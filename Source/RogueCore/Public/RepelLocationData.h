@@ -1,0 +1,19 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "RepelLocationData.generated.h"
+
+USTRUCT(BlueprintType)
+struct FRepelLocationData {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FVector SourceLocation;
+    
+    float Radius;
+    float HalfHeight;
+    FVector ExtraVelocity;
+    float MinStrength;
+    float MaxStrength;
+    ROGUECORE_API FRepelLocationData();
+};

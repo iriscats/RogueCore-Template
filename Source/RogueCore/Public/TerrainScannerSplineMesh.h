@@ -1,0 +1,37 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Components/SplineMeshComponent.h"
+#include "TerrainScannerSplineMesh.generated.h"
+
+class UHealthComponentBase;
+UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class ROGUECORE_API UTerrainScannerSplineMesh : public USplineMeshComponent {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+
+    bool bVisibleOnScanner;
+
+    UTerrainScannerSplineMesh(const FObjectInitializer& ObjectInitializer);
+
+    UFUNCTION(BlueprintCallable)
+
+    void SetVisibleOnScanner(bool InShowOnScanner);
+
+
+
+public:
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool bVisibleAtBeginPlay;
+    
+    bool bHideOnDeath;
+    bool bUseFogOfWar;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    bool bVisibleOnScanner;
+    UTerrainScannerSplineMesh(const FObjectInitializer& ObjectInitializer);
+    UFUNCTION(BlueprintCallable)
+    void SetVisibleOnScanner(bool InShowOnScanner);
+    void OnOwnerDeath(UHealthComponentBase* InHealthComponent);
+};

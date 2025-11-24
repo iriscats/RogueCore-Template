@@ -1,0 +1,14 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "DestructableBodypartItem.generated.h"
+
+USTRUCT(BlueprintType)
+struct FDestructableBodypartItem {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    uint8 MaterialIndex;
+    
+    TArray<FName> ArmorBones;
+    ROGUECORE_API FDestructableBodypartItem();
+};

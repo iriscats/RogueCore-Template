@@ -1,0 +1,21 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "DeepPathfinderCharacter.h"
+#include "NetMontageAble.h"
+#include "ASimpleFlyingDrone.generated.h"
+
+class UAnimInstance;
+class UAnimMontage;
+class USkeletalMeshComponent;
+UCLASS(Blueprintable, NoExport)
+class ROGUECORE_API AASimpleFlyingDrone : public ADeepPathfinderCharacter, public INetMontageAble {
+    GENERATED_BODY()
+public:
+    AASimpleFlyingDrone(const FObjectInitializer& ObjectInitializer);
+    // Fix for true pure virtual functions not being implemented
+    UFUNCTION(BlueprintCallable)
+    float QueueMontage(UAnimMontage* Montage) override PURE_VIRTUAL(QueueMontage, return 0.0f;);
+    
+    USkeletalMeshComponent* GetSkeletalMesh() const override PURE_VIRTUAL(GetSkeletalMesh, return NULL;);
+    UAnimInstance* GetAnimInstance() const override PURE_VIRTUAL(GetAnimInstance, return NULL;);
+};

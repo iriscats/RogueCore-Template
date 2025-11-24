@@ -1,0 +1,5 @@
+#include "TXNegotiationEndEvent_Negotiation_Selection_Options.h"
+
+FTXNegotiationEndEvent_Negotiation_Selection_Options::FTXNegotiationEndEvent_Negotiation_Selection_Options() {
+}
+

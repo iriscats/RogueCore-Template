@@ -1,0 +1,22 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Engine/NetSerialization.h"
+#include "ProjectileState.generated.h"
+
+class USceneComponent;
+USTRUCT(BlueprintType)
+struct FProjectileState {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FVector_NetQuantize Velocity;
+    
+    FVector_NetQuantize Location;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    USceneComponent* HomingTargetComponent;
+    bool IsSimulating;
+    bool IsBouncy;
+    bool IsHoming;
+    bool IsPenetrating;
+    ROGUECORE_API FProjectileState();
+};

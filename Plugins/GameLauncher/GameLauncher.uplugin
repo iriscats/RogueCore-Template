@@ -1,0 +1,17 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "Game Launcher SDK",
+	"Description": "Linking and functionality for the Gamelauncher. Changing some structs locally will break it",
+	"Category": "GameLauncherFunctionality",
+	"CreatedBy": "Axel Emanuelsson <Axel@GhostShip.dk>",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": true
+}

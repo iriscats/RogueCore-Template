@@ -1,0 +1,17 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "CallbackBonusDelegateDelegate.h"
+#include "DamageBonusBase.h"
+#include "CallbackBonus.generated.h"
+
+UCLASS(Blueprintable, EditInlineNew)
+class UCallbackBonus : public UDamageBonusBase {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected sectio
+
+public:
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FCallbackBonusDelegate Callback;
+    
+    UCallbackBonus();
+};

@@ -1,0 +1,52 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "Subsystems/GameInstanceSubsystem.h"
+#include "OnlineSubsystemTypes.h"
+#include "GetLobbiesResultDelegate.h"
+#include "ServerlistLobby.h"
+#include "FindSessionsCallbackProxy.h"
+#include "FSDServerListClient.generated.h"
+
+UCLASS(Blueprintable)
+class UFSDServerListClient : public UGameInstanceSubsystem {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from private section
+
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+
+    FGetLobbiesResult ListDelegate;
+
+    UFSDServerListClient();
+
+    UFUNCTION(BlueprintCallable)
+
+    bool StopHosting();
+
+    bool StartHosting(const FString& RunName);
+
+    void ListLobbys();
+
+
+
+public:
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBlueprintFindSessionsResultDelegate, const TArray<FBlueprintSessionResult>&, Results);
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<FServerlistLobby> Lobbies;
+    FServerlistLobby MyActiveLobbyData;
+    FGuid LobbyGuid;
+    FString FilterRunName;
+    bool IsInProgress;
+    FString CurrentSessionId;
+private:
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FGetLobbiesResult ListDelegate;
+    UFSDServerListClient();
+    UFUNCTION(BlueprintCallable)
+    bool StopHosting();
+    bool StartHosting(const FString& RunName);
+    void ListLobbys();
+    FBlueprintSessionResult CreateSessionData(FServerlistLobby FromLobby);
+    int32 CalculateRemoteServerPing(const FString& RemoteServerSteamLocation);
+};

@@ -1,0 +1,28 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EShowroomScaling.h"
+#include "ShowroomItem.h"
+#include "EnemyShowroomItem.generated.h"
+
+UCLASS(Blueprintable, NoExport)
+class AEnemyShowroomItem : public AShowroomItem {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+
+    EShowroomScaling Scaling;
+
+    
+
+    AEnemyShowroomItem(const FObjectInitializer& ObjectInitializer);
+
+
+
+public:
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    EShowroomScaling Scaling;
+    
+    AEnemyShowroomItem(const FObjectInitializer& ObjectInitializer);
+};

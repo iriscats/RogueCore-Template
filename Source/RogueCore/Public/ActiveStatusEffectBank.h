@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ActiveStatusEffect.h"
+#include "ActiveStatusEffectBank.generated.h"
+
+class UStatusEffect;
+USTRUCT(BlueprintType)
+struct FActiveStatusEffectBank {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    UStatusEffect* Key;
+    
+    TArray<FActiveStatusEffect> effects;
+    ROGUECORE_API FActiveStatusEffectBank();
+};

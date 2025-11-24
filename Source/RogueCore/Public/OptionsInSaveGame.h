@@ -1,0 +1,14 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "OptionsInSaveGame.generated.h"
+
+USTRUCT(BlueprintType)
+struct FOptionsInSaveGame {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool SaveGameOptionsValid;
+    
+    int32 ScreenMode;
+    ROGUECORE_API FOptionsInSaveGame();
+};

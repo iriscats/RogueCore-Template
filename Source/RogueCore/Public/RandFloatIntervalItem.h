@@ -1,0 +1,15 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "RandRange.h"
+#include "RandFloatIntervalItem.generated.h"
+
+USTRUCT(BlueprintType)
+struct FRandFloatIntervalItem {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float Weight;
+    
+    FRandRange Range;
+    ROGUECORE_API FRandFloatIntervalItem();
+};

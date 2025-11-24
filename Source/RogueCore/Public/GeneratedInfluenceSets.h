@@ -1,0 +1,15 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "GeneratedInfluenceSet.h"
+#include "GeneratedInfluenceSets.generated.h"
+
+USTRUCT(BlueprintType)
+struct FGeneratedInfluenceSets {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<FGeneratedInfluenceSet> InfluenceSets;
+    
+    bool IsValid;
+    ROGUECORE_API FGeneratedInfluenceSets();
+};

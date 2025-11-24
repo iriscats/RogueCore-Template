@@ -1,0 +1,18 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "FlyingBugAnimInstance.h"
+#include "BomberAnimInstance.generated.h"
+
+UCLASS(Blueprintable, NonTransient)
+class UBomberAnimInstance : public UFlyingBugAnimInstance {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    bool ShouldBomb;
+    
+    bool ShouldSpiral;
+    bool IsBombing;
+    bool IsSpiraling;
+    UBomberAnimInstance();
+};

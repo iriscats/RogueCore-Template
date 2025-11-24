@@ -1,0 +1,5 @@
+#include "TXStageStartEvent_CaveGeneration_SpawnedObjectives.h"
+
+FTXStageStartEvent_CaveGeneration_SpawnedObjectives::FTXStageStartEvent_CaveGeneration_SpawnedObjectives() {
+}
+

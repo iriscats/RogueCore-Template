@@ -1,0 +1,24 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "AnimatedItem.h"
+#include "DrinkableItem.generated.h"
+
+class UDrinkableDataAsset;
+UCLASS(Abstract, Blueprintable, NoExport)
+class ADrinkableItem : public AAnimatedItem {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DrinkableData, meta=(AllowPrivateAccess=true))
+    UDrinkableDataAsset* DrinkableData;
+    
+    ADrinkableItem(const FObjectInitializer& ObjectInitializer);
+    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
+    UFUNCTION(BlueprintCallable)
+    void OnRep_DrinkableData();
+    void Consume();
+    UFUNCTION(BlueprintCallable, Client, Reliable)
+    void ClientConsumed();
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
+    bool CheckCanSalute() const;
+};

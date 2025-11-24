@@ -1,0 +1,11 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "FSDPhysicsActor.generated.h"
+
+UCLASS(Blueprintable, NoExport)
+class AFSDPhysicsActor : public AActor {
+    GENERATED_BODY()
+public:
+    AFSDPhysicsActor(const FObjectInitializer& ObjectInitializer);
+};

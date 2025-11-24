@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ReflectiveHitscanHit.h"
+#include "ScanPath.h"
+#include "ReflectionTraceResult.generated.h"
+
+USTRUCT(BlueprintType)
+struct FReflectionTraceResult {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<FScanPath> Path;
+    
+    FReflectiveHitscanHit FinalHit;
+    ROGUECORE_API FReflectionTraceResult();
+};

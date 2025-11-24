@@ -1,0 +1,17 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "TextCounterEntry.generated.h"
+
+class UTextBlock;
+USTRUCT(BlueprintType)
+struct FTextCounterEntry {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UTextBlock* TextBlock;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FText Format;
+    int32 Value;
+    ROGUECORE_API FTextCounterEntry();
+};

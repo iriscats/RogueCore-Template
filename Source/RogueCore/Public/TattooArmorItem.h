@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "TattooArmorItem.generated.h"
+
+class UVanityTattoo;
+USTRUCT(BlueprintType)
+struct FTattooArmorItem {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UVanityTattoo* Tattoo;
+    
+    bool IsLeftArm;
+    bool FlipTexture;
+    ROGUECORE_API FTattooArmorItem();
+};

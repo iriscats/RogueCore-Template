@@ -1,0 +1,5 @@
+#include "TXArtifactNegotiationEndEvent_PlayerInfo_Loadout.h"
+
+FTXArtifactNegotiationEndEvent_PlayerInfo_Loadout::FTXArtifactNegotiationEndEvent_PlayerInfo_Loadout() {
+}
+

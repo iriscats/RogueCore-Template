@@ -1,0 +1,15 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ActiveCampaingMission.generated.h"
+
+USTRUCT(BlueprintType)
+struct FActiveCampaingMission {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    bool HasMission;
+    
+    int32 globalSeed;
+    int32 missionSeed;
+    ROGUECORE_API FActiveCampaingMission();
+};

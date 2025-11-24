@@ -1,0 +1,38 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
+#include "DamageSigDelegate.h"
+#include "HealthDamageTracker.generated.h"
+
+class UHealthComponentBase;
+UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class UHealthDamageTracker : public UActorComponent {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+
+    UHealthComponentBase* Health;
+
+    UHealthDamageTracker(const FObjectInitializer& ObjectInitializer);
+
+    UFUNCTION(BlueprintCallable)
+
+    void ResetTrackedDamage();
+
+
+
+public:
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FDamageSig OnTrackedPercentageReachedEvent;
+    
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float TiggerOnPercentage;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+    UHealthComponentBase* Health;
+    UHealthDamageTracker(const FObjectInitializer& ObjectInitializer);
+    UFUNCTION(BlueprintCallable)
+    void ResetTrackedDamage();
+    void OnDamageTaken(float amount);
+};

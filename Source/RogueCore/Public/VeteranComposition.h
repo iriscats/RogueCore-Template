@@ -1,0 +1,15 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "RandFloatInterval.h"
+#include "VeteranComposition.generated.h"
+
+USTRUCT(BlueprintType)
+struct FVeteranComposition {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FRandFloatInterval Normal;
+    
+    FRandFloatInterval Large;
+    ROGUECORE_API FVeteranComposition();
+};

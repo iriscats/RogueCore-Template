@@ -1,0 +1,5 @@
+#include "TXArtifactNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates.h"
+
+FTXArtifactNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates::FTXArtifactNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates() {
+}
+

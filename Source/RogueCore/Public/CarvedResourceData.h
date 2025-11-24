@@ -1,0 +1,28 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ResourceData.h"
+#include "CarvedResourceData.generated.h"
+
+class AProceduralSetup;
+class UCarvedResourceCreator;
+UCLASS(Blueprintable)
+class ROGUECORE_API UCarvedResourceData : public UResourceData {
+    GENERATED_BODY()
+
+public:
+    UCarvedResourceData();
+
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    UCarvedResourceCreator* LoadResourceCreator() const;
+
+    float GetUnitsPerCarver() const;
+
+    float GetTargetAmount(AProceduralSetup* pls) const;
+
+protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
+    TSoftObjectPtr<UCarvedResourceCreator> CarvedResourceCreator;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float UnitsPerCarver;
+};

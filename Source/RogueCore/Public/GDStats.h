@@ -1,0 +1,95 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "GDStats.generated.h"
+
+class UPawnStat;
+USTRUCT(BlueprintType)
+struct FGDStats {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UPawnStat* ArmorPiercing;
+    
+    UPawnStat* ArmorBreaking;
+    UPawnStat* MaxArmor;
+    UPawnStat* MaxArmorModifier;
+    UPawnStat* ShieldRegenerationRate;
+    UPawnStat* MaxHealth;
+    UPawnStat* BaseHealth;
+    UPawnStat* DamageResistance;
+    UPawnStat* FireResistance;
+    UPawnStat* FireRate;
+    UPawnStat* ColdResistance;
+    UPawnStat* MeleeAttackDamage;
+    UPawnStat* MovementSpeed;
+    UPawnStat* MovementSpeedAdditive;
+    UPawnStat* WeaponCooldownRate;
+    UPawnStat* JumpVelocityMultiplier;
+    UPawnStat* FallDamageStartVelocityMultiplier;
+    UPawnStat* AirControl;
+    UPawnStat* SprintSpeed;
+    UPawnStat* CarryingSpeedModifier;
+    UPawnStat* ReviveSpeed;
+    UPawnStat* DepositSpeed;
+    UPawnStat* RessuplySpeed;
+    UPawnStat* RedSugarHeal;
+    UPawnStat* CarryingCapacity;
+    UPawnStat* ZiplineSpeed;
+    UPawnStat* ZiplineDownwardsBoost;
+    UPawnStat* SlideDownIce;
+    UPawnStat* FriendlyFireRecieved;
+    UPawnStat* FriendlyFireInflicted;
+    UPawnStat* DamageFromPlayers;
+    UPawnStat* DamageBonus;
+    UPawnStat* DamageMultiplier;
+    UPawnStat* FlareThrowingStrength;
+    UPawnStat* CaveLeechSense;
+    UPawnStat* MorkiteMining;
+    UPawnStat* GoldMining;
+    UPawnStat* RockMiningStrength;
+    UPawnStat* DirtMiningStrength;
+    UPawnStat* ResourceMiningStrength;
+    UPawnStat* PowerAttackCooldownRate;
+    UPawnStat* ImpactCompensation;
+    UPawnStat* MovementSpeedPenalty;
+    UPawnStat* MovementSpeedPenaltyReduction;
+    UPawnStat* MovementSpeedEnvironmentalPenalty;
+    UPawnStat* AccelerationModifier;
+    UPawnStat* MovementSpeedEnvironmentalPenaltyReduction;
+    UPawnStat* CarriableThrowing;
+    UPawnStat* HoverBootsDuration;
+    UPawnStat* ExplodeOnDeath;
+    UPawnStat* CritChance;
+    UPawnStat* DodgeChance;
+    UPawnStat* DodgeFromCrit;
+    UPawnStat* CritVulnerability;
+    UPawnStat* CritDamageBonus;
+    UPawnStat* ReloadSpeedBonus;
+    UPawnStat* MaxSpreadBonus;
+    UPawnStat* SpreadPerShotBonus;
+    UPawnStat* SpreadRecoveryBonus;
+    UPawnStat* MovementSpreadBonus;
+    UPawnStat* HeatGenerationBonus;
+    UPawnStat* RecoildBonus;
+    UPawnStat* WeakpointDamageBonus;
+    UPawnStat* MaxGrenades;
+    UPawnStat* HealthRegenTargetBonus;
+    UPawnStat* ShieldRegenDelayBonus;
+    UPawnStat* AbilityCooldownModifier;
+    UPawnStat* AbilityCooldownRate;
+    UPawnStat* AbilityRange;
+    UPawnStat* AbilityDuration;
+    UPawnStat* AbilityQuantity;
+    UPawnStat* AbilityDamage;
+    UPawnStat* AbilityExtraCharges;
+    UPawnStat* RevivedInvulnerabilityBonus;
+    UPawnStat* MaxAmmoBonus;
+    UPawnStat* AdaptiveMaxAmmoBonus;
+    UPawnStat* MiningSpeed;
+    UPawnStat* RadialRangeBonus;
+    UPawnStat* ArmorPickupBonus;
+    UPawnStat* AmmoPickupBonus;
+    UPawnStat* HealthRegenModifier;
+    UPawnStat* HealthRegenDelay;
+    ROGUECORE_API FGDStats();
+};

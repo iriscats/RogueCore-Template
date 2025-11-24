@@ -1,0 +1,15 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "ScaledEffect.generated.h"
+
+class UFXSystemAsset;
+USTRUCT(BlueprintType)
+struct FScaledEffect {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UFXSystemAsset* ParticleSystem;
+
+    float Scale;
+    ROGUECORE_API FScaledEffect();
+};

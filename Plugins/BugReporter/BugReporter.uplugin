@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "Bugreporter SDK",
+	"Description": "Linking and functionality for the bugreporter. Changing some structs locally will break it",
+	"Category": "Bugreporting",
+	"CreatedBy": "Axel Emanuelsson <Axel@GhostShip.dk>",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Plugins": [
+		{
+			"Name": "DiscordSDK",
+			"Enabled": true
+		}
+	]
+}

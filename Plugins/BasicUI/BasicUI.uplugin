@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BasicUI",
+	"Description": "Widgets and editor tools",
+	"Category": "UI",
+	"CreatedBy": "Ghost Ship Games",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BasicUI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

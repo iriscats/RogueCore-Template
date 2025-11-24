@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "InputTranslationEntry.h"
+#include "InputTranslation.generated.h"
+
+USTRUCT(BlueprintType)
+struct FInputTranslation {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FInputTranslationEntry Default;
+    
+    bool bControllerOverride;
+    FInputTranslationEntry ControllerOverride;
+    ROGUECORE_API FInputTranslation();
+};

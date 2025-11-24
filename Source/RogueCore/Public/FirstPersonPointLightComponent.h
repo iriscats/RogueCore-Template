@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Components/PointLightComponent.h"
+#include "FirstPersonPointLightComponent.generated.h"
+
+UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
+class UFirstPersonPointLightComponent : public UPointLightComponent {
+    GENERATED_BODY()
+
+private:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    bool CorrectionEnabled;
+
+public:
+    UFirstPersonPointLightComponent(const FObjectInitializer& ObjectInitializer);
+};

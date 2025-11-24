@@ -1,0 +1,23 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "Subsystems/GameInstanceSubsystem.h"
+#include "GeneratedRunGroup.h"
+#include "GeneratedRunsForBiome.h"
+#include "RunGenerationManager.generated.h"
+
+class UStage;
+UCLASS(Blueprintable)
+class ROGUECORE_API URunGenerationManager : public UGameInstanceSubsystem {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TMap<int32, FGeneratedRunGroup> AllRunGroups;
+    
+    URunGenerationManager();
+    UFUNCTION(BlueprintCallable, BlueprintPure)
+    TArray<UStage*> GetStages(int32 Seed);
+    TArray<UStage*> GetAvailableStages();
+    TArray<FGeneratedRunsForBiome> GenerateRuns(const int32 Seed);
+};

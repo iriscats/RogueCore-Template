@@ -1,0 +1,5 @@
+#include "TXStageStartEvent_CaveGeneration_LevelDecoration.h"
+
+FTXStageStartEvent_CaveGeneration_LevelDecoration::FTXStageStartEvent_CaveGeneration_LevelDecoration() {
+}
+

@@ -1,0 +1,19 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/Object.h"
+#include "SavableObject.generated.h"
+
+UCLASS(Blueprintable)
+class USavableObject : public UObject {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+public:
+    UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool EnableDangerousSaveGameIDEditing;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FGuid SavegameID;
+    USavableObject();
+};

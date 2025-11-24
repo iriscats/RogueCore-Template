@@ -1,0 +1,18 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EProjectileSwitchCriteria.h"
+#include "Templates/SubclassOf.h"
+#include "ProjectileSwitch.generated.h"
+
+class AProjectileBase;
+USTRUCT(BlueprintType)
+struct FProjectileSwitch {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TSubclassOf<AProjectileBase> ProjectileClass;
+    
+    EProjectileSwitchCriteria CriteriaType;
+    float CriteriaThreshhold;
+    ROGUECORE_API FProjectileSwitch();
+};

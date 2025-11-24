@@ -1,0 +1,21 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "AbilityUpgrade.h"
+#include "Templates/SubclassOf.h"
+#include "SpawnActorAbilityUpgrade.generated.h"
+
+class AAbilitySpawnActor;
+UCLASS(Blueprintable, EditInlineNew)
+class USpawnActorAbilityUpgrade : public UAbilityUpgrade {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TSubclassOf<AAbilitySpawnActor> SpawnActor;
+    
+    FVector SpawnLocationOffset;
+    float Lifetime;
+    USpawnActorAbilityUpgrade();
+};

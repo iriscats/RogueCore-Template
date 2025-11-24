@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.1",
+	"FriendlyName": "Vertex Color Baker",
+	"Description": "",
+	"Category": "Baking",
+	"CreatedBy": "Axel @ Ghost Ship Games, Inc.",
+	"CreatedByURL": "https://ghostship.dk",
+	"DocsURL": "https://www.notion.so/Vertex-baking-tool-9a49a811e3d341259a4b186e616f6b66",
+	"MarketplaceURL": "",
+	"SupportURL": "axel@ghostship.dk",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+		{
+			"Name": "GeometryProcessing",
+			"Enabled": true
+		}
+	]
+}

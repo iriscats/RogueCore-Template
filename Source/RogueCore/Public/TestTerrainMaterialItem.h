@@ -1,0 +1,20 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "TestTerrainMaterialItem.generated.h"
+
+class UFXSystemAsset;
+class USoundCue;
+class UTerrainMaterial;
+USTRUCT(BlueprintType)
+struct FTestTerrainMaterialItem {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<UTerrainMaterial*> Materials;
+    
+    TSoftObjectPtr<UFXSystemAsset> DigParticles;
+    TSoftObjectPtr<UFXSystemAsset> PartialDigParticles;
+    TSoftObjectPtr<USoundCue> CrumbleSound;
+    TSoftObjectPtr<USoundCue> PartialMineSound;
+    ROGUECORE_API FTestTerrainMaterialItem();
+};

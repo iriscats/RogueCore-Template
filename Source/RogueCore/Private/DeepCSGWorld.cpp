@@ -1,0 +1,178 @@
+#include "DeepCSGWorld.h"
+#include "Components/ArrowComponent.h"
+#include "AsyncPathRequests.h"
+#include "Templates/SubclassOf.h"
+
+ADeepCSGWorld::ADeepCSGWorld(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
+    this->bAlwaysRelevant = true;
+    this->bReplicates = true;
+    const FProperty* p_RemoteRole = GetClass()->FindPropertyByName("RemoteRole");
+    (*p_RemoteRole->ContainerPtrToValuePtr<TEnumAsByte<ENetRole>>(this)) = ROLE_SimulatedProxy;
+    this->RootComponent = CreateDefaultSubobject<UArrowComponent>(TEXT("FakeMoeventBase"));
+    this->MOMTerrrainMaterial = NULL;
+    this->NitraTerrrainMaterial = NULL;
+    this->GoldTerrainType = NULL;
+    this->MOMTerrainType = NULL;
+    this->RockTerrainType = NULL;
+    this->CrystalTerrainType = NULL;
+    this->EmptyTerrainType = NULL;
+    this->DirtTerrainType = NULL;
+    this->DefaultBurntTerrainType = NULL;
+    this->DefaultConstructionScannerMaterial = NULL;
+    this->TestLevelCarver = NULL;
+    this->DebrisActorInstance = NULL;
+    this->DebrisActorIndex = 0;
+    this->ProceduralSetup = NULL;
+    this->AsyncPathRequests = CreateDefaultSubobject<UAsyncPathRequests>(TEXT("AsyncPathRequests"));
+}
+
+void ADeepCSGWorld::UnRegisterScannerComponent(UPrimitiveComponent* Component) {
+}
+
+void ADeepCSGWorld::TerrainOp_SpawnDebris_Implementation(const FTerrainSpawnDebrisOperationData& Data) {
+}
+
+void ADeepCSGWorld::TerrainMaterialDataLoaded() {
+}
+
+void ADeepCSGWorld::SpawnDebris(UDebrisMesh* Debris, const FVector& Pos, float Radius) {
+}
+
+void ADeepCSGWorld::SetVisibleToScanner(const FVector& Center, const FVector& Range) {
+}
+
+void ADeepCSGWorld::SetRockMaterialForTest(UTerrainMaterial* Material) {
+}
+
+void ADeepCSGWorld::SelectDebrisSettings() {
+}
+
+void ADeepCSGWorld::ResetEntireWorld() {
+}
+
+void ADeepCSGWorld::RemoveDebrisInSphere(const FVector& position, float Radius, bool onlyFragile, bool alsoDurable, ESpecialDebrisType onlyType) {
+}
+
+void ADeepCSGWorld::RegisterScannerComponent(UPrimitiveComponent* Component, bool useFogOfWar) {
+}
+
+bool ADeepCSGWorld::Raycast(FVector Start, FVector Direction, float MaxDistance, FCSGRaycastHitInfo& HitInfo, ELandscapeCellFilter Filter) const {
+    return false;
+}
+
+bool ADeepCSGWorld::Linecast(FVector Start, FVector End, FCSGRaycastHitInfo& HitInfo, ELandscapeCellFilter Filter) const {
+    return false;
+}
+
+bool ADeepCSGWorld::IsPositionVisibleToScanner(const FVector& Pos) const {
+    return false;
+}
+
+bool ADeepCSGWorld::IsPointInsideTerrain(const FVector& Pos) const {
+    return false;
+}
+
+bool ADeepCSGWorld::IsComponentRegisteredWithScanner(UPrimitiveComponent* Component) {
+    return false;
+}
+
+bool ADeepCSGWorld::InitialGenerationDone() const {
+    return false;
+}
+
+bool ADeepCSGWorld::HasUnfinishedRuntimeOperations() const {
+    return false;
+}
+
+int32 ADeepCSGWorld::GetTerrainHash() {
+    return 0;
+}
+
+int32 ADeepCSGWorld::GetShadowQuality() {
+    return 0;
+}
+
+FFSDTerrainGenerationStats ADeepCSGWorld::GetGenerationStats(bool detailed) {
+    return FFSDTerrainGenerationStats{};
+}
+
+ADebrisDataActor* ADeepCSGWorld::GetDebrisDataActor() const {
+    return NULL;
+}
+
+void ADeepCSGWorld::GetAllTerrainActorsAroundPoint(const FVector& Center, const FVector& Range, TArray<AActor*>& TerrainActors) {
+}
+
+void ADeepCSGWorld::GenerateAllMeshes() {
+}
+
+void ADeepCSGWorld::FinishGeneration_Blocking() {
+}
+
+float ADeepCSGWorld::FindTotalVolumeOfMaterialInWorld(UTerrainMaterial* Material) {
+    return 0.0f;
+}
+
+void ADeepCSGWorld::CarveWithSTLMeshUsingTransform_Wait(ADeepCSGWorld* CSGWorld, USTLMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, EPreciousMaterialOptions Precious, FLatentActionInfo LatentInfo) {
+}
+
+void ADeepCSGWorld::CarveWithSTLMeshUsingTransform(USTLMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithSTLMesh_Wait(ADeepCSGWorld* CSGWorld, USTLMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, FVector Pos, FQuat Orientation, FVector Scale, EPreciousMaterialOptions Precious, FLatentActionInfo LatentInfo) {
+}
+
+void ADeepCSGWorld::CarveWithSTLMesh(USTLMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, FVector Pos, FQuat Orientation, FVector Scale, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithStaticMeshUsingTransform_Wait(ADeepCSGWorld* CSGWorld, UStaticMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, EPreciousMaterialOptions Precious, FLatentActionInfo LatentInfo) {
+}
+
+void ADeepCSGWorld::CarveWithStaticMeshUsingTransform(UStaticMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithStaticMesh(UStaticMeshCarver* MeshCarver, UTerrainMaterial* Material, ECarveFilterType CarveFilter, FVector Pos, FQuat Orientation, FVector Scale, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithSplineSegments(const TArray<FCarveSplineSegment>& Segments, UTerrainMaterial* Material, float Noise, ECarveFilterType CarveFilter, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithSplineSegment(const FVector& SplineStart, const FVector& SplineStartTangent, const FVector& SplineEnd, const FVector& SplineEndTangent, float Radius, float Noise, UTerrainMaterial* Material, ECarveFilterType CarveFilter, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithMeshUsingTransform_Wait(ADeepCSGWorld* CSGWorld, UStaticMesh* StaticMesh, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, float ExpensiveNoise, EPreciousMaterialOptions Precious, FLatentActionInfo LatentInfo) {
+}
+
+void ADeepCSGWorld::CarveWithMeshUsingTransform(UStaticMesh* StaticMesh, UTerrainMaterial* Material, ECarveFilterType CarveFilter, const FTransform& Transform, float ExpensiveNoise, EPreciousMaterialOptions Precious, CarveOptionsCellSize CarverSize, bool anchorCenterPosition) {
+}
+
+void ADeepCSGWorld::CarveWithMesh_Wait(ADeepCSGWorld* CSGWorld, UStaticMesh* StaticMesh, UTerrainMaterial* Material, ECarveFilterType CarveFilter, FVector Pos, FQuat Orientation, FVector Scale, FLatentActionInfo LatentInfo) {
+}
+
+void ADeepCSGWorld::CarveWithMesh(UStaticMesh* StaticMesh, UTerrainMaterial* Material, ECarveFilterType CarveFilter, FVector Pos, FQuat Orientation, FVector Scale, EPreciousMaterialOptions Precious) {
+}
+
+void ADeepCSGWorld::CarveWithCSGBuild(TSubclassOf<ACSGBuilder> CSGModel, const FTransform& Transform) {
+}
+
+float ADeepCSGWorld::CalcApproximateTerrainDensity(FVector Pos, float Radius) {
+    return 0.0f;
+}
+
+UTerrainMaterial* ADeepCSGWorld::BPGetTerrainMaterial(int32 Handle) const {
+    return NULL;
+}
+
+void ADeepCSGWorld::BaseLayerCommitFinal(bool blocking) {
+}
+
+void ADeepCSGWorld::BaseLayerCommit(bool blocking, bool scheduleTesselation) {
+}
+
+void ADeepCSGWorld::AttachActorToTerrain(AActor* Actor, FVector Pos) {
+}
+
+void ADeepCSGWorld::ApplyBaseDebrisCarvers(const TArray<UDebrisBase*>& Carvers) {
+}
+
+

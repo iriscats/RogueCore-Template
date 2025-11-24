@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "BioBoosterDeckEntry.generated.h"
+
+class UBXEUnlockBase;
+USTRUCT(BlueprintType)
+struct FBioBoosterDeckEntry {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UBXEUnlockBase* Unlock;
+    
+    int32 UnlocksAtLevel;
+    int32 UnlockAtPromotion;
+    ROGUECORE_API FBioBoosterDeckEntry();
+};

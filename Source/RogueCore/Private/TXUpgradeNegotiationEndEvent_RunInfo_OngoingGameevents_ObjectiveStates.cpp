@@ -1,0 +1,5 @@
+#include "TXUpgradeNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates.h"
+
+FTXUpgradeNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates::FTXUpgradeNegotiationEndEvent_RunInfo_OngoingGameevents_ObjectiveStates() {
+}
+

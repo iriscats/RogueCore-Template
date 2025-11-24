@@ -1,0 +1,26 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "CSGBuilderBase.h"
+#include "EPreviewCellSize.h"
+#include "SDFBuilder.generated.h"
+
+class USDFUnionOpComponent;
+class UTerrainMaterialCore;
+
+UCLASS(Blueprintable, NoExport)
+class ROGUECOREENGINE_API ASDFBuilder : public ACSGBuilderBase {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    EPreviewCellSize PreviewSize;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UTerrainMaterialCore* PreviewMaterial;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    USDFUnionOpComponent* SDFRoot;
+    
+    ASDFBuilder(const FObjectInitializer& ObjectInitializer);
+
+};
+

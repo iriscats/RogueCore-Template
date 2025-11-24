@@ -1,0 +1,16 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "SkinEffect.h"
+#include "MaterialSkinEffect.generated.h"
+
+class UMaterialInterface;
+UCLASS(Blueprintable, EditInlineNew)
+class UMaterialSkinEffect : public USkinEffect {
+    GENERATED_BODY()
+    // UPROPERTY fields moved from protected section
+public:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    TArray<TSoftObjectPtr<UMaterialInterface>> Materials;
+    
+    UMaterialSkinEffect();
+};
