@@ -1,11 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
 #include "ElementEffectsUpgradeElement.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
-class UElementEffectsUpgradeElement
-{
+class ROGUECORE_API UElementEffectsUpgradeElement : public UObject {
     GENERATED_BODY()
 public:
-    UElementEffectsUpgradeElement();
+    UElementEffectsUpgradeElement(const FObjectInitializer& ObjectInitializer);
 };

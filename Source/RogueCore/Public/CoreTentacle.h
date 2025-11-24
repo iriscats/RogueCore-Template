@@ -27,5 +27,6 @@ public:
     void OnRep_MovementTarget();
     ECoreTentacleState GetTentacleState() const;
     FCoreTentacleMovementTarget GetMovementTarget() const;
+    bool FindBurrowEntrancePoint(UDebrisPositioning* Debris, const FVector& AroundPoint, float SearchRadius, float BurrowDepth, FVector& OutLocation) const;
     // Fix for true pure virtual functions not being implemented
 };

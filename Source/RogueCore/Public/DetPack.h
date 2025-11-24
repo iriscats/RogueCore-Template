@@ -17,17 +17,13 @@ class ADetPack : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float UpgradedStaggerChance;
-    
-    float UpgradedStaggerDuration;
-    float UpgradedFearFactor;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     float VisualDamageRadius;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float IncreasedFearRadius;
-    float IncreasedStaggerRadius;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UProjectileMovementComponent* Movement;
     UExplosionComponent* Explosion;
@@ -38,6 +34,11 @@ protected:
     bool HasExploded;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsMoving, meta=(AllowPrivateAccess=true))
     bool IsMoving;
+
+protected:
+    float UpgradedStaggerDuration;
+    float UpgradedFearFactor;
+    float IncreasedStaggerRadius;
     bool ExplodesOnDeath;
     bool HasExtraStaggerRadius;
     bool HasExtraFearRadius;

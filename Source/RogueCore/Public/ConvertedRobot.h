@@ -134,9 +134,11 @@ protected:
 
 private:
     bool IsWalking;
+    UStaticMeshComponent* TurretRotation;
+
+public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsDoingSpecialAttack, meta=(AllowPrivateAccess=true))
     bool IsDoingSpecialAttack;
-    UStaticMeshComponent* TurretRotation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Target, meta=(AllowPrivateAccess=true))
     AActor* CurrentTarget;
     AConvertedRobot(const FObjectInitializer& ObjectInitializer);

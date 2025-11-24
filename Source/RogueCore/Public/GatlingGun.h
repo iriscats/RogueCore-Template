@@ -14,7 +14,6 @@ class AGatlingGun : public ABeltDrivenWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool BarrelProximityDamageEnabled;
     
@@ -33,6 +32,7 @@ protected:
     UDamageAsset* BarrelProximityDamage;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;
+protected:
     AGatlingGun(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)

@@ -21,13 +21,9 @@ class UStaticMeshComponent;
 UCLASS(Abstract, Blueprintable, NoExport)
 class ADamageEnhancer : public AGrenade, public ITargetable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* RootCollision;
-    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHealthComponent* HealthComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
@@ -52,6 +48,7 @@ protected:
     float EnabledDuration;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float TraceStepTime;
+protected:
     ADamageEnhancer(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void HitByHitScan(UHitscanBaseComponent* Component, const FVector& Origin, const FHitResult& HitResult);

@@ -16,10 +16,13 @@ protected:
     FGameplayTagContainer GameplayTags;
     
     ATargetDummyPawn(const FObjectInitializer& ObjectInitializer);
-    // Fix for true pure virtual functions not being implemented
+
+    // IGameplayTagAssetInterface interface
+    virtual void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
+
+    // ITargetable interface - implemented using GameplayTags
     UFUNCTION(BlueprintCallable)
-    bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override PURE_VIRTUAL(HasMatchingGameplayTag, return false;);
-    bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override PURE_VIRTUAL(HasAnyMatchingGameplayTags, return false;);
-    bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override PURE_VIRTUAL(HasAllMatchingGameplayTags, return false;);
-    FGameplayTagContainer BP_GetOwnedGameplayTags() const override PURE_VIRTUAL(BP_GetOwnedGameplayTags, return FGameplayTagContainer{};);
+    virtual bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const;
+    virtual bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const;
+    virtual bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const;
 };

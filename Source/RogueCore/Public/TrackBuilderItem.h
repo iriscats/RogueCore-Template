@@ -38,7 +38,9 @@ protected:
     void ServerUpdatePlacement(const FTransform& InTransform, const bool bPlacementValid, UTrackBuilderConnectPoint* InConnectPoint);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void ServerFinishPlacement(const FTransform& FinalLocation, UTrackBuilderConnectPoint* ConnectPoint);
+    UFUNCTION(Reliable, Server)
     void ServerCancelPlacement();
+    UFUNCTION(Reliable, Server)
     void ServerBeginPlaceSegment(UTrackBuilderUsable* InUsable);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveBeginPlaceSegment();

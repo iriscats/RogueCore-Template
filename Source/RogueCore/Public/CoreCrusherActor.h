@@ -42,9 +42,11 @@ public:
     float HealPerUse;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     float CurrentBootLeft;
-protected:
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    float DrainImmunityTime;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnPartInserted;
+protected:
     void RepairableUsableOnUsedBy(APlayerCharacter* User, EInputKeys Key);
     void ReceiveStateChange(ECoreCrusherState InState);
     void OnRunningRepairUsedBy(APlayerCharacter* User, EInputKeys Key);

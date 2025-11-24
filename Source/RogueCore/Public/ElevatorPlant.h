@@ -16,10 +16,9 @@ class AElevatorPlant : public AActor {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStartTimelineEvent OnStartTimelineEvent;
-    
+
     FCOnStateChanged COnStateChangedEvent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAudioComponent* MovingSoundComponent;

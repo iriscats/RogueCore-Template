@@ -11,12 +11,12 @@ struct FDownCameraSettings {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APlayerCharacter> Target;
-    
+
     int32 TargetIndex;
+    ROGUECORE_API FDownCameraSettings();
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MinPitch;
     float MaxPitch;
     float SmoothSpeed;
-    ROGUECORE_API FDownCameraSettings();
 };

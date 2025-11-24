@@ -59,10 +59,11 @@ public:
     UCritterManager* CritterManager;
     TArray<AFSDPlayerController*> PlayerControllers;
     UStaticSpawnPointManager* StaticSpawnPointManager;
-protected:
-    UFormationsManagerComponent* FormationsManager;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ATeamTransport> DropPodClass;
+
+protected:
+    UFormationsManagerComponent* FormationsManager;
     TSoftClassPtr<AMolly> MuleClass;
     TSoftClassPtr<ATeamTransport> DropodEscapeClass;
     TSoftClassPtr<ATeamTransport> DropodEscapeSafeClass;

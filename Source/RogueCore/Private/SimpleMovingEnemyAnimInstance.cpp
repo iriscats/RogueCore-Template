@@ -1,6 +1,6 @@
 #include "SimpleMovingEnemyAnimInstance.h"
 
-USimpleMovingEnemyAnimInstance::USimpleMovingEnemyAnimInstance() {
+USimpleMovingEnemyAnimInstance::USimpleMovingEnemyAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->Speed = 0.00f;
     this->WalkCycleSpeed = 200.00f;
     this->StartMovingSpeed = 50.00f;

@@ -10,9 +10,10 @@ class AFacilityGeneratorLine : public AGeneratorLine {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     ATetherStation* Station;
+
+protected:
     
     AFacilityGeneratorLine(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

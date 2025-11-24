@@ -23,10 +23,9 @@ class AFlare : public AFSDPhysicsActor, public ISaveGameIDInterface, public IIte
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float InitialSpeed;
-    
+
     float InitialAngularImpulse;
     float InitialAngularImpulseRandomScale;
     int32 MaxFlares;
@@ -42,6 +41,7 @@ protected:
     TSubclassOf<AItem> LoadoutItem;
     UItemID* ItemID;
     USoundCue* ImpactGroundSound;
+protected:
     AFlare(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

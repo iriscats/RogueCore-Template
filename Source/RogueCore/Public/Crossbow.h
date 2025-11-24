@@ -33,23 +33,23 @@ public:
     TSubclassOf<AProjectileBase> SpecialArrow;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     float SpecialStatusEffectBonusTimeScale;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsDefaultArrowEquipped, meta=(AllowPrivateAccess=true))
+    bool IsDefaultArrowEquipped;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+    UStaticMeshComponent* AnimatedFPMesh;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SwitchIsQueued, meta=(AllowPrivateAccess=true))
+    bool SwitchIsQueued;
+    UPROPERTY(EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
+    ECrossbowSwitchState SwitchState;
 protected:
     TSubclassOf<UStatusEffect> BattleFrenzyStatusEffect;
     TSubclassOf<ACrossbowProjectileStuck> BasicSpawnableStuckProjectile;
     int32 SpecialAmmoMax;
     float SwitchTime;
     bool CanTrifork;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsDefaultArrowEquipped, meta=(AllowPrivateAccess=true))
-    bool IsDefaultArrowEquipped;
     float RecallProgress;
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-    UStaticMeshComponent* AnimatedFPMesh;
     UStaticMeshComponent* AnimatedTPMesh;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SwitchIsQueued, meta=(AllowPrivateAccess=true))
-    bool SwitchIsQueued;
-    UPROPERTY(EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-    ECrossbowSwitchState SwitchState;
     float OutOfAmmoSwapDelay;
     TSubclassOf<AActor> AnimatedArrowSpawnable;
     float ExtraShotAngleDifference;
@@ -79,6 +79,7 @@ protected:
     void Server_UpdateRetrievableArrows(const int32& defaultAmmo, const int32& specialAmmo);
     UFUNCTION(Reliable, Server)
     void Server_SwitchAmmoType(UProjectileLauncherBaseComponent* projectileLauncher, const ECrossbowSwitchState State);
+    UFUNCTION(Reliable, Server)
     void Server_SetSwitchIsQueued(bool IsQueued);
     UFUNCTION()
     void OnRep_SwitchIsQueued();
@@ -92,6 +93,8 @@ protected:
     void DestroyActor(AActor* Actor);
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_RefillSpecialAmmo(float percentage);
+    UFUNCTION(Client, Reliable)
     void Client_CallAddSpecialAmmo(const int32& amount);
+    UFUNCTION(Client, Reliable)
     void Client_CallAddDefaultAmmo(const int32& amount);
 };

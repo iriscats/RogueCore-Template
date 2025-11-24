@@ -47,7 +47,7 @@ protected:
     UPoseCorrectionComponent* PoseCorrectionComponent;
 
 public:
-    UEnemyAnimInstance();
+    UEnemyAnimInstance(const FObjectInitializer& ObjectInitializer);
 
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsSlotPlayingAnyAnimation(FName SlotNodeName) const;

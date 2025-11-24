@@ -1,6 +1,6 @@
 #include "ElementEffectCollection.h"
 
-UElementEffectCollection::UElementEffectCollection() {
+UElementEffectCollection::UElementEffectCollection(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
 
 

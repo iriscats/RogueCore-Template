@@ -26,5 +26,6 @@ protected:
     void Receive_OnPerformAttack();
     void Receive_OnAborted();
     void OnMontageEnded(UAnimMontage* Montage, bool interrupted);
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnFrozen(bool IsFrozen);
 };

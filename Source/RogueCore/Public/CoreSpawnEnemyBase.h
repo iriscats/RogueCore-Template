@@ -14,13 +14,14 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API ACoreSpawnEnemyBase : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool LimitRagdollSpeed;
-    
-    float MaxRagdollSpeed;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPawnStatsComponent* PawnStats;
+
+protected:
+    float MaxRagdollSpeed;
     UHitReactionComponent* HitReactions;
     UPawnSensingComponent* PawnSensing;
     UEnemyComponent* Enemy;

@@ -15,8 +15,7 @@ class ROGUECORE_API ADropPod : public ATeamTransport {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMiningPodDialogs Dialogs;
-    
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAutoCarverComponent* AutoCarverComp;
     UCurveFloat* CarverDropCurve;

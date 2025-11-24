@@ -4,14 +4,14 @@
 UFSDSplineLibrary::UFSDSplineLibrary() {
 }
 
-bool UFSDSplineLibrary::SplineComponentSphereTrace(const USplineComponent*& SplineComponent, float Radius, TEnumAsByte<ETraceTypeQuery> TraceType, float StepSize, TArray<AActor*> IgnoreActors, FHitResult& OutHitResult, FVector Offset) {
+bool UFSDSplineLibrary::SplineComponentSphereTrace(const USplineComponent* SplineComponent, float Radius, TEnumAsByte<ETraceTypeQuery> TraceType, float StepSize, TArray<AActor*> IgnoreActors, FHitResult& OutHitResult, FVector Offset) {
     return false;
 }
 
 void UFSDSplineLibrary::SetStartAndEndTangentsCurve2D(FInterpCurveVector2D& Curve, FVector2D StartTangent, FVector2D EndTangent) {
 }
 
-TArray<FTransform> UFSDSplineLibrary::GetSplineComponentTransforms(const USplineComponent*& SplineComponent, float StepSize, TEnumAsByte<ESplineCoordinateSpace::Type> Space) {
+TArray<FTransform> UFSDSplineLibrary::GetSplineComponentTransforms(const USplineComponent* SplineComponent, float StepSize, TEnumAsByte<ESplineCoordinateSpace::Type> Space) {
     return TArray<FTransform>();
 }
 

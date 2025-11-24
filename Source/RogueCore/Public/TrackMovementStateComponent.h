@@ -48,6 +48,7 @@ protected:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void ServerExitMode(EExitTrackMode eMode);
+    UFUNCTION(Reliable, Server)
     void ServerAddTemporaryAcceration(float Acceleration, float Duration);
     UFUNCTION(BlueprintCallable)
     void OnRep_TrackMovementdata(FPipelineMovementData& oldState);

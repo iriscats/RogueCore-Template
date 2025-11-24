@@ -24,20 +24,21 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ACryosprayItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UProjectileLauncherComponent* projectileLauncher;
-    
-    UDamageComponent* DamageComponent;
-    UStickyFlameSpawner* StickyFlames;
-    UDamageComponent* AoEColdDamageComponent;
-    UMotionAudioController* VelocityAudio;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UFXSystemComponent* FlameParticleComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool PressurizedProjectileEnabled;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float PressurizedProjectileDelay;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsCharging, meta=(AllowPrivateAccess=true))
+    bool isCharging;
+protected:
+    UDamageComponent* DamageComponent;
+    UStickyFlameSpawner* StickyFlames;
+    UDamageComponent* AoEColdDamageComponent;
+    UMotionAudioController* VelocityAudio;
     int32 PressurizeProjectileFullCost;
     UNiagaraSystem* ChargeupParticles;
     UNiagaraComponent* ChargeupParticleInstance;
@@ -52,10 +53,6 @@ protected:
     float FriendlyFireModifier;
     float ChargeupTime;
     float ChargeDownTime;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsCharging, meta=(AllowPrivateAccess=true))
-    bool isCharging;
-
     float ChargeProgress;
     bool bRepressurerising;
     float RepressurerisingDoneAtPct;
@@ -74,7 +71,9 @@ protected:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void ServerDoDamage(FVector_NetQuantize Start, FVector_NetQuantize End, uint8 Power);
+    UFUNCTION(Reliable, Server)
     void Server_TriggerAoECold();
+    UFUNCTION(Reliable, Server)
     void Server_PreLaunchProjectile();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveRepressurisingChanged(bool Value);

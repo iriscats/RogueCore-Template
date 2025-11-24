@@ -79,6 +79,9 @@ public:
     bool IsGunslinging;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     bool ReadyToExtract;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CurrentLoad, meta=(AllowPrivateAccess=true))
+    float CurrentLoad;
+
 protected:
     UFXSystemAsset* VacuumEffect;
     UFXSystemAsset* ChunkSplatEffect;
@@ -95,8 +98,6 @@ protected:
     FColor SurfaceLightEndColor;
     float SurfaceLightMinIntensity;
     float SurfaceLightMaxIntensity;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CurrentLoad, meta=(AllowPrivateAccess=true))
-    float CurrentLoad;
     AExtractorItem(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable, BlueprintImplementableEvent)

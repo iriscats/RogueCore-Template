@@ -25,10 +25,9 @@ class AFlameThrowerItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UFXSystemComponent* FlameParticleComponent;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageComponent* DamageComponent;
     UStickyFlameSpawner* StickyFlames;
@@ -41,6 +40,7 @@ protected:
     float DecalDelay;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float CurrentDecalDelay;
+protected:
     UFXSystemAsset* ImpactParticles;
     UFXSystemComponent* ImpactParticleInstance;
     UFXSystemAsset* FP_LongReachParticles;

@@ -23,7 +23,7 @@ protected:
     float WalkCyclePlayRate;
     float MeshScale;
     bool IsMoving;
-    USimpleMovingEnemyAnimInstance();
+    USimpleMovingEnemyAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetMeshScale(float NewScale);
     UFUNCTION(BlueprintCallable, BlueprintPure)

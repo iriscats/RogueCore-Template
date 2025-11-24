@@ -16,24 +16,25 @@ class ROGUECORE_API ADynamicStaircase : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
-    
+
     UInstancedStaticMeshComponent* StairBody;
     UStaticMeshComponent* TopSegmentMesh;
     UStaticMeshComponent* BottomSegmentMesh;
     UPathfinderCollisionComponent* PathfinderCollision;
     UPathfinderCollisionComponent* BlockingPathfinderCollision;
     UBoxComponent* StairCollision;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_StairData, meta=(AllowPrivateAccess=true))
     FStairData StairData;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 PreviewStairIndex;
     float PreviewStairLenght;
     TArray<UStairSettings*> StairVersions;
     float CollisionOffset;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     int32 SelectedStairVersion;
     ADynamicStaircase(const FObjectInitializer& ObjectInitializer);

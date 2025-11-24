@@ -1,7 +1,6 @@
 #include "ElementEffectsUpgradeElement.h"
 
-UElementEffectsUpgradeElement::UElementEffectsUpgradeElement() {
-    this->ElementType = NULL;
+UElementEffectsUpgradeElement::UElementEffectsUpgradeElement(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
 
 

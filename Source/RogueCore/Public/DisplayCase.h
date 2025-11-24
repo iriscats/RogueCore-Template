@@ -16,14 +16,17 @@ class ADisplayCase : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
-    
+
     USceneComponent* ContentAttachPoint;
     USkeletalMeshComponent* ContentMesh;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDisplayCaseDelegate OnContentUpdated;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve RelativeZOffset;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ContentIndex, meta=(AllowPrivateAccess=true))
+    int32 ContentIndex;
+
+protected:
     FRuntimeFloatCurve ReactZOffsetCof;
     FRuntimeFloatCurve ReactTimeDilationCof;
     TArray<FDisplayContent> Contents;
@@ -32,8 +35,6 @@ protected:
     float BarrelSpawnChancePercent;
     float TimeMultiplier;
     float SizeMultiplier;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ContentIndex, meta=(AllowPrivateAccess=true))
-    int32 ContentIndex;
     UDialogDataAsset* BeerMugShout;
     ADisplayCase(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

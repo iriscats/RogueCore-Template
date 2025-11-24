@@ -22,6 +22,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ObjectiveCompleted, meta=(AllowPrivateAccess=true))
+    bool ObjectiveCompleted;
+
 protected:
     UDebrisPositioning* DebrisPositioning;
     int32 NumAllowedChecks;
@@ -32,8 +35,6 @@ protected:
     USceneComponent* GeneratorSpawnCenter;
     USpawnActorWithDebrisPosComponent* DebrisSpawner;
     TArray<AActor*> SpawnedGenerators;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ObjectiveCompleted, meta=(AllowPrivateAccess=true))
-    bool ObjectiveCompleted;
     TArray<AConnectCableObjectiveSocketActor*> SocketActors;
     AConnectCableObjectiveActor(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

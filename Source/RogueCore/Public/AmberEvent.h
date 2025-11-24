@@ -16,13 +16,14 @@ class AAmberEvent : public AGameEvent {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageComponent* EndExplosionDamage;
-    
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UAmberEventEnemyPool*> EnemyPools;
-    TArray<AFSDPawn*> spawnedEnemies;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UAmberEventEnemyPool> CurrentPool;
+
+protected:
+    TArray<AFSDPawn*> spawnedEnemies;
     float InitialDelayBeforeSpawn;
     float MaxSpawnRange;
     AAmberEvent(const FObjectInitializer& ObjectInitializer);

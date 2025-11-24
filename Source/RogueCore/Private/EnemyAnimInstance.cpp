@@ -1,6 +1,6 @@
 #include "EnemyAnimInstance.h"
 
-UEnemyAnimInstance::UEnemyAnimInstance() {
+UEnemyAnimInstance::UEnemyAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->IsAttacking = false;
     this->IKBlend = 0.00f;
     this->IKEnabled = false;

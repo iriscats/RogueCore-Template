@@ -84,6 +84,16 @@ public:
     UMaterialInterface* DefaultConstructionScannerMaterial;
     TSubclassOf<ACSGBuilder> TestLevelCarver;
     FBox TestLevelCarverBoundingBox;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UAsyncPathRequests* AsyncPathRequests;
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    FTerrainBaseDone OnBaseLayerCommitDone;
+    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    TArray<TWeakObjectPtr<UObject>> TerrainListeners;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+    TArray<UDebrisInstances*> DebrisInstanceList;
+    UPROPERTY(EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    TArray<TWeakObjectPtr<UPrimitiveComponent>> ShowAlwaysScannerComponents;
 
     // Blueprint Implementable Events
     UFUNCTION(BlueprintImplementableEvent)
@@ -111,22 +121,11 @@ protected:
     int32 DebrisActorIndex;
     AProceduralSetup* ProceduralSetup;
     TArray<UObject*> TerrainMaterialAssets;
-private:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    UAsyncPathRequests* AsyncPathRequests;
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FTerrainBaseDone OnBaseLayerCommitDone;
     FTerrainBaseDone OnBaseLayerFinalCommitDone;
     TArray<AActor*> TerrainAttachedActors;
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    TArray<TWeakObjectPtr<UObject>> TerrainListeners;
     TArray<UDebrisBase*> RegisteredDebrisList;
     TArray<FDebrisWhenCarving> DebrisWhenCarvingList;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-    TArray<UDebrisInstances*> DebrisInstanceList;
     TArray<FRuntimeSpawnedDebris> RuntimeSpawnedDebris;
-    UPROPERTY(EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-    TArray<TWeakObjectPtr<UPrimitiveComponent>> ShowAlwaysScannerComponents;
     TArray<TWeakObjectPtr<UPrimitiveComponent>> FogOfWarScannerComponents;
     TArray<UDebrisBase*> DebrisHandles;
     FTerrainLateJoinData LateJoinData;

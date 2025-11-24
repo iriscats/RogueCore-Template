@@ -10,9 +10,9 @@ class ROGUECORE_API AAmbientChargeBlasterProjectile : public AProjectile {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageAsset* DamageAsset;
-    
+
+protected:
     AAmbientChargeBlasterProjectile(const FObjectInitializer& ObjectInitializer);
 };

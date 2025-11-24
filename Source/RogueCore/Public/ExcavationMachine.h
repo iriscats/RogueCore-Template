@@ -15,9 +15,8 @@ class AExcavationMachine : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* GemSpawnPoint;
-    
+
     USceneComponent* RootScene;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FExcavationReward> Rewards;
     FExcavationReward ExpeniteChunkReward;
@@ -37,6 +36,8 @@ protected:
     FRewardsUpdated OnRewardsUpdated;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_VisualsEnabled, meta=(AllowPrivateAccess=true))
     bool VisualsEnabled;
+
+protected:
     AExcavationMachine(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

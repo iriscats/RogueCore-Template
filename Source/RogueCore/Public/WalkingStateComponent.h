@@ -33,6 +33,7 @@ protected:
     void TrackGrindCallback(APlayerCharacter* User, EInputKeys Key);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_StartTrackMovement(UTrackBuilderMovement* InMovement);
+    UFUNCTION(Reliable, Server)
     void Server_SetIsSliding(bool isSliding);
     void JumpPress();
 };

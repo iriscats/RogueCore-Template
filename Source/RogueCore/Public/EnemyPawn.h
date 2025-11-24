@@ -20,19 +20,20 @@ class AEnemyPawn : public AFSDPawn, public INetMontageAble {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEnemyHealthComponent* Health;
-    
-    UPawnStatsComponent* Stats;
-    UEnemyPawnAfflictionComponent* Affliction;
-    UEnemyComponent* Enemy;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName CenterMassSocketName;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_QueuedMontage, meta=(AllowPrivateAccess=true))
     FQueuedMontage QueuedMontage;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UMaterialInterface*> CachedMaterials;
+
+protected:
+    UPawnStatsComponent* Stats;
+    UEnemyPawnAfflictionComponent* Affliction;
+    UEnemyComponent* Enemy;
     AEnemyPawn(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

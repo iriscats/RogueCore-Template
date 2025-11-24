@@ -19,10 +19,24 @@ class ADetPackItem : public AAnimatedItem, public IUpgradable, public IUpgradabl
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<ADetPack> DetPackClass;
-    
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    USkeletalMeshComponent* DetonatorFPMesh;
+    USkeletalMeshComponent* DetonatorTPMesh;
+    UForceFeedbackEffect* DetonatorTriggerForceFeedback;
+    UCapacityHoldingItemAggregator* Capacity;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    float CooldownLeft;
+    TArray<ADetPack*> ThrownPacks;
+    TArray<UItemUpgrade*> DetPackUpgrades;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsDetonatorOut, meta=(AllowPrivateAccess=true))
+    bool IsDetonatorOut;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
+    bool HasThrownPack;
+
+protected:
     TSubclassOf<AItem> LoadoutProxy;
     UAnimMontage* FPThrowMontage;
     UAnimMontage* TPThrowMontage;
@@ -30,11 +44,6 @@ protected:
     UAnimMontage* WPN_DetonateAnim;
     UAnimMontage* FP_EquipDetonatorAnimation;
     UAnimMontage* WPN_EquipDetonatorAnimation;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USkeletalMeshComponent* DetonatorFPMesh;
-    USkeletalMeshComponent* DetonatorTPMesh;
-    UForceFeedbackEffect* DetonatorTriggerForceFeedback;
-    UCapacityHoldingItemAggregator* Capacity;
     float SupplyStatusWeight;
     float ThrowVelocity;
     float EnheiritOwnerVelocityScale;
@@ -45,14 +54,6 @@ protected:
     float ThrowZOffset;
     UDialogDataAsset* ShoutDetPackPlaced;
     UDialogDataAsset* ShoutOutOfAmmo;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    float CooldownLeft;
-    TArray<ADetPack*> ThrownPacks;
-    TArray<UItemUpgrade*> DetPackUpgrades;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsDetonatorOut, meta=(AllowPrivateAccess=true))
-    bool IsDetonatorOut;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-    bool HasThrownPack;
     ADetPackItem(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)

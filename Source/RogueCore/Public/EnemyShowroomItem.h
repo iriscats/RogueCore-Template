@@ -10,9 +10,9 @@ class AEnemyShowroomItem : public AShowroomItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EShowroomScaling Scaling;
-    
+
+protected:
     AEnemyShowroomItem(const FObjectInitializer& ObjectInitializer);
 };

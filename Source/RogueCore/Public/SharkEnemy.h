@@ -92,12 +92,13 @@ protected:
     void OnHit(float HitDamage, const FDamageData& DamageData, bool anyHealthLost, UHealthComponentBase* InHealthComponent);
     void OnExitState(ESharkEnemyState NewState);
     void OnEnterState(ESharkEnemyState NewState);
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
+    void ImpactSound();
 private:
     void OnDeathDetailed(UHealthComponent* aHealthComponent, float damageAmount, const FDamageData& DamageData, const TArray<UDamageTag*>& dTags);
     void OnCollided(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void Jumped();
-    void ImpactSound();
     void DiveShow();
     void DiveHide();
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)

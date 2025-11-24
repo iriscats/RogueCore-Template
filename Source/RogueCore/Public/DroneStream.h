@@ -16,13 +16,12 @@ class ADroneStream : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
-    
+
     UCapsuleComponent* Collision;
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool CheckStartOverlaps;
     bool CheckEndOverlaps;
-    ADroneStream(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_OnAbilityDataSet();
     UFUNCTION(BlueprintCallable)
@@ -30,4 +29,8 @@ protected:
     void OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     ABosco* GetBosco() const;
+
+private:
+    friend struct Z_Construct_UClass_ADroneStream_Statics;
+    ADroneStream(const FObjectInitializer& ObjectInitializer);
 };

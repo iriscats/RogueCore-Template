@@ -11,13 +11,14 @@ class AAimingTowerModule : public ATowerModuleBase {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     AActor* Target;
-    
+
     FRotator AimRotation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float BurstTime;
+
+protected:
     float AttackTime;
     int32 BurstSize;
     AAimingTowerModule(const FObjectInitializer& ObjectInitializer);

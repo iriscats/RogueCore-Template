@@ -31,9 +31,11 @@ public:
     float StatusEffectTime;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_BansheePulseActive, meta=(AllowPrivateAccess=true))
     bool BansheePulseActive;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UCrossbowProjectileMagnetic* MagneticComponent;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_OnlyTrailShown, meta=(AllowPrivateAccess=true))
+    bool OnlyTrailShown;
+protected:
     UCrossbowProjectileRicochet* RicochetComponent;
     UCrossbowStuckProjectileEffectBanshee* BansheeComponent;
     UNiagaraComponent* BansheePulseComponent;
@@ -54,8 +56,6 @@ protected:
     UDamageComponent* SimpleDamageComponent;
     UStaticMesh* ProjectileMesh;
     float KillTrailAfterTime;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_OnlyTrailShown, meta=(AllowPrivateAccess=true))
-    bool OnlyTrailShown;
     ACrossbowProjectileBase(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

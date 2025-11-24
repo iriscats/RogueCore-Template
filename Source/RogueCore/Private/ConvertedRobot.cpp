@@ -35,7 +35,6 @@ AConvertedRobot::AConvertedRobot(const FObjectInitializer& ObjectInitializer) : 
     this->LaserSound = NULL;
     this->LastPowerDownSound = NULL;
     this->PowerUpSound = NULL;
-    this->IntroductionTime = 1.00f;
     this->IsIntroducing = false;
     this->IntroductionDone = false;
     this->IsGrowingShield = false;

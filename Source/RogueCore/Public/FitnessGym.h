@@ -20,11 +20,11 @@ class AFitnessGym : public AActor {
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnRepCompletedDelegate OnRepCompleted;
-    
+
     FOnSetCompletedDelegate OnSetCompleted;
     FOnRepNewHighscoreDelegate OnNewHighscore;
     FOnNewGoalDelegate OnNewGoal;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<ABaseFitnessActivity*> activities;
     TArray<AGymDisplay*> GymMonitors;
@@ -37,6 +37,7 @@ protected:
     int32 RepsRemaining;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_SetsRemainingChanged, meta=(AllowPrivateAccess=true))
     int32 SetsRemaining;
+protected:
     AFitnessGym(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

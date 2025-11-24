@@ -13,13 +13,14 @@ class AExtruderPlant : public AActor {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* SkeletalMesh;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimationAsset* ExtrudeAnimation;
     UAnimationAsset* RetractAnimation;
     UAudioComponent* Audio;
+
+protected:
     AExtruderPlant(const FObjectInitializer& ObjectInitializer);
 };

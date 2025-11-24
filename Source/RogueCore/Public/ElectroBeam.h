@@ -21,17 +21,21 @@ class AElectroBeam : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCapsuleComponent* collider;
-    
+
     USceneComponent* SceneRoot;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<AActor*> ParentPlants;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector LocationOffset;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SourceLocation, meta=(AllowPrivateAccess=true))
     FVector_NetQuantize SourceLocation;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_TargetLocation, meta=(AllowPrivateAccess=true))
     FVector_NetQuantize TargetLocation;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneComponent* DelaySource;
     USceneComponent* DelayTarget;
@@ -43,9 +47,12 @@ protected:
     float MaxUnlitTime;
     float MinUnlitTime;
     bool ShouldFlicker;
+
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnLitChanged;
+
     bool IgnorePlayerOverlap;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsLit, meta=(AllowPrivateAccess=true))
     bool IsLit;
     AElectroBeam(const FObjectInitializer& ObjectInitializer);

@@ -49,17 +49,29 @@ public:
     FDelegate OnShotFiredEvent;
     FAmmoDrivenGenericEvent OnStoppedUsingEvent;
     FDelegate OnAmmoUpdatedLocal;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    bool LoopFireAnimation;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
+    UAnimMontage* FP_ReloadAnimation;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+    ULightComponent* MuzzleFlashLight;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
+    TWeakObjectPtr<UAudioComponent> FireSoundInstance;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ReserveCount, meta=(AllowPrivateAccess=true))
+    FAmmoValue ReserveCount;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ClipCount, meta=(AllowPrivateAccess=true))
+    FAmmoValue ClipCount;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    float AutoReloadDuration;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsFiring, meta=(AllowPrivateAccess=true))
+    bool IsFiring;
 protected:
     UWeaponFireComponent* WeaponFire;
     UAmmoDriveWeaponAggregator* Aggregator;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool LoopFireAnimation;
     bool OverHeatOnNoAmmo;
     float LoopFireAnimationBlendoutTime;
     UAnimMontage* FP_FireAnimation;
     UAnimMontage* TP_FireAnimation;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-    UAnimMontage* FP_ReloadAnimation;
     UAnimMontage* FP_ReloadAnimation_Empty;
     FItemAnimationItem OverheatAnimation;
     TArray<FItemAnimationItem> GunslingAnimations;
@@ -76,8 +88,6 @@ protected:
     FTracerData Tracer;
     UFXSystemAsset* CasingParticles;
     bool UseTriggeredCasingParticleSystem;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-    ULightComponent* MuzzleFlashLight;
     FRuntimeFloatCurve MuzzleFlashLightCurve;
     USoundBase* FireSound;
     USoundCue* RicochetSound;
@@ -86,8 +96,6 @@ protected:
     USoundBase* FireSoundTail;
     bool IsFireSoundTail2D;
     UForceFeedbackEffect* FireForceFeedbackEffect;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-    TWeakObjectPtr<UAudioComponent> FireSoundInstance;
     float FireSoundFadeDuration;
     USoundCue* ReloadSound;
     int32 BulletsRemainingForNearEmptySound;
@@ -108,15 +116,9 @@ protected:
     int32 BurstCount;
     float BurstCycleTime;
     float ReloadDuration;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ReserveCount, meta=(AllowPrivateAccess=true))
-    FAmmoValue ReserveCount;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ClipCount, meta=(AllowPrivateAccess=true))
-    FAmmoValue ClipCount;
     bool ShouldInitAmmoAtBeginPlay;
     int32 ManualHeatReductionAmmo;
     float FireInputBufferTime;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    float AutoReloadDuration;
     USoundCue* AutoReloadCompleteCue;
     FAmmoDrivenGenericEvent OnItemAutoReloaded;
     float SupplyStatusWeight;
@@ -131,8 +133,6 @@ protected:
     bool ApplyRecoilAtEndOfBurst;
     float EndOfBurstRecoilMultiplier;
     bool HasAutomaticFire;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsFiring, meta=(AllowPrivateAccess=true))
-    bool IsFiring;
     bool OverheatOnReload;
     bool ManualHeatReductionOnReload;
     int32 MaxManualHeatReductionCharges;

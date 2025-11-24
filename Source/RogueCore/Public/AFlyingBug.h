@@ -15,7 +15,7 @@ class UHealthComponentBase;
 class UHitReactionComponent;
 class UOutlineComponent;
 class UPawnAlertComponent;
-class UPawnSensingComponent;
+class UAIPerceptionComponent;
 class UPawnStatsComponent;
 class USoundBase;
 class USphereComponent;
@@ -28,25 +28,25 @@ public:
     
     UPawnStatsComponent* PawnStats;
     UOutlineComponent* Outline;
-    UPawnSensingComponent* Senses;
+    UAIPerceptionComponent* Senses;
     UPawnAlertComponent* Alert;
     USphereComponent* ExplosionSphere;
     UAudioComponent* WingSoundComponent;
     UFrozenPawnImpactComponent* FrozenImpact;
     UHitReactionComponent* HitReactions;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     AActor* RotateTarget;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundBase* ChatterSound;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AttackStance, meta=(AllowPrivateAccess=true))
+    bool AttackStance;
+protected:
     float DistanceForAttackMode;
     float MinChatterDelay;
     float MaxChatterDelay;
     float AttackModeRotationSpeed;
     bool UsesAttackStance;
     bool SetLifeTime;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AttackStance, meta=(AllowPrivateAccess=true))
-    bool AttackStance;
     bool LookStraight;
     bool UseDefaultRagdoll;
     AAFlyingBug(const FObjectInitializer& ObjectInitializer);

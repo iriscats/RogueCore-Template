@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     ENisseState State;
     
-    UNisseAnimInstance();
+    UNisseAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsWalking() const;
     bool IsRunning() const;

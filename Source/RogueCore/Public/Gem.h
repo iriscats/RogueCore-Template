@@ -12,7 +12,6 @@ class ROGUECORE_API AGem : public ACarriableItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCarriableInstantUsable* usable;
     
@@ -24,6 +23,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float ResourceAmount;
     bool hasBeenReleased;
+protected:
     AGem(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetResourceAmount(float amount);

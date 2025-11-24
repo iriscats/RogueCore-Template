@@ -12,12 +12,13 @@ class AFSDGameModeSpaceRig : public AFSDGameMode {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     uint8 AmountOfPlayersSpawnedInMedbay;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool StartedSession;
+
+protected:
     AFSDGameModeSpaceRig(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void OnMissionStartedFromSpacerig();

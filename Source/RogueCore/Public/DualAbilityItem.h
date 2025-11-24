@@ -13,9 +13,9 @@ class ROGUECORE_API ADualAbilityItem : public AAbilityItem {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* FPSuitMesh2;
-    
+
     USkeletalMeshComponent* TPSuitMesh2;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* Item_EquippedSecondaryMontage;
     FName SecondaryAttachSocket;

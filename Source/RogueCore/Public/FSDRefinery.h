@@ -32,7 +32,7 @@ public:
     FRefineryPipelineDelegate OnPipelineRegistered;
     FRefineryPipelineSegmentDelegate OnPipelineSegmentPlaced;
     FRefineryExtractPodDelegate OnExtractorPodSpawned;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USingleUsableComponent* UsableStartRefining;
     USingleUsableComponent* UsableLaunchRocket;
@@ -51,6 +51,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     uint8 RefiningProgressReplicated;
     TArray<APipelineStart*> PipelineStarts;
+protected:
     AFSDRefinery(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

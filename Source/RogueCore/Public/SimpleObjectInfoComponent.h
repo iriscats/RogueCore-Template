@@ -36,6 +36,7 @@ protected:
     USimpleObjectInfoComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void SetInGameName(const FString& GameName);
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetInGameDescription(const FString& GameDescription);
     UFUNCTION(BlueprintCallable)
     void SetContextWidget(UActorContextWidget* InContextWidget);

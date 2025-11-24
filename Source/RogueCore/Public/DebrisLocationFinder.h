@@ -14,13 +14,13 @@ class ROGUECORE_API ADebrisLocationFinder : public AActor {
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnFailedDelegate;
-    
+
     FDelegate OnSuceesDelegate;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDebrisPositioning* Positioning;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTerrainPlacementComponent* terrainPlacement;
+protected:
     float MinRadius;
     float MaxRadius;
     float MaxExtraRadius;

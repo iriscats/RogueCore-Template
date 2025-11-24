@@ -12,15 +12,16 @@ class AEscortMuleAIController : public AFSDAIController, public IAsyncPathReques
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FVector> CurrentPath;
-    
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UEscortObjective* EscortObj;
+
+protected:
     TArray<FVector> GaragePath;
     int32 PathIndex;
     int32 CurrentRoom;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    UEscortObjective* EscortObj;
     int32 TunnelStartIndex;
     int32 TunnelEndIndex;
     FRandomStream RandomStream;

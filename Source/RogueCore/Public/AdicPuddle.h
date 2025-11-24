@@ -16,12 +16,12 @@ class AAdicPuddle : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPrimitiveComponent> TriggerCollider;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* SphereTrigger;
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundBase* SpawnSound;
+protected:
     TSubclassOf<UStatusEffect> InflictedStatusEffect;
 
     float Lifetime;

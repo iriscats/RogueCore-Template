@@ -11,10 +11,10 @@ class AAimingTowerEventModule : public ATowerEventModule {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRotator AimRotation;
-    
+
+protected:
     AActor* CurrentTarget;
     AAimingTowerEventModule(const FObjectInitializer& ObjectInitializer);
 };

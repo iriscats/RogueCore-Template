@@ -22,14 +22,19 @@ class ADeepPathfinderCharacter : public AFSDPawn, public ITriggerAI, public IVis
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDeepPathfinderMovement* PathfinderMovement;
-    
+
     USkeletalMeshComponent* mesh;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName CenterMassSocketName;
-protected:
-    UDeepPatherFinderCharacterAfflictionComponent* Affliction;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float AnimationOffset;
+    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
+    int8 MeshDecalIndex;
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
+    UAIPlayerControlComponent* AIPlayerControlComponentCache;
+
+protected:
+    UDeepPatherFinderCharacterAfflictionComponent* Affliction;
     bool CanPlayerStandOn;
     bool UseDormancy;
     float StaggerDurationMultiplier;
@@ -39,14 +44,10 @@ protected:
     bool IsHidden;
     bool IsStaggered;
     bool FrozenPauseLogic;
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    int8 MeshDecalIndex;
     UPawnAffliction* CurrentStaggerAffliction;
     float AttackerRadius;
     TArray<UMaterialInterface*> CachedMaterials;
     float AllowedInFormationChance;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-    UAIPlayerControlComponent* AIPlayerControlComponentCache;
     ADeepPathfinderCharacter(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     bool TryJoinFormation();

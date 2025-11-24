@@ -13,10 +13,11 @@ class ROGUECORE_API AFacilityHackingPod : public ARessuplyPod {
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHackingPod_Delegate OnHackingPodStateChanged;
-    
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_PodState, meta=(AllowPrivateAccess=true))
     EHackingPodState PodState;
+
+protected:
     AFacilityHackingPod(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)

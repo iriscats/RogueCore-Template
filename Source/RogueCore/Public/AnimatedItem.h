@@ -16,10 +16,9 @@ class AAnimatedItem : public AItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(AssetRegistrySearchable, BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkinnableComponent* Skinnable;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UPlayerAnimInstance* FPAnimInstance;
     UPlayerAnimInstance* TPAnimInstance;
@@ -28,6 +27,8 @@ protected:
     USkeletalMeshComponent* TPMesh;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* FP_EquipAnimation;
+
+protected:
     UAnimMontage* FP_IdleAnimation;
     UAnimMontage* TP_EquipAnimation;
     UAnimMontage* TP_IdleAnimation;

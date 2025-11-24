@@ -22,10 +22,10 @@ class UFSDSplineLibrary : public UBlueprintFunctionLibrary {
 public:
     UFSDSplineLibrary();
     UFUNCTION(BlueprintCallable)
-    static bool SplineComponentSphereTrace(const USplineComponent*& SplineComponent, float Radius, TEnumAsByte<ETraceTypeQuery> TraceType, float StepSize, TArray<AActor*> IgnoreActors, FHitResult& OutHitResult, FVector Offset);
+    static bool SplineComponentSphereTrace(const USplineComponent* SplineComponent, float Radius, TEnumAsByte<ETraceTypeQuery> TraceType, float StepSize, TArray<AActor*> IgnoreActors, FHitResult& OutHitResult, FVector Offset);
     
     static void SetStartAndEndTangentsCurve2D(UPARAM(Ref) FInterpCurveVector2D& Curve, FVector2D StartTangent, FVector2D EndTangent);
-    static TArray<FTransform> GetSplineComponentTransforms(const USplineComponent*& SplineComponent, float StepSize, TEnumAsByte<ESplineCoordinateSpace::Type> Space);
+    static TArray<FTransform> GetSplineComponentTransforms(const USplineComponent* SplineComponent, float StepSize, TEnumAsByte<ESplineCoordinateSpace::Type> Space);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static void GetLocationAndTangentsAtSplinePoint(const USplineComponent* Spline, int32 PointIndex, FVector& Location, FVector& ArriveTangent, FVector& LeaveTangent, TEnumAsByte<ESplineCoordinateSpace::Type> CoordinateSpace);
     static void EvalCurveScaled2D(const FInterpCurveVector2D& Curve, float Key, FVector2D ScaleBy, FVector2D& OutPosition, FVector2D& OutTangent);

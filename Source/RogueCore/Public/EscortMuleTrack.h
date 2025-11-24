@@ -10,9 +10,10 @@ class AEscortMuleTrack : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer GameplayTags;
+
+protected:
 
     AEscortMuleTrack(const FObjectInitializer& ObjectInitializer);
     // Fix for true pure virtual functions not being implemented
