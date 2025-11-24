@@ -10,23 +10,6 @@ class UIntelChallengeForBossSummon : public UIntelChallenge {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<TSoftClassPtr<AActor>> AllowedBosses;
-
-    
-
-    int32 RequiredSummonAmount;
-
-    ERunDepth RequiredRunDepth;
-
-    UIntelChallengeForBossSummon();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnBossSummoned(AActor* boss);
-
-
 
 public:
 protected:

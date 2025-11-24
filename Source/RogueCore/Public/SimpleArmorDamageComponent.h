@@ -11,16 +11,6 @@ class USimpleArmorDamageComponent : public UBaseArmorDamageComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ArmorDamageInfo, meta=(AllowPrivateAccess=true))
-
-    FArmorDamageInfo ArmorDamageInfo;
-
-    USimpleArmorDamageComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSimpleArmorRadialDamagedDelegate OnRadialArmorPartsDestroyedEvent;

@@ -15,30 +15,6 @@ class ULookingAtWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UCharacterSightComponent> CharacterSight;
-
-    TWeakObjectPtr<AActor> CurrentTarget;
-
-    TWeakObjectPtr<UPawnAfflictionComponent> CurrentTargetAfflictions;
-
-    TScriptInterface<IHealth> CurrentTargetHealth;
-
-    bool CanCurrentTargetTakeDamage;
-
-    float TargetLostTime;
-
-    bool bTargetSet;
-
-    ULookingAtWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetCurrentTarget(AActor* NewActor, const TScriptInterface<IHealth>& HealthComponent, float OverrideTargetLostTime);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

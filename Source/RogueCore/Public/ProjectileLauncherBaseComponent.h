@@ -13,16 +13,6 @@ class UProjectileLauncherBaseComponent : public UWeaponFireComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UPawnStatsComponent> OwnerPawnStat;
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_StopFire();
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FProjectileSpawned, AProjectileBase*, Projectile);
     

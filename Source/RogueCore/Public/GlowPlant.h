@@ -11,42 +11,6 @@ class AGlowPlant : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float IntensityBase;
-
-    float RadiusBase;
-
-    float IntensityPerPart;
-
-    float RadiusPerPart;
-
-    float IntensityAllParts;
-
-    float RadiusAllParts;
-
-    float MaxIntensity;
-
-    float MinIntensity;
-
-    float TimeOnMaxLight;
-
-    float IntensityFadeInTime;
-
-    float IntensityFadeOutTime;
-
-    float MaxEmissive;
-
-    float MinEmissive;
-
-    float EmissiveFadeInTime;
-
-    float EmissiveFadeOutTime;
-
-    AGlowPlant(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* TrunkMesh;

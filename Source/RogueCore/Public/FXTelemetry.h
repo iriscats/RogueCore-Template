@@ -13,24 +13,6 @@ class UFXTelemetry : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FString TelSessionID;
-
-    
-
-    FString TelRelativeEndpoint;
-
-    FString TelTopic;
-
-    UFXTelemetry();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnStageStart();
-
-
-
 public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

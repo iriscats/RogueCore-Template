@@ -8,23 +8,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class APlacementDeviceActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float DefaultRadius;
-
-    
-
-    UPawnStat* RadiusStat;
-
-    float DefaultLifetime;
-
-    UPawnStat* LifetimeStat;
-
-    APlacementDeviceActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

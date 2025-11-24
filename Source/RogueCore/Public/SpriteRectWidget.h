@@ -9,23 +9,6 @@ UCLASS(Abstract, Blueprintable, EditInlineNew)
 class USpriteRectWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FVector2D position;
-
-    
-
-    FVector2D Size;
-
-    USpriteRectWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetSize(FVector2D InSize);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

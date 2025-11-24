@@ -16,16 +16,6 @@ class UEnemyBufferComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<UFXSystemComponent*> ParticleInstances;
-
-    UEnemyBufferComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

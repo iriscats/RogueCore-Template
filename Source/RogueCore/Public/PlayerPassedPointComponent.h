@@ -10,18 +10,6 @@ class ROGUECORE_API UPlayerPassedPointComponent : public USceneComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FPlayerInfrontState> OldStates;
-
-    UPlayerPassedPointComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnMatchStarted();
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayerMovedPassedDelegate OnPlayerMovedPast;

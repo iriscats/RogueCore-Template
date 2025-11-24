@@ -12,13 +12,6 @@ class AJetBootsBoxSpawner : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UTerrainPlacementComponent* terrainPlacement;
-
-    AJetBootsBox* JetBootsBoxInstance;
-
-
 
 public:
 protected:

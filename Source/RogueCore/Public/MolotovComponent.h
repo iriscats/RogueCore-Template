@@ -10,21 +10,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UMolotovComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<AActor> BurningFlamesClass;
-
-    float Radius;
-
-    UMolotovComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void Trigger();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

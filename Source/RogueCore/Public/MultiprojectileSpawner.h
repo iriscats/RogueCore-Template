@@ -12,27 +12,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UMultiprojectileSpawner : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<FProjectileSpawnData> ProjectileData;
-
-    
-
-    bool ProjectilesIgnoreEachOther;
-
-    UMultiprojectileSpawner(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    bool GetIsFiring() const;
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    void Fire(const FVector& Velocity, const FVector& Origin);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

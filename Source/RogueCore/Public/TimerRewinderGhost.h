@@ -12,18 +12,6 @@ class ATimerRewinderGhost : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UMaterialInterface* HologramMaterial;
-
-    UAnimSequence* HologramAnimation;
-
-    FName BoneToScaleToZero;
-
-    ATimerRewinderGhost(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

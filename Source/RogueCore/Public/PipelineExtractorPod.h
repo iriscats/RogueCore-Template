@@ -10,14 +10,6 @@ class ROGUECORE_API APipelineExtractorPod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    float TargetRotation;
-
-    APipelineExtractorPod(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ConnectedSegment, meta=(AllowPrivateAccess=true))

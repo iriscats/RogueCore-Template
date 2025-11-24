@@ -9,13 +9,6 @@ UCLASS(Blueprintable, NoExport)
 class AMeteorDefenseEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    APlagueMeteor* meteor;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

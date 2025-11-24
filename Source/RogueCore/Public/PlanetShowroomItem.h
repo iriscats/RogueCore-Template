@@ -16,15 +16,6 @@ class ROGUECORE_API APlanetShowroomItem : public AShowroomItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UStaticMeshComponent* PlanetMeshComp;
-
-    ERunDepth SelectedDeptht;
-
-    APlanetShowroomItem(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

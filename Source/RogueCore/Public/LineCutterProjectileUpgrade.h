@@ -13,20 +13,6 @@ class ULineCutterProjectileUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    ELineCutterProjectileUpgradeType upgradeType;
-
-    
-
-    ULineCutterProjectileUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(AFSDPlayerState* Player, TSubclassOf<AActor> Item, ELineCutterProjectileUpgradeType NewUpgradeType);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

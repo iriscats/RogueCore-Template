@@ -15,26 +15,6 @@ class ASoapVacuumItem : public APlagueCleanupItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float VacuumCooldown;
-
-    float VacuumRadius;
-
-    float VacuumRange;
-
-    float CurrentVacuumEffectStrenght;
-
-    float MaxVacuumEffectStrength;
-
-    float VacuumEffectFoamSuckTime;
-
-    float LastPuddleSuckTime;
-
-    ASoapVacuumItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCapsuleComponent* VacuumCapsule;

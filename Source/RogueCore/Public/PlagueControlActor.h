@@ -16,14 +16,6 @@ class APlagueControlActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<APlagueInfectionNode> TargetedPlagueNode;
-
-    APlagueControlActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     TArray<FPlacementObstruction> Obstructions;

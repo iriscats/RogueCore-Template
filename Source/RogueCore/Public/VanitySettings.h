@@ -18,26 +18,6 @@ class ROGUECORE_API UVanitySettings : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TSet<FGuid> ValidIDs;
-
-    TMap<FGuid, UVanityItem*> ItemMap;
-
-    TMap<EVanitySlot, FVanitySlotCharacter> GlobalItems;
-
-    TMap<EVanitySlot, FVanitySlotCharacter> StoreItems;
-
-    TMap<EVanitySlot, FVanitySlotCharacter> TreassureItems;
-
-    UVanitySettings();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    static bool HasNewVanityNotification(UObject* WorldContextObject, EVanitySlot Slot, UPlayerCharacterID* characterID);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UVanityItem* MedbayArmorItem;

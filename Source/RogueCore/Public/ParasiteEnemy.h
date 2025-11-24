@@ -15,16 +15,6 @@ class AParasiteEnemy : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UFXSystemAsset* deathParticles;
-
-    USoundBase* deathSound;
-
-    AParasiteEnemy(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

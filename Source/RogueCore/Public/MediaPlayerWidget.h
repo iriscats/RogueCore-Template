@@ -13,19 +13,6 @@ class USoundClass;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UMediaPlayerWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UImage* OutputImage;
-
-    UMediaPlayerWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void Stop();
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FStateChanged, UMediaPlayerWidget*, InPlayerWidget, EMediaPlayerState, InState);

@@ -10,14 +10,6 @@ class ROGUECORE_API AFacilityHackingPod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_PodState, meta=(AllowPrivateAccess=true))
-
-    EHackingPodState PodState;
-
-    AFacilityHackingPod(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHackingPod_Delegate OnHackingPodStateChanged;

@@ -31,22 +31,6 @@ class USeasonsSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FSeasonMissionResult TempSeasonMissionResult;
-
-    FSeasonMissionResult LatestMissionSeasonResult;
-
-    USeasonsSubsystem();
-
-    UFUNCTION(BlueprintCallable)
-
-    FTimespan TimeToNewChallenge();
-
-    void RerollChallenge(int32 Index);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnXPChangedSignature OnXpChanged;

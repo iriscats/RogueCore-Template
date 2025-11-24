@@ -9,16 +9,6 @@ class ATaggedActor : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGameplayTagContainer GameplayTags;
-
-    
-
-    ATaggedActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

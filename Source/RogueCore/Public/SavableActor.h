@@ -9,14 +9,6 @@ class ASavableActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuid SavegameID;
-
-    ASavableActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

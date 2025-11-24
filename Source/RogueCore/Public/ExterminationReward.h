@@ -10,25 +10,6 @@ UCLASS(Abstract, Blueprintable)
 class UExterminationReward : public UStageLogic {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UResourceData* Resource;
-
-    
-
-    float AwardSize;
-
-    FGameplayTagContainer AllowedFilter;
-
-    UExterminationReward();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnEnemyKilled(const FGameplayTagContainer& GameplayTags, AActor* killedEnemy);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

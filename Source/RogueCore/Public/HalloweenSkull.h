@@ -10,26 +10,6 @@ class AHalloweenSkull : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FVector WobbleSpeeds;
-
-    
-
-    FVector WobbleRanges;
-
-    FRuntimeFloatCurve AlertedMovement;
-
-    float AlertedMovementScale;
-
-    float AlertedMovementTimeScale;
-
-    float JawMovementSpeed;
-
-    AHalloweenSkull(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

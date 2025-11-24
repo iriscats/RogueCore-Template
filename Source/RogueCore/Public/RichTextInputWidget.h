@@ -14,18 +14,6 @@ class URichTextInputWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    URichTextBlock* RichTextBlock;
-
-    URichTextInputWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void ScaleTextBlockToHeight(UTextBlock* InTextBlock, float LineHeight);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -15,32 +15,6 @@ class ROGUECORE_API UItemID : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSoftClassPtr<AActor> Item;
-
-    
-
-    UPlayerCharacterID* ItemOwner;
-
-    EItemCategory ItemCategory;
-
-    UItemID();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    bool IsItemClassChildOf(TSubclassOf<AActor> InParentClass) const;
-
-    UItemData* GetItemData() const;
-
-    TSubclassOf<AItem> GetItemClass() const;
-
-    EItemCategory GetItemCategory() const;
-
-    AItem* GetItem() const;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

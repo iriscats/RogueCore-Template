@@ -14,16 +14,6 @@ class AItemPreviewActor : public AActor, public ISkinnable, public IIconGenerata
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UIconGenerationCameraKey* CameraKey_Normal;
-
-    UIconGenerationCameraKey* CameraKey_CloseUp;
-
-    AItemPreviewActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

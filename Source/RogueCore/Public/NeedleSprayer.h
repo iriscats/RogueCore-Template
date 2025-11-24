@@ -19,42 +19,6 @@ class ANeedleSprayer : public AActor, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UAnimMontage* ReloadAnimation;
-
-    int32 MaxRotations;
-
-    int32 LinesPerRotation;
-
-    FVector2D ShotAngleFromTop;
-
-    float DeployDelay;
-
-    float Lifetime;
-
-    float TimeBetweenRotations;
-
-    float RearmTime;
-
-    float AvoidCloseOffset;
-
-    float ShotOriginOffset;
-
-    int32 MaxRearms;
-
-    bool PlayAnimationOnBeginPlay;
-
-    bool PlayAnimationOnReload;
-
-    bool DrawDebugLines;
-
-    float DebugLinesDuration;
-
-    ANeedleSprayer(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

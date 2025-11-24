@@ -60,6 +60,7 @@ protected:
     void SetAttackStance(bool isAttackStance);
     void PlayVoice();
     void OnStartFalling();
+    UFUNCTION()
     void OnRep_AttackStance();
     void OnRagdoll();
     void OnFreezeImpact();

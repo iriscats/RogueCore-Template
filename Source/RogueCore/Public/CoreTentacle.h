@@ -23,6 +23,7 @@ public:
     void SetTentacleState(const ECoreTentacleState NewState);
     void SetSwayTarget(const FCoreTentacleSwayTarget& Target, const bool SwayImmediately);
     void SetMovementTarget(const FCoreTentacleMovementTarget& Target);
+    UFUNCTION()
     void OnRep_MovementTarget();
     ECoreTentacleState GetTentacleState() const;
     FCoreTentacleMovementTarget GetMovementTarget() const;

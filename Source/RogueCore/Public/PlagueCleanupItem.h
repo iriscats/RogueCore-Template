@@ -21,16 +21,6 @@ class ROGUECORE_API APlagueCleanupItem : public AAnimatedItem, public IThrowable
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UAudioComponent* UsingSoundInstance;
-
-    float FireRate;
-
-    APlagueCleanupItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* DroppedCollider;

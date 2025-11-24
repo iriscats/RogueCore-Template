@@ -10,19 +10,6 @@ UCLASS(Blueprintable, NoExport)
 class AProspectorRobot : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AActor* Target;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ProspectorState, meta=(AllowPrivateAccess=true))
-
-    EProspectorRobotState ProspectorState;
-
-    AProspectorRobot(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

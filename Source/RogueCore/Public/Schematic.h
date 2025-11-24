@@ -20,22 +20,6 @@ class ROGUECORE_API USchematic : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    USchematicItem* Item;
-
-    TMap<UResourceData*, int32> CraftingCost;
-
-    bool CostIsLocked;
-
-    USchematic();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetCraftingMaterialCost();
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSchematicDelegate, USchematic*, Schematic);
     

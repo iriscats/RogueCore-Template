@@ -19,24 +19,6 @@ class UFallingStateComponent : public UCharacterStateComponent, public IInputCom
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_HoverBootsActive, meta=(AllowPrivateAccess=true))
-
-    bool bHoverBootsActive;
-
-    float HoverBootMaxDuration;
-
-    FVector2D JumpBootsVelocityWindow;
-
-    float JumpBootsZVelocity;
-
-    bool JumpBootsActive;
-
-    UFallingStateComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

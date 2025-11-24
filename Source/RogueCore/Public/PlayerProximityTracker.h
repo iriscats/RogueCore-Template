@@ -12,23 +12,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPlayerProximityTracker : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FPlayerSphere> PlayerSpheres;
-
-    TArray<FProximityTriggerItem> LocalPlayerProximityTriggers;
-
-    TArray<FProximityTriggerItem> AnyPlayerProximityTriggers;
-
-    UPlayerProximityTracker(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    static void Receive_RegisterForLocalPlayerProximity(UObject* WorldContextObject, const FVector& Location, float Distance, const FPlayerProximityDelegate& proximityCallback, bool triggerOnlyOnce);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

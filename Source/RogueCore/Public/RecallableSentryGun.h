@@ -10,15 +10,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ARecallableSentryGun : public ARecallableActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SentryIndex, meta=(AllowPrivateAccess=true))
-
-    int32 SentryIndex;
-
-    ARecallableSentryGun(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSentryIndexChanged, int32, Index);
     

@@ -20,37 +20,6 @@ UCLASS(Blueprintable, NoExport)
 class AWormPod : public ATaggedActor, public ITargetable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UAnimMontage* GrowthAnimation;
-
-    UAnimMontage* PopAnimation;
-
-    TSubclassOf<AActor> CarcasActor;
-
-    FRuntimeFloatCurve GrowthCurve;
-
-    UEnemyDescriptor* WormDescriptor;
-
-    UFXSystemAsset* PopParticles;
-
-    UFXSystemAsset* deathParticles;
-
-    USoundCue* PopSound;
-
-    USoundCue* deathSound;
-
-    float ParentDeathDelay;
-
-    float DeathDelayVariance;
-
-    int32 WormCount;
-
-    AWormPod(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

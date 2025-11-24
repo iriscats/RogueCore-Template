@@ -12,31 +12,6 @@ UCLASS(Abstract, Blueprintable, EditInlineNew)
 class ROGUECORE_API UWorkbenchItemWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FItemSlotIndex UnlockSlot;
-
-    int32 ChoiceCount;
-
-    UItemData* ItemData;
-
-    TArray<UItemUpgrade*> ItemUpgrades;
-
-    TArray<UItemUpgrade*> OwnedIndices;
-
-    TArray<UItemUpgrade*> AvailableIndices;
-
-    UWorkbenchItemWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    bool SelectItemUpgrade(UObject* InUpgrade);
-
-    void Refresh();
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FWorkbenchItemDelegate, UWorkbenchItemWidget*, InWidget);
     

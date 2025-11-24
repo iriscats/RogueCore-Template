@@ -10,20 +10,6 @@ class UPerkComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnActivePerksReplicated, meta=(AllowPrivateAccess=true))
-
-    TArray<FPerkState> ActivePerks;
-
-    TArray<UPerkAsset*> LocallyActivatedPerks;
-
-    TArray<UPerkAsset*> LocallyUsablePerks;
-
-    UPerkComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPerkDelegate);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPerkComponentDelegate, UPerkAsset*, Perk);

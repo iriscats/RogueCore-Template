@@ -11,21 +11,6 @@ class USoundBase;
 UCLASS(Blueprintable)
 class UMusicManager : public UWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TMap<FMusicHandle, FActiveAudioItem> ActiveAudio;
-
-    
-
-    UMusicManager();
-
-    UFUNCTION(BlueprintCallable)
-
-    void StopTransitionMusic(float FadeOut);
-
-
 
 public:
 protected:

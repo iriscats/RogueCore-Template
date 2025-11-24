@@ -21,14 +21,6 @@ class ROGUECORE_API AGameEvent : public AActor, public IGameplayTagAssetInterfac
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_EventParticipants, meta=(AllowPrivateAccess=true))
-
-    TArray<AActor*> EventParticipants;
-
-    AGameEvent(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent EventTriggeredDelegate;

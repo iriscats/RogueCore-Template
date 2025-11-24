@@ -15,20 +15,6 @@ class UInfectionMasterComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    uint8 InfectionPoints;
-
-
-
-    // UPROPERTY fields moved from private section
-
-    UPROPERTY(EditAnywhere, ReplicatedUsing=OnRep_RandomSeed, meta=(AllowPrivateAccess=true))
-
-    uint32 RandomSeed;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

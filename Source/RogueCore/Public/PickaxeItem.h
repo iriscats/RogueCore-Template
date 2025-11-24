@@ -36,12 +36,6 @@ class APickaxeItem : public AItem, public IUpgradableGear, public IPickaxePartEq
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    double QMiningLastHitTime;
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool QuadDamageCarving;

@@ -60,44 +60,6 @@ class ROGUECORE_API AFSDGameState : public AGameState {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsWaveActive, meta=(AllowPrivateAccess=true))
-
-    bool IsWaveActive;
-
-    bool RememberDifficulty;
-
-    UPlayerProximityTracker* ProximityTracker;
-
-    UShowroomManager* ShowroomManager;
-
-    AGameStats* GameStats;
-
-    UPROPERTY(EditAnywhere, Transient, ReplicatedUsing=OnRep_MissionTime, meta=(AllowPrivateAccess=true))
-
-    uint32 MissionTime;
-
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    uint32 MissionStartTime;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CountdownText, meta=(AllowPrivateAccess=true))
-
-    FText CountdownText;
-
-    bool CanCarryOverResources;
-
-    FCurrentLeaderChanged SessionLeaderChanged;
-
-    APlayerState* CurrentPlayerSessionLeader;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRepNamedCountdowns, meta=(AllowPrivateAccess=true))
-
-    TArray<FNamedCountdownInt> NamedCountdowns;
-
-    AFSDGameState(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FNamedCountdownDelegate, const FNamedCountdownInt&, Countdown);
     

@@ -15,14 +15,6 @@ class APlaceableItem : public AAnimatedItem, public IUpgradable, public IPlaceab
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<AActor> PlacableClass;
-
-    APlaceableItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

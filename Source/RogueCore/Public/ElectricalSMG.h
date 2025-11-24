@@ -16,24 +16,6 @@ class AElectricalSMG : public AHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<UStatusEffect> AoEStatusEffect;
-
-    
-
-    UFXSystemAsset* AoEParticle;
-
-    USoundCue* AoESound;
-
-    float AoEStatusEffectChance;
-
-    float AoEStatusEffectRange;
-
-    AElectricalSMG(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

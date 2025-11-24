@@ -12,14 +12,6 @@ class UBaseCritterDescriptor : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UDebrisPositioning* Positioning;
-
-    DeepPathFinderType PathfinderType;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -15,18 +15,6 @@ class AGuntowerWeakPoint : public AFSDPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UDamageClass* DamageToParent;
-
-    UFXSystemAsset* deathParticles;
-
-    USoundCue* deathSound;
-
-    AGuntowerWeakPoint(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

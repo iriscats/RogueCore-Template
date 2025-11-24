@@ -13,30 +13,6 @@ class UStatusEffectEnemies : public UStageLogic {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<TSubclassOf<UStatusEffect>> StatusEffects;
-
-    
-
-    FGameplayTagContainer AllowedFilter;
-
-    FGameplayTagQuery AllowedQuery;
-
-    float ChanceToApply;
-
-    bool OverrideReplacesDefault;
-
-    TMap<UEnemyDescriptor*, TSubclassOf<UStatusEffect>> Overrides;
-
-    UStatusEffectEnemies();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnEnemySpawned(APawn* Enemy, UEnemyDescriptor* descriptor);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

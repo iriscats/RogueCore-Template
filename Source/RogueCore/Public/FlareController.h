@@ -15,18 +15,6 @@ class UFlareController : public UWorldSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FFlareMeta> FlaresMeta;
-
-    UFlareController();
-
-    UFUNCTION(BlueprintCallable)
-
-    static void UnregisterFlareGunProjectile(AFlareGunProjectile* flareprj);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FShadowQualityChanged OnShadowQualityChanged;

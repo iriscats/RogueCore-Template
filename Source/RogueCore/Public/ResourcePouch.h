@@ -12,15 +12,6 @@ UCLASS(Blueprintable, NoExport)
 class AResourcePouch : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    USoundCue* ImpactGroundSound;
-
-    AResourcePouch(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

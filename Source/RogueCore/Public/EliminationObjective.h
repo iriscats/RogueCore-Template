@@ -17,18 +17,6 @@ class ROGUECORE_API UEliminationObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FEliminationDescriptors> TargetQueue;
-
-    TArray<FEliminationTarget> ActiveEliminationTargets;
-
-    UEliminationObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

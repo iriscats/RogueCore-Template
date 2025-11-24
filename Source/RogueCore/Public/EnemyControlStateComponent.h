@@ -13,18 +13,6 @@ class ROGUECORE_API UEnemyControlStateComponent : public UCharacterStateComponen
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    FQuat AngularVelocity;
-
-    FQuat ControlRotation;
-
-    UEnemyControlStateComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

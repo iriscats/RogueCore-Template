@@ -11,18 +11,6 @@ class USavablePrimaryDataAsset : public UPrimaryDataAsset, public ISaveGameIDInt
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuid SavegameID;
-
-    UBuildRestriction* BuildRestriction;
-
-    USavablePrimaryDataAsset();
-
-    // Fix for true pure virtual functions not being implemented
-
-
-
 public:
     UPROPERTY(AssetRegistrySearchable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 BuildRestrictions;

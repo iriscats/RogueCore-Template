@@ -16,14 +16,6 @@ class AEnemyDeepPathfinderCharacter : public ADeepPathfinderCharacter, public IN
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_QueuedMontage, meta=(AllowPrivateAccess=true))
-
-    FQueuedMontage QueuedMontage;
-
-    AEnemyDeepPathfinderCharacter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

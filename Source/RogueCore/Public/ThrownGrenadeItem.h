@@ -19,16 +19,6 @@ class AThrownGrenadeItem : public AItem, public IRejoinListener {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool CooldownIsDone;
-
-    bool HasRejoinedInitialized;
-
-    AThrownGrenadeItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGrenadeThrown);
     

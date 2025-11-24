@@ -20,20 +20,6 @@ class ATeamElevator : public ATeamTransport {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AGeneratorLine* ElevatorCableInstance;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRepNextLevelWarnings, meta=(AllowPrivateAccess=true))
-
-    TArray<URiskVector*> NextLevelRiskVectors;
-
-    ETeamElevatorType Type;
-
-    ATeamElevator(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FElevatorDelegate OnElevatorPoweredUp;

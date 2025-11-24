@@ -16,18 +16,6 @@ class ROGUECORE_API ATrackBuilderItem : public AAnimatedItem, public IPlaceableI
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_NextSegment, meta=(AllowPrivateAccess=true))
-
-    ATrackBuilderSegment* NextSegment;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bIsPlacingSegment;
-
-    ATrackBuilderItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -8,19 +8,6 @@ UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnable
 class ROGUECORE_API UTerrainScannerStaticMesh : public UStaticMeshComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bVisibleOnScanner;
-
-    UTerrainScannerStaticMesh(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetVisibleOnScanner(bool InShowOnScanner);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -15,21 +15,6 @@ class APipelineStart : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    APipelineFinish* PipelineFinish;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AFSDRefinery* Refinery;
-
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<TWeakObjectPtr<APipelineSegment>> BrokenSegments;
-
-    APipelineStart(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPipelineStartStateDelegate, APipelineStart*, InPipelineStart, EPipelineBuildState, InPipelineState);

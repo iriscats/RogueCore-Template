@@ -12,22 +12,6 @@ class USimpleHealthComponent : public UHealthComponentBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UEnemyComponent> EnemyComponent;
-
-    TMap<UPawnStat*, float> Resistances;
-
-    TArray<UDamageTag*> RequiredDamageTags;
-
-    bool AutomaticFlushNetDormancy;
-
-    USimpleHealthComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Damage, meta=(AllowPrivateAccess=true))

@@ -26,52 +26,6 @@ class ROGUECORE_API UFSDPhysicalMaterial : public UPhysicalMaterial {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
-
-    TArray<FDecalData> ImpactDecals;
-
-    FSkeletalMeshDecalData SkeletalMeshDecal;
-
-    USoundBase* FirstPersonDamageIndicatorSound;
-
-    bool IsWeakPoint;
-
-    bool IsSubhealthCollider;
-
-    float DamageMultiplier;
-
-    UFXSystemAsset* FootStepParticle;
-
-    UMaterialInstance* FootstepMaterialOverride;
-
-    FDecalData LeftFootprintDecal;
-
-    FDecalData RightFootprintDecal;
-
-    USoundBase* FootStepSound;
-
-    float ExtraFallVelocity;
-
-    UFXSystemAsset* FallImpactEffect;
-
-    USoundBase* FallImpactSound;
-
-    bool AlwaysPenetrate;
-
-    bool OneSidedPenetrate;
-
-    TSubclassOf<UReactiveTerrain> ReactiveTerrain;
-
-    TSet<TSubclassOf<UElementEventTypeBase>> AllowedElementEventBonus;
-
-    UFSDPhysicalMaterial();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    static UNiagaraComponent* SpawnImpactParticlesFromHit(UObject* WorldContextObject, const FHitResult& HitResult);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EPhysicalMaterialType MaterialType;

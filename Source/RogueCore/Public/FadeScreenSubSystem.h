@@ -12,18 +12,6 @@ class ROGUECORE_API UFadeScreenSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FFadeData Fading;
-
-    UFadeScreenSubSystem();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContext"))
-
-    static bool IsScreenFadingToBlack(UObject* WorldContext);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFadingDone OnFadeInComplete;

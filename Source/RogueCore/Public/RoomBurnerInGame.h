@@ -19,46 +19,6 @@ class ROGUECORE_API ARoomBurnerInGame : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    URoomGenerator* RoomGenerator;
-
-    float RoomRadius;
-
-    bool ShowRoomCollider;
-
-    FGameplayTagContainer RoomTags;
-
-    ERunDepth RunDepth;
-
-    URunTemplate* RunTemplate;
-
-    int32 ActiveStage;
-
-    int32 Seed;
-
-    UBiome* Biome;
-
-    UPlanetZone* PlanetZone;
-
-    UStageTemplateDifficulty* DifficultyOverride;
-
-    UDifficultySetting* Difficulty;
-
-    int32 ForcePlayerCount;
-
-    bool GenerateDebris;
-
-    bool GenerateItems;
-
-    bool GenerateResources;
-
-    bool SpawnEncounters;
-
-    ADeepCSGWorld* CSGWorld;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

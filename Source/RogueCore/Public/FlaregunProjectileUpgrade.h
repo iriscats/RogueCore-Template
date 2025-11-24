@@ -13,22 +13,6 @@ class UFlaregunProjectileUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EFlaregunProjectileUpgrades upgradeType;
-
-    
-
-    TSubclassOf<AActor> ProjectileClass;
-
-    UFlaregunProjectileUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(TSubclassOf<AActor> Item, TSubclassOf<AActor> upgradedItem, AFSDPlayerState* Player, EFlaregunProjectileUpgrades NewUpgradeType);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

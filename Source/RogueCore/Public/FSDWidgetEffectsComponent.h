@@ -19,29 +19,6 @@ class UWidget;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UFSDWidgetEffectsComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FWidgetPing> WidgetPings;
-
-    
-
-    TArray<FWidgetFade> WidgetFades;
-
-    TArray<FWidgetTextCounter> WidgetTextCounters;
-
-    TArray<FCustomCounter> CustomCounters;
-
-    TArray<FWidgetMover> WidgetMovers;
-
-    UFSDWidgetEffectsComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    static void StartTextCounter(UObject* WorldContext, UTextBlock* Widget, float Start, float End, float Duration, int32 MaxDigits, float StartDelay);
-
-
 
 public:
 protected:

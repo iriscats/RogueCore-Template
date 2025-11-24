@@ -17,20 +17,6 @@ class UMilestoneAsset : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    int32 LastTierReached;
-
-    bool bPendingMilestoneReached;
-
-    UMilestoneAsset();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    static TArray<UMilestoneAsset*> SortMilestonesByProgress(UObject* WorldContext, UPARAM(Ref) TArray<UMilestoneAsset*>& Milestones);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FOnMilestoneClaimed OnMilestoneClaimed;

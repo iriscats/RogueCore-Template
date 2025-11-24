@@ -10,25 +10,6 @@ class UWidgetComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPawnDebugComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UWidgetComponent* WidgetComponent;
-
-    
-
-    UHealthComponent* HealthComponent;
-
-    UObjectInfoComponent* InfoComponent;
-
-    UPawnDebugComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void ShowPawnHealth(bool InWidgetVisible);
-
-
 
 public:
 protected:

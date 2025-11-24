@@ -13,20 +13,6 @@ class ROGUECORE_API UVoteManager : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FVoteData VoteData;
-
-    TArray<UVoteOptionAction*> ExcludeVoteOption;
-
-    UVoteManager();
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    void StartVote(UObject* WorldContext, UVoteOptionPool* InVotePool, int32 Seed);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnVoteDone;

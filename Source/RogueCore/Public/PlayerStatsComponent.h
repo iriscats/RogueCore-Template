@@ -13,40 +13,6 @@ class UPlayerStatsComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    int32 TotalKills;
-
-    int32 TotalRevived;
-
-    int32 TotalDeaths;
-
-    int32 TotalSupplypodsRequested;
-
-    float TotalGoldMined;
-
-    float TotalMOMsMined;
-
-    float TotalMineralsMined;
-
-    float TotalXPGained;
-
-    float TotalHealthRestored;
-
-    bool EscapedInPod;
-
-    TSubclassOf<APlayerCharacter> LastPlayedClass;
-
-    FEndMissionResult EndMissionResult;
-
-    UClass* CauseOfDeathClass;
-
-    UPlayerStatsComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnKillAdded;

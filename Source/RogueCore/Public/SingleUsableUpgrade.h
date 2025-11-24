@@ -13,20 +13,6 @@ class USingleUsableUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    ESingleUsableUpgradeType upgradeType;
-
-    
-
-    USingleUsableUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(TSubclassOf<AActor> Item, TSubclassOf<AActor> subItem, AFSDPlayerState* Player, ESingleUsableUpgradeType NewUpgradeType);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

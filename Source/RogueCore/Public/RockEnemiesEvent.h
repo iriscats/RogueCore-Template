@@ -16,23 +16,6 @@ class ARockEnemiesEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    USkeletalMeshComponent* mesh;
-
-    UFXSystemAsset* MuzzleEffect;
-
-    int32 PowerUpsPerGeneration;
-
-    int32 GruntPointsAward;
-
-    int32 TankPointsAward;
-
-    UEnemyGroupDescriptor* RockEnemies;
-
-    ARockEnemiesEvent(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

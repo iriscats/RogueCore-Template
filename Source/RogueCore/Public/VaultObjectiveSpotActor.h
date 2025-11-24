@@ -9,16 +9,6 @@ class ROGUECORE_API AVaultObjectiveSpotActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    USceneComponent* RootSceneComponent;
-
-    
-
-    AVaultObjectiveSpotActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

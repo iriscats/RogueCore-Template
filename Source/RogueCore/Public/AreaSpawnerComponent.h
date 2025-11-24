@@ -13,16 +13,6 @@ class UAreaSpawnerComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<AActor> ActorToSpawn;
-
-    
-
-    DeepPathFinderSize PathfinderSize;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

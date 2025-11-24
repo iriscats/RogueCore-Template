@@ -18,14 +18,6 @@ class AElectroBeam : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsLit, meta=(AllowPrivateAccess=true))
-
-    bool IsLit;
-
-    AElectroBeam(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCapsuleComponent* collider;

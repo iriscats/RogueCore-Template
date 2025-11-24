@@ -12,22 +12,6 @@ class ROGUECORE_API UNotificationSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FSpaceRigNotification> SpaceRigNotifications;
-
-    UCampaignNotification* CampaignNotification;
-
-    UNotificationSubSystem();
-
-    UFUNCTION(BlueprintCallable)
-
-    bool GetNextSpaceRigNotification(FSpaceRigNotification& NextNotification);
-
-    void ClearCampaignNotifications();
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnNewSpaceRigNotificationEvent;

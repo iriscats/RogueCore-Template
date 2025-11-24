@@ -14,14 +14,6 @@ class ARecallableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(EditAnywhere, Transient, ReplicatedUsing=OnRep_ActiveItems, meta=(AllowPrivateAccess=true))
-
-    TArray<TWeakObjectPtr<ARecallableActor>> ActiveItems;
-
-    ARecallableItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

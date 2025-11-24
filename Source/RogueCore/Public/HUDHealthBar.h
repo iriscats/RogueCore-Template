@@ -14,21 +14,6 @@ class UHUDHealthBar : public UFSDUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TScriptInterface<IHealth> TargetHealth;
-
-    float AnimatedHealth;
-
-    float MaxHealth;
-
-    UHUDHealthBar();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetHealthComponent(const TScriptInterface<IHealth>& Health, float Damage);
-
-
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -20,14 +20,6 @@ class AFSDPlayerControllerBase : public APlayerController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<FPlatformComponent> PlatformComponentClasses;
-
-    AFSDPlayerControllerBase(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnClientKicked OnClientKicked;

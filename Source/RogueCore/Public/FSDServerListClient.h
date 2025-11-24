@@ -13,22 +13,6 @@ class UFSDServerListClient : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGetLobbiesResult ListDelegate;
-
-    UFSDServerListClient();
-
-    UFUNCTION(BlueprintCallable)
-
-    bool StopHosting();
-
-    bool StartHosting(const FString& RunName);
-
-    void ListLobbys();
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBlueprintFindSessionsResultDelegate, const TArray<FBlueprintSessionResult>&, Results);
     

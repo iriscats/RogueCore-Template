@@ -12,14 +12,6 @@ class AIconGenerationCharacter : public AIconGenerationBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<UIconSceneCaptureComponent*> CaptureComponents;
-
-    AIconGenerationCharacter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UMaterialInterface* OrigBaseMaterial;

@@ -13,14 +13,6 @@ class ROGUECORE_API ATetherStation : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=Onrep_FacilityActive, meta=(AllowPrivateAccess=true))
-
-    bool FacilityActive;
-
-    ATetherStation(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* SceneRoot;

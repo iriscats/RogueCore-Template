@@ -15,18 +15,6 @@ class UNiagaraComponent;
 UCLASS(Blueprintable, NoExport)
 class ALineCutterProjectile : public AProjectile {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float InhibitImpactDecalsTime;
-
-    float MinTimeBetweenImpactDecals;
-
-    UDamageComponent* ExplosionDamageComponent;
-
-    ALineCutterProjectile(const FObjectInitializer& ObjectInitializer);
-
 
 
 public:

@@ -10,17 +10,6 @@ class UEscortMuleAttackerPositioning : public UAttackerPositioningComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<FVector> AttackerPositions;
-
-    UEscortMuleAttackerPositioning(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetNewMaxAttackers(int32 newMaxAttackers);
-
-
 
 public:
 protected:

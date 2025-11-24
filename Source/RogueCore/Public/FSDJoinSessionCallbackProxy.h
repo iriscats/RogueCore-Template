@@ -12,19 +12,6 @@ UCLASS(Blueprintable, MinimalAPI)
 class UFSDJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UObject* WorldContextObject;
-
-    UFSDJoinSessionCallbackProxy();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    static UFSDJoinSessionCallbackProxy* FSDJoinSession(UObject* NewWorldContextObject, APlayerController* PlayerController, const FBlueprintSessionResult& SearchResult, const FString& fsdpassword, bool fromInvite);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEmptyOnlineDelegate OnSuccess;

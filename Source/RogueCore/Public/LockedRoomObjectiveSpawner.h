@@ -9,13 +9,6 @@ class UBXELockedRoomObjective;
 UCLASS(Blueprintable, NoExport)
 class ALockedRoomObjectiveSpawner : public AStructureSpawner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_RoomInstance, meta=(AllowPrivateAccess=true))
-
-    ALockedRoomActor* RoomInstance;
-
-
 
 public:
 protected:

@@ -16,26 +16,6 @@ class UIntelCampaignSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UFSDGameInstance* GameInstance;
-
-    TArray<UIntelObjective*> AllObjectives;
-
-    TArray<UIntelObjective*> ActiveObjectives;
-
-    TArray<UIntelChallenge*> ActiveChallenges;
-
-    FIntelProgression RecentProgression;
-
-    UIntelCampaignSubsystem();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetIntelPoints(const int32 NewIntelPoints);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FIntelSubsystemObjectiveDelegate, UIntelObjective*, Objective);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FIntelSubsystemDelegate);

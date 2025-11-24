@@ -12,18 +12,6 @@ class UElementEventComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UElementEventType* EventType;
-
-    
-
-    UElementType* TriggeredByElementType;
-
-    AActor* Source;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,17 +11,6 @@ class AExtruderPlant : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UAnimationAsset* ExtrudeAnimation;
-
-    UAnimationAsset* RetractAnimation;
-
-    UAudioComponent* Audio;
-
-    AExtruderPlant(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

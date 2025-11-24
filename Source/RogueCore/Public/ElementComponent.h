@@ -24,20 +24,6 @@ class UElementComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    TMap<UElementEventType*, UElementEventComponent*> EventComponents;
-
-    UPawnStatsComponent* CachedPawnStatComponent;
-
-    UStatusEffectsComponent* CachedStatusEffectsComponent;
-
-    UElementComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FElementEventDelegate OnElementEventAdded;

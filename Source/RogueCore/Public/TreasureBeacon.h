@@ -14,13 +14,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API ATreasureBeacon : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    ATreasureContainer* TreasureInstance;
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* RootComp;

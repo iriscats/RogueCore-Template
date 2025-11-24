@@ -46,14 +46,6 @@ class ARiftCrystal : public AActor, public IGameplayTagAssetInterface, public IB
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    TEnumAsByte<ERiftCrystalState> State;
-
-    ARiftCrystal(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

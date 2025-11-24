@@ -18,20 +18,6 @@ class UWeaponFireComponent : public UActorComponent, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TScriptInterface<IWeaponFireOwner> Weapon;
-
-    bool UseDynamicSpread;
-
-    UWeaponFireComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void StopFire();
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FWeaponFiredDelegate OnWeaponFired;

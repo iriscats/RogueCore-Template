@@ -11,26 +11,6 @@ class UObjectiveWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool bIsPrimaryObjective;
-
-    FText ObjectiveText;
-
-    FText ObjectiveCounterText;
-
-    UTexture2D* ObjectiveCounterIcon;
-
-    bool bObjectiveCompleted;
-
-    UObjectiveWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetText(const FText& InText, const FText& InCounterText, UTexture2D* InCounterIcon, bool InObjectiveCompleted);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FObjectiveWidgetDelegate, UObjectiveWidget*, InObjectiveWidget);
     

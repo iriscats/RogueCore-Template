@@ -8,20 +8,6 @@ class UFirstPersonStaticMeshComponent : public UStaticMeshComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool EnabledFPFOV;
-
-    
-
-    UFirstPersonStaticMeshComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetEnabledFPFOV(bool FOV);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,15 +11,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ROGUECORE_API AExample01Actor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_Mesh, meta=(AllowPrivateAccess=true))
-
-    UStaticMesh* mesh;
-
-    AExample01Actor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTargetChangedDelegate OnTargetChanged;

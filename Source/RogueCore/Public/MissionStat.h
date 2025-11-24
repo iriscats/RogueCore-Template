@@ -18,36 +18,6 @@ class UMissionStat : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuid SavegameID;
-
-    FText Title;
-
-    UMissionStatCategory* Category;
-
-    UFSDAchievement* StatAchievement;
-
-    EMissionStatType MissionStatType;
-
-    bool DoNotShowInMissionStatView;
-
-    bool ShowAllValuesCombined;
-
-    bool ShowHighestValue;
-
-    UMissionStat();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    float SetStatValue(UObject* WorldContext, APlayerCharacter* Character, float amount);
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FText MissionStatToText(EMissionStatType StatType, float Value);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FStatCountChanged, UObject*, WorldContext, UMissionStat*, MissionStat, float, Value, float, change);
     

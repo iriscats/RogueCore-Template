@@ -16,15 +16,7 @@ class ROGUECORE_API ATrackBuilderSegment : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SegmentEndTransform, meta=(AllowPrivateAccess=true))
-
-    FTrackBuilderPoint ServerSegmentEndTransform;
-
-    ATrackBuilderSegment(const FObjectInitializer& ObjectInitializer);
-
-
-
-public:
+ public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTrackBuilderUsable* NextSegmentUsable;

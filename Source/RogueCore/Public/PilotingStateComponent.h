@@ -9,12 +9,6 @@ class UPilotingStateComponent : public UCharacterStateComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Vehicle, meta=(AllowPrivateAccess=true))
-
-    AActor* Vehicle;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Vehicle, meta=(AllowPrivateAccess=true))

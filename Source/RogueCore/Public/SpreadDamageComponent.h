@@ -10,26 +10,6 @@ class ROGUECORE_API USpreadDamageComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TMap<AActor*, float> DamageLog;
-
-    
-
-    float Range;
-
-    float SpreadDamageMultiplier;
-
-    FDamageInstance DamageInstance;
-
-    USpreadDamageComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    void DamagedActor(AActor* Target, float amount);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

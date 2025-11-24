@@ -17,22 +17,6 @@ class AFitnessGym : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<ABaseFitnessActivity*> activities;
-
-    TArray<AGymDisplay*> GymMonitors;
-
-    AOmegaBartender* Bartender;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_SetsRemainingChanged, meta=(AllowPrivateAccess=true))
-
-    int32 SetsRemaining;
-
-    AFitnessGym(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnRepCompletedDelegate OnRepCompleted;

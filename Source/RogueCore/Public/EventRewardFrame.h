@@ -11,16 +11,6 @@ class AEventRewardFrame : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool keyInserted;
-
-    TArray<FString> EventPlayerIDs;
-
-    AEventRewardFrame(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USpecialEventUsableComponent* EventUsable;

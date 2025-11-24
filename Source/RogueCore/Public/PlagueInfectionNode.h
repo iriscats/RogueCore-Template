@@ -17,14 +17,6 @@ class APlagueInfectionNode : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    bool HasCleanPodBeenSpawned;
-
-    APlagueInfectionNode(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFirstPlayerNearCenter OnFirstPlayerNearCenter;

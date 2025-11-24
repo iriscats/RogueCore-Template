@@ -14,21 +14,6 @@ class USplineMeshComponent;
 UCLASS(Blueprintable, NoExport)
 class AElevatorPlant : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_Open, meta=(AllowPrivateAccess=true))
-
-    bool IsOpen;
-
-    bool Extend;
-
-    UCurveFloat* DipOffsetCurve;
-
-    UCurveFloat* LocationLerpCurve;
-
-    AElevatorPlant(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

@@ -9,17 +9,6 @@ class UHealthComponentBase;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UProspectorObjective : public UObjective {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ActiveProspector, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<AProspectorRobot> ActiveProspector;
-
-    UProspectorObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
 
 public:
 protected:

@@ -15,20 +15,6 @@ class AFSDAIController : public AAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<APlayerCharacter> TargetedPlayer;
-
-    FPlayerCharacterDelegate OnTargetPlayerChanged;
-
-    FActorDelegate OnTargetUpdated;
-
-    FBoolDelegate OnStaggeredChanged;
-
-    AFSDAIController(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMessageBehaviorTree OnMessageBehaviorTreeEvent;

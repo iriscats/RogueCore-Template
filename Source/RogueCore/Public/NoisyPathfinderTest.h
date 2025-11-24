@@ -14,50 +14,6 @@ class ANoisyPathfinderTest : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FVector Start;
-
-    
-
-    FVector End;
-
-    FVector StartDirection;
-
-    FVector EndDirection;
-
-    float DirectionDistance;
-
-    float DirectionPenalty;
-
-    float ZPenaltyPower;
-
-    float ZPenaltyScale;
-
-    float DistancePenaltyScale;
-
-    float RandomPenaltyScale;
-
-    TArray<FPathObstacle> Obstacles;
-
-    UTunnelSegmentSetting* TunnelSettings;
-
-    UTunnelParameters* TunnelParameters;
-
-    int32 StepSize;
-
-    bool Realtime;
-
-    bool CarvePath;
-
-    bool CanDiagonal;
-
-    UFloodFillSettings* FloodFillSettings;
-
-    ADeepCSGWorld* CSGWorld;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

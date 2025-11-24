@@ -12,16 +12,6 @@ class ATentacleBase : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    USceneComponent* HeadRoot;
-
-    USceneComponent* HeadRotator;
-
-    ATentacleBase(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USplineComponent* SplineComponent;

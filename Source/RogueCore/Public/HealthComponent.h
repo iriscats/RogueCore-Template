@@ -21,32 +21,6 @@ class UHealthComponent : public UHealthComponentBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AActor* LastDamageCauser;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Damage, meta=(AllowPrivateAccess=true))
-
-    float Damage;
-
-    float EnvironmentalDamageResistance;
-
-    bool ShouldUseLargestSubhealthDamageTaken;
-
-    bool InvulnerableToNonDefinedResistances;
-
-    bool AffectedByGlobalWeakpointDamageMultiplier;
-
-    bool UseDormancy;
-
-    bool CanDamageThroughSegments;
-
-    UHealthComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnTemporaryHealthChanged;

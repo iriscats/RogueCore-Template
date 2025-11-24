@@ -9,22 +9,6 @@ class UPerkEffectComponentBerserk : public UPerkEffectComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UPawnStat* BoostedStat;
-
-    
-
-    float AmountPerValue;
-
-    UPerkEffectComponentBerserk(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnHealthChanged(float Health);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

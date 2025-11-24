@@ -15,20 +15,6 @@ class AItemDispenser : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SpawnedItem, meta=(AllowPrivateAccess=true))
-
-    AActor* spawnedItem;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsOpen, meta=(AllowPrivateAccess=true))
-
-    bool IsOpen;
-
-    bool KillItemsOnDestuction;
-
-    AItemDispenser(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

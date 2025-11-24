@@ -23,28 +23,6 @@ class UIconGenerationManager : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AIconGenerationCharacter* GeneratorInst;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<EVanitySlot> VanitySlots;
-
-    TArray<UVanityItem*> HairColorHairItems;
-
-    TSoftClassPtr<AIconGenerationCharacter> IconCharacter;
-
-    TSoftClassPtr<AIconGenerationPickaxe> IconPickaxe;
-
-    TSoftClassPtr<AIconGenerationWeapon> IconWeapon;
-
-    UTextureRenderTarget2D* LatestGeneratedTexture;
-
-    AIconGenerationBase* ActiveIconGenerator;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

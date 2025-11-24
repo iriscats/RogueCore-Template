@@ -15,15 +15,6 @@ class UPostProcessComponent;
 UCLASS(Abstract, Blueprintable, NoExport)
 class AFSDPostProcessingActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FWeightedBlendables InitialBlendables;
-
-    AFSDPostProcessingActor(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

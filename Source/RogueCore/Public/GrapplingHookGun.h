@@ -14,16 +14,6 @@ class AGrapplingHookGun : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    FGraplingGunState State;
-
-    float GrapleStartTime;
-
-    AGrapplingHookGun(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

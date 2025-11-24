@@ -14,25 +14,6 @@ class UTriggeredStatusEffectUpgrade : public UItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<UStatusEffect> StatusEffect;
-
-    
-
-    ETriggeredStatusEffectType upgradeType;
-
-    float AoERange;
-
-    TSubclassOf<UStatusEffect> OwnerEffect;
-
-    UTriggeredStatusEffectUpgrade();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnEffectShouldTrigger(AActor* PlayerCharacter);
-
-
 
 public:
 protected:

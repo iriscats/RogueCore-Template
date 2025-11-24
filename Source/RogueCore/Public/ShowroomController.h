@@ -12,30 +12,6 @@ class UShowroomController : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AShowroomStage* Stage;
-
-
-
-    // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UAudioComponent* SpeedNotifierAudioComponent;
-
-    FName SpeedNotifierParameterName;
-
-    float SmoothedRotationSpeed;
-
-    FRotator LastCameraRotation;
-
-    UFUNCTION(BlueprintCallable)
-
-    void ZoomShowroom(float Distance, bool instantZoom);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

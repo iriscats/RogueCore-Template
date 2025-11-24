@@ -16,42 +16,6 @@ class ROGUECORE_API UStageTemplate : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FText StageName;
-
-    
-
-    TSoftObjectPtr<UWorld> Level;
-
-    TSoftClassPtr<AFSDGameMode> GameMode;
-
-    UTexture2D* StageIcon;
-
-    UTexture2D* StageIconSmall;
-
-    FLinearColor StageColor;
-
-    int32 StageTypeIndex;
-
-    TArray<TSoftClassPtr<UTutorialComponent>> Tutorials;
-
-    UStageTemplate();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    bool IsLocked(UFSDSaveGame* SaveGame) const;
-
-    int32 GetStageTypeIndex() const;
-
-    UTexture2D* GetStageImageLarge() const;
-
-    UTexture2D* GetStageButtonImage() const;
-
-    static FObjectiveMissionIcon GetPrimaryObjectiveIconFromAsset(UStageTemplate* Mission, bool getSmallVersion);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

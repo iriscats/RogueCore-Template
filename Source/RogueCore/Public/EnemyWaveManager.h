@@ -18,56 +18,6 @@ class UEnemyWaveManager : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<UEnemyWaveController*> ActiveScriptedWaves;
-
-    TArray<UEnemyWaveController*> ActiveSecretWaves;
-
-    float StartDelay;
-
-    float NoWavesBeforeRedTime;
-
-    float spawnRadiusFromSpawnPoint;
-
-    bool ScriptedWavesEnabled;
-
-    bool NormalWavesEnabled;
-
-    TArray<TSoftClassPtr<UObject>> RiftClasses;
-
-    float RiftSpawnDistance;
-
-    TArray<ACorespawnRift*> SpawnedRifts;
-
-    bool RiftsAreOpen;
-
-    int32 RiftSpawnCount;
-
-    bool RiftsArePermanentAndAlwaysActive;
-
-    AFSDGameMode* GameMode;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UEnemySpawnManager* SpawnManager;
-
-    TArray<UObject*> NormalWavesBlockStack;
-
-    TArray<UObject*> ScriptedWavesBlockStack;
-
-    UEnemyWaveManager(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    UEnemyWaveController* TriggerWave(TSubclassOf<UEnemyWaveController> waveClass);
-
-    UEnemyWaveController* TriggerSecretWave(TSubclassOf<UEnemyWaveController> waveClass);
-
-    void TriggerEndWave(bool cancelAllWaves);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNormalWaveSpawned OnNormalWaveTimeUpdated;

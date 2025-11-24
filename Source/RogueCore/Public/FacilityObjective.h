@@ -25,40 +25,6 @@ class ROGUECORE_API UFacilityObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<APawn*> spawnedEnemies;
-
-    TArray<UEnemyDescriptor*> TurretDescriptors;
-
-    TArray<UEnemyDescriptor*> GeneratorRoomTurretDescriptors;
-
-    TArray<UEnemyDescriptor*> EncounterEnemies;
-
-    float EncounterDifficulty;
-
-    FRandInterval Diversity;
-
-    FIRandRange TurretEncountersRange;
-
-    int32 MinimumTurretEncounters;
-
-    FIRandRange TunnelTurretsRange;
-
-    TArray<AActor*> SmallGenerators;
-
-    ATetherStation* mainFacility;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_GeneratorsActivated, meta=(AllowPrivateAccess=true))
-
-    int32 GeneratorsActivated;
-
-    UFacilityObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ARessuplyPod> generatorClass;

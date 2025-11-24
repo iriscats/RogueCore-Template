@@ -15,22 +15,6 @@ class UOxygenComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsReplenishingOxygen, meta=(AllowPrivateAccess=true))
-
-    bool IsReplenishingOxygen;
-
-    float OxygenDepletionPersecond;
-
-    TArray<FOxygenCallback> Callbacks;
-
-    TSubclassOf<UStatusEffect> NoOxygenStatusEffect;
-
-    UOxygenComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOxygenDelegate OnOxygenChanged;

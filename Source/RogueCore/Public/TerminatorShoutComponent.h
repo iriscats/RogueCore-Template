@@ -17,20 +17,6 @@ class UTerminatorShoutComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UMeshComponent* OwnerMesh;
-
-    UAudioComponent* ShoutInstance;
-
-    UTerminatorShoutComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    void SetShoutState(ETerminatorShoutState State, float delayShout);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FTerminatorShoutState> States;

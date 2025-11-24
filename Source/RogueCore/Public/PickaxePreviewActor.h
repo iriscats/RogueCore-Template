@@ -18,18 +18,6 @@ class APickaxePreviewActor : public AActor, public IPickaxePartEquip, public IIt
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TMap<EPickaxePartLocation, FPickaxeMeshInstance> EquippedParts;
-
-    UItemID* ItemID;
-
-    UMaterialInterface* EquippedMaterial;
-
-    APickaxePreviewActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

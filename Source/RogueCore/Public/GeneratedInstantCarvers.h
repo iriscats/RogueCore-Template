@@ -8,16 +8,6 @@ struct FGeneratedInstantCarvers {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FLevelCarverPass> LevelCarverPasses;
-
-    
-
-    ROGUECORE_API FGeneratedInstantCarvers();
-
-
-
 public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

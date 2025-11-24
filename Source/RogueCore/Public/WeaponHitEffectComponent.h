@@ -13,22 +13,6 @@ class UWeaponHitEffectComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float EffectChance;
-
-    
-
-    TSubclassOf<AActor> ActorToSpawn;
-
-    UWeaponHitEffectComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_SpawnEffect(const FVector_NetQuantize& Location, const FRotator& Rotation);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -49,6 +49,7 @@ protected:
     void ReceiveStateChange(ECoreCrusherState InState);
     void OnRunningRepairUsedBy(APlayerCharacter* User, EInputKeys Key);
     void OnRevivableUsedBy(APlayerCharacter* User, EInputKeys Key);
+    UFUNCTION()
     void OnRep_State();
     void OnDeath(UHealthComponentBase* HealthComponent);
     void OnDamage(float amount);

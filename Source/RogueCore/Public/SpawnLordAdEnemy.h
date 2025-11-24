@@ -12,12 +12,6 @@ class ROGUECORE_API ASpawnLordAdEnemy : public ACoreSpawnEnemyBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    ASpawnLordEnemy* boss;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnUndock;

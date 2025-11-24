@@ -24,14 +24,6 @@ class AHeavyParticleCannon : public AAmmoDrivenWeapon, public IStackingDamageNum
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_bIsBeamActive, meta=(AllowPrivateAccess=true))
-
-    bool bIsBeamActive;
-
-    AHeavyParticleCannon(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

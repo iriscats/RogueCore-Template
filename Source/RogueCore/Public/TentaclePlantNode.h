@@ -12,18 +12,6 @@ class ATentaclePlantNode : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<ASplineCableActor> TentacleCableType;
-
-    ASplineCableActor* TentacleCable;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    ATentaclePlant* TentaclePlant;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

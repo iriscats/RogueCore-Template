@@ -16,20 +16,6 @@ class UHitscanBaseComponent : public UWeaponFireComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UPawnStatsComponent> ParentPawnStats;
-
-    TArray<UElementType*> ActiveElementTypes;
-
-    UHitscanBaseComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_StopFire();
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnFireComplete;

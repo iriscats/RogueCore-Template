@@ -23,20 +23,6 @@ class USingleUsableComponent : public UUsableComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UAudioComponent* AudioBeginUseInstance;
-
-    UAudioComponent* AudioProgressInstance;
-
-    bool bAudioProgressPlaying;
-
-    USingleUsableComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUsedBySignature OnUsedBy;

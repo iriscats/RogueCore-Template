@@ -15,20 +15,6 @@ class ARecallableActor : public ADeepPathfinderCharacter, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FTransform RelocateTransform;
-
-    bool RelocateLanded;
-
-    TWeakObjectPtr<AActor> RelocationMarker;
-
-    bool bInitialized;
-
-    ARecallableActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FRecallableActorStateChanged, ARecallableActor*, Sender, ERecallableActorState, State);
     

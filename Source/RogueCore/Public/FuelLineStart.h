@@ -16,14 +16,6 @@ class ROGUECORE_API AFuelLineStart : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_FuelLineConnected, meta=(AllowPrivateAccess=true))
-
-    bool bFuelLineConnected;
-
-    AFuelLineStart(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FFuelLineStartedDelegate, bool, InFuelLineStarted);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FFuelLineConnectedDelegate, AFuelLineEndPoint*, InFuelLineStart);

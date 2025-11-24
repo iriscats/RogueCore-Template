@@ -15,30 +15,6 @@ class ARandomFiringGuntowerModule : public AHostileGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float TimeUntilNextAttack;
-
-    float ModuleRotationSpeed;
-
-    float TurretAimSpeed;
-
-    float LaserLeghtRatio;
-
-    float TimeBetweenHits;
-
-    float ChanceToInvert;
-
-    float PlatformDissolveRadius;
-
-    float PlatformDissolveSqueeze;
-
-    bool IsAttacking;
-
-    ARandomFiringGuntowerModule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* LaserFrontTop;

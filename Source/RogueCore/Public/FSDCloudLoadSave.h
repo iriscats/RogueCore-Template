@@ -11,18 +11,6 @@ class UFSDCloudLoadSave : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UFSDCloudSaveHandler* CloudSaveHandler;
-
-    UFSDCloudLoadSave();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    void StartCloudLoadAll(UObject* WorldContextObject, int32 Index, int32 Offset);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSDCloudLoad OnCloudLoadAll;

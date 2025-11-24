@@ -21,20 +21,6 @@ class ABasicThrowableItem : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    USoundCue* ImpactSound;
-
-    float SquaredMinImpactForce;
-
-    float ImpactAudioResetTime;
-
-    float SquaredMinThrowforce;
-
-    ABasicThrowableItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* BoxComp;

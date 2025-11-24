@@ -29,14 +29,6 @@ class ROGUECORE_API AEscortMule : public AFSDPawn, public ITriggerAI {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ExtractorSlots, meta=(AllowPrivateAccess=true))
-
-    TArray<FEscortMuleExtractorSlot> ExtractorSlots;
-
-    AEscortMule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMuleActivatedSignature OnMuleActivated;

@@ -16,26 +16,6 @@ class ROGUECORE_API URunHistoryManager : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FDamageLogger Logger;
-
-    bool HasSavedRecentRun;
-
-    FRunHistoryBasicCooperStats BasicCooperStats;
-
-    TMap<int32, FParsedRunHistoryEntry> CachedHistoryEntries;
-
-    TMap<int32, FParsedRunHistoryEntry> SentPlayerStateEntries;
-
-    URunHistoryManager();
-
-    UFUNCTION(BlueprintCallable)
-
-    void RemoveRunHistoryEntry(int32 Index);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnCharacterDataLoaded OnCharacterDataLoaded;

@@ -17,34 +17,6 @@ class AShockBlaster : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UNiagaraSystem* ImpactEffect;
-
-    UNiagaraSystem* BeamEffect;
-
-    USoundCue* ImpactSound;
-
-    FDamageInstance BaseDamage;
-
-    FName BeamStartPositionParam;
-
-    FName BeamTargetPositionParam;
-
-    FName BeamDistanceParam;
-
-    float BounceDelay;
-
-    float RicochetRange;
-
-    float AmmoCostPerBounce;
-
-    int32 AttitudeQuery;
-
-    AShockBlaster(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;

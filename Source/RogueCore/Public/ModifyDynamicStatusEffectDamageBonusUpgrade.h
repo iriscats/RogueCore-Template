@@ -13,20 +13,6 @@ class UModifyDynamicStatusEffectDamageBonusUpgrade : public UStandardItemUpgrade
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EModifyStatusEffectDamageUpgrade upgradeType;
-
-    
-
-    UModifyDynamicStatusEffectDamageBonusUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(TSubclassOf<AActor> Item, TSubclassOf<AActor> upgradedItem, AFSDPlayerState* Player, EModifyStatusEffectDamageUpgrade NewUpgradeType);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

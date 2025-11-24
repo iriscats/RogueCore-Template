@@ -12,28 +12,6 @@ class UFSDAchievement : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FString SteamAPIAchievementName;
-
-    
-
-    FString SteamAPIStatName;
-
-    FString XboxAchievementID;
-
-    float AchievementTargetValue;
-
-    EFSDAchievementType AchievementType;
-
-    UFSDAchievement();
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    void SetAchievementProgressForEntireServer(float Progress, UObject* WorldContext);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

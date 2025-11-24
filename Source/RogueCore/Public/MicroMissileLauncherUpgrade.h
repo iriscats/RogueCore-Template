@@ -13,20 +13,6 @@ class UMicroMissileLauncherUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EMicroMissileLauncherUpgrades upgradeType;
-
-    
-
-    UMicroMissileLauncherUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(TSubclassOf<AItem> Item, AFSDPlayerState* Player, EMicroMissileLauncherUpgrades NewUpgradeType);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,16 +11,6 @@ class ATerrainScannerItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    USceneComponent* TerrainScannerRoot;
-
-    USceneCaptureComponent2D* TerrainScannerCapture;
-
-    ATerrainScannerItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

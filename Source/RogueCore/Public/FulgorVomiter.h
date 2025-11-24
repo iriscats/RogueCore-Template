@@ -16,16 +16,6 @@ class AFulgorVomiter : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    FVector TargetDirection;
-
-    USceneComponent* ConeOrigin;
-
-    APlayerCharacter* Target;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

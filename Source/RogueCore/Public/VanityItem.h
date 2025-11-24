@@ -23,28 +23,6 @@ class ROGUECORE_API UVanityItem : public USavablePrimaryDataAsset, public ICraft
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UItemAquisitionBase* Aquisition;
-
-    UVanityEventSourceDataAsset* EventSourceAsset;
-
-    UIconGenerationCameraKey* IconGenerationCameraKey;
-
-    TSet<UPlayerCharacterID*> RestrictToCharacters;
-
-    UVanityItem();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    bool RemoveFromOwned(UObject* WorldContext);
-
-    UFUNCTION(BlueprintCallable, BlueprintPure=false)
-
-    void PreviewItem(AFSDPlayerState* PlayerState, bool Show) const;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

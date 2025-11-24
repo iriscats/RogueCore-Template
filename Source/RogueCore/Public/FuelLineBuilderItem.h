@@ -7,15 +7,6 @@ class UItemPlacerAggregator;
 UCLASS(Abstract, Blueprintable, NoExport)
 class ROGUECORE_API AFuelLineBuilderItem : public ATrackBuilderItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float MaxRangeToConnection;
-
-    AFuelLineBuilderItem(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

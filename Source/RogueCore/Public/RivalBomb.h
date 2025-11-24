@@ -14,22 +14,6 @@ class ARivalBomb : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DataCellPickedUp, meta=(AllowPrivateAccess=true))
-
-    bool bDataCellPickedUp;
-
-    TSubclassOf<AGem> DataCell;
-
-    TSubclassOf<ARivalBombNode> RivalBomb;
-
-    UDebrisPositioning* NodePositioning;
-
-    UCurveFloat* NodeCostCurve;
-
-    ARivalBomb(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

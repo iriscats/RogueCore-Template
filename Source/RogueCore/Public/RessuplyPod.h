@@ -18,16 +18,6 @@ class ARessuplyPod : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    float ServerDropProgress;
-
-    UCurveFloat* DropCurve;
-
-    AActor* PlayerSpawnPoint;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FRessuplyPodStateDelegate, ARessuplyPod*, InPod, ERessuplyPodState, InState);
 

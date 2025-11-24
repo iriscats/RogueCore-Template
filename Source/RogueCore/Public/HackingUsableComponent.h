@@ -13,16 +13,6 @@ class ROGUECORE_API UHackingUsableComponent : public UInstantUsable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_HackingState, meta=(AllowPrivateAccess=true))
-
-    FHackingUsableState HackingState;
-
-    UHackingUsableComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHackedDelegate, APlayerCharacter*, InHackedBy);
     

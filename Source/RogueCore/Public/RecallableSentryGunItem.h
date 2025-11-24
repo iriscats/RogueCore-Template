@@ -16,22 +16,6 @@ class ARecallableSentryGunItem : public ARecallableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<UItemUpgrade*> upgrades;
-
-    TSubclassOf<AItem> LoadoutClass;
-
-    float SupplyStatusWeight;
-
-    float SentryAngleRestriction;
-
-    bool bIsUpgraded;
-
-    ARecallableSentryGunItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRecallableSentryGunSignature, ARecallableSentryGun*, SentryGun);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRecallableSentryGunItemSignature, ARecallableSentryGunItem*, Item);

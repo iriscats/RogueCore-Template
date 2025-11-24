@@ -15,24 +15,6 @@ class ROGUECORE_API UHUDVisibilityGroup : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bDynamicallyVisible;
-
-    TArray<FHUDVisibilityRegisteredWidget> RegisteredWidgets;
-
-    EHUDVisibilityMode RecommendedMode;
-
-    EHUDVisibilityMode MinimalMode;
-
-    UHUDVisibilityGroup();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetModeFromPreset(EHUDVisibilityPresets Preset);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FVisibilityDelegate, UHUDVisibilityGroup*, Group, bool, IsVisible);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FModeDelegate, UHUDVisibilityGroup*, Group, EHUDVisibilityMode, Mode);

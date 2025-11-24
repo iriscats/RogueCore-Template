@@ -12,18 +12,6 @@ class ROGUECORE_API USpaceRigSubSystem : public UWorldSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    TArray<UGymMinigameBaseWidget*> MinigameHUDs;
-
-    USpaceRigSubSystem();
-
-    UFUNCTION(BlueprintCallable)
-
-    void PushMiniGameWidget(APlayerCharacter* Owner, int32 Index);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnMinigamePushedDelegate OnMiniGamePushed;

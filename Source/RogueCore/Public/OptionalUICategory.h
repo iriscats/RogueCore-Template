@@ -11,20 +11,6 @@ class UOptionalUICategory : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuid Guid;
-
-    FText Description;
-
-    UOptionalUICategory();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    void SetVisible(UObject* WorldContext, bool IsCategoryVisible);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FVisibilityChanged, UOptionalUICategory*, Category, bool, IsVisible);
     

@@ -10,26 +10,6 @@ class ROGUECORE_API UInputCaptureWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FCustomKeySetting Settings;
-
-    
-
-    EKeyBindingSlot InputSlot;
-
-    bool bIsGamepadKey;
-
-    bool bCapturing;
-
-    UInputCaptureWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetData(const FCustomKeySetting InSettings, EKeyBindingSlot InInputSlot, bool InIsGamepadKey);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

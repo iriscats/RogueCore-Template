@@ -9,19 +9,6 @@ class UPlayerHealthComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class URageUnlockComponent : public UPerkInputUnlockComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    bool RageOn;
-
-    FRageComponentDelegate OnRageActiveChanged;
-
-    URageUnlockComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRageValueChanged, float, Value);

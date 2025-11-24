@@ -15,28 +15,6 @@ class ARandomizedInstantMeshCarver : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TArray<UStaticMesh*> CarvingMeshes;
-
-    
-
-    TArray<USTLMeshCarver*> STLCarvingMeshes;
-
-    TArray<UStaticMeshCarver*> StaticMeshCarvers;
-
-    FRandRange RandomScale;
-
-    UTerrainMaterialBase* TerrainMaterial;
-
-    ECarveFilterType Filter;
-
-    EPreciousMaterialOptions PreciousMaterialAction;
-
-    ARandomizedInstantMeshCarver(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

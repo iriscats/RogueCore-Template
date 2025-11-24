@@ -13,15 +13,6 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API AFacilityTentacle : public ATentacleBase, public ITriggerAI {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DesiredTarget, meta=(AllowPrivateAccess=true))
-
-    FTentacleTarget DesiredTarget;
-
-    AFacilityTentacle(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

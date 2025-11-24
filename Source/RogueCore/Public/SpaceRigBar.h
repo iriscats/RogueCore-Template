@@ -19,16 +19,6 @@ class ASpaceRigBar : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_DrinkableSpecial, meta=(AllowPrivateAccess=true))
-
-    UDrinkableDataAsset* DrinkableSpecial;
-
-    TMap<EHolidayType, FHolidayMeshItems> HolidayComponentMap;
-
-    ASpaceRigBar(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDrinkableSignature, UDrinkableDataAsset*, drinkable);
     

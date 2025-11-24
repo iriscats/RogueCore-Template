@@ -16,26 +16,6 @@ class UFSDAdvancedLabel : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FText FormattedText;
-
-    
-
-    FText ControllerOverrideText;
-
-    bool UpperCase;
-
-    EFSDInputSource PreviewAs;
-
-    UFSDAdvancedLabel();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetText(FText NewText, FText OverrideControllerText);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

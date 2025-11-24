@@ -22,21 +22,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class AProjectile : public AProjectileBase, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UFSDProjectileMovementComponent* MovementComponent;
-
-    FDamageNumberStackingRules DamageNumbersRules;
-
-    bool CallPenetrateOnOverlap;
-
-    bool CallImpactOnInTerrain;
-
-    AProjectile(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

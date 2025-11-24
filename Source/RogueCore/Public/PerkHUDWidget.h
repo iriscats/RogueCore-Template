@@ -10,21 +10,6 @@ UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkHUDWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UPerkAsset* PerkAsset;
-
-    
-
-    UPerkHUDWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetPerkAsset(UPerkAsset* InPerk);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

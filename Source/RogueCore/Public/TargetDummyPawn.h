@@ -10,17 +10,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ATargetDummyPawn : public AActor, public IGameplayTagAssetInterface, public ITargetable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGameplayTagContainer GameplayTags;
-
-    
-
-    ATargetDummyPawn(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

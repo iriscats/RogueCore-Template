@@ -10,20 +10,6 @@ class UMinersManualData : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FSoftMinersManualDescription Description;
-
-    
-
-    UMinersManualData();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    void GetText(FText& Headline, FText& richText);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

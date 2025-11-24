@@ -12,18 +12,6 @@ class AFacilityTurretController : public AFSDAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float RememberTargetTime;
-
-    float RetargetOnAttackChance;
-
-    bool RespectAttack;
-
-    AFacilityTurretController(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAIPerceptionComponent* Perception;

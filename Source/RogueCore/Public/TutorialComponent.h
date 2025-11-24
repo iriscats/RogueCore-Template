@@ -11,35 +11,6 @@ class UFSDSaveGame;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UTutorialComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<APlayerCharacter> PlayerCharacter;
-
-    TWeakObjectPtr<AFSDPlayerState> PlayerState;
-
-    TWeakObjectPtr<AFSDPlayerController> PlayerController;
-
-    TWeakObjectPtr<UFSDSaveGame> SaveGame;
-
-    TWeakObjectPtr<ATutorialManager> TutorialManager;
-
-    bool bTutorialInitialized;
-
-    bool bTutorialReady;
-
-    bool bTutorialVisible;
-
-    bool bTutorialActive;
-
-    UTutorialComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void RegisterTutorial();
-
-
 
 public:
 protected:

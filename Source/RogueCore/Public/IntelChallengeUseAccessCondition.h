@@ -9,19 +9,6 @@ UCLASS(Abstract, Blueprintable)
 class UIntelChallengeUseAccessCondition : public UIntelChallengePlayerMonitor {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TSet<UUsableComponentBase*> UsableComponentsUsedInThisLevel;
-
-    UIntelChallengeUseAccessCondition();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnUsableTriggered(UUsableComponentBase* usable);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

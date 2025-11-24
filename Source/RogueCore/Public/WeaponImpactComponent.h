@@ -11,26 +11,6 @@ class UWeaponImpactComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    USkeletalMeshComponent* ActiveMesh;
-
-    bool TrackAcceleration;
-
-    bool TrackVelocity;
-
-    float TriggerHighAccelAt;
-
-    float TriggerAtVelocityDifference;
-
-    UWeaponImpactComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void EnableImpactCheckhing(USkeletalMeshComponent* cmp);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FImpactedSignature OnImpactedEvent;

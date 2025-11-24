@@ -9,15 +9,6 @@ class AHydraWeedSpawnProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FVector TargetLocation;
-
-    
-
-    AHydraWeedSpawnProjectile(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

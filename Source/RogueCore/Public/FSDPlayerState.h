@@ -35,25 +35,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API AFSDPlayerState : public APlayerState {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_GameOwnerStatus, meta=(AllowPrivateAccess=true))
-
-    uint8 gameOwnerStatus;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_PlayerCharacter, meta=(AllowPrivateAccess=true))
-
-    APlayerCharacter* PlayerCharacter;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SupplyAmmoStatus, meta=(AllowPrivateAccess=true))
-
-    uint8 SupplyAmmoStatus;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SupplyHealthStatus, meta=(AllowPrivateAccess=true))
-
-    uint8 SupplyHealthStatus;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayerSpawnedSignature OnPlayerCharacterSpawned;

@@ -10,32 +10,6 @@ class USeasonLevelWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    int32 Level;
-
-    int32 SeasonLevel;
-
-    bool IsNormalClaimed;
-
-    bool IsSpecialClaimed;
-
-    bool IsUnlocked;
-
-    bool IsLastInRow;
-
-    FSeasonLevel LevelInfo;
-
-    USeasonLevelWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    bool TryClaimReward(bool isNormalReward);
-
-    void SetData(int32 inLevel, bool inLastInRow);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRewardClaimed OnRewardClaimed;

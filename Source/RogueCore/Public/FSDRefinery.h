@@ -19,13 +19,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API AFSDRefinery : public ADroppableOutpost {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    uint8 RefiningProgressReplicated;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryStateDelegate, ERefineryState, InRefineryState);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryProgressDelegate, float, InProgress01);

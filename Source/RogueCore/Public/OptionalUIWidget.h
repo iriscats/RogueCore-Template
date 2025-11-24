@@ -10,24 +10,6 @@ class UOptionalUIWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UOptionalUICategory* Category;
-
-    
-
-    ESlateVisibility VisibleFlag;
-
-    ESlateVisibility HiddenFlag;
-
-    UOptionalUIWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnVisibilityChanged(UOptionalUICategory* UICategory, bool IsVisible);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

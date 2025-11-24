@@ -18,12 +18,6 @@ class AFoamPuddle : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    uint16 MaxSoapPiles;
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

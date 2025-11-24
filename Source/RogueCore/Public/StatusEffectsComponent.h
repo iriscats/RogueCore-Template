@@ -16,18 +16,6 @@ class UStatusEffectsComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool IgnoreAll;
-
-    UStatusEffectsComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    static bool TryPushActiveStatusEffectInstance(UStatusEffect* StatusEffect, AActor* Target, AActor* Owner);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

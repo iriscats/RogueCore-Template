@@ -14,28 +14,6 @@ class UProjectileExplosion : public UExplosionBaseComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool PlayImpactFXFromMaterial;
-
-    
-
-    FScaledEffect ExplosionEffect;
-
-    USoundCue* ExplosionSound;
-
-    UForceFeedbackEffect* ForceFeedbackEffect;
-
-    UForceFeedbackAttenuation* ForceFeedbackAttanuation;
-
-    UProjectileExplosion(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SpawnEffectsFromHit(const FHitResult& Hit);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

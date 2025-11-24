@@ -15,14 +15,6 @@ class ROGUECORE_API AMolly : public AMULE {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CalledBy, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<APlayerCharacter> CalledBy;
-
-    AMolly(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCalledByDelegate, APlayerCharacter*, InPlayer);
     

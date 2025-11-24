@@ -36,18 +36,6 @@ class URunManager : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<TWeakObjectPtr<AActor>> LevelUpBlockers;
-
-    URunManager();
-
-    UFUNCTION(BlueprintCallable)
-
-    void StartRun(const FRunCreationParameters& Parameters);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRunManagerStageDelegate, UStage*, Stage);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRunManagerRunDelegate, URun*, Run);

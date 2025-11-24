@@ -12,14 +12,6 @@ class AInsectSwarmSpawner : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<AInsectSwarmEnemy> SwarmInstance;
-
-    AInsectSwarmSpawner(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

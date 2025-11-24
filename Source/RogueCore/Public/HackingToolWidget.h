@@ -12,17 +12,6 @@ class ROGUECORE_API UHackingToolWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<AHackingToolItem> HackingTool;
-
-    UHackingToolWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void StartHacking(UHackingUsableComponent* InHackingUsable, AHackingToolItem* InHackingTool);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FHackingUnequipDelegate);

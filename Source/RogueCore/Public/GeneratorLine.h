@@ -13,15 +13,6 @@ class UStaticMesh;
 UCLASS(Blueprintable, NoExport)
 class AGeneratorLine : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<USplineMeshComponent*> SplinesThatNeedStaticMeshUpdate;
-
-    AGeneratorLine(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

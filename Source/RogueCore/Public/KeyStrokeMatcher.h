@@ -7,15 +7,6 @@ USTRUCT(BlueprintType)
 struct FKeyStrokeMatcher {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<bool> Pressed;
-
-    ROGUECORE_API FKeyStrokeMatcher();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

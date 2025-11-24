@@ -10,22 +10,6 @@ class ASpinningFacilityturret : public AFacilityTurret {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FRandRange AimAtTargetEveryTurn;
-
-    float TurnCooldown;
-
-    float TurnTimer;
-
-    float Acceptance;
-
-    float TurnSpeed;
-
-    ASpinningFacilityturret(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

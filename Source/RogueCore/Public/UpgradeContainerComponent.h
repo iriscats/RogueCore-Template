@@ -12,19 +12,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UUpgradeContainerComponent : public UActorComponent, public IDamageRelevant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    float NumericalDamageUpgrades[15];
-
-    float NumericalUpgrades[5];
-
-    UUpgradeContainerComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

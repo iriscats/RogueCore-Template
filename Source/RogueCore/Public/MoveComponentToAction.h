@@ -13,18 +13,6 @@ class UMoveComponentToAction : public UTickableActionBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FCompletedDelegate Completed;
-
-    UMoveComponentToAction();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    static UMoveComponentToAction* EaseComponentTo(UObject* WorldContext, USceneComponent* InComponent, FTransform InEndTransform, TEnumAsByte<EEasingFunc::Type> InEasingMode, bool InWorldSpace, float InDuration);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCompletedDelegate, USceneComponent*, Component);
     

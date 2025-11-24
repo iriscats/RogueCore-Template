@@ -11,14 +11,6 @@ class AJetBootsBox : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    USpecialEvent* SpecialEvent;
-
-    AJetBootsBox(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTerrainPlacementComponent* terrainPlacement;

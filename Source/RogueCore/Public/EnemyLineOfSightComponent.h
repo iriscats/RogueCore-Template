@@ -9,31 +9,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UEnemyLineOfSightComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FName LoSFromSocketName;
-
-    float LoSInterval;
-
-    float LoSIntervalVariance;
-
-    bool AutoSetupOwnerMesh;
-
-    UEnemyLineOfSightComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    bool HasLineOfSight() const;
-
-    bool GetIsDetecting() const;
-
-    UFUNCTION(BlueprintCallable)
-
-    void AsyncTrace();
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLoSDelegate OnGaindedLineOfSight;

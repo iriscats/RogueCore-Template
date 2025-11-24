@@ -8,16 +8,6 @@ class UOverheatingAggregator : public UItemAggregator {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Temperature, meta=(AllowPrivateAccess=true))
-
-    float temperature;
-
-    UOverheatingAggregator(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOverheatingProgressChanged, float, Progress);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOverheatedChanged, bool, overheated);

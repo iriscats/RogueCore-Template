@@ -12,18 +12,6 @@ class ALoadoutItemProxy : public AItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UItemCharacterAnimationSet* AnimationSet;
-
-    
-
-    FItemLoadoutAnimations LoadoutAnimations;
-
-    ALoadoutItemProxy(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -13,20 +13,6 @@ class ROGUECORE_API AEscortDestination : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    int32 SecondsToDestroyHeartstone;
-
-    TArray<float> BreakpointsPercent;
-
-    float Radius;
-
-    float ShellThickness;
-
-    AEscortDestination(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FShellCrackedSignature OnShellCracked;

@@ -16,14 +16,6 @@ class ROGUECORE_API AGuardianAbilityItem : public ADualAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuardianAbilityItemDelegate OnAuraActiveChanged;
-
-    AGuardianAbilityItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGuardianAbilityItemDelegate);
     

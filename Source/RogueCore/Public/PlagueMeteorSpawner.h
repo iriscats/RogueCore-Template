@@ -11,28 +11,6 @@ class APlagueMeteorSpawner : public ADebrisLocationFinder {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSoftClassPtr<APlagueMeteor> MeteorActorClass;
-
-    FRandRange EscortSpawnFromMuleRange;
-
-    float EscortSpawnFromImportantRange;
-
-    float EscortMinimum2DSpawnDistFromPath;
-
-    float EscortMinimumZSpawnDistFromPath;
-
-    float DropLocationHeightOffset;
-
-    float ImportantLocationRange;
-
-    UClass* MeteorActorClassLoaded;
-
-    APlagueMeteorSpawner(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMeteorSpawnedDelegate OnSpawnedMeteor;

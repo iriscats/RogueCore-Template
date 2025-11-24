@@ -21,36 +21,6 @@ class ROGUECORE_API ATimeRewinder : public AAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FRewindData RewindData;
-
-    FTimerHandle Handle_RewindindTimeLimit;
-
-    FTimerHandle Handle_RewindStarted;
-
-    FTimerHandle Handle_RewindUnEquip;
-
-    FTimerHandle Handle_Terminating;
-
-    FTimerHandle Handle_AlmostOverWarning;
-
-    TSubclassOf<AActor> HologramClass;
-
-    TWeakObjectPtr<AActor> HologramInstance;
-
-    UItemCharacterAnimationSet* ActiveAnimationSet;
-
-    float WarntAtTimeRemaining;
-
-    float TimePerChargeDrain;
-
-    float RewindDelay;
-
-    ATimeRewinder(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

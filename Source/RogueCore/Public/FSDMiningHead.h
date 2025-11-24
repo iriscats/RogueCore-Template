@@ -9,16 +9,6 @@ class ROGUECORE_API AFSDMiningHead : public ADroppableOutpost {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UResourceBank* ResourceBank;
-
-    
-
-    AFSDMiningHead(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

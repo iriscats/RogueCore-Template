@@ -10,20 +10,6 @@ class ROGUECORE_API UBXEBlueprintControlledObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ObjectiveCompleted, meta=(AllowPrivateAccess=true))
-
-    bool ObjectiveCompleted;
-
-    bool ObjectiveShouldSpawnXP;
-
-    bool AllowDecoration;
-
-    UBXEBlueprintControlledObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

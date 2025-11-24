@@ -85,19 +85,6 @@ UCLASS(Blueprintable)
 class ROGUECORE_API UGameData : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TMap<FGuid, UAccessCondition*> AccessConditions;
-
-    UGameData();
-
-    UFUNCTION(BlueprintCallable)
-
-    void LoadDefaultAssetsBlocking(UAsyncManager* AsyncManager);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGVisibilityGroups VisibilityGroups;

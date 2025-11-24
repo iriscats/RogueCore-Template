@@ -8,17 +8,6 @@ UCLASS(Blueprintable, NoExport)
 class ALockedRoomActor : public AStructureActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UBXEBlueprintControlledObjective* Objective;
-
-    
-
-    ALockedRoomActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

@@ -10,15 +10,6 @@ UCLASS(Blueprintable, NoExport)
 class AHomingDroneBomb : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_HomingAccelerationMagnitude, meta=(AllowPrivateAccess=true))
-
-    float HomingAccelerationMagnitude;
-
-    AHomingDroneBomb(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEnemyHealthComponent* Health;

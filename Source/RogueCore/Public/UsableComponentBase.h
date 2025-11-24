@@ -15,37 +15,6 @@ UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableCompo
 class ROGUECORE_API UUsableComponentBase : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    USceneComponent* RestrictToCollider;
-
-    bool UsableHidesPlaceables;
-
-    bool IsRayTraceTriggered;
-
-    bool ResetUsingOnCompletion;
-
-    UUseConditionSet* UseConditions;
-
-    UAccessCondition* AccessCondition;
-
-    bool IsClientPredictive;
-
-    bool ThirdPersonWhileUsing;
-
-    bool CapitalUseText;
-
-    TWeakObjectPtr<APlayerCharacter> HoveringPlayer;
-
-    UUsableComponentBase(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetUseRestrictions(UUseConditionSet* Set);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUsableHoveredEvent, APlayerCharacter*, InUser);
     

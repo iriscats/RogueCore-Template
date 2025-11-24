@@ -11,24 +11,6 @@ class UStatChangeStatusEffectItem : public UStatusEffectItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UPawnStat* Stat;
-
-    
-
-    float StatChange;
-
-    bool AffectedByResistances;
-
-    UStatChangeStatusEffectItem();
-
-    UFUNCTION(BlueprintCallable)
-
-    static UStatusEffect* CreateStatSTE(UObject* Owner, UPawnStat* PawnStat, float StartingValue);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

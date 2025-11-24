@@ -13,25 +13,6 @@ class ROGUECORE_API UTremorAttackComponent : public USpecialDamageAttackComponen
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float InitialParticlesDelay;
-
-    float PostParticleDelay;
-
-    float TargetMaxDistanceFromGround;
-
-    float TimeBetweenDamageTicks;
-
-    float LaunchForce;
-
-    float Duration;
-
-    UTremorAttackComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
 
 public:
 protected:

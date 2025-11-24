@@ -13,20 +13,6 @@ class AShieldGeneratorItem : public AThrowableItem, public IUpgradableGear, publ
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float RechargeProgress;
-
-    float SupplyStatusWeight;
-
-    UDialogDataAsset* ShoutRecarged;
-
-    FCoolDownProgressStyle RechargeProgressUI;
-
-    AShieldGeneratorItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

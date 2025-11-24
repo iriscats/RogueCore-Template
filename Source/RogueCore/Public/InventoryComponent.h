@@ -37,40 +37,6 @@ class UInventoryComponent : public UInventoryBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float FlareProductionTime;
-
-    FLinearColor FlareChromaColor;
-
-    float FlareProductionTimeLeft;
-
-    int32 MaxFlares;
-
-    int32 Flares;
-
-    float FlareCooldownRemaining;
-
-    TArray<UItemUpgrade*> FlareUpgrades;
-
-    bool bItemsLoaded;
-
-    APickaxeItem* MiningItem;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    AActor* AmmoBag;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ItemSlots, meta=(AllowPrivateAccess=true))
-
-    TArray<FItemSlot> ItemSlots;
-
-    UInventoryComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, DuplicateTransient, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInventoryItemsLoaded OnItemsLoaded;

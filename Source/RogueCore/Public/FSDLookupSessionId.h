@@ -12,22 +12,6 @@ class UFSDLookupSessionId : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FFoundSessionResult OnSuccess;
-
-    
-
-    FEmptyOnlineDelegate OnFailure;
-
-    UFSDLookupSessionId();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-
-    static UFSDLookupSessionId* FSDLookupSessionId(UObject* WorldContextObject, const FString& SessionKey);
-
-
-
 public:
 private:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

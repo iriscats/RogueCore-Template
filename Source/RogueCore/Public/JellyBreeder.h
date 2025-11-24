@@ -15,15 +15,6 @@ UCLASS(Blueprintable, NoExport)
 class AJellyBreeder : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_BreedMode, meta=(AllowPrivateAccess=true))
-
-    bool IsInBreedMode;
-
-    AJellyBreeder(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -80,7 +80,9 @@ protected:
     UFUNCTION(Reliable, Server)
     void Server_SwitchAmmoType(UProjectileLauncherBaseComponent* projectileLauncher, const ECrossbowSwitchState State);
     void Server_SetSwitchIsQueued(bool IsQueued);
+    UFUNCTION()
     void OnRep_SwitchIsQueued();
+    UFUNCTION()
     void OnRep_IsDefaultArrowEquipped();
     void OnProjectileFired(AProjectileBase* Projectile);
     UFUNCTION(BlueprintCallable, BlueprintPure)

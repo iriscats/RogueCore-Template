@@ -89,28 +89,6 @@ class ROGUECORE_API UFSDGameInstance : public UGameInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UWindowWidget> ActiveEscapeMenu;
-
-    TWeakObjectPtr<APostProcessingManager> PostProcessingManager;
-
-    TWeakObjectPtr<ABosco> drone;
-
-    TWeakObjectPtr<ABXECompanionDrone> BXEDrone;
-
-    TWeakObjectPtr<APlayerCharacter> LocalPlayerCharacter;
-
-    TWeakObjectPtr<ATutorialManager> TutorialManager;
-
-    ACharacterSelectionSwitcher* CharacterSelectionSwitcher;
-
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    double SessionStartTime;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSteamServerJoinStatusDelegate, ESteamServerJoinStatus, status);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSteamSearchRegionDelegate, ESteamSearchRegion, Region);

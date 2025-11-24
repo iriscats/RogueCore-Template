@@ -17,15 +17,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ROGUECORE_API AJettyBootsArcadeActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Save, meta=(AllowPrivateAccess=true))
-
-    FJettyBootsSave JettyBootsSave;
-
-    AJettyBootsArcadeActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

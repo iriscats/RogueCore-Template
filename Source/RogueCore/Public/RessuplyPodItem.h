@@ -14,13 +14,6 @@ class ARessuplyPodItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Used, meta=(AllowPrivateAccess=true))
-
-    bool Used;
-
-    ARessuplyPodItem(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

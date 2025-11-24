@@ -8,16 +8,6 @@ class AShieldGeneratorActor : public AThrowableActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool bPushStatusEffectOnExit;
-
-    float GeneratorLifetime;
-
-    AShieldGeneratorActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))

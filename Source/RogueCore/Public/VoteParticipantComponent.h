@@ -13,18 +13,6 @@ class ROGUECORE_API UVoteParticipantComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UVoteWidget* VoteWidget;
-
-    UVoteParticipantComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_Vote(int32 InVoteIndex);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

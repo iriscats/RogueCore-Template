@@ -13,59 +13,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UTrackMovementStateComponent : public UCharacterStateComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSoftObjectPtr<USoundBase> AudioOnStart;
-
-    TSoftObjectPtr<USoundBase> AudioOnDuring;
-
-    TSoftObjectPtr<USoundBase> AudioOnStop;
-
-    float AudioOnFadeOut;
-
-    UDialogDataAsset* StateUpdateShout;
-
-    float StateUpdateShoutFrequencySecsMin;
-
-    float StateUpdateShoutFrequencySecsMax;
-
-    float AudioDuringSlidingSpeedParam;
-
-    float SpeedTarget;
-
-    float SpeedMin;
-
-    float SpeedMax;
-
-    float AccelerationBase;
-
-    float AccelerationMultiplier;
-
-    float DecelerationMultiplier;
-
-    float AccelerationOnSlopeMultiplier;
-
-    float DecelerationOnSlopeMultiplier;
-
-    float StoppingDeceleration;
-
-    float StoppingDistance;
-
-    TSoftClassPtr<AZipLineConnector> ConnectorClass;
-
-    AZipLineConnector* Connector;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_TrackMovementdata, meta=(AllowPrivateAccess=true))
-
-    FPipelineMovementData TrackMovementData;
-
-    UTrackMovementStateComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

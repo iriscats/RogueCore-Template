@@ -8,27 +8,6 @@ UCLASS(Blueprintable, NonTransient)
 class UExpeniteProcessingMachineAnimInstance : public UAnimInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float ExpenitePotZOffset;
-
-    
-
-    float ExpenitePotScale;
-
-    UCurveVector* ShrinkCurve;
-
-    bool ShouldStartShrinking;
-
-    UExpeniteProcessingMachineAnimInstance();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetMaxTime(const float Time);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

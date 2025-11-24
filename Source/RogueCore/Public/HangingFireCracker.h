@@ -15,22 +15,6 @@ class AHangingFireCracker : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UNiagaraSystem* CrackerExplosion;
-
-    USoundCue* CrackerExplosionCue;
-
-    float SparkSpeed;
-
-    float ExplodeRange;
-
-    float ExplodeImpulse;
-
-    AHangingFireCracker(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UInstantUsable* usable;

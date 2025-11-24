@@ -8,14 +8,6 @@ class AItem;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkActivationWidgetWithItemMonitor : public UPerkActivationWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AItem* ActiveItem;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

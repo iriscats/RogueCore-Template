@@ -23,22 +23,6 @@ class UHealthComponentBase : public UActorComponent, public IHealth, public IDam
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool ShowLaserPointMarkerWhenDead;
-
-    bool canTakeDamage;
-
-    bool PassthroughTemperatureDamage;
-
-    UHealthComponentBase(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void TrySetCanTakeDamage(bool NewCanTakeDamage);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCanTakeDamageDelegate, bool, OutCanTakeDamage);
     

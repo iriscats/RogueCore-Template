@@ -10,24 +10,6 @@ class ROGUECORE_API UUsableComponent : public UUsableComponentBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UDialogDataAsset* ShoutBegin;
-
-    FText UseText;
-
-    bool ResetOnFail;
-
-    bool SwitchToUsingState;
-
-    UUsableComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetUseText(const FText& NewText);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUsedBySignature OnUsedByClient;

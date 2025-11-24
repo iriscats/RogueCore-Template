@@ -11,22 +11,6 @@ class USavableDataAsset : public UDataAsset, public ISaveGameIDInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGuid SavegameID;
-
-    UBuildRestriction* BuildRestriction;
-
-    USavableDataAsset();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    FGuid GetSaveGameID() const;
-
-    // Fix for true pure virtual functions not being implemented
-
-
-
 public:
 protected:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -18,13 +18,6 @@ class ATowerModuleBase : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    EGuntowerModuleState State;
-
-    ATowerModuleBase(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

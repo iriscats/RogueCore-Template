@@ -11,15 +11,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class AMicroMissileLauncher : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MML_ClipCount, meta=(AllowPrivateAccess=true))
-
-    int32 MML_ClipCount;
-
-    AMicroMissileLauncher(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChargingDelegate);
     

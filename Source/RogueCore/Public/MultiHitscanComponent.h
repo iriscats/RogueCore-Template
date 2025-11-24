@@ -9,23 +9,6 @@ class AActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UMultiHitscanComponent : public UHitscanBaseComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<AActor*> DamagedActorCache;
-
-    FMultiHitScanHits Hits;
-
-    TArray<AActor*> ActorsHit;
-
-    UMultiHitscanComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_RegisterHit(const FMultiHitScanHits& hitResults, int32 Clip);
-
-
 
 public:
 private:

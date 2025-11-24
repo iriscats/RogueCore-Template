@@ -12,19 +12,6 @@ class USplineMeshComponent;
 UCLASS(Abstract, Blueprintable, NoExport)
 class ALockOnBeam : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<ALockOnWeapon> Item;
-
-    TWeakObjectPtr<AActor> targetActor;
-
-    FBeamCollision Collision;
-
-    ALockOnBeam(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

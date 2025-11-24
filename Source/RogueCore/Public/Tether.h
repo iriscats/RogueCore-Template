@@ -15,17 +15,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API ATether : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool IsOnGround;
-
-    float KnockBackForce;
-
-    ATether(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* BaseMesh;

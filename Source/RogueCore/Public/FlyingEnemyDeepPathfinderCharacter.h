@@ -16,22 +16,6 @@ class AFlyingEnemyDeepPathfinderCharacter : public AEnemyDeepPathfinderCharacter
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UPhysicalMaterial* FrozenMaterial;
-
-    
-
-    UPhysicsAsset* FrozenAsset;
-
-    USoundCue* FrozenDeathSound;
-
-    UFXSystemAsset* FrozenDeathParticles;
-
-    AFlyingEnemyDeepPathfinderCharacter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

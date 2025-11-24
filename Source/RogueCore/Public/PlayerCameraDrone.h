@@ -17,17 +17,6 @@ class APlayerCameraDrone : public APawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<AVanityCharacter*> VanityCharacterInstances;
-
-    TArray<AVanityCharacter*> StaticVanityCharacterInstances;
-
-    TSubclassOf<ALaserPointerMarker> DroneMarker;
-
-    ALaserPointerMarker* ActiveMarker;
-
-
 
 public:
 protected:

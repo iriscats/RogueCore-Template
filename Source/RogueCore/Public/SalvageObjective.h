@@ -20,28 +20,6 @@ class ROGUECORE_API USalvageObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    ADropPod* DamagedPod;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_PointsRepaired, meta=(AllowPrivateAccess=true))
-
-    int32 PointsRepaired;
-
-    float MinSalvageActorDistanceToLandingZone;
-
-    bool HasMuleReturnedToPod;
-
-    TArray<AMiniMule*> AllSalvageActors;
-
-    TArray<AMiniMule*> SalvagedActors;
-
-    USalvageObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

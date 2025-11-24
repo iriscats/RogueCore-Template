@@ -20,42 +20,6 @@ class AFlyingLifter : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    EGrabberState GrabberState;
-
-    float WanderingSpeed;
-
-    float WanderingAcceleration;
-
-    float ChaseSpeed;
-
-    float ChaseAcceleration;
-
-    float CarrySpeed;
-
-    float CarryAcceleration;
-
-    float FleeSpeed;
-
-    float FleeAcceleration;
-
-    float CarryCooldown;
-
-    USoundBase* FleeSound;
-
-    UAnimSequenceBase* FleeAnimation;
-
-    bool ParalyzeOnGrab;
-
-    float ExtraUpForce;
-
-    float ScreamDistance;
-
-    AFlyingLifter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPointLightComponent* GrabLight;

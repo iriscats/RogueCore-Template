@@ -14,17 +14,6 @@ class AGuntowerLineProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UParticleSystemComponent* HitParticles;
-
-    UNiagaraComponent* HitParticlesNS;
-
-    float TimeBetweenLineChecks;
-
-    AGuntowerLineProjectile(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLineDestroy, FHitResult, Result);

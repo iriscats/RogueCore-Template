@@ -10,20 +10,6 @@ class UPlayerAfflictionComponent : public UPawnAfflictionComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TMap<UPlayerAfflictionOverlay*, int32> ActiveOverlays;
-
-    TWeakObjectPtr<APlayerCharacter> Character;
-
-    UPlayerAfflictionComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void ShowPlayerOverlay(UPlayerAfflictionOverlay* Overlay);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOverlayDelegate, UPlayerAfflictionOverlay*, Overlay);
     

@@ -12,21 +12,6 @@ class ROGUECORE_API USkinnableComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UItemSkin* EquippedSkinColor;
-
-    
-
-    UItemSkin* EquippedSkinMesh;
-
-    USkinnableComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void UpdateSkin(AFSDPlayerState* Player);
-
-
 
 public:
 protected:

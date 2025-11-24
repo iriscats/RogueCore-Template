@@ -5,7 +5,7 @@
 #include "UObject/UnrealType.h"
 #include "Engine/NetSerialization.h"
 #include "GameplayTagContainer.h"
-// // #include "GameplayTags/GameplayTagAssetInterface.h" // UE5中已移除 // UE5中已移除
+#include "GameplayTags/GameplayTagAssetInterface.h" 
 #include "AcceptInviteSignatureDelegate.h"
 #include "ActionHoldEventDelegate.h"
 #include "AnalogAimSettings.h"
@@ -158,20 +158,6 @@ UCLASS(Abstract, Blueprintable, NoExport, Config=Engine)
 class ROGUECORE_API APlayerCharacter : public ACharacter, public ITargetable, public IRejoinListener, public IPlaySoundInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_UniqueRunID, meta=(AllowPrivateAccess=true))
-
-    FString UniqueRunID;
-
-    TArray<UPerkAsset*> TrackedActivePerks;
-
-    TArray<bool> TrackedPerksThatShouldUpdate;
-
-    int32 TrackedPerksThatAreUpdating;
-
-    APlayerCharacter(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPlayerDelegate, APlayerCharacter*, Player);

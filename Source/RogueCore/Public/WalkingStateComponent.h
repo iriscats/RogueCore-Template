@@ -13,20 +13,6 @@ class UWalkingStateComponent : public UCharacterStateComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UAudioComponent* AudioComponentSliding;
-
-    UAudioComponent* AudioComponentIceSliding;
-
-    UWalkingStateComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void TrackGrindCallback(APlayerCharacter* User, EInputKeys Key);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

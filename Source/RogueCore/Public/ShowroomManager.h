@@ -11,15 +11,6 @@ class UTextureRenderTarget2D;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UShowroomManager : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<AShowroomStage> CurrentStage;
-
-    AShowroomStage* StageInstance;
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

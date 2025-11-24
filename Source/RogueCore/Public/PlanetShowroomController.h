@@ -16,35 +16,6 @@ class USceneComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPlanetShowroomController : public UShowroomController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    APlanetShowroomItem* PlanetInstance;
-
-
-
-    // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float DragSmoothingSpeed;
-
-    float PointTargetSmoothingSpeed;
-
-    float AccumulatedDeltaPitch;
-
-    float AccumulatedDeltaYaw;
-
-    TOptional<FQuat> PointTargetRotation;
-
-    UPlanetShowroomController(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetPlanetViewDepth(const ERunDepth Depth);
-
-
 
 public:
 protected:

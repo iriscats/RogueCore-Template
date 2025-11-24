@@ -10,16 +10,6 @@ class UOncePerPlayerSingleUsableComponent : public USingleUsableComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Users, meta=(AllowPrivateAccess=true))
-
-    TArray<FUniqueNetIdRepl> ExcludedUsers;
-
-    UOncePerPlayerSingleUsableComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUsersChanged OnUsersChangedEvent;

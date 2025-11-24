@@ -16,20 +16,6 @@ class ROGUECORE_API UTrackBuilderUsable : public UInstantUsable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_NextSegment, meta=(AllowPrivateAccess=true))
-
-    ATrackBuilderSegment* NextSegment;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<APlayerCharacter> InUseBy;
-
-    UTrackBuilderUsable(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FSegmentDelegate, UTrackBuilderUsable*, InUsable, ATrackBuilderSegment*, InSegment);
     

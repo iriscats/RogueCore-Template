@@ -17,55 +17,6 @@ class UStatusEffectItem;
 UCLASS(Blueprintable, EditInlineNew)
 class UStatusEffect : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    TArray<UStatusEffectItem*> StatusEffects;
-
-    float MaxResistance;
-
-    UDamageClass* DamageClass;
-
-    UStatusEffectExclusiveKey* ExclusiveKey;
-
-    EStatusEffectPopSetting PopSetting;
-
-    bool TriggerTwiceOnPush;
-
-    FRandRange ApplyEffectsInterval;
-
-    bool CanStack;
-
-    int32 MaxStack;
-
-    bool RemoveAllStacksAfterDuration;
-
-    float Duration;
-
-    bool RestartDurationOnApply;
-
-    bool ApplyDurationAfterPop;
-
-    bool RemoveOnDeath;
-
-    bool RemoveOnTemperatureStateChange;
-
-    bool AllowExternalSread;
-
-    bool RefreshDurationOnApplication;
-
-    bool OnlyOneInstanceUpdates;
-
-    FGameplayTagQuery GameplayTagQuery;
-
-    UStatusEffect();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static float GetStatusEffectDuration(TSubclassOf<UStatusEffect> StatusEffect);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

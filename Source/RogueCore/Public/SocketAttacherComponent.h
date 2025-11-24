@@ -9,20 +9,6 @@ class USocketAttacherComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    int32 MaxSocketAttachments;
-
-    
-
-    USocketAttacherComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void DetachFromSocket();
-
-
-
 public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

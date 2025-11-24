@@ -27,42 +27,6 @@ class ROGUECORE_API UEnemyDescriptor : public UDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UDebrisPositioning* CustomPositioning;
-
-    UCaveInfluencer* CaveInfluencer;
-
-    int32 PlaceInGroupsOf;
-
-    float PlaceInGroupRadius;
-
-    TArray<FEnemyDebris> Debris;
-
-    float InfluencerRange;
-
-    TSubclassOf<AActor> PlacementCarver;
-
-    DeepPathFinderType PathfinderType;
-
-    UPROPERTY(AssetRegistrySearchable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EEnemyDescriptorCheatClass CheatClass;
-
-    EEnemyDescriptorCheatTag CheatTag;
-
-    UEnemyDescriptor();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    TSubclassOf<APawn> GetEnemyClass(UBiome* Biome) const;
-
-    UFUNCTION(BlueprintCallable)
-
-    static TArray<UEnemyDescriptor*> FindTagsForCheatMenu(EEnemyDescriptorCheatClass NewCheatTag);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

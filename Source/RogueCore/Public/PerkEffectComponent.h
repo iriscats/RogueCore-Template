@@ -8,17 +8,6 @@ UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableCompo
 class UPerkEffectComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float FloatValue;
-
-    
-
-    APlayerCharacter* PlayerCharacter;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

@@ -17,6 +17,7 @@ public:
     FInt32Interval BurstCount;
     void SetupAimindicator(UFXSystemComponent* NewAimIndicator, UFXSystemComponent* NewAimIndicatorLock);
     void OnRep_IsLockedOn();
+    UFUNCTION()
     void OnRep_IndicatorMode();
     void OnLockedOn(bool lockedOn);
 };

@@ -27,16 +27,6 @@ class AFSDPawn : public APawn, public IGameplayTagAssetInterface, public ITarget
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MaterialState, meta=(AllowPrivateAccess=true))
-
-    FPawnMaterialState MaterialState;
-
-    TArray<UMaterialInterface*> OriginalMaterials;
-
-    AFSDPawn(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBoolDelegate OnFrozenEvent;

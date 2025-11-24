@@ -19,14 +19,6 @@ class ROGUECORE_API ATerminatorTentacle : public ATentacleBase, public ITriggerA
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DesiredTarget, meta=(AllowPrivateAccess=true))
-
-    FTerminatorTarget DesiredTarget;
-
-    ATerminatorTentacle(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnTentacleStateChangedEvent;

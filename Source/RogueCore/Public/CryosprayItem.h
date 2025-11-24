@@ -80,6 +80,7 @@ protected:
     void ReceiveRepressurisingChanged(bool Value);
     UFUNCTION(BlueprintCallable)
     void OnTargetDamaged(UHealthComponentBase* Health, float amount, UPrimitiveComponent* HitComponent, UFSDPhysicalMaterial* PhysicalMaterial);
+    UFUNCTION()
     void OnRep_IsCharging(bool OldValue);
     void OnProjectileSpawned(AProjectileBase* Projectile);
     void OnProjectileLaunched(const FVector& Location);

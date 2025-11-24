@@ -12,20 +12,6 @@ class UProceduralVeinsComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FVeinResource> VeinResources;
-
-    
-
-    UProceduralVeinsComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo"))
-
-    static void GenerateResourceVeins_Async(const AProceduralSetup*& setup, FLatentActionInfo LatentInfo);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

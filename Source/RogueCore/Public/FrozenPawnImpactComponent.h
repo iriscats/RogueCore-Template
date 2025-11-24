@@ -17,24 +17,6 @@ class UFrozenPawnImpactComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UPhysicalMaterial* FrozenMaterial;
-
-    UPhysicsAsset* FrozenAsset;
-
-    USoundCue* FrozenDeathSound;
-
-    UFXSystemAsset* FrozenDeathParticles;
-
-    UFrozenPawnImpactComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void TriggerFrozenRagdoll();
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnStartFallingEvent;

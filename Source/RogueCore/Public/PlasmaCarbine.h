@@ -9,34 +9,6 @@ class APlasmaCarbine : public AProjectileWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float RateOfFireBoostOnFullShield;
-
-    
-
-    bool RemoveShieldOnOverheat;
-
-    bool RemoveShieldOnReload;
-
-    float HeatEffectsThreshold;
-
-    UAnimMontage* FP_CharacterOverheatEndMontage;
-
-    UAnimMontage* TP_CharacterOverheatEndMontage;
-
-    UAnimMontage* WPN_ItemOverheatEndMontage;
-
-    UAnimMontage* FP_CharacterReloadEndMontage;
-
-    UAnimMontage* TP_CharacterReloadEndMontage;
-
-    UAnimMontage* WPN_ItemReloadEndMontage;
-
-    APlasmaCarbine(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -14,15 +14,6 @@ UCLASS(Abstract, Blueprintable, NoExport)
 class ROGUECORE_API AFuelLineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bHaveFlowingLiquid;
-
-    AFuelLineSegment(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

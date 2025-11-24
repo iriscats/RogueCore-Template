@@ -10,22 +10,6 @@ class USpiderLobberAnimInstance : public UShootingSpiderAnimInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float LiquidInBumEaseInExp;
-
-    float LiquidInBumTimeToMax;
-
-    float LiquidInBumTimeToMaxShort;
-
-    USpiderLobberAnimInstance();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetAttackIndex(int32 Index);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

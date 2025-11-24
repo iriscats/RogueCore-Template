@@ -15,30 +15,6 @@ class ROGUECORE_API URefineryObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    ERefineryState RefineryState;
-
-    UDebrisPositioning* RefineryPlacement;
-
-    TSoftClassPtr<AActor> RawMaterialClass;
-
-    UDebrisPositioning* RawMaterialPlacement;
-
-    int32 RawMaterialCount;
-
-    bool bMissionCompleted;
-
-    bool bIsFinalBattle;
-
-    int32 OptionalTunnelRoomID;
-
-    URefineryObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryDelegate, AFSDRefinery*, InRefinery);
     

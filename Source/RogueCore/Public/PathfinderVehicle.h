@@ -12,15 +12,6 @@ UCLASS(Blueprintable, NoExport)
 class APathfinderVehicle : public APawn, public ITargetable, public ISteerable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float Speed;
-
-    APathfinderVehicle(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDeepPathfinderMovement* PathfinderMovement;

@@ -27,16 +27,6 @@ class ROGUECORE_API ASentryGun : public AActor, public IWeaponFireOwner, public 
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UWeaponFireComponent* WeaponFire;
-
-    UAudioComponent* ShootingAudioComponent;
-
-    ASentryGun(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnabledChanged, bool, IsEnabled);
     

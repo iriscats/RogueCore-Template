@@ -9,13 +9,6 @@ UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkCooldownWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AActor* MonitoredCharacter;
-
-
-
 public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

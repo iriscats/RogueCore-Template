@@ -12,22 +12,6 @@ class UHeroEnemies : public UStageLogic {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FGameplayTagQuery AllowedQuery;
-
-    
-
-    TMap<UEnemyDescriptor*, FEliteEnemyEntry> Entries;
-
-    UHeroEnemies();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnEnemySpawned(APawn* Enemy, UEnemyDescriptor* descriptor);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

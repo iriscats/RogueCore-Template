@@ -13,28 +13,6 @@ class UExplosionBaseComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float CarveDiameterCM;
-
-    
-
-    float CarveNoiseCM;
-
-    float CarveBurnThicknessCM;
-
-    float CarveNormalOffsetCM;
-
-    float CarveNormalSqueeze;
-
-    UExplosionBaseComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void DamageOnlyFromHit(const FHitResult& HitResult, UPARAM(Ref) UDamageComponent*& DamageComponent);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

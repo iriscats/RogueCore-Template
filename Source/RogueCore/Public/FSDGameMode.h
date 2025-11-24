@@ -39,48 +39,6 @@ class ROGUECORE_API AFSDGameMode : public AGameMode {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSoftClassPtr<ATeamTransport> DropPodClass;
-
-    TSoftClassPtr<AMolly> MuleClass;
-
-    TSoftClassPtr<ATeamTransport> DropodEscapeClass;
-
-    TSoftClassPtr<ATeamTransport> DropodEscapeSafeClass;
-
-    TSoftClassPtr<ABosco> DroneClass;
-
-    TSoftClassPtr<UWidget> CheatUI;
-
-    bool PreventAllLatejoin;
-
-    bool PreventLateJoinOnMissionStart;
-
-    float PlayerSpawnHeightOffset;
-
-    float FriendlyFireGracePeriod;
-
-    TArray<UEnemyDescriptor*> ForcedEnemyPool;
-
-    TArray<UEnemyDescriptor*> ForcedStationaryPool;
-
-    bool UseNormalEncounters;
-
-    bool UseStationaryEncounter;
-
-    bool AllowSpecialEncounters;
-
-    UEnemyWaveManager* CachedWaveManager;
-
-    bool MissionWasAborted;
-
-    TArray<FNamedCountdownFloat> NamedCountdowns;
-
-    AFSDGameMode(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMatchStartedSignature OnMatchStarted;

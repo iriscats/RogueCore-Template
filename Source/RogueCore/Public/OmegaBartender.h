@@ -20,34 +20,6 @@ class ROGUECORE_API AOmegaBartender : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_BartenderAnimationState, meta=(AllowPrivateAccess=true))
-
-    EBartenderAnim BartenderAnimationState;
-
-    TArray<FAnimationWeight> OmegaIdle;
-
-    TArray<FArmAnimation> OmegaIdleArm;
-
-    TArray<FAnimationWeight> OmegaPourArm1;
-
-    TArray<FAnimationWeight> OmegaPourArm2;
-
-    TArray<FAnimationWeight> OmegaPourArm3;
-
-    TArray<FAnimationWeight> OmegaPourArm4;
-
-    UAnimMontage* OmegaSalute;
-
-    float SaluteLoseTime;
-
-    float SaluteCooldown;
-
-    int32 SalutesToMakeOmegaSalute;
-
-    AOmegaBartender(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnNewSpecialOrderSignature OnNewSpecialOrder;

@@ -18,28 +18,6 @@ class UPawnAfflictionComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<UAfflictionEffect> FrozenEffect;
-
-    TSubclassOf<UBurningAfflictionEffect> BurningEffect;
-
-    EFrozenBitsSize EffectSize;
-
-    FIRandRange FrozenBitsAmount;
-
-    float FrozenBitsMinDistance;
-
-    float BaseEffectScale;
-
-    bool UseDormancy;
-
-    UPawnAfflictionComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAfflictionChangeDelegate OnAfflictionActivatedEvent;

@@ -15,32 +15,6 @@ class ROGUECORE_API UEncounterManager : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FEncounterManagerItem> Encounters;
-
-    AProceduralSetup* ProceduralSetup;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UEnemySpawnManager* SpawnManager;
-
-    TArray<UEnemyDescriptor*> RCEnemyPool;
-
-    TArray<UEnemyDescriptor*> EnemyPool;
-
-    TArray<UEnemyDescriptor*> EncounterPool;
-
-    TArray<UCritterDescriptor*> CritterPool;
-
-    UEncounterManager(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Exec)
-
-    void ShowSpawnLocations();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

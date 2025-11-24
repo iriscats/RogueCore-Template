@@ -42,7 +42,8 @@ public:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)
     void UsableChanged(bool CanUse);
-    
+
+    UFUNCTION()
     void OnRep_BansheePulseEnabled();
 
     void MatchParentDestroy(UHealthComponentBase* destroyed);

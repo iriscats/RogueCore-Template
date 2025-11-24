@@ -15,34 +15,6 @@ class UFSDEventManager : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TSet<FName> PendingActiveEvents;
-
-    TSet<FName> ActiveEvents;
-
-    int32 NumFailedRequests;
-
-    bool BackendDataValid;
-
-    FDateTime LastRequestTime;
-
-    float NextCheckTime;
-
-    FDateTime SeasonExpirationTime;
-
-    bool SeasonExpirationTimeValid;
-
-    bool BackendNotificationEventValid;
-
-    UFSDEventManager();
-
-    UFUNCTION(BlueprintCallable)
-
-    void TryGetJettyBootSettings(bool& OutHasSettings, FJettyBootEventSettings& OutSettings);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FFSDEventsRefreshDelegate);
     

@@ -15,28 +15,6 @@ class ARivalBombNode : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    ERivalBombNodeState State;
-
-    ASplineCableActor* BombCable;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    ARivalBomb* RivalBomb;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_RemainingHackTime, meta=(AllowPrivateAccess=true))
-
-    float RemainingHackTime;
-
-    float HackStartTime;
-
-    int32 BombIndex;
-
-    ARivalBombNode(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FStateChangedDelegate, ARivalBombNode*, InBombNode, ERivalBombNodeState, InState);
     

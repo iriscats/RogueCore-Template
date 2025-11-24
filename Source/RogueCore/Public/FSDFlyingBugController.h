@@ -9,22 +9,6 @@ class AFSDFlyingBugController : public AFSDAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UBehaviorTree* BehaviourTree;
-
-    
-
-    float UpdateLosInterval;
-
-    bool SetTargetOnAlert;
-
-    bool SyncTargetWithBB;
-
-    AFSDFlyingBugController(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

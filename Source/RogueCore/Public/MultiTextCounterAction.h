@@ -14,27 +14,6 @@ class UMultiTextCounterAction : public UTickableActionBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FText TotalFormat;
-
-    TArray<FTextCounterEntry> Entries;
-
-    float CountSpeed;
-
-    USoundCue* CountingSound;
-
-    UAudioComponent* AudioComponent;
-
-    UObject* WorldContext;
-
-    UMultiTextCounterAction();
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="InWorldContext"))
-
-    static UMultiTextCounterAction* StartMultiTextCounter(UObject* InWorldContext, UTextBlock* InTotalBlock, const FText InTotalFormat, float InCountSpeed, USoundCue* InCountingSound, const TArray<FTextCounterEntry> InEntries);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FTickDelegate);

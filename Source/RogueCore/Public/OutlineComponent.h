@@ -15,22 +15,6 @@ class UOutlineComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    TArray<UPrimitiveComponent*> ExcludedComponents;
-
-    TArray<UPrimitiveComponent*> IncludedComponents;
-
-    TWeakObjectPtr<APlayerCharacter> Character;
-
-    UOutlineComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void UnlockOutline();
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOutlineChanged, EOutline, InOutline);
     

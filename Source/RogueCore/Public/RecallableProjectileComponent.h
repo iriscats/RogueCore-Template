@@ -15,30 +15,6 @@ class URecallableProjectileComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    APlayerCharacter* RecallTarget;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FVector EndRotationOffset;
-
-    float RecallStartTime;
-
-    float RecallSpeed;
-
-    FTransform StartTransform;
-
-    UInterpolatedFirstPersonStaticMeshComponent* FPMeshComponent;
-
-    bool IsRecallable;
-
-    URecallableProjectileComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRecallDelegate OnCollectRecallable;

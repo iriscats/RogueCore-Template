@@ -10,20 +10,6 @@ class AHomingFireModule : public AHostileTargetingGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FName ShootDroneSocket;
-
-    
-
-    TSubclassOf<AProjectile> HomingProjectileClass;
-
-    float TimeBetweenShots;
-
-    AHomingFireModule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

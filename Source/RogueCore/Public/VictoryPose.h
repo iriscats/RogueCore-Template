@@ -13,31 +13,6 @@ UCLASS(Blueprintable)
 class UVictoryPose : public USavablePrimaryDataAsset, public IAquisitionable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UItemAquisitionBase* Aquisition;
-
-    TArray<TSoftObjectPtr<UAnimSequence>> Walks;
-
-    TSoftObjectPtr<UAnimSequence> Pose;
-
-    TSoftClassPtr<AActor> Prop_Actor;
-
-    TSoftObjectPtr<UAnimSequence> Prop_Walk;
-
-    TSoftObjectPtr<UAnimSequence> Prop_Pose;
-
-    TSoftObjectPtr<UAnimSequence> Prop_Idle;
-
-    UVictoryPose();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure=false, meta=(WorldContext="WorldContextObject"))
-
-    void Unlock(UObject* WorldContextObject, UPlayerCharacterID* characterID) const;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

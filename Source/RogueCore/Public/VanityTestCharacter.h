@@ -11,24 +11,6 @@ class AVanityTestCharacter : public ACharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float ArmorThickness;
-
-    
-
-    float BeardThickness;
-
-    bool ArmorCoversBeard;
-
-    TMap<EVanitySlot, FVanityTestCharacterItem> VanityItems;
-
-    USkeletalMesh* WeaponMesh;
-
-    AVanityTestCharacter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

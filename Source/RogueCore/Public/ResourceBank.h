@@ -14,36 +14,6 @@ class UResourceBank : public UUsableComponentBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AFSDGameState* GameState;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UResourceBankFilter* ResourceFilter;
-
-    float DepositesPerSecond;
-
-    float DepositeAmount;
-
-    bool CanGetStrict;
-
-    bool AddToTeamInventory;
-
-    USoundBase* AudioBeginDepositing;
-
-    USoundBase* AudioDepositing;
-
-    USoundBase* AudioEndDepositing;
-
-    UDialogDataAsset* ShoutBeginDepositing;
-
-    UResourceBank(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FResourceEvent, UResourceData*, Resource, float, amount);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FResourceBankEvent, APlayerCharacter*, User);

@@ -16,32 +16,6 @@ class URiftSpawnerComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TMap<UDifficultySetting*, int32> AmountByDifficulty;
-
-    TSubclassOf<ACoreRift> RiftClass;
-
-    UDebrisPositioning* Positioning;
-
-    float SpawnInterval;
-
-    float SpawnDeviation;
-
-    float InitialSpawnDelay;
-
-    int32 AmountToSpawn;
-
-    bool SpawnOneAtATime;
-
-    bool DisallowSpawning;
-
-    URiftSpawnerComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRiftSpawnerDelegate OnRiftSpawned;

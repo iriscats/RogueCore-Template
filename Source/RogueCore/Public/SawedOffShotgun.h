@@ -10,28 +10,6 @@ class ASawedOffShotgun : public AMultiHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UDamageAsset* ShockwaveDamage;
-
-    
-
-    float FearFactorOnFire;
-
-    float FearFactorOnFireRadius;
-
-    bool ShotgunJumpEnabled;
-
-    float ShotgunJumpForce;
-
-    bool ShockwaveEnabled;
-
-    float ShockWaveDistance;
-
-    ASawedOffShotgun(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

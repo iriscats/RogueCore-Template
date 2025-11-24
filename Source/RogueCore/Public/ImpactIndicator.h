@@ -10,18 +10,6 @@ class AImpactIndicator : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FRuntimeFloatCurve OuterGrowthCurve;
-
-    FRuntimeFloatCurve InnerGrowthCurve;
-
-    float Radius;
-
-    AImpactIndicator(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

@@ -9,15 +9,6 @@ class AStabberVine : public ATentacleBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DesiredTarget, meta=(AllowPrivateAccess=true))
-
-    FTentacleTarget DesiredTarget;
-
-    
-
-    AStabberVine(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

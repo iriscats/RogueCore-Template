@@ -14,20 +14,6 @@ class UStatusEffectTriggerComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UPrimitiveComponent* collider;
-
-    bool RemoveStatusEffectOnEndOverlap;
-
-    UStatusEffectTriggerComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetCollider(UPrimitiveComponent* Primitive);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintAuthorityOnly, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEffectTriggeredDelegate OnEffectTriggered;

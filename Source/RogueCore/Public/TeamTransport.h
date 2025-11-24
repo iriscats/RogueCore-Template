@@ -22,24 +22,6 @@ class ROGUECORE_API ATeamTransport : public AActor, public IGameplayTagAssetInte
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_RampState, meta=(AllowPrivateAccess=true))
-
-    EMiningPodRampState rampState;
-
-    bool isEscapeTransport;
-
-    float TargetDropTime;
-
-    float TargetDepartureTime;
-
-    float TimeToDrop;
-
-    UObjectivesManager* ObjectivesManager;
-
-    ATeamTransport(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DropHeight;

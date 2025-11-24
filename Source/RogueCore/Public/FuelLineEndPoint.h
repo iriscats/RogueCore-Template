@@ -12,15 +12,6 @@ class UTrackBuilderConnectPoint;
 UCLASS(Abstract, Blueprintable, NoExport)
 class ROGUECORE_API AFuelLineEndPoint : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool OpenForConnection;
-
-    AFuelLineEndPoint(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

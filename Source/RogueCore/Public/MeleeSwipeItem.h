@@ -17,51 +17,6 @@ class ROGUECORE_API AMeleeSwipeItem : public AAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UStaticMesh* CarveMesh;
-
-    UTerrainMaterial* MagmaMaterial;
-
-    UNiagaraSystem* HitEffect;
-
-    UNiagaraSystem* BeamEffect;
-
-    USoundCue* ImpactSound;
-
-    USoundCue* SwipeHitConfirmSond;
-
-    UAnimMontage* FP_AttackAnim;
-
-    UAnimMontage* TP_AttackAnim;
-
-    UDamageAsset* Damage;
-
-    FVector CarveScale;
-
-    FVector MagmaScale;
-
-    float MinRange;
-
-    float MaxRange;
-
-    float Width;
-
-    float AttackThickness;
-
-    float AngleLimit;
-
-    float VerticalOffset;
-
-    float VerticalCarveOffset;
-
-    bool ShowDebugBox;
-
-    bool RequireFullyEquipped;
-
-    AMeleeSwipeItem(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

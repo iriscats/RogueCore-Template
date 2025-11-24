@@ -10,23 +10,6 @@ class ROGUECORE_API UResourceObjective : public UResourceBasedObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ResourcesCollected, meta=(AllowPrivateAccess=true))
-
-    float ResourcesCollected;
-
-    float ResourceBuffer;
-
-    float RoundToNearest;
-
-    FText ObjectivesText;
-
-    FText CreditsRewardText;
-
-    UResourceObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
 
 public:
 protected:

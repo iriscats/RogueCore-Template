@@ -11,21 +11,6 @@ class AItem;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UShieldGeneratorUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EShieldGeneratorUpgrades upgradeType;
-
-    
-
-    UShieldGeneratorUpgrade();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    static FUpgradeValues GetUpgradedValue(TSubclassOf<AItem> Item, AFSDPlayerState* Player, EShieldGeneratorUpgrades NewUpgradeType);
-
-
 
 public:
 protected:

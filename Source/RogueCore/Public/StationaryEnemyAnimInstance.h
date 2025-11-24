@@ -9,22 +9,6 @@ class UStationaryEnemyAnimInstance : public UEnemyAnimInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AActor* Target;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool InvertPitch;
-
-    UStationaryEnemyAnimInstance();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetIsVisible(bool InIsVisible);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

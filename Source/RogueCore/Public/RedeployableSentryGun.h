@@ -17,18 +17,6 @@ class ARedeployableSentryGun : public ASentryGun {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<ASentryElectroBeam*> PlasmaLines;
-
-    TSubclassOf<ASentryElectroBeam> PlasmaBeamClass;
-
-    TSubclassOf<AActor> ElectrocutionActorClass;
-
-    AActor* ElectrocutionActor;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStateChanged, ARedeployableSentryGun*, Sender, ERedeployableSentryGunState, NewState);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDismantleFinished);

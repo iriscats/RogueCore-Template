@@ -14,18 +14,6 @@ class ROGUECORE_API UReadyUpManager : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UReadyUpWindow> ReadyUpWindow;
-
-    UReadyUpManager();
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    void StartReadyUp(const FSingleDelegate& OnCompleted);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FReadyUpEvent);
     

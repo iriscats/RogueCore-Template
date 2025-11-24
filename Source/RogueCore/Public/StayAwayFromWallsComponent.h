@@ -8,35 +8,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UStayAwayFromWallsComponent : public USceneComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AFSDGameState* GameState;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float MaxSpeed;
-
-    float Acceleration;
-
-    float BackAcceleration;
-
-    float PointOffset;
-
-    float AvoidSpeed;
-
-    float GoBackSpeed;
-
-    bool Active;
-
-    UStayAwayFromWallsComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetIsActive(const bool IsActive);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

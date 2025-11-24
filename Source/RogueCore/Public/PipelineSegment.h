@@ -27,36 +27,6 @@ class APipelineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SegmentActivatedProgress, meta=(AllowPrivateAccess=true))
-
-    float SegmentActivatedProgress;
-
-    EPipelineBuildState PipelineState;
-
-    TWeakObjectPtr<APipelineStart> PipelineStart;
-
-    float MinValidLength;
-
-    float MaxValidLength;
-
-    float TooSharpExtraLength;
-
-    float TooSteepExtraLength;
-
-    float BlockedSphereSize;
-
-    int32 BlockedExtraRaytraceRotationOffset;
-
-    float BlockedExtraRaytraces;
-
-    float BlockedExtraRaytraceDist;
-
-    float BlockedRayTraceSuccesses;
-
-    APipelineSegment(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPipelineStateDelegate, EPipelineBuildState, InPipelineState);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPipelineSegmentDelegate, APipelineSegment*, InPipelineSegment);

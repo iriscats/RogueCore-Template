@@ -27,14 +27,6 @@ class ROGUECORE_API AHardRockBreakingInstallationActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_bHasScannedForMissingParts, meta=(AllowPrivateAccess=true))
-
-    bool bHasScannedForMissingParts;
-
-    AHardRockBreakingInstallationActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

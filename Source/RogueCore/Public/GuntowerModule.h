@@ -19,28 +19,6 @@ class AGuntowerModule : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UStaticMeshComponent* ArmorPiece1;
-
-    UStaticMeshComponent* ArmorPiece2;
-
-    UStaticMeshComponent* ArmorPiece3;
-
-    USkeletalMeshComponent* ModuleMesh;
-
-    UGunTowerHealthComponent* GuntowerModuleHealth;
-
-    AGuntowerEvent* OwningEvent;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Exploded, meta=(AllowPrivateAccess=true))
-
-    bool Exploded;
-
-    AGuntowerModule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

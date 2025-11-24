@@ -25,44 +25,6 @@ class ROGUECORE_API UUpgradableGearComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UItemData* ItemData;
-
-    
-
-    UTexture2D* IconLine;
-
-    UTexture2D* IconBG;
-
-    UTexture2D* IconDetailed;
-
-    TSoftObjectPtr<UTexture2D> PreviewImage;
-
-    TSoftClassPtr<AActor> PreviewActor;
-
-    FText Name;
-
-    FText Category;
-
-    FText Description;
-
-    int32 CreditCost;
-
-    TMap<UResourceData*, float> ResourceCost;
-
-    int32 RequiredCharacterLevel;
-
-    TArray<FMasteryItem> masteryLevels;
-
-    UUpgradableGearComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    static void SetGearStatText(UPARAM(Ref) FGearStatEntry& Entry, FText Text);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -12,28 +12,6 @@ class ATerrainModifyingProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UTerrainMaterial* OriginalGroundMaterial;
-
-    UStaticMesh* CarveMesh;
-
-    FVector CarveMeshScale;
-
-    FVector LastHitLocation;
-
-    float Radius;
-
-    bool Revert;
-
-    float TimeOnGround;
-
-    float ExpensiveCarveNoise;
-
-    ATerrainModifyingProjectile(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRevertToNormal OnRevertToNormal;

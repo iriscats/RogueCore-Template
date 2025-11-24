@@ -13,14 +13,6 @@ class AGuntowerEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ModuleActive, meta=(AllowPrivateAccess=true))
-
-    int32 ActiveHostileModules;
-
-    AGuntowerEvent(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

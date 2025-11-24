@@ -25,16 +25,6 @@ class ROGUECORE_API UEscortObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_EscortMule, meta=(AllowPrivateAccess=true))
-
-    AEscortMule* EscortMule;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    AEscortDestination* EscortDestination;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FShellBreakTimerSignature OnProgressUpdated;

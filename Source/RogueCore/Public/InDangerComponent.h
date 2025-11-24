@@ -10,22 +10,6 @@ class UInDangerComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    float DamageTimeLimit;
-
-    float DamageThreshold;
-
-    bool RunsOnClients;
-
-    UInDangerComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetIsActive(bool aFlag);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsInDangerSig OnInDanger;

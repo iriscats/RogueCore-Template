@@ -25,54 +25,6 @@ class AVanityCharacter : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UAnimSequenceBase* Animation;
-
-    USkinColorVanityItem* skinColor;
-
-    UBeardColorVanityItem* BeardColor;
-
-    UBeardColorVanityItem* DynamicBeardColor;
-
-    UHeadVanityItem* Head;
-
-    UEyeBrowsVanityItem* EyeBrows;
-
-    USideburnsVanityItem* Sideburns;
-
-    UMoustacheVanityItem* Moustache;
-
-    UBeardVanityItem* Beard;
-
-    UArmorVanityItem* Armor;
-
-    EArmorMeshType ArmorMeshType;
-
-    UArmorMaterialVanityItem* ArmorColor;
-
-    UArmorMaterialVanityItem* UndersuitColor;
-
-    USkeletalMeshComponent* mesh;
-
-    USkeletalMeshComponent* BodyMesh;
-
-    UBeardColorVanityItem* DefaultHairColor;
-
-    UMaterialInterface* DefaultArmorMaterial;
-
-    UMaterialInterface* DefaultUndersuitMaterial;
-
-    TSubclassOf<AItem> itemClass;
-
-    UItemSkin* Framework;
-
-    UItemSkin* Paintjob;
-
-    AVanityCharacter(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

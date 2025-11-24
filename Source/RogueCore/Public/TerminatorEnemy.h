@@ -11,15 +11,6 @@ UCLASS(Blueprintable, NoExport)
 class ATerminatorEnemy : public AEnemyDeepPathfinderCharacter, public IMultiTargeter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TSet<AActor*> CurrentTargets;
-
-    ATerminatorEnemy(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

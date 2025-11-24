@@ -11,15 +11,6 @@ class APostProcessingManager : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FPostProcessingBlendable> CurrentBlendables;
-
-    TArray<UMaterialInstanceDynamic*> Materials;
-
-    APostProcessingManager(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

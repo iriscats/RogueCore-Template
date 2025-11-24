@@ -40,22 +40,6 @@ class ROGUECORE_API AFSDPlayerController : public AFSDPlayerControllerBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool ServerTravelDone;
-
-    UFSDWidgetEffectsComponent* WidgetEffects;
-
-    ESpacerigStartType SpacerigSpawnType;
-
-    bool bDetectGravityChanges;
-
-    bool bReceivedEndLevel;
-
-    AFSDPlayerController(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FReceivingVoiceSignature, bool, isRecieving);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FReceivedEndLevelDelegate);

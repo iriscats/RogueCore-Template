@@ -15,18 +15,6 @@ class AWallSaw : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_PosVel, meta=(AllowPrivateAccess=true))
-
-    FSawFakeMoveState PosVel;
-
-    float PopWeakpointRadius;
-
-    float PlayerHitRangeFromCenter;
-
-    AWallSaw(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

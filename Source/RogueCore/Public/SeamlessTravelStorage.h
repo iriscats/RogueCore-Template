@@ -16,22 +16,6 @@ class USeamlessTravelStorage : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TMap<FUniqueNetIdRepl, FPlayerDataStorage> StoredPlayerData;
-
-    TSet<AActor*> OtherStoredActors;
-
-    TArray<APlayerState*> SeamlessTravelPlayerStates;
-
-    USeamlessTravelStorage();
-
-    UFUNCTION(BlueprintCallable)
-
-    void UnStoreActor(AActor* Actor);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UDifficultySetting* ChosenDifficulty;

@@ -12,24 +12,6 @@ class ROGUECORE_API UTrackBuilderConnectPoint : public USphereComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(EditAnywhere, Transient, ReplicatedUsing=OnRep_ConnectedSegment, meta=(AllowPrivateAccess=true))
-
-    TArray<TWeakObjectPtr<ATrackBuilderSegment>> ConnectedSegments;
-
-    int32 MaxConnections;
-
-    float MaxConnectRadius;
-
-    float ConnectDistance;
-
-    FVector MaxAngles;
-
-    UTrackBuilderConnectPoint(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FConnectionDelegate, UTrackBuilderConnectPoint*, InConnectPoint, ATrackBuilderSegment*, InSegment);
     

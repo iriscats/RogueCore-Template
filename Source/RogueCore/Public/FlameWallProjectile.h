@@ -11,22 +11,6 @@ class AFlameWallProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSubclassOf<AFlameWallSegment> SegmentParticleClass;
-
-    
-
-    int32 SegmentCount;
-
-    float WallWidth;
-
-    TSubclassOf<AActor> ImpactClass;
-
-    AFlameWallProjectile(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

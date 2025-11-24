@@ -11,20 +11,6 @@ class UEndStatusEffectOnLanding : public UActorComponent, public IStatusAddedCom
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UStatusEffect> EffectToCancel;
-
-    
-
-    UEndStatusEffectOnLanding(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnOwnerStateChanged(ECharacterState State);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

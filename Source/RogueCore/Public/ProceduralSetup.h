@@ -51,33 +51,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API AProceduralSetup : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UNoisyPathfinderComponent* NoisyPathfinder;
-
-    UProceduralTunnelComponent* ProceduralTunnel;
-
-    UPLSEncounterComponent* Encounters;
-
-    UConstructionSpawnerComponent* ConstructionSpawnerComponent;
-
-    UProceduralVeinsComponent* Veins;
-
-    UProceduralResources* Resources;
-
-    UProceduralObjectColliders* ObjectColliders;
-
-    ADeepCSGWorld* CSGWorld;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    float CaveDepth;
-
-    AActor* PostProcessActor;
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ShowItemNoisePattern;

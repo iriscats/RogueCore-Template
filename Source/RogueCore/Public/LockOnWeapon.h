@@ -19,20 +19,6 @@ class ROGUECORE_API ALockOnWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    AActor* AimTarget;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
-
-    bool LastShotWasLockedOn;
-
-    float LockOnRecoilMult;
-
-    ALockOnWeapon(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMaxTargetsDelegate, int32, InMaxTargets);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FLockonTargetRotationUpdated, bool, hasTargetLockon, FRotator, socketRotation);

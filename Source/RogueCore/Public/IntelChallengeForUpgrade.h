@@ -10,24 +10,6 @@ class UIntelChallengeForUpgrade : public UIntelChallenge {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EUnlockType RequiredType;
-
-    
-
-    int32 RequiredAmount;
-
-    bool AllowCollectionOverMultipleRuns;
-
-    UIntelChallengeForUpgrade();
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnLevelUp(const int32 Level, const TArray<UBXEUnlockBase*>& Unlocks);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

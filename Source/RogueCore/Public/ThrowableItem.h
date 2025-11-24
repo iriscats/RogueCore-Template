@@ -16,14 +16,6 @@ class AThrowableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<TWeakObjectPtr<AThrowableActor>> ThrownActors;
-
-    AThrowableItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

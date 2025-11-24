@@ -7,17 +7,6 @@ class UWallMouthAnimInstance;
 UCLASS(Blueprintable, NoExport)
 class AWallMouth : public AFSDPawn {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UWallMouthAnimInstance* AnimInstance;
-
-    
-
-    AWallMouth(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
 protected:

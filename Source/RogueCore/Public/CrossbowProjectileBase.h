@@ -66,7 +66,9 @@ protected:
     void SetMainDamageComponent(UDamageComponent* Component);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_HandleImpact(const FHitResult& HitResult, const FVector& RelativeLocation);
+    UFUNCTION()
     void OnRep_OnlyTrailShown();
+    UFUNCTION()
     void OnRep_BansheePulseActive();
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsLocallyControlled() const;

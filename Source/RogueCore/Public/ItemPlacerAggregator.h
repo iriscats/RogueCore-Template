@@ -15,12 +15,6 @@ class UItemPlacerAggregator : public UItemAggregator {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    AItemMarker* PlacementMarker;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPlacementUpdatedDelegate, bool, InPlacementValid, const FTransform&, InPlacement);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMarkerDelegate, AItemMarker*, Marker);

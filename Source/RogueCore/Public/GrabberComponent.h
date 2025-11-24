@@ -20,12 +20,6 @@ class UGrabberComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CurrentlyGrabbed, meta=(AllowPrivateAccess=true))
-
-    AActor* CurrentlyGrabbed;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGrabbedActorSig OnGrabbedActor;

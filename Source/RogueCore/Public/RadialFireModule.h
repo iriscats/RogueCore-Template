@@ -11,22 +11,6 @@ class ARadialFireModule : public AHostileGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    bool IsAttacking;
-
-    FName LeftFireSocket;
-
-    FName RightFireSocket;
-
-    FName FrontFireSocket;
-
-    FName BackFireSocket;
-
-    ARadialFireModule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

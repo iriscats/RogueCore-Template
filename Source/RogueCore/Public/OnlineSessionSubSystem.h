@@ -11,26 +11,6 @@ class UOnlineSessionSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool IsJoiningInvite;
-
-    bool CanPlayOnline;
-
-    EDisconnectReason DisconnectReason;
-
-    FString DisconnectErrorCode;
-
-    UFSDSessionUpdater* SessionUpdater;
-
-    UOnlineSessionSubSystem();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetShouldAdvertiseInServerlist(bool bShouldAdvertise);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

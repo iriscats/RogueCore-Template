@@ -14,16 +14,6 @@ class ROGUECORE_API UItemRackComponent : public USingleUsableComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, ReplicatedUsing=OnRep_Item, meta=(AllowPrivateAccess=true))
-
-    URackableItemComponent* Item;
-
-    UItemRackComponent(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemRackDelegate OnHasItemChanged;

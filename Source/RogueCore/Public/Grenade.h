@@ -26,16 +26,6 @@ class AGrenade : public AActor, public ISaveGameIDInterface, public IItemIDInter
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool CountDownBegun;
-
-    float RemainingDuration;
-
-    AGrenade(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UUserWidget> CrossHairType;

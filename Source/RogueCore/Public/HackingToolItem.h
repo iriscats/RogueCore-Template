@@ -9,16 +9,6 @@ class ROGUECORE_API AHackingToolItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, ReplicatedUsing=OnRep_HackingUsable, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UHackingUsableComponent> HackingUsable;
-
-    
-
-    AHackingToolItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, ReplicatedUsing=OnRep_HackingUsable, meta=(AllowPrivateAccess=true))

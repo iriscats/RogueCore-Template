@@ -22,34 +22,6 @@ class ROGUECORE_API URunHistoryStateComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FParsedCharacterBuildData> CachedParsedBuildData;
-
-    TArray<FParsedCharacterDamageData> CachedParsedDamageData;
-
-    TArray<FCharacterBuildData> CachedBuildData;
-
-    TArray<FCharacterDamageData> CachedDamageData;
-
-    FSharedRunData CachedSharedData;
-
-    FRunHistoryEntry CachedRunHistoryEntry;
-
-    TArray<FRunHistoryNetMessage> NetMessages;
-
-    TMap<URunHistoryStateComponent*, bool> ActiveMessageListeners;
-
-    TArray<uint8> ReceivingBuffer;
-
-    URunHistoryStateComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, Reliable, Server)
-
-    void Server_RequestHistoryData(URunHistoryStateComponent* Sender, AFSDPlayerState* TargetState, ERunHistoryNetMessageDataType Type);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,13 +11,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UEnemyComponent : public USimpleObjectInfoComponent {
     GENERATED_BODY()
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UEnemyFamily* Family;
-
-    UDialogDataAsset* KillShout;
-
-    UEnemyID* EnemyID;
-
 public:
     UEnemyComponent(const FObjectInitializer& ObjectInitializer);
 

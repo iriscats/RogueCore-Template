@@ -9,20 +9,6 @@ class UTutorialWidget : public UFSDUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    float RemainingVisibleTime;
-
-    
-
-    UTutorialWidget();
-
-    UFUNCTION(BlueprintCallable)
-
-    void Show(const FText& Text, const FText& Title, const FText& TaskText, UTexture2D* Image, float Duration);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

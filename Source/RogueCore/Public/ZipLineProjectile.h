@@ -16,18 +16,6 @@ class AZipLineProjectile : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<UMaterialInstanceDynamic*> MaterialInstances;
-
-    TSubclassOf<UStatusEffect> OnUseStatusEffect;
-
-    TSubclassOf<UStatusEffect> OnReleaseStatusEffect;
-
-    AZipLineProjectile(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

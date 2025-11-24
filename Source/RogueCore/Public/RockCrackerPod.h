@@ -18,24 +18,6 @@ class ARockCrackerPod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    ARockCrackerPod* EndPointDrill;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_LightsAreGreen, meta=(AllowPrivateAccess=true))
-
-    bool LightsAreGreen;
-
-    float DrainImmunityTime;
-
-    float YellowLightsThreshold;
-
-    float HealPerTick;
-
-    ARockCrackerPod(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UFriendlyHealthComponent* Health;

@@ -23,42 +23,6 @@ class ROGUECORE_API UItemUpgrade : public USavableDataAsset, public IRefundableI
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FText Name;
-
-    FText Description;
-
-    int32 Cost;
-
-    FText GeneralIconType;
-
-    EWeaponOverviewModifierType ModifierType;
-
-    bool UseOldCost;
-
-    EUpgradeTiers UpgradeTier;
-
-    EUpgradeClass upgradeClass;
-
-    UItemUpgradeCategory* Category;
-
-    TMap<UResourceData*, float> UpgradeCraftingCost;
-
-    TArray<UResourceData*> ResourceCost;
-
-    TArray<UItemUpgradeElement*> Elements;
-
-    TArray<FItemUpgradeStatText> StatTexts;
-
-    UItemUpgrade();
-
-    UFUNCTION(BlueprintCallable)
-
-    void UnequipUpgrade(TSubclassOf<AActor> itemClass, AFSDPlayerState* PlayerState);
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FItemUpgradeSignature, UItemUpgrade*, upgrade);
     

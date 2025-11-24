@@ -23,26 +23,6 @@ class ROGUECORE_API UEnemySpawnManager : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    int32 MaxActiveEnemies;
-
-    int32 MaxActiveSwarmers;
-
-    int32 MaxActiveCritters;
-
-    float MaxDistanceBeforeCleanup;
-
-    FGameplayTag SwarmerTag;
-
-    FGameplayTag RegularTag;
-
-    FGameplayTag CritterTag;
-
-    AProceduralSetup* ProceduralSetup;
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEnemyDestroyedSignature OnEnemyDestroyed;

@@ -16,24 +16,6 @@ class APlasmaBoomerang : public AGrenade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    UCurveVector* ArcCurve;
-
-    float StartSmoothTime;
-
-    float RotationSpeed;
-
-    float ArcSpeed;
-
-    float HomingAcceleration;
-
-    bool IsHoming;
-
-    APlasmaBoomerang(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

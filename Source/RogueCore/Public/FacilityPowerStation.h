@@ -9,14 +9,6 @@ class ROGUECORE_API AFacilityPowerStation : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsHacking, meta=(AllowPrivateAccess=true))
-
-    bool IsHacking;
-
-    AFacilityPowerStation(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHackprogress_Delegate OnHackingProgressDelegate;

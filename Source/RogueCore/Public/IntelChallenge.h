@@ -8,18 +8,6 @@ class UIntelChallenge : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bIsActive;
-
-    UIntelChallenge();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetStatValue(const float NewValue);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

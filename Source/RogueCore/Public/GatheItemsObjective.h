@@ -10,18 +10,6 @@ class UGatheItemsObjective : public UResourceBasedObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ItemsCollected, meta=(AllowPrivateAccess=true))
-
-    int32 ItemsCollected;
-
-    UCollectableResourceData* ItemResource;
-
-    UGatheItemsObjective(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -20,50 +20,6 @@ class APLSTester : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FString FullSeedString;
-
-    
-
-    int32 PLSSeed;
-
-    int32 missionSeed;
-
-    int32 globalSeed;
-
-    USpecialEvent* SpecialEvent;
-
-    URunTemplate* RunTemplate;
-
-    ERunDepth RunDepth;
-
-    int32 ActiveStage;
-
-    UBiome* Biome;
-
-    UPlanetZone* PlanetZoneOverride;
-
-    TSubclassOf<UMissionDNA> DnaOverride;
-
-    UStageTemplateDifficulty* DifficultyOverride;
-
-    UStageTemplateOverride* BossOverride;
-
-    FRunObjectiveOverrides ObjectiveOverrides;
-
-    FRunMutatorOverrides MutatorOverrides;
-
-    UDifficultySetting* OverrideDifficulty;
-
-    int32 SimulatePlayerCount;
-
-    FText CustomMissionName;
-
-    APLSTester(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

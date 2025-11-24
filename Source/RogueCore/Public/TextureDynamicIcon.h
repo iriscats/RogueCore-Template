@@ -10,18 +10,6 @@ class ROGUECORE_API UTextureDynamicIcon : public UDynamicIcon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    UMaterialInstanceDynamic* PreviewInstance;
-
-    UTextureDynamicIcon();
-
-    UFUNCTION(BlueprintCallable)
-
-    void UpdatePreview();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

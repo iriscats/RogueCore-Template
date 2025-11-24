@@ -21,24 +21,6 @@ class ROGUECORE_API UPerkAsset : public USavableDataAsset {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool bIsHighlighted;
-
-    UPerkAsset();
-
-    UFUNCTION(BlueprintCallable)
-
-    bool UseCharge(APlayerController* PlayerController);
-
-    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))
-
-    bool Unequip(UObject* WorldContext, UPlayerCharacterID* characterID);
-
-    void SetHighlighted(UObject* WorldContext, bool IsHighlighted);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

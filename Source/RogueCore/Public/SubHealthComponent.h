@@ -15,22 +15,6 @@ class USubHealthComponent : public UActorComponent, public IHealth {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    EHealthbarType HealthbarType;
-
-    bool passthroughDamageWhenDisabled;
-
-    EEnemyHealthScaling EnemyHealthScaling;
-
-    USubHealthComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetPassthroughDamageWhenDisabled(bool NewPassthroughDamageWhenDisabled);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDamageSig OnDamageTaken;

@@ -11,30 +11,6 @@ class ULightModulationComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FRuntimeFloatCurve ModulationCurve;
-
-    
-
-    float PhotoSensitiveMaterialModifier;
-
-    float PhotoSensitiveLightModifier;
-
-    bool Loop;
-
-    bool AffectedByPhotosensitivity;
-
-    bool RandomStartTime;
-
-    ULightModulationComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void StopModulation();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

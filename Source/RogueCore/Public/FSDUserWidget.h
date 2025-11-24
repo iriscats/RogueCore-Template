@@ -11,13 +11,6 @@ class APlayerCharacter;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UFSDUserWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    APlayerCharacter* Character;
-
-
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

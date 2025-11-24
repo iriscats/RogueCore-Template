@@ -28,14 +28,6 @@ class ROGUECORE_API AExtractorItem : public AAnimatedItem, public IThrowable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CurrentLoad, meta=(AllowPrivateAccess=true))
-
-    float CurrentLoad;
-
-    AExtractorItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFloatDelegate OnCurrentLoadChangedEvent;

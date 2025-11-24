@@ -16,14 +16,6 @@ class ROGUECORE_API AResourceChunk : public AFSDPhysicsActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UBXEBlueprintControlledObjective* SpawnedByObjective;
-
-    AResourceChunk(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

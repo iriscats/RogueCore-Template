@@ -11,20 +11,6 @@ class AEscortMuleAIController : public AFSDAIController, public IAsyncPathReques
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UEscortObjective* EscortObj;
-
-    int32 TunnelStartIndex;
-
-    int32 TunnelEndIndex;
-
-    FRandomStream RandomStream;
-
-    AEscortMuleAIController(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -12,18 +12,6 @@ class UInstancedNiagaraComponent : public USceneComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-
-    UNiagaraComponent* NiagaraComponent;
-
-    UInstancedNiagaraComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SpawnSystemAtLocation(const FVector& InLocation);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

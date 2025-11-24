@@ -13,16 +13,6 @@ class ROGUECORE_API AEscortHammerObjectiveActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MovementState, meta=(AllowPrivateAccess=true))
-
-    FEscortHammerMovementState MovementState;
-
-    FEscortHammerMovementState LocalMovementState;
-
-    AEscortHammerObjectiveActor(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

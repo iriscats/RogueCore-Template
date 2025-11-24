@@ -13,32 +13,6 @@ class UProjectileThrowerAttack : public UProjectileAttackComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    USkeletalMesh* ThrowerMesh;
-
-    
-
-    TSubclassOf<UAnimInstance> ThrowerAnimInstance;
-
-    TArray<UAnimMontage*> ThrowerMontages;
-
-    FName ThrowerAttachPoint;
-
-    bool RotateToTarget;
-
-    FRotator ThrowerRotation;
-
-    FVector ThrowerOffset;
-
-    UProjectileThrowerAttack(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnThrowerMontageEnded(UAnimMontage* Montage, bool bInterrupted);
-
-
-
 public:
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

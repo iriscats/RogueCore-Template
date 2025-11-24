@@ -29,19 +29,6 @@ UCLASS(Blueprintable, NoExport)
 class ROGUECORE_API AMicrowaveWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UElementComponent> RadiantSuperheaterTarget;
-
-    bool SlowOnHit;
-
-    TSubclassOf<AActor> HeatSink;
-
-    AMicrowaveWeapon(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageComponent* DamageComp;

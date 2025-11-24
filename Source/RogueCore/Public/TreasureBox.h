@@ -24,15 +24,6 @@ class ROGUECORE_API ATreasureBox : public ATreasureContainer {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    int32 ItemsInserted;
-
-    bool IsTreasureAvailable;
-
-    ATreasureBox(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

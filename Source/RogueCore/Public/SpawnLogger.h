@@ -12,20 +12,6 @@ class USpawnLogger : public UObject {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FDelegate OnLogAdded;
-
-    FOnSectionLogAdded OnSectionLogAdded;
-
-    USpawnLogger();
-
-    UFUNCTION(BlueprintCallable, BlueprintPure=false, meta=(WorldContext="WorldContextObject"))
-
-    void ShowSpawnLocations(UObject* WorldContextObject) const;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

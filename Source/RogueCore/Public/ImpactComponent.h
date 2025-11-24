@@ -11,26 +11,6 @@ class UImpactComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    bool DebugText;
-
-    bool TrackAcceleration;
-
-    bool TrackVelocity;
-
-    float TriggerHighAccelAt;
-
-    float TriggerAtVelocityDifference;
-
-    UImpactComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetCheckVelocity(bool aCheckVelocity);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FImpactedSignature OnImpactedEvent;

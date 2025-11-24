@@ -16,33 +16,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UWeakpointGlowComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    TArray<FWeakpointChannel> Channels;
-
-    FRuntimeFloatCurve WeakpointHitCurve;
-
-    float CurveMultiplier;
-
-    EWeakpointGlowMode Mode;
-
-    UFSDPhysicalMaterial* WeakPointMaterial;
-
-    bool AddFirstChannelAutomatically;
-
-    int32 ReplaceMatIndex;
-
-    UWeakpointGlowComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    bool StopLoopingGlow(int32 aGlowID, bool aFade);
-
-    void ShowBodypartHit(float amount, float BaseAmount, const FDamageData& DamageData);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

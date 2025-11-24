@@ -12,17 +12,6 @@ class UPlayerMovementComponent : public UCharacterMovementComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UCharacterStateComponent> CurrentPhysUpdateState;
-
-    UPlayerMovementComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void RemoveGravityModifier(AActor* SourceActor);
-
-
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnJumpOffDelegate);

@@ -16,36 +16,6 @@ class ULineSpikeAttack : public USpecialAttackComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_TentaclesBurried, meta=(AllowPrivateAccess=true))
-
-    bool TentaclesBurried;
-
-    float MaxStepUpheight;
-
-    float firstSpikeDelay;
-
-    float MaxDistanceToGround;
-
-    float DistanceBetweenSpikes;
-
-    float TimeBetweenSpikes;
-
-    float TentacleStretchPower;
-
-    float TentacleSearchDistance;
-
-    float TentacleInGroundOffset;
-
-    int32 MinSpikeCount;
-
-    int32 MaxFails;
-
-    ULineSpikeAttack(const FObjectInitializer& ObjectInitializer);
-
-    virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

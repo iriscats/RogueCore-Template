@@ -11,25 +11,6 @@ class USceneComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UImpactAudioComponent : public UAudioComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FName AudioParameterSpeed;
-
-    
-
-    float DecelerationThreshold;
-
-    bool ListenForDeath;
-
-    UImpactAudioComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnOwnerDeath(UHealthComponentBase* HealthComponent);
-
-
 
 public:
 protected:

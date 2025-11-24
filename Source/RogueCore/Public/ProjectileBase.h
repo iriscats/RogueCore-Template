@@ -25,13 +25,6 @@ class AProjectileBase : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsDorment, meta=(AllowPrivateAccess=true))
-
-    bool IsDorment;
-
-    AProjectileBase(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

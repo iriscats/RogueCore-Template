@@ -9,23 +9,6 @@ UCLASS(Blueprintable, EditInlineNew)
 class UTimedSpecialEventSpawner : public USpecialEventSpawner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    TSoftClassPtr<AActor> EventActor;
-
-    float MinTime;
-
-    float MaxTime;
-
-    UTimedSpecialEventSpawner();
-
-    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
-
-    static void UnblockEventSpawn(UObject* blocker);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

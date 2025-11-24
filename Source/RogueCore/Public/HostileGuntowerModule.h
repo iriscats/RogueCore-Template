@@ -16,14 +16,6 @@ class AHostileGuntowerModule : public AGuntowerModule, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
-
-    FRotator CurrentAimRotation;
-
-    AHostileGuntowerModule(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* DestroyedMesh;

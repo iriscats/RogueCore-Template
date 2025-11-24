@@ -16,26 +16,6 @@ class UProjectileAttackBaseComponent : public UAttackBaseComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    FProjectileAttackDelegate OnAttackStartedEvent;
-
-    FProjectileAttackDelegate OnProjectileFiredEvent;
-
-    FProjectileAttackDelegate OnAttackEndedEvent;
-
-    FProjetileSpawnedDelegate OnProjectileSpawnedEvent;
-
-    UProjectileAttackBaseComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    bool TriggerMontage(AActor* Target);
-
-    void SpawnProjectile();
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

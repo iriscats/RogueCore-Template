@@ -11,19 +11,6 @@ class UShieldProjectorBeltUnlockComponent : public UPerkInputUnlockComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    FTimerHandle TimeoutHandle;
-
-    float Duration;
-
-    UShieldProjectorBeltUnlockComponent(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable)
-
-    void StopShieldProjector();
-
-
 
 public:
 protected:

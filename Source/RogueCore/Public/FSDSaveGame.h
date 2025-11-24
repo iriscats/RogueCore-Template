@@ -55,17 +55,6 @@ UCLASS(Blueprintable)
 class ROGUECORE_API UFSDSaveGame : public USaveGame {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
-
-    UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    uint32 userIdx;
-
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    uint32 SaveToDiskCounter;
-
-
-
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FTutorialsResetDelegate);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FSkinSignature, UItemSkin*, Skin, UItemID*, ItemID);

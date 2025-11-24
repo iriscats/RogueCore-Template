@@ -25,24 +25,6 @@ class ALaserPointerItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
-
-    TWeakObjectPtr<UObjectInfoComponent> LookAtInfo;
-
-    TWeakObjectPtr<UTerrainMaterial> LookAtTerrainMaterial;
-
-    FLaserPointerData LookAtData;
-
-    float LookAtDistance;
-
-    UDialogDataAsset* LookAtShout;
-
-    UDialogDataAsset* MissionControlLookAtShout;
-
-    ALaserPointerItem(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMarkerPlacedDelegate OnMarkerPlaced;

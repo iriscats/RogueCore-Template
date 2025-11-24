@@ -27,14 +27,6 @@ class ASharkEnemy : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))
-
-    ESharkEnemyState State;
-
-    ASharkEnemy(const FObjectInitializer& ObjectInitializer);
-
-
-
 public:
     USphereComponent* CollisionSphere;
     USphereComponent* NearTargetSphere;

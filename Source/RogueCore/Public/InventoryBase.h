@@ -12,12 +12,6 @@ class UInventoryBase : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 
-    UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
-
-    AActor* LastEquippedActors[2];
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnEquippedActorChanged;

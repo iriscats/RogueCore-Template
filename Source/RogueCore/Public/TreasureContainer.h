@@ -16,21 +16,6 @@ class ROGUECORE_API ATreasureContainer : public AActor, public IActorTrackingChe
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_LastJoiner, meta=(AllowPrivateAccess=true))
-
-    APlayerCharacter* LastJoiner;
-
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-
-    UTreasureRewarder* TreasureRewarder;
-
-    bool ShouldActivateCollectUsable;
-
-    bool PreventLatejoiners;
-
-    ATreasureContainer(const FObjectInitializer& ObjectInitializer);
-
-
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

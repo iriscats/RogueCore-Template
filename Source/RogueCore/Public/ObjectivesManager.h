@@ -11,26 +11,6 @@ class UObjectivesManager : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool ObjectivesInitialized;
-
-    bool ObjectivesStarted;
-
-    bool bCheatObjectivesCompleted;
-
-    UObjectivesManager(const FObjectInitializer& ObjectInitializer);
-
-    UFUNCTION(BlueprintCallable, BlueprintPure)
-
-    bool ReturnObjectivesCompleted(bool& hasRequiredSecondary, UDialogDataAsset*& OverridePrimaryObjCompletedShout) const;
-
-    UFUNCTION(BlueprintCallable)
-
-    void OnObjectiveChanged(UObjective* obj);
-
-
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnObjectivesCompleted;

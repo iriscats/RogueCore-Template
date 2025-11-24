@@ -8,20 +8,6 @@ class UWallMouthAnimInstance : public UAnimInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-
-    bool IsPuking;
-
-    
-
-    UWallMouthAnimInstance();
-
-    UFUNCTION(BlueprintCallable)
-
-    void SetIsPuking(bool InIsPuking);
-
-
-
 public:
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
