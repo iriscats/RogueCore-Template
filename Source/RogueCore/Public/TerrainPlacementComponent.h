@@ -19,7 +19,7 @@ public:
     FDebrisCapsule Capsule;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     int32 BlockerIDHack;
-protected:
+ 
     bool bAddBlockerOnSpawn;
     UTerrainPlacementComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)

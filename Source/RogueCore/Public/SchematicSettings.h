@@ -52,7 +52,7 @@ public:
     USchematicCategory* VanityCatVictoryPose;
     USchematicCategory* WeaponPaintJob;
     UDataTable* SchematicGATable;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<FGuid, USchematic*> AllSchematicsMap;
     TSet<USchematic*> AllSchematics;

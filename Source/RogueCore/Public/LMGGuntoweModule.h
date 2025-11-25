@@ -22,7 +22,7 @@ public:
     UDamageComponent* DamageComp;
     USceneComponent* AimAtWhenNoTarget;
     UAudioComponent* FireAudio;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UFXSystemAsset* TracerEffect;
     UFXSystemAsset* MuzzleEffect;

@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UBXEBlueprintControlledObjective* RewardObjective;
     
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float XRange;
     float YRange;

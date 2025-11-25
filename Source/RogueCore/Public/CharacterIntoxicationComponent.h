@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIntoxicationProgressSignature OnIntoxicationChanged;
     FPassOutDrunkSignature OnPassOutDrunk;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlayerCharacter* Character;
     EIntoxicationState CurrentState;

@@ -11,5 +11,5 @@ public:
     int32 XP;
     TArray<FForgingPendingReward> PendingMasteryRewards;
     ROGUECORE_API FForgingSave();
-protected:
+ 
 };

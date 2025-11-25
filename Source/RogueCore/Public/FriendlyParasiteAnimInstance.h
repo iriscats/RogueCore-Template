@@ -11,5 +11,5 @@ public:
     bool InFoldoutRange;
     
     bool InSpinRange;
-    UFriendlyParasiteAnimInstance();
+    UFriendlyParasiteAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

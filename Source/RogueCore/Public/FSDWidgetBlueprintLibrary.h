@@ -68,7 +68,7 @@ public:
     static void SetMousePosition(UObject* WorldContextObject, int32 X, int32 Y);
     static bool SetHorizontalSlot(UWidget* Widget, FSlateChildSize Size, TEnumAsByte<EHorizontalAlignment> HorizontalAlignment, TEnumAsByte<EVerticalAlignment> VerticalAlignment, FMargin Padding);
     static void SetChildrenVisibility(UPanelWidget* Panel, ESlateVisibility Visibility, int32 StartIndex, TSubclassOf<UUserWidget> OptionalClassFilter);
-protected:
+ 
     static void SelectVisibility(UWidget* Widget, ESlateVisibility InFalse, ESlateVisibility InTrue, const bool Value, bool& IsVisible, bool& VisibilityChanged, ESlateVisibility& NewVisibility);
     static void ScrubAnimation(UObject* WorldContext, UWidgetAnimation* InAnimation, float Progress01);
     static void ScaleTextBlockToHeight(UTextBlock* TextBlock, float TargetHeight, bool SetMinimimumWidth);

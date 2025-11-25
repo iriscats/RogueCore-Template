@@ -18,7 +18,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStickyFlameSignature OnStickyFlameSpawned;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AStickyFlame> StickyFlameActor;
     float FlameLifetime;

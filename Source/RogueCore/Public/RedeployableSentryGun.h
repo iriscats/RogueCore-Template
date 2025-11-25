@@ -31,7 +31,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnDeployProgress OnDeployProgressEvent;
     FOnDestructionRequested OnDestructionRequested;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UActorTrackingComponent* ActorTrackingIcon;
     UOutlineComponent* Outline;

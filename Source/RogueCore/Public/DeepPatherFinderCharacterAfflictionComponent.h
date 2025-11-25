@@ -9,7 +9,6 @@ class UDeepPatherFinderCharacterAfflictionComponent : public UPawnAfflictionComp
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     ADeepPathfinderCharacter* Character;
     

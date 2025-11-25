@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "Styling/SlateColor.h"
-#include "UMG/RichTextBlock.h"
+#include "Components/RichTextBlock.h"
 #include "RichTextSizable.generated.h"
 
 UCLASS(Blueprintable)
@@ -11,7 +11,6 @@ class URichTextSizable : public URichTextBlock {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bOverrideDefaultSize;
     

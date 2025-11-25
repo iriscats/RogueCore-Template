@@ -10,7 +10,6 @@ class AMaggot : public ADeepPathfinderCharacter {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USimpleHealthComponent* HealthComponent;
     

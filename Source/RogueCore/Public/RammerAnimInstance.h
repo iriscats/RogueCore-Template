@@ -25,5 +25,5 @@ public:
     float VerticalAngularChargeSpeed;
     bool HasCarvedRecently;
     bool IsStoppingEarly;
-    URammerAnimInstance();
+    URammerAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

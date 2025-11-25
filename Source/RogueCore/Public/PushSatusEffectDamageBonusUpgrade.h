@@ -15,7 +15,6 @@ class UPushSatusEffectDamageBonusUpgrade : public UItemUpgrade {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> StatusEffect;
     

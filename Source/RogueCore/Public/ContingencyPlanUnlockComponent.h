@@ -17,7 +17,7 @@ public:
     FDelegate OnContingencyStarted;
     
     FDelegate OnContingencyEnded;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnGameStateDelegate OnGameStateChangedDelegate;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

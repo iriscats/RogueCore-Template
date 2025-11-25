@@ -24,7 +24,7 @@ public:
     
     TArray<UVanityItem*> MedbayArmorMaterials;
     UDLCBase* AlwaysLockedDLC;
-protected:
+ 
     FVanityMasterySettings MasterySettings;
     FResourceSpawner FashioniteSpawn;
     TArray<UTexture2D*> VanityCategoryIcons;

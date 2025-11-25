@@ -9,7 +9,6 @@ class UExpeniteProcessingMachineAnimInstance : public UAnimInstance {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ExpenitePotZOffset;
     

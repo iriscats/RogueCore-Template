@@ -12,7 +12,6 @@ class ALaserPointerWaypoint : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APlayerCharacter> Character;
     

@@ -20,7 +20,7 @@ public:
     UDebrisPositioning* Positioning;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTerrainPlacementComponent* terrainPlacement;
-protected:
+ 
     float MinRadius;
     float MaxRadius;
     float MaxExtraRadius;

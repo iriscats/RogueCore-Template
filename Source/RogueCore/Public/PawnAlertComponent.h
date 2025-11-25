@@ -21,7 +21,7 @@ public:
     UPawnAlertComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void StopAutoAlerting();
-protected:
+ 
     void OnPawnSeen(APawn* Pawn);
     void OnHit(float Damage, const FDamageData& DamageData, bool anyHealthLost, UHealthComponentBase* HealthComponent);
     void OnAlerted();

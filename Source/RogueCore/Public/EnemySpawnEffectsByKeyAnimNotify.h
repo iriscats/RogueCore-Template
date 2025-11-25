@@ -10,7 +10,6 @@ class UEnemySpawnEffectsByKeyAnimNotify : public UAnimNotify {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UEnemySpawnEffectsKey* EffectKey;
     

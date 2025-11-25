@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAggregatorVisibilityChangedDelegate OnVisibilityChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText UsingText;
     UUsableAggregator(const FObjectInitializer& ObjectInitializer);

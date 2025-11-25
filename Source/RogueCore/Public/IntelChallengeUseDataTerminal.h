@@ -11,14 +11,13 @@ class UIntelChallengeUseDataTerminal : public UIntelChallengePlayerMonitor {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 RequiredUseAmount;
     
     ERunDepth RequiredRunDepth;
     bool RequireMutator;
     UIntelChallengeUseDataTerminal();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnActivatedTerminal(AActor* TerminalActor);
 };

@@ -11,7 +11,6 @@ class UProspectorObjective : public UObjective {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<AProspectorRobot> ProspectorClass;
     

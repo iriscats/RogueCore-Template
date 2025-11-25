@@ -10,5 +10,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FPerkClaimEntry> PerkEntries;
     FPerkClaimsSave();
-protected:
+ 
 };

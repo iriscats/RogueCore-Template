@@ -13,7 +13,6 @@ class UFSDAchievement : public USavableDataAsset {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString SteamAPIAchievementName;
     

@@ -20,7 +20,7 @@ bool URunHistoryStateComponent::GetLatestBuildData(int32 PlayerIndex, FParsedCha
 void URunHistoryStateComponent::Client_ReceiveDataDone_Implementation(ERunHistoryNetMessageDataType Type, int32 TargetPlayerIndex) {
 }
 
-void URunHistoryStateComponent::Client_ReceiveData_Implementation(const TArray<uint8>& CharacterData) {
+void URunHistoryStateComponent::Client_ReceiveData(const TArray<uint8>& CharacterData) {
 }
 
 

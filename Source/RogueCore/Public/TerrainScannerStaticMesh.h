@@ -9,7 +9,6 @@ class ROGUECORE_API UTerrainScannerStaticMesh : public UStaticMeshComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bVisibleAtBeginPlay;
     

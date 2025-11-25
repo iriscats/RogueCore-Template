@@ -10,14 +10,14 @@ class UPerkCooldownWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AActor* MonitoredCharacter;
     
     UPerkAsset* MonitoredPerk;
     float currentProgress;
     UPerkCooldownWidget();
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void SetMonitoredPerk(AActor* Character, UPerkAsset* Perk);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

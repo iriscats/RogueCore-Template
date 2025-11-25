@@ -14,7 +14,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnTookDamage(UHealthComponent* Health);
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool LeftCannistersVisible;
 

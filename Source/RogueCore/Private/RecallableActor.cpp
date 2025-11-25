@@ -14,13 +14,6 @@ ARecallableActor::ARecallableActor(const FObjectInitializer& ObjectInitializer) 
 void ARecallableActor::SetRecallTarget_Implementation(AActor* NewTarget) {
 }
 
-void ARecallableActor::Relocate_Implementation(FVector NewLocation, FRotator NewRotation) {
-}
-
-
-void ARecallableActor::Recall_Implementation() {
-}
-
 
 
 void ARecallableActor::OnRep_State(ERecallableActorState oldState) {

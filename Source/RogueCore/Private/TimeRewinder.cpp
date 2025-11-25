@@ -29,19 +29,19 @@ void ATimeRewinder::Terminate() {
 void ATimeRewinder::Server_ShowTPRecall_Implementation() {
 }
 
-void ATimeRewinder::Server_ShowTPActivation_Implementation() {
+void ATimeRewinder::Server_ShowTPActivation() {
 }
 
 void ATimeRewinder::Server_SavedRewindSpot_Implementation(FRewindData Data) {
 }
 
-void ATimeRewinder::Server_RewindStarted_Implementation(FRewindData Data) {
+void ATimeRewinder::Server_RewindStarted(FRewindData Data) {
 }
 
-void ATimeRewinder::Server_Rewind_Implementation(FRewindData Data) {
+void ATimeRewinder::Server_Rewind(FRewindData Data) {
 }
 
-void ATimeRewinder::Server_DeactivateEffects_Implementation() {
+void ATimeRewinder::Server_DeactivateEffects() {
 }
 
 
@@ -66,13 +66,13 @@ void ATimeRewinder::DeactivateAfterRewind() {
 void ATimeRewinder::All_ShowTPRecall_Implementation() {
 }
 
-void ATimeRewinder::All_ShowTPActivation_Implementation() {
+void ATimeRewinder::All_ShowTPActivation() {
 }
 
 void ATimeRewinder::All_OnDeath_Implementation() {
 }
 
-void ATimeRewinder::All_DeactivateEffects_Implementation() {
+void ATimeRewinder::All_DeactivateEffects() {
 }
 
 

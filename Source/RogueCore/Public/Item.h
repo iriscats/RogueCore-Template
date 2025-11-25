@@ -43,7 +43,6 @@ class ROGUECORE_API AItem : public AActor, public ISaveGameIDInterface, public I
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnAddedToInventoryDelegate;
     

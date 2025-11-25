@@ -17,7 +17,6 @@ class ULineSpikeAttack : public USpecialAttackComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* TentacleMaterial;
     

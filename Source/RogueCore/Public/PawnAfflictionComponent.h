@@ -23,7 +23,7 @@ public:
     FAfflictionChangeDelegate OnAfflictionActivatedEvent;
     
     FAfflictionChangeDelegate OnAfflictionDeactivatedEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<UPawnAffliction*, FPawnAfflictionItem> ActiveAfflictions;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

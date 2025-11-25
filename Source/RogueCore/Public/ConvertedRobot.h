@@ -84,7 +84,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_TeamState, meta=(AllowPrivateAccess=true))
     ERobotState TeamState;
 
-protected:
+ 
     bool IntroductionDone;
     bool IsGrowingShield;
     float AimDownwardsOffset;
@@ -132,7 +132,7 @@ protected:
     float FriendlyFriendlyFireMultiplier;
     bool StartedSpecialAttack;
 
-private:
+ 
     bool IsWalking;
     UStaticMeshComponent* TurretRotation;
 
@@ -171,7 +171,7 @@ public:
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void DestroyAttatchPoint(USceneComponent* aComponent);
     void CannonEffects_Implementation();
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void BP_OnStateChanged(ERobotState NewTeamState);
 public:

@@ -14,7 +14,7 @@ public:
     FLoSDelegate OnGaindedLineOfSight;
     
     FLoSDelegate OnLostLineOfSight;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UMeshComponent* OwnerMesh;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -10,7 +10,7 @@ class UKeyStrokeMatcherLibrary : public UBlueprintFunctionLibrary {
     GENERATED_BODY()
 public:
     UKeyStrokeMatcherLibrary();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     static bool TestKeyStroke(UPARAM(Ref) FKeyStrokeMatcher& KeyStrokeMatcher, const FKeyEvent& InKey);
     

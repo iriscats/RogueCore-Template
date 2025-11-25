@@ -1,6 +1,7 @@
 #include "WoodLouseAnimInstance.h"
 
-UWoodLouseAnimInstance::UWoodLouseAnimInstance() {
+UWoodLouseAnimInstance::UWoodLouseAnimInstance(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
     this->InterpSpeed = 3.00f;
     this->BreakRollingWhenTimeLeft = 0.97f;
     this->RollerState = EWoodLouseState::Unfolded;

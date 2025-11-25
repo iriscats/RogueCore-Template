@@ -13,7 +13,6 @@ class ROGUECORE_API UMultiprojectileSpawner : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FProjectileSpawnData> ProjectileData;
     

@@ -10,7 +10,6 @@ class UStationaryEnemyAnimInstance : public UEnemyAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AActor* Target;
     
@@ -24,7 +23,7 @@ protected:
     bool IsVisible;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool InvertPitch;
-    UStationaryEnemyAnimInstance();
+    UStationaryEnemyAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetIsVisible(bool InIsVisible);
 };

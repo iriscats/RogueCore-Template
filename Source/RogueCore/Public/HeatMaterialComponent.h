@@ -10,7 +10,6 @@ class UHeatMaterialComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName ParameterName;
     

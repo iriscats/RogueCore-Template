@@ -11,7 +11,6 @@ class UReflectionHitscanComponent : public UHitscanBaseComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTerrainType* PlatformTerrainType;
     
@@ -23,6 +22,7 @@ protected:
     UReflectionHitscanComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_RegisterHit_Reflection(const FReflectiveHitscanHit& Hit);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_RegisterHit(const FReflectiveHitscanHit& Hit);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_ShowHit(const FReflectiveHitscanHit& Hit);

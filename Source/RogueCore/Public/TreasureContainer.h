@@ -22,7 +22,7 @@ public:
     USceneComponent* Root;
     
     UOncePerPlayerInstantUsableComponent* CollectUsable;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UItemAquisitionSource* AquisitionSource;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Collectors, meta=(AllowPrivateAccess=true))

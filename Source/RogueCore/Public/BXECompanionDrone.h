@@ -97,7 +97,7 @@ public:
     UDialogDataAsset* ShoutUpgradesLastActivation;
     float MinTimeBetweenConsecutiveShouts;
     float TimeOfLastShout;
-protected:
+ 
     ABXECompanionDrone(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)
@@ -108,7 +108,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_MessageAi(FName Trigger);
     void OnTrayChanged();
-private:
+ 
     void OnResourceAdded(UCappedResource* Resource, float amount);
     UFUNCTION()
     void OnRep_TrayOpen();

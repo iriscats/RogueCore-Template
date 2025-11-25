@@ -15,7 +15,6 @@ class ASpiderEnemy : public AEnemyDeepPathfinderCharacter, public IEnemyAttacker
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPawnStatsComponent* PawnStats;
     

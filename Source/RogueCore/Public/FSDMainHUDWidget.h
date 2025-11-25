@@ -14,7 +14,7 @@ public:
     void PushEvent(UWidget* eventWidget, bool Left);
     
     void PopEvent(UWidget* eventWidget, bool Left);
-protected:
+ 
     void OnRadarPointAdded(URadarPointComponent* Point);
     UFUNCTION(BlueprintCallable)
     void AddRadarPoint(URadarPointComponent* Point);

@@ -12,11 +12,10 @@ class ADroneControllerBase : public AAIController {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<TWeakObjectPtr<APlayerCharacter>> ControllingPlayers;
 
-private:
+ 
     friend struct Z_Construct_UClass_ADroneControllerBase_Statics;
     
     ADroneControllerBase(const FObjectInitializer& ObjectInitializer);

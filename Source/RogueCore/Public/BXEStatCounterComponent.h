@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnStatsUpdated;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText TotalDamageDealtText;
     FText TotalDamageTakenText;

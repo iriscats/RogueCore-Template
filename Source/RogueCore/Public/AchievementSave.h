@@ -12,5 +12,5 @@ public:
 
     TArray<FAchievementSaveEntry> AchievementEntries;
     ROGUECORE_API FAchievementSave();
-protected:
+ 
 };

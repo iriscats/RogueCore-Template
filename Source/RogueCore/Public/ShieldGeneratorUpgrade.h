@@ -13,7 +13,6 @@ class UShieldGeneratorUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EShieldGeneratorUpgrades upgradeType;
     

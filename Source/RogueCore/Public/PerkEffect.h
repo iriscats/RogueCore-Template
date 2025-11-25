@@ -9,7 +9,7 @@ class UPerkEffect : public UDataAsset {
     GENERATED_BODY()
 public:
     UPerkEffect();
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_ActivatePerk(APlayerCharacter* Character, float Value);
     

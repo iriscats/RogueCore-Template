@@ -22,7 +22,7 @@ public:
     FChargingDelegate OnEndCharging;
     FChargingDelegate OnChargingFailed;
     FChargeChangedDelegate OnChargeChanged;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ChargeTime;
     int32 ShotCostCharged;

@@ -16,7 +16,6 @@ class ARessuplyPodItem : public AAnimatedItem {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AActor> ResupplyBeacon;
     

@@ -22,7 +22,7 @@ public:
 
     void BeginRewardFlow(FClaimableRewardView InViewData);
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FClaimableRewardView Data;
 };

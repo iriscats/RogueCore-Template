@@ -12,7 +12,6 @@ class USavableDataAsset : public UDataAsset, public ISaveGameIDInterface {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool EnableDangerousSaveGameIDEditing;
     

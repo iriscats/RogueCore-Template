@@ -22,7 +22,7 @@ public:
     FReloadCompleteSignature OnReloadComplete;
     FReloadStartedSignature OnReloadStarted;
     FAmountChangedSignature OnMaxAmmoCapacityChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool showClipCount;
     UCapacityBasedItemAggregator(const FObjectInitializer& ObjectInitializer);

@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMineHitEvent HitSomething;
     
-protected:
+ 
     float Range;
     float SameHitDistance;
     float MineRadius;

@@ -18,7 +18,7 @@ public:
     FOnHitDelegate OnHitEffect;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnHitDelegate OnClosestHit_Client;
-protected:
+ 
     float Range;
     float Width;
     bool ShowPhysMatImpact;

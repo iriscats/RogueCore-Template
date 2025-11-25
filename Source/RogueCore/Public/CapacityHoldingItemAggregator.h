@@ -11,7 +11,6 @@ class UCapacityHoldingItemAggregator : public UCapacityBasedItemAggregator, publ
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MaxAmmo, meta=(AllowPrivateAccess=true))
     int32 MaxAmmo;
     

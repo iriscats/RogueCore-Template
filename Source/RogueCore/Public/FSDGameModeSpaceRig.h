@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool StartedSession;
 
-protected:
+ 
     AFSDGameModeSpaceRig(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void OnMissionStartedFromSpacerig();

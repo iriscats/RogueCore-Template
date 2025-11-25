@@ -15,7 +15,6 @@ class UPerkEffectComponentThorns : public UPerkEffectComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageClass* DamageClass;
     

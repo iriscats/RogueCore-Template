@@ -43,7 +43,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnPowerAttackRecharged;
     FDelegate OnTerrainDug;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* FP_Root;
     USceneComponent* TP_Root;
@@ -105,13 +105,18 @@ protected:
     void SetSpecialCoolDownDuration(float newCooldownDuration);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_TriggerBezerk();
-    void Server_SetState(EPickaxeState NewState);
-    void Server_RemoveDebrisInstance(FVector_NetQuantize HitPos, int32 DebrisIndex, int32 remappedIndex);
+    UFUNCTION(Reliable, Server)
+    void Server_SetState_Implementation(EPickaxeState NewState);
+    UFUNCTION(Reliable, Server)
+    void Server_RemoveDebrisInstance_Implementation(FVector_NetQuantize HitPos, int32 DebrisIndex, int32 remappedIndex);
     UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_HitBlock(FVector_NetQuantize position, int32 Material, bool removeDebris, bool isSpecial);
-    void Server_DoPowerAttack();
-    void Server_DigBlock(FVector carvePos, FVector carveDirection, int32 TerrainMaterial, bool isSpecial);
-    void Server_DamageTarget(UPrimitiveComponent* TargetComponent, bool isSpecial, const FVector_NetQuantize& ImpactPoint, const FVector_NetQuantizeNormal& ImpactNormal, UFSDPhysicalMaterial* PhysMaterial, uint8 BoneIndex);
+    UFUNCTION(Reliable, Server)
+    void Server_DoPowerAttack_Implementation();
+    UFUNCTION(Reliable, Server)
+    void Server_DigBlock_Implementation(FVector carvePos, FVector carveDirection, int32 TerrainMaterial, bool isSpecial);
+    UFUNCTION(Reliable, Server)
+    void Server_DamageTarget_Implementation(UPrimitiveComponent* TargetComponent, bool isSpecial, const FVector_NetQuantize& ImpactPoint, const FVector_NetQuantizeNormal& ImpactNormal, UFSDPhysicalMaterial* PhysMaterial, uint8 BoneIndex);
     void RefreshSpecialCooldown();
     void OnSpecialHitTarget(UHealthComponentBase* Health, float amount, UPrimitiveComponent* Component, UFSDPhysicalMaterial* PhysicalMaterial);
     UFUNCTION()
@@ -124,15 +129,22 @@ protected:
     void DecreaseSpecialCooldownDurationRemaining_Percent(float InPercent);
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_SetSpecialCoolDownDurationRemaining(float newCooldownRemaining);
-    void Client_SetSpecialCoolDownDuration(float newCooldownDuration);
-    void Client_EnemyKilledWithPowerAttack();
-    void Client_DecreaseSpecialCooldownDurationRemaining_Percent(float InPercent);
+    UFUNCTION(Client, Reliable)
+    void Client_SetSpecialCoolDownDuration_Implementation(float newCooldownDuration);
+    UFUNCTION(Client, Reliable)
+    void Client_EnemyKilledWithPowerAttack_Implementation();
+    UFUNCTION(Client, Reliable)
+    void Client_DecreaseSpecialCooldownDurationRemaining_Percent_Implementation(float InPercent);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_SimulateHitBlock(FVector_NetQuantize position, int32 materia, bool removeDebris, bool isSpecial);
-    void All_SimulateDigDebris(FVector_NetQuantize position, UFXSystemAsset* Particles, USoundCue* cue);
-    void All_SimulateDigBlock(FVector_NetQuantize position, bool spawnParticles, int32 Material, float Density, bool isSpecial);
-    void All_SimulateDamageTarget(UPrimitiveComponent* TargetComponent, bool isSpecial, const FVector_NetQuantize& ImpactPoint, const FVector_NetQuantizeNormal& ImpactNormal, UFSDPhysicalMaterial* PhysMaterial, uint8 BoneIndex);
-    void All_DoPowerAttack();
+    UFUNCTION(NetMulticast, Unreliable)
+    void All_SimulateDigDebris_Implementation(FVector_NetQuantize position, UFXSystemAsset* Particles, USoundCue* cue);
+    UFUNCTION(NetMulticast, Unreliable)
+    void All_SimulateDigBlock_Implementation(FVector_NetQuantize position, bool spawnParticles, int32 Material, float Density, bool isSpecial);
+    UFUNCTION(NetMulticast, Unreliable)
+    void All_SimulateDamageTarget_Implementation(UPrimitiveComponent* TargetComponent, bool isSpecial, const FVector_NetQuantize& ImpactPoint, const FVector_NetQuantizeNormal& ImpactNormal, UFSDPhysicalMaterial* PhysMaterial, uint8 BoneIndex);
+    UFUNCTION(NetMulticast, Reliable)
+    void All_DoPowerAttack_Implementation();
     // Fix for true pure virtual functions not being implemented
     float GetStackingTimeLimit() const override PURE_VIRTUAL(GetStackingTimeLimit, return 0.0f;);
     int32 GetMaxCombinationsPerentry() const override PURE_VIRTUAL(GetMaxCombinationsPerentry, return 0;);

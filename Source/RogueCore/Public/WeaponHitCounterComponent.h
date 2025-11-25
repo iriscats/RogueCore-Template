@@ -14,7 +14,6 @@ class UWeaponHitCounterComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UWeaponHitCountEffect* HitEffect;
     

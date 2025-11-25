@@ -10,9 +10,9 @@ class UBomberAnimInstance : public UFlyingBugAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool ShouldBomb;
-    
+
     bool ShouldSpiral;
     bool IsBombing;
     bool IsSpiraling;
-    UBomberAnimInstance();
+    UBomberAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

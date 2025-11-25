@@ -17,7 +17,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FWorkbenchItemDelegate OnItemUpgradeSelected;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemSlotIndex UnlockSlot;
     int32 ChoiceCount;

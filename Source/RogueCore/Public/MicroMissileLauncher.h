@@ -17,7 +17,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FChargingDelegate OnStartCharging;
     FChargingDelegate OnEndCharging;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UChargedProjectileLauncherComponent* LauncherComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

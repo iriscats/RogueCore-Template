@@ -27,7 +27,7 @@ public:
     FDepositingEvent OnDepositingBegin;
     FDepositingEvent OnDepositingEnd;
     FBeginUsingDelegate OnUsableTriggered;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float UseDistance;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_State, meta=(AllowPrivateAccess=true))

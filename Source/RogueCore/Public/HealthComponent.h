@@ -33,7 +33,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintAuthorityOnly, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeathSigDetailed OnDeathDetailed;
     FHealthSegmentChange OnNewHealthSegment;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UHealthModifier*> DamageModifiers;
     TArray<float> HealthSegmentSizes;

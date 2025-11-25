@@ -10,5 +10,5 @@ public:
     float CountDownDuration;
 
     ROGUECORE_API FCountDownFloat();
-protected:
+ 
 };

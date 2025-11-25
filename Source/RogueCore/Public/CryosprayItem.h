@@ -34,7 +34,7 @@ public:
     float PressurizedProjectileDelay;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsCharging, meta=(AllowPrivateAccess=true))
     bool isCharging;
-protected:
+ 
     UDamageComponent* DamageComponent;
     UStickyFlameSpawner* StickyFlames;
     UDamageComponent* AoEColdDamageComponent;

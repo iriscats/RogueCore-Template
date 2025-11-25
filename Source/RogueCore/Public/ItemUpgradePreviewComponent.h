@@ -14,7 +14,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemUpgradeDelegate OnPreviewUpgradeChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UItemUpgrade* PreviewUpgrade;
     UItemUpgradePreviewComponent(const FObjectInitializer& ObjectInitializer);

@@ -26,7 +26,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ContentIndex, meta=(AllowPrivateAccess=true))
     int32 ContentIndex;
 
-protected:
+ 
     FRuntimeFloatCurve ReactZOffsetCof;
     FRuntimeFloatCurve ReactTimeDilationCof;
     TArray<FDisplayContent> Contents;

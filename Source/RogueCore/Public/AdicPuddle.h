@@ -21,7 +21,7 @@ public:
     USphereComponent* SphereTrigger;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundBase* SpawnSound;
-protected:
+ 
     TSubclassOf<UStatusEffect> InflictedStatusEffect;
 
     float Lifetime;

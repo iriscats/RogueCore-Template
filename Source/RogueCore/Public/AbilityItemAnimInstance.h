@@ -10,7 +10,6 @@ class UAbilityItemAnimInstance : public UAnimInstance {
     // UPROPERTY fields moved from protected sectio                      
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsEqupped;
     

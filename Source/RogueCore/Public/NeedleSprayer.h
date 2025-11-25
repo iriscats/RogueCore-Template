@@ -30,7 +30,7 @@ public:
     UNiagaraComponent* MuzzleFlashParticleSys;
     UNiagaraComponent* ImpactParticleComponent;
     USceneComponent* ShotOriginPivot;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;
     UFSDAudioComponent* SoundEnd;

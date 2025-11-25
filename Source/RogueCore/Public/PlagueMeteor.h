@@ -30,7 +30,7 @@ public:
     UDamageComponent* ImpactDamage;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ManuallyTargeted;
-protected:
+ 
     TArray<UStaticMesh*> Stages;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CrackStage, meta=(AllowPrivateAccess=true))
     int32 CrackStage;

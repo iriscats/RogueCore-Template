@@ -27,7 +27,7 @@ public:
     FSchematicDelegate OnSchematicAddedToInventory;
     FSchematicDelegate OnSchematicReset;
     FSchematicDelegate OnSchematicBuilt;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USchematicCategory* Category;
     USchematicPricingTier* PricingTier;

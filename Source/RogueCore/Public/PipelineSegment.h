@@ -36,7 +36,7 @@ public:
     FPipelineSegmentDelegate OnPipelineRepaired;
     FPipelineSegmentDelegate OnPipelineActivated;
     FPipelineStateDelegate OnPipelineStateChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UStaticMesh* StaticMeshUnassembled;
     UStaticMesh* StaticMeshAssembled;

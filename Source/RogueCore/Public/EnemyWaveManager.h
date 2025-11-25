@@ -23,7 +23,7 @@ public:
     FNormalWaveSpawned OnNormalWaveTimeUpdated;
     
     FDelegate OnEndWaveTriggered;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<UEnemyWaveController> AlwaysRunningWave;
     TArray<FWaveEntry> ScriptedWaves;
@@ -42,7 +42,7 @@ protected:
     bool RiftsAreOpen;
     int32 RiftSpawnCount;
     bool RiftsArePermanentAndAlwaysActive;
-private:
+ 
     AFSDGameMode* GameMode;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UEnemySpawnManager* SpawnManager;

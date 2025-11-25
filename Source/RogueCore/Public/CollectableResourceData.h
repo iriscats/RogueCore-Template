@@ -22,7 +22,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     float GetDesiredAmount(AProceduralSetup* pls) const;
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCollectableResourceCreator* ResourceCreator;
 

@@ -11,7 +11,6 @@ class UTutorialLevelWidget : public UFSDUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DelayBetweenTutorials;
     

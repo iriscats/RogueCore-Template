@@ -28,7 +28,7 @@ public:
     UParticleSystemComponent* AcidEmitterRight;
     UNiagaraComponent* AcidEmitterLeftNS;
     UNiagaraComponent* AcidEmitterRightNS;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AProjectile> AcidProjectile;
     UFXSystemAsset* deathParticles;

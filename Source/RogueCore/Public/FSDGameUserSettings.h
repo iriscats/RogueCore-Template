@@ -124,7 +124,7 @@ public:
     bool UseManuelGrahpicsMode;
     FHUDElements HUDElements;
     FCharacterOptions CharacterOptions;
-protected:
+ 
     float DownedTurnDirection_Controller;
     float DownedTurnDirection_Mouse;
     float UIDPIScale;

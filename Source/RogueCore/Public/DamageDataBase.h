@@ -21,5 +21,5 @@ public:
     bool IsRadial;
     int32 CritLevel;
     ROGUECORE_API FDamageDataBase();
-protected:
+ 
 };

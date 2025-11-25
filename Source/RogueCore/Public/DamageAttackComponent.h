@@ -9,7 +9,7 @@ UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableCompo
 class UDamageAttackComponent : public UAttackBaseComponent {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageAsset* AttackDamage;
 

@@ -14,7 +14,6 @@ class ALockOnBeam : public AActor {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USplineComponent* BeamSpline;
     

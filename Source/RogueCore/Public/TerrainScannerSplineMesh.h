@@ -10,7 +10,6 @@ class ROGUECORE_API UTerrainScannerSplineMesh : public USplineMeshComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bVisibleAtBeginPlay;
     

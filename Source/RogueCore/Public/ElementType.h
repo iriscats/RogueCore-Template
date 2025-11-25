@@ -28,7 +28,7 @@ class UElementType : public USavablePrimaryDataAsset {
     UElementEffects* ElementEffects;
     TArray<FConditionalElementEvent> Events;
 
-protected:
+ 
     UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     float Intensities[3];
     float IntensityStartDelay;

@@ -42,7 +42,7 @@ public:
     FPlayerHitSig OnPlayerHit;
     FDelegate OnIronWillActivated;
     FDelegate OnArmorUpgraded;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageClass* FallingDamageClass;
     UDialogDataAsset* OnHealedShout;
@@ -94,6 +94,7 @@ protected:
     UStatusEffect* SetIronWillStatusEffect(TSubclassOf<UStatusEffect> steClass);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_TryActivateIronWill();
+    UFUNCTION(BlueprintAuthorityOnly, Server, Reliable)
     void Server_HealArmor(float amount);
     void ResetTimeSinceLastDamage();
     void RemoveShieldUpgrade(float CapacityAmount, float RegenAmount, float DegradationRate);
@@ -124,9 +125,13 @@ protected:
     void Client_SetHealthRegenerating(bool isRegenerating);
     UFUNCTION(BlueprintCallable, Client, Unreliable)
     void Client_OnFriendlyFire(AController* EventInstigator, AActor* DamageCauser);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_HealthFullCannotHeal();
+    UFUNCTION(BlueprintCallable, Client, Unreliable)
     void Client_ArmorDamaged(float amount);
+    UFUNCTION(BlueprintAuthorityOnly, Server, Reliable)
     void Cheat_Revive();
+    UFUNCTION(BlueprintAuthorityOnly, Server, Reliable)
     void Cheat_KillPlayer();
     bool CanActivateIronWill() const;
     // Fix for true pure virtual functions not being implemented

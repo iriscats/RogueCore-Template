@@ -105,7 +105,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ExtractorSlots, meta=(AllowPrivateAccess=true))
     TArray<FEscortMuleExtractorSlot> ExtractorSlots;
 
-protected:
+ 
     AEscortMule(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

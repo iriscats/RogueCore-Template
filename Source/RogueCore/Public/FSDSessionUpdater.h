@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNewFSDSessionID OnNewFSDSessionID;
     
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UFSDSessionHandler* SessionHandler;
     UFSDSessionUpdater();

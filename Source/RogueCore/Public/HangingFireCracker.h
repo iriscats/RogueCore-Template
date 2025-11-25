@@ -22,7 +22,7 @@ public:
     USkeletalMeshComponent* SKMesh;
     UNiagaraComponent* MovingSparks;
     UFSDAudioComponent* FuseSound;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     TArray<UStaticMeshComponent*> Crackers;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

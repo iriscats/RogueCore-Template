@@ -12,5 +12,5 @@ public:
 
     TSet<FGuid> PopupsSeen;
     ROGUECORE_API FFSDEventRewardsSave();
-protected:
+ 
 };

@@ -9,7 +9,7 @@ class APlaguePuddle : public AAdicPuddle, public IVacuumable {
     GENERATED_BODY()
 public:
     APlaguePuddle(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_OnVacuumed();
     

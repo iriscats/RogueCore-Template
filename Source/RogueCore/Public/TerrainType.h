@@ -15,7 +15,7 @@ public:
     uint8 Diggable: 1;
     uint8 Precious: 1;
     USoundCue* DebrisStandardSoundCue;
-protected:
+ 
     TSoftObjectPtr<UFXSystemAsset> DebrisStandardParticles;
     UTerrainType();
 };

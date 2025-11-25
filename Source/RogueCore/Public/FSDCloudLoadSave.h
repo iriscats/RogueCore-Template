@@ -16,7 +16,7 @@ public:
     FSDCloudLoad OnCloudLoadAll;
     
     FSDCloudFailed OnCloudLoadAllFailed;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UFSDCloudSaveHandler* CloudSaveHandler;
     UFSDCloudLoadSave();

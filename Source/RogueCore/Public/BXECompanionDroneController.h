@@ -39,12 +39,12 @@ public:
     bool StoreRewards;
     UDialogDataAsset* ShoutCalling;
     TMap<EBXECompanionDroneState, UDialogDataAsset*> ShoutsWhenCannotCall;
-private:
+ 
     ABXECompanionDroneController(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void Salute();
     void ReleaseFromMachine();
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_ElevatorPressed(ATeamElevator* Elevator);
 public:

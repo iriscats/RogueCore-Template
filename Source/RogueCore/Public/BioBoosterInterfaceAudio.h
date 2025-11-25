@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<USceneComponent> AudioRootComponent;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* AudioSelectionStart;
     USoundCue* AudioSelectionSuccess;

@@ -10,7 +10,6 @@ class ROGUECORE_API USchematicBank : public USchematicBankBase {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSet<USchematic*> Schematics;
     

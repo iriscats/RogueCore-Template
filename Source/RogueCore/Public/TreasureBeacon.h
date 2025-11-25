@@ -19,7 +19,7 @@ public:
     USceneComponent* RootComp;
     
     UTerrainPlacementComponent* terrainPlacement;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDebrisPositioning* TreasurePositioning;
     UDebrisPositioning* DebrisPartsPositioning;

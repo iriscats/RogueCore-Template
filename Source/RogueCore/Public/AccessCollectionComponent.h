@@ -9,7 +9,6 @@ class ROGUECORE_API UAccessCollectionComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     TArray<UAccessCondition*> AccessConditions;
     

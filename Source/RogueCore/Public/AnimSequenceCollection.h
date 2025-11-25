@@ -18,7 +18,7 @@ public:
     TMap<UPlayerCharacterID*, FAnimSequenceArray> ClassAnims;
     
     UAnimSequenceCollection();
-private:
+ 
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UAnimSequence* GetRandomAnimSequence(const FMovieSceneConditionContext& Context) const;
 };

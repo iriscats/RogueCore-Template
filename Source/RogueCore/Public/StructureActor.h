@@ -18,7 +18,7 @@ public:
     USceneComponent* Root;
     
     UTerrainPlacementComponent* terrainPlacement;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDebrisPositioning* DebrisPositioning;
     UCurveFloat* CostCurve;

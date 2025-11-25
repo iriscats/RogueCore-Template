@@ -94,7 +94,7 @@ public:
     bool ShouldSelfDestructOnMultiplePlayers;
     FStateChangedSig OnStateChanged;
     TArray<FBoscoUnlockRecordEntry> Unlocks;
-protected:
+ 
     FGameplayTagContainer LosMatchTags;
     float SeeTargetTime;
     USoundBase* AbillityErrorSound;

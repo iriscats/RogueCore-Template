@@ -17,7 +17,7 @@ public:
     float FirstHitReactBlendIn;
     float OverrideHitReactBlendIn;
     bool AllowHitReactions;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* SkeletalMesh;
     UHitReactionComponent(const FObjectInitializer& ObjectInitializer);

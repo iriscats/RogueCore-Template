@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UMaterialInterface* OrigBaseMaterial;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* mesh;
     USkeletalMeshComponent* BodyMesh;

@@ -14,7 +14,7 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ECaveEntranceType EntranceType;
-protected:
+ 
     bool HasBeenConverted;
     ACaveEntrance(const FObjectInitializer& ObjectInitializer);
 };

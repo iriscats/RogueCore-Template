@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UVoteParticipantComponent> participant;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVoteData VoteData;
     UVoteWidget();

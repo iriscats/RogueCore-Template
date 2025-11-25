@@ -12,7 +12,6 @@ class UBXELogicUnlockComponent : public UActorComponent, public IDamageListener 
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlayerCharacter* Character;
     

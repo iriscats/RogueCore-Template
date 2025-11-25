@@ -21,11 +21,11 @@ class URun : public UObject {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRunDelegate);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRunDelegate OnRunStateChangedDelegate;
     FRunDelegate OnRunStatisticsChangedDelegate;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRunState RunState;
     FRunStatistics RunStatistics;

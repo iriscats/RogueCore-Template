@@ -21,7 +21,7 @@ bool USessionHandling::StartSearchForBlockedUsers(int32 LocalUserNum) {
 void USessionHandling::StartCheckForInstalledDLC(UObject* WorldContextObject) {
 }
 
-void USessionHandling::SortServerList(UObject* WorldContextObject, EServerSortOrder Order, bool Reverse, bool sortByFriends, TArray<FBlueprintSessionResult>& servers) {
+void USessionHandling::SortServerList(UObject* WorldContextObject, EServerSortOrder Order, bool Reverse, bool sortByFriends, TArray<FOnlineSessionSearchResult>& servers) {
 }
 
 void USessionHandling::ShowStoreUI(UObject* WorldContextObject) {
@@ -61,7 +61,7 @@ EFSDNATType USessionHandling::GetNATType(UObject* WorldContextObject) {
     return EFSDNATType::Open;
 }
 
-EMissionStructure USessionHandling::GetMissionStructure(const FBlueprintSessionResult& Result) {
+EMissionStructure USessionHandling::GetMissionStructure(const FOnlineSessionSearchResult& Result) {
     return EMissionStructure::SingleMission;
 }
 
@@ -97,102 +97,102 @@ bool USessionHandling::FSDUpdateSessionInfo(UObject* WorldContextObject) {
     return false;
 }
 
-EFSDMissionStatus USessionHandling::FSDMissionStatus(const FBlueprintSessionResult& Result) {
+EFSDMissionStatus USessionHandling::FSDMissionStatus(const FOnlineSessionSearchResult& Result) {
     return EFSDMissionStatus::SpaceRig;
 }
 
 void USessionHandling::FSDListen(UObject* WorldContextObject) {
 }
 
-bool USessionHandling::FSDIsSessionValid(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsSessionValid(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDIsPrivateServer(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsPrivateServer(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDIsPasswordRequired(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsPasswordRequired(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDIsFullServer(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsFullServer(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDIsEliteDeepDive(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsEliteDeepDive(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDIsClassLocked(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDIsClassLocked(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDHasGameStarted(const FBlueprintSessionResult& Result) {
+bool USessionHandling::FSDHasGameStarted(const FOnlineSessionSearchResult& Result) {
     return false;
 }
 
-bool USessionHandling::FSDGetServerStartTime(const FBlueprintSessionResult& Result, FDateTime& StartTime) {
+bool USessionHandling::FSDGetServerStartTime(const FOnlineSessionSearchResult& Result, FDateTime& StartTime) {
     return false;
 }
 
-FString USessionHandling::FSDGetServerNameSanitized(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetServerNameSanitized(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-FString USessionHandling::FSDGetServerName(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetServerName(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-FString USessionHandling::FSDGetServerID(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetServerID(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-FString USessionHandling::FSDGetRegion(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetRegion(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-TArray<UPlayerCharacterID*> USessionHandling::FSDGetPlayerClassIDs(const FBlueprintSessionResult& Result) {
+TArray<UPlayerCharacterID*> USessionHandling::FSDGetPlayerClassIDs(const FOnlineSessionSearchResult& Result) {
     return TArray<UPlayerCharacterID*>();
 }
 
-TArray<TSubclassOf<APlayerCharacter>> USessionHandling::FSDGetPlayerClasses(const FBlueprintSessionResult& Result) {
+TArray<TSubclassOf<APlayerCharacter>> USessionHandling::FSDGetPlayerClasses(const FOnlineSessionSearchResult& Result) {
     return TArray<TSubclassOf<APlayerCharacter>>();
 }
 
-int32 USessionHandling::FSDGetNumPlayers(const FBlueprintSessionResult& Result) {
+int32 USessionHandling::FSDGetNumPlayers(const FOnlineSessionSearchResult& Result) {
     return 0;
 }
 
-int32 USessionHandling::FSDGetMissionSeed(const FBlueprintSessionResult& Result) {
+int32 USessionHandling::FSDGetMissionSeed(const FOnlineSessionSearchResult& Result) {
     return 0;
 }
 
-FString USessionHandling::FSDGetMapName(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetMapName(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-FString USessionHandling::FSDGetHostUserID(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetHostUserID(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
-int32 USessionHandling::FSDGetGlobalMissionSeed(const FBlueprintSessionResult& Result) {
+int32 USessionHandling::FSDGetGlobalMissionSeed(const FOnlineSessionSearchResult& Result) {
     return 0;
 }
 
-float USessionHandling::FSDGetDistanceFloat(const FBlueprintSessionResult& Result) {
+float USessionHandling::FSDGetDistanceFloat(const FOnlineSessionSearchResult& Result) {
     return 0.0f;
 }
 
-EServerDistance USessionHandling::FSDGetDistance(const FBlueprintSessionResult& Result) {
+EServerDistance USessionHandling::FSDGetDistance(const FOnlineSessionSearchResult& Result) {
     return EServerDistance::Close;
 }
 
-UDifficultySetting* USessionHandling::FSDGetDifficulty(const FBlueprintSessionResult& Result) {
+UDifficultySetting* USessionHandling::FSDGetDifficulty(const FOnlineSessionSearchResult& Result) {
     return NULL;
 }
 
-FString USessionHandling::FSDGetBuildId(const FBlueprintSessionResult& Result) {
+FString USessionHandling::FSDGetBuildId(const FOnlineSessionSearchResult& Result) {
     return TEXT("");
 }
 
@@ -200,7 +200,7 @@ bool USessionHandling::FSDCancelFindSessions(UObject* WorldContextObject) {
     return false;
 }
 
-bool USessionHandling::FindBestQuickJoinServer(UObject* WorldContextObject, TArray<FBlueprintSessionResult>& sessions, UDifficultySetting* Difficulty, UBiome* Biome, UStageTemplate* MissionTemplate, FBlueprintSessionResult& OutResult) {
+bool USessionHandling::FindBestQuickJoinServer(UObject* WorldContextObject, TArray<FOnlineSessionSearchResult>& sessions, UDifficultySetting* Difficulty, UBiome* Biome, UStageTemplate* MissionTemplate, FOnlineSessionSearchResult& OutResult) {
     return false;
 }
 

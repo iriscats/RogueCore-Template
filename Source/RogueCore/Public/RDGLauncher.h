@@ -10,7 +10,6 @@ class ARDGLauncher : public AAmmoDrivenWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     TArray<URDGComponent*> ActiveGrenades;
     

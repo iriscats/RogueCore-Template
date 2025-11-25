@@ -11,7 +11,6 @@ class AIconGenerationBase : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneCaptureComponent2D* ActiveCaptureComponent;
     

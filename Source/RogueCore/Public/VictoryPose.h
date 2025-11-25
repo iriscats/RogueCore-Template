@@ -14,7 +14,6 @@ class UVictoryPose : public USavablePrimaryDataAsset, public IAquisitionable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText Title;
     

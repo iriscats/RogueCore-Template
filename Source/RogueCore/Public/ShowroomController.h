@@ -13,7 +13,6 @@ class UShowroomController : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AShowroomStage* Stage;
     
@@ -25,7 +24,7 @@ protected:
     float RotationAveragingWindowInSeconds;
 public:
     UShowroomController(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UAudioComponent* SpeedNotifierAudioComponent;
     FName SpeedNotifierParameterName;

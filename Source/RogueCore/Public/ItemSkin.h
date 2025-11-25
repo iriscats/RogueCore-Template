@@ -28,7 +28,7 @@ public:
     FItemSkinSignature OnSkinUnlocked;
     FItemSkinEquipSignature OnSkinEquipped;
     FItemSkinEquipSignature OnSkinUnequipped;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UItemAquisitionBase* Aquisition;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,5 +11,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FGuid, FSeasonSaveEntry> Seasons;
     ROGUECORE_API FSeasonSave();
-protected:
+ 
 };

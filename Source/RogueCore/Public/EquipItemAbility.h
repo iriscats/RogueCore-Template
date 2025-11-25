@@ -12,7 +12,6 @@ class UEquipItemAbility : public UAbilityComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AAbilityItem> ItemToEquip;
     

@@ -25,7 +25,7 @@ public:
     float SyncTime;
     AFakePhysicsProjectile(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void SphereBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* Other, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
     UFUNCTION()

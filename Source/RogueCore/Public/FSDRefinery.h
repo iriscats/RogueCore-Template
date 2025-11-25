@@ -51,7 +51,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     uint8 RefiningProgressReplicated;
     TArray<APipelineStart*> PipelineStarts;
-protected:
+ 
     AFSDRefinery(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

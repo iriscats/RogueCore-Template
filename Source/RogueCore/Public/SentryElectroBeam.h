@@ -10,7 +10,6 @@ class ASentryElectroBeam : public AElectroBeam {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<ARedeployableSentryGun*> Sentries;
     

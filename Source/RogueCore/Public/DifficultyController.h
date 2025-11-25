@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate WavePredictionCalculated;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CachedFutureWaves, meta=(AllowPrivateAccess=true))
     TArray<FBXEDifficultyPoint> CachedFutureWaves;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

@@ -23,14 +23,13 @@ class ROGUECORE_API URunHistoryStateComponent : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnBuildDataReceived OnBuildDataReceived;
     
     FOnDamageDataReceived OnDamageDataReceived;
     FOnSharedRunDataReceived OnSharedRunDataReceived;
     FOnRunHistoryDataReceived OnRunHistoryDataReceived;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FParsedCharacterBuildData> CachedParsedBuildData;
     TArray<FParsedCharacterDamageData> CachedParsedDamageData;

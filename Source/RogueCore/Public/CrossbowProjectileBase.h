@@ -35,7 +35,7 @@ public:
     UCrossbowProjectileMagnetic* MagneticComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_OnlyTrailShown, meta=(AllowPrivateAccess=true))
     bool OnlyTrailShown;
-protected:
+ 
     UCrossbowProjectileRicochet* RicochetComponent;
     UCrossbowStuckProjectileEffectBanshee* BansheeComponent;
     UNiagaraComponent* BansheePulseComponent;

@@ -14,7 +14,7 @@ class UProjectileThrowerAttack : public UProjectileAttackComponent {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USkeletalMesh* ThrowerMesh;
     

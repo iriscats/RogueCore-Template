@@ -23,5 +23,5 @@ public:
     bool IsTurningSharkEdition;
     float TurnSpeed;
     float IdleSpeed;
-    USharkAnimInstance();
+    USharkAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

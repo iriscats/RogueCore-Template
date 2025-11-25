@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UItemRefundList*> ItemRefunds;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<UItemID*, UItemData*> ItemData;
     UItemSettings();

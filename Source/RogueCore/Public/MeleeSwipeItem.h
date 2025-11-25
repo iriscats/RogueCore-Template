@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAudioComponent* SlicerSounds;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UStaticMesh* CarveMesh;
     UTerrainMaterial* MagmaMaterial;

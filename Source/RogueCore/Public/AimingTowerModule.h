@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float BurstTime;
 
-protected:
+ 
     float AttackTime;
     int32 BurstSize;
     AAimingTowerModule(const FObjectInitializer& ObjectInitializer);

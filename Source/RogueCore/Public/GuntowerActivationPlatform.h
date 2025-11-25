@@ -29,7 +29,7 @@ public:
     FProgressUpdated OnProgressUpdatedDelegate;
     FPlayersInsideChanged OnPlayersInsideChangedDelegate;
     FOnFinished OnProgressFilled;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     AGuntowerModule* AssignedModule;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

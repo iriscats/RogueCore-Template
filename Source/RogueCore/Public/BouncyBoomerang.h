@@ -21,7 +21,6 @@ class ABouncyBoomerang : public AGrenade {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
     

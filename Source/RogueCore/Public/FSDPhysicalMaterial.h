@@ -39,7 +39,7 @@ public:
     float RepulsePlayerRandomDegreeOffset;
     USoundBase* RepulsePlayerSound;
     UFXSystemAsset* RepulsePlayerParticle;
-protected:
+ 
     UNiagaraSystem* ImpactParticles;
     float ImpactParticleScale;
     UMaterialInstance* ImpactMaterialOverride;

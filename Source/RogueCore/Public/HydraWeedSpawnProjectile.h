@@ -11,7 +11,6 @@ class AHydraWeedSpawnProjectile : public AProjectile {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector TargetLocation;
     

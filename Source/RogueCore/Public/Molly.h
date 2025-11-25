@@ -20,7 +20,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCalledByDelegate OnCalledByChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UResourceBank* ResourceBank;
     UOutlineComponent* OutlineComponent;

@@ -1,5 +1,5 @@
 #include "VanityCharacter.h"
-#include "ComponentsChildActorComponent.h"
+#include "Components/ChildActorComponent.h"
 #include "Components/SceneComponent.h"
 #include "Components/SkeletalMeshComponent.h"
 

@@ -29,7 +29,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayerDataChanged OnPlayerDataChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_PlayerData, meta=(AllowPrivateAccess=true))
     FBXEPlayerData PlayerData;
     FLoadoutChanged OnStartLoadoutChanged;

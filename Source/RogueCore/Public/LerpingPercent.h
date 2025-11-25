@@ -10,5 +10,5 @@ public:
     uint8 TargetPercent;
 
     ROGUECORE_API FLerpingPercent();
-protected:
+ 
 };

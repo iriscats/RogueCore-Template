@@ -26,7 +26,7 @@ public:
     TArray<TSoftClassPtr<ULoreScreenMasterWidget>> CombatPages;
     TArray<TSoftClassPtr<ULoreScreenMasterWidget>> ExtraMissionPages;
     TArray<TSoftClassPtr<ULoreScreenMasterWidget>> ResourcePages;
-protected:
+ 
     TArray<UEnemyMinersManualData*> Enemies;
     TArray<TSoftObjectPtr<UBiome>> BiomeReferences;
     TArray<TSoftObjectPtr<UStageTemplate>> MissionReferences;

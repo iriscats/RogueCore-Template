@@ -13,7 +13,6 @@ class UHeroEnemies : public UStageLogic {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagQuery AllowedQuery;
     

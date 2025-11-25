@@ -22,7 +22,7 @@ public:
     UPawnAffliction* HeavyStaggerAffliction;
     UPawnAffliction* MediumStaggerAffliction;
     UPawnAffliction* ShortStaggerAffliction;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))
     TArray<TSoftObjectPtr<UNiagaraSystem>> BurningParticles;
     TArray<TSoftObjectPtr<UNiagaraSystem>> EletrocutedParticles;

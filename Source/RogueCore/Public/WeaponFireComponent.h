@@ -25,7 +25,7 @@ public:
     FWeaponFireEndedDelegate OnWeaponFireEnded;
     FWeaponRicochetDelegate OnRicochetEvent;
     FSpreadChangedDelegate OnSpreadChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve SpreadCurve;
     float MinSpreadWhenMoving;

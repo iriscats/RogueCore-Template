@@ -13,7 +13,6 @@ class ULineCutterUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ELineCutterUpgradeType upgradeType;
     

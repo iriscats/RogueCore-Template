@@ -41,7 +41,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MovementState, meta=(AllowPrivateAccess=true))
     FEscortHammerMovementState MovementState;
 
-protected:
+ 
     FEscortHammerMovementState LocalMovementState;
     AEscortHammerObjectiveActor(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

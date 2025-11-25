@@ -75,7 +75,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FBXESaveChanged OnBXESaveChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBXESave BXESave;
     FCreditsChangedSignature OnCreditsChanged;

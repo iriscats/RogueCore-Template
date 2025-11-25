@@ -1,6 +1,8 @@
 #include "ShootingPlantAnimInstance.h"
 
-UShootingPlantAnimInstance::UShootingPlantAnimInstance() {
+UShootingPlantAnimInstance::UShootingPlantAnimInstance(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer)
+{
 }
 
 

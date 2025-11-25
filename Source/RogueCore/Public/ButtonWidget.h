@@ -24,7 +24,7 @@ public:
     UObject* DataObject;
     FString DataString;
     bool DataBool;
-protected:
+ 
     float AnimHoveringPlaybackSpeed;
     float AnimClickedPlaybackSpeed;
     bool bButtonHovered;

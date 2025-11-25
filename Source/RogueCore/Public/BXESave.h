@@ -23,7 +23,7 @@ public:
     FIntelCampaignSave CampaignSave;
     bool IsThirdRiskVectorUnlocked;
     ROGUECORE_API FBXESave();
-protected:
+ 
     TMap<FGuid, FBXEDiveSaveData> DiveSaves;
     TArray<int32> UnlockedRunDepths;
     int32 EnhancementSlotsUnlocked;

@@ -10,7 +10,6 @@ class AMultiHitscanWeapon : public AAmmoDrivenWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UMultiHitscanComponent* MultiHitscanComponent;
     

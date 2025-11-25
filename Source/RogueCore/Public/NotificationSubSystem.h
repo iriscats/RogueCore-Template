@@ -17,7 +17,7 @@ public:
     FDelegate OnNewSpaceRigNotificationEvent;
     
     FCampaignNotificationSignature OnCampaignNotification;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FSpaceRigNotification> SpaceRigNotifications;
     UCampaignNotification* CampaignNotification;

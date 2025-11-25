@@ -10,7 +10,6 @@ class ROGUECORE_API AVaultObjectiveActor : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* RootSceneComponent;
     

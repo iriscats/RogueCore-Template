@@ -20,7 +20,6 @@ class ROGUECORE_API ARoomBurnerInGame : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool LiveUpdateEditor;
     
@@ -45,7 +44,7 @@ protected:
     ADeepCSGWorld* CSGWorld;
     AProceduralSetup* PLSLiveEditor;
     TSubclassOf<AProceduralSetup> CaveGeneratorPLSOverride;
-private:
+ 
     URoomGenerator* LiveEditRoomGenerator;
     ARoomBurnerInGame(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintPure)

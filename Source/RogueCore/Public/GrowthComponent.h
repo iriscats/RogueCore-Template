@@ -11,7 +11,7 @@ class UGrowthComponent : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneComponent* ScaleComponent;
     

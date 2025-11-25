@@ -20,7 +20,7 @@ public:
     
     FResourceAddedSignature OnIncreased;
     FResourceFullSignature OnFull;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     UResourceData* Data;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_CurrentAmount, meta=(AllowPrivateAccess=true))

@@ -152,8 +152,28 @@ void ARiftCrystal::All_AddKnockBack_Implementation(FVector_NetQuantize Direction
 
 void ARiftCrystal::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(ARiftCrystal, State);
+}
+
+bool ARiftCrystal::HasMatchingGameplayTag(FGameplayTag TagToCheck) const {
+    return GameplayTags.HasTag(TagToCheck);
+}
+
+bool ARiftCrystal::HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const {
+    return GameplayTags.HasAny(TagContainer);
+}
+
+bool ARiftCrystal::HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const {
+    return GameplayTags.HasAll(TagContainer);
+}
+
+void ARiftCrystal::GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const {
+    TagContainer.AppendTags(GameplayTags);
+}
+
+FGameplayTagContainer ARiftCrystal::BP_GetOwnedGameplayTags() const {
+    return GameplayTags;
 }
 
 

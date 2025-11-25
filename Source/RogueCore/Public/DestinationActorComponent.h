@@ -9,7 +9,6 @@ class ROGUECORE_API UDestinationActorComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<AActor> DestinationActor;
     

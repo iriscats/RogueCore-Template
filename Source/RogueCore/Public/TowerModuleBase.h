@@ -26,7 +26,7 @@ public:
     USkeletalMeshComponent* ModuleMesh;
     TArray<UStaticMeshComponent*> ArmorPlates;
     UEnemyHealthComponent* Health;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     FRotator ModuleRotation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

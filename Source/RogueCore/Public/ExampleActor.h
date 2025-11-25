@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Field;
 
-protected:
+ 
     AExampleActor(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_ExampleFunction();

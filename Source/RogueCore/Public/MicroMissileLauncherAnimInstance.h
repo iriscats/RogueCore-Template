@@ -12,7 +12,6 @@ class UMicroMissileLauncherAnimInstance : public UAnimInstance, public ICopyBone
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AMicroMissileLauncher* Weapon;
     

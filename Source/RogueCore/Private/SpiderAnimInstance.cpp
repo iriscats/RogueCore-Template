@@ -1,6 +1,6 @@
 #include "SpiderAnimInstance.h"
 
-USpiderAnimInstance::USpiderAnimInstance() {
+USpiderAnimInstance::USpiderAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->Speed = 0.00f;
     this->WalkCycleSpeed = 200.00f;
     this->StartMovingSpeed = 50.00f;
@@ -54,6 +54,9 @@ USpiderAnimInstance::USpiderAnimInstance() {
     this->DeathAnimationCategory = ESpiderDeathAnimationCategory::NoAnimation;
     this->AimHorizontal = 0.00f;
     this->AimVertical = 0.00f;
+}
+
+USpiderAnimInstance::USpiderAnimInstance() : USpiderAnimInstance(FObjectInitializer::Get()) {
 }
 
 void USpiderAnimInstance::SetMeshScale(float NewScale) {

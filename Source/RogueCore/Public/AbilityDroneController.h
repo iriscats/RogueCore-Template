@@ -72,7 +72,7 @@ public:
     UFUNCTION()
     void OnRep_DroneInstances();
     void OnDroneStateChanged(EAbilityDroneState State);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnDroneReviveActivated();
 public:

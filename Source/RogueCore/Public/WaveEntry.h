@@ -10,7 +10,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Weight;
     
-protected:
+ 
     TSoftClassPtr<UEnemyWaveController> WaveController;
     ROGUECORE_API FWaveEntry();
 };

@@ -19,7 +19,7 @@ public:
     UTerrainPlacementComponent* terrainPlacement;
     URoomSphereCollisionComponent* RoomSphereCollision;
     UDecorationSplineComponent* TunnelReshapeSpline;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bShouldForceSpawn;
     ATunnelDecoration(const FObjectInitializer& ObjectInitializer);

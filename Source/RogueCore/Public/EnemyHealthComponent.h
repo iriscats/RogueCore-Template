@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EEnemyHealthScaling EnemyHealthScaling;
     
-protected:
+ 
     float Courage;
     float MaxHealth;
     bool bShowHealthBar;

@@ -10,8 +10,8 @@ class ROGUECORE_API UBoomerAnimInstance : public USpiderAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UBallisticMovementComponent> BallisticMovement;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsJumping;
-    UBoomerAnimInstance();
+    UBoomerAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

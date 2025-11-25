@@ -19,7 +19,7 @@ public:
 
     float GetTargetAmount(AProceduralSetup* pls) const;
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<UCarvedResourceCreator> CarvedResourceCreator;
 

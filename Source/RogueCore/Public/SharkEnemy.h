@@ -37,7 +37,7 @@ public:
     UDamageComponent* Damage;
     UDamageComponent* BumpDamage;
     UFakePhysGrabberComponent* RestrictedGrabberComponent;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* ImpactCue;
     USoundCue* JumpSound;
@@ -94,7 +94,7 @@ protected:
     void OnEnterState(ESharkEnemyState NewState);
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ImpactSound();
-private:
+
     void OnDeathDetailed(UHealthComponent* aHealthComponent, float damageAmount, const FDamageData& DamageData, const TArray<UDamageTag*>& dTags);
     void OnCollided(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)

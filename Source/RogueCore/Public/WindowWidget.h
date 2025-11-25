@@ -14,7 +14,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FWindowDelegate OnWindowClosed;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bHandleCloseCommand;
     bool bResolutionDownscaleWhenOpen;

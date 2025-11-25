@@ -18,7 +18,7 @@ public:
     USceneComponent* Root;
     
     USphereComponent* AuraShape;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UStatusEffect>> AuraEffects;
     TArray<AActor*> ActorsInAura;

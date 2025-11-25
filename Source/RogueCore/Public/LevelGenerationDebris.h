@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDebrisBase* Debris;
     
-protected:
+ 
     UObject* Influencer;
     float Range;
     bool SelfActivate;

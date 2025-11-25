@@ -25,7 +25,7 @@ public:
     
     FAbillityChargeUsedSig OnAbillityChargeUsed;
     FAbilityDataUpdated OnAbilityDataUpdated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FBoscoAbilityTarget Target;
     TArray<UItemUpgrade*> upgrades;

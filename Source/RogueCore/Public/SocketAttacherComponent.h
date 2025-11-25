@@ -10,7 +10,7 @@ class USocketAttacherComponent : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 MaxSocketAttachments;
     

@@ -16,7 +16,6 @@ class APlaceableItem : public AAnimatedItem, public IUpgradable, public IPlaceab
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCapacityHoldingItemAggregator* Capacity;
     

@@ -11,14 +11,13 @@ class UIntelChallengeForUpgrade : public UIntelChallenge {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EUnlockType RequiredType;
     
     int32 RequiredAmount;
     bool AllowCollectionOverMultipleRuns;
     UIntelChallengeForUpgrade();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnLevelUp(const int32 Level, const TArray<UBXEUnlockBase*>& Unlocks);
 };

@@ -15,7 +15,6 @@ class AGrapplingHookGun : public AAnimatedItem, public IUpgradable {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCoolDownItemAggregator* CoolDownAggregator;
     

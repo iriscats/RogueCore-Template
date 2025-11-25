@@ -13,7 +13,6 @@ class AInsectSwarmSpawner : public AEnemyPawn {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AInsectSwarmEnemy> SwarmType;
     

@@ -20,7 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     uint8 bShouldPenetrate: 1;
     bool HomingToCenter;
-protected:
+ 
     TArray<TSubclassOf<AActor>> IgnoreCollisionAgainst;
     bool InvertIgnoreCollisionAgainst;
     UCurveFloat* AccelerationCurve;

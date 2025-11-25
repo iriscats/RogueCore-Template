@@ -12,7 +12,6 @@ class AFSDGameSession : public AGameSession {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHostKickClient, const FString&, reason);
     
-private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FUniqueNetIdRepl> KickedPlayers;
     TArray<FUniqueNetIdRepl> BannedPlayers;

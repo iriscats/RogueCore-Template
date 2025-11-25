@@ -41,7 +41,7 @@ public:
     TSubclassOf<AItem> LoadoutItem;
     UItemID* ItemID;
     USoundCue* ImpactGroundSound;
-protected:
+ 
     AFlare(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

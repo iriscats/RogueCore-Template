@@ -28,7 +28,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* FP_EquipAnimation;
 
-protected:
+ 
     UAnimMontage* FP_IdleAnimation;
     UAnimMontage* TP_EquipAnimation;
     UAnimMontage* TP_IdleAnimation;

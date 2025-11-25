@@ -17,7 +17,7 @@ public:
     UDeepPathfinderMovement* PathfinderMovement;
     
     USkeletalMeshComponent* mesh;
-protected:
+ 
     UHealthComponent* HealthComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Speed;

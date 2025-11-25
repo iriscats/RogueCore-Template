@@ -40,7 +40,7 @@ public:
     USoundBase* ChatterSound;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AttackStance, meta=(AllowPrivateAccess=true))
     bool AttackStance;
-protected:
+ 
     float DistanceForAttackMode;
     float MinChatterDelay;
     float MaxChatterDelay;

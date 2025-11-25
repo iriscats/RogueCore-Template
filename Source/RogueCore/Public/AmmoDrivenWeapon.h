@@ -65,7 +65,7 @@ public:
     float AutoReloadDuration;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsFiring, meta=(AllowPrivateAccess=true))
     bool IsFiring;
-protected:
+ 
     UWeaponFireComponent* WeaponFire;
     UAmmoDriveWeaponAggregator* Aggregator;
     bool OverHeatOnNoAmmo;

@@ -14,7 +14,7 @@ public:
     FDelegate OnDrop;
     
     FDelegate OnLanding;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsDropping, meta=(AllowPrivateAccess=true))
     bool IsDropping;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))

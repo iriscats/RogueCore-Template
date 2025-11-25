@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AZipLineProjectile> ZiplineProjectileClass;
     
-protected:
+ 
     FVector RelativeDestinationLocation;
     AOldZiplineSalvage(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)

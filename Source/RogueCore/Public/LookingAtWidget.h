@@ -16,7 +16,6 @@ class ULookingAtWidget : public UUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float TargetSelectDuration;
     

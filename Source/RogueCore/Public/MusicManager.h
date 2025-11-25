@@ -13,7 +13,6 @@ class UMusicManager : public UWorldSubsystem {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<FMusicHandle, FActiveAudioItem> ActiveAudio;
     

@@ -42,7 +42,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLensActivedDelegate OnLenseActivated;
     FLensDeactivedDelegate OnLenseDeactivated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float SwitchTime;
     TSubclassOf<UStatusEffect> GammaContaminationSTE;

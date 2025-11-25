@@ -7,5 +7,5 @@ UCLASS(Blueprintable, NonTransient)
 class UShootingPlantAnimInstance : public UStationaryEnemyAnimInstance {
     GENERATED_BODY()
 public:
-    UShootingPlantAnimInstance();
+    UShootingPlantAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

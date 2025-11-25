@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTerrainPlacementComponent* terrainPlacement;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USpecialEvent* SpecialEvent;
     AJetBootsBox(const FObjectInitializer& ObjectInitializer);

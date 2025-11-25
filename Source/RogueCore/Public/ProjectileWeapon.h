@@ -11,7 +11,6 @@ class AProjectileWeapon : public AAmmoDrivenWeapon {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UProjectileLauncherComponent* LauncherComponent;
     

@@ -13,6 +13,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EShowroomScaling Scaling;
 
-protected:
+ 
     AEnemyShowroomItem(const FObjectInitializer& ObjectInitializer);
 };

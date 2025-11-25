@@ -24,7 +24,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDrinkableSignature OnNewDrinkableSpecial;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UInstantUsable* BarUsable;
     UBoxComponent* BarUsableCollider;

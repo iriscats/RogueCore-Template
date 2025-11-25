@@ -15,7 +15,6 @@ class AItemPreviewActor : public AActor, public ISkinnable, public IIconGenerata
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UItemSkin* CurrentSkinColor;
     

@@ -23,7 +23,7 @@ public:
     UStaticMeshComponent* Tentacles1;
     UStaticMeshComponent* Tentacles2;
     UOutlineComponent* Outline;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UFXSystemAsset* deathParticles;
     USoundBase* deathSound;

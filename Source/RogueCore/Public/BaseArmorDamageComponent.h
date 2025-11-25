@@ -19,7 +19,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FArmorShatterDelegate OnArmorShatteredEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FArmorDamageEffects ArmorBreakEffects;
     TArray<UFSDPhysicalMaterial*> ArmorPhysMats;

@@ -17,7 +17,6 @@ class ROGUECORE_API ATrackBuilderSegment : public AActor {
     // UPROPERTY fields moved from protected section
 
  public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTrackBuilderUsable* NextSegmentUsable;
     

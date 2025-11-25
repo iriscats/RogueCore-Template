@@ -12,7 +12,6 @@ class ROGUECORE_API UHeightenedSenseComponent : public UPerkEffectComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPawnAffliction* HeightenSenseAffliction;
     

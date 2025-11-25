@@ -17,7 +17,6 @@ class UWeakpointGlowComponent : public UActorComponent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName EmissiveParam;
     

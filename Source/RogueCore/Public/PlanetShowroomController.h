@@ -18,14 +18,13 @@ class UPlanetShowroomController : public UShowroomController {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlanetShowroomItem* PlanetInstance;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DragSmoothingSpeed;
     float PointTargetSmoothingSpeed;
-private:
+ 
     float AccumulatedDeltaPitch;
     float AccumulatedDeltaYaw;
     TOptional<FQuat> PointTargetRotation;

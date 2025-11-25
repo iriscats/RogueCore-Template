@@ -26,7 +26,7 @@ public:
     FIntelSubsystemChallengeDelegate OnChallengeClaimed;
     FIntelSubsystemObjectiveDelegate OnObjectiveClaimed;
     FIntelSubsystemChallengeDelegate OnChallengeCompleted;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UFSDGameInstance* GameInstance;
     TArray<UIntelObjective*> AllObjectives;

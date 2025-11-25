@@ -31,7 +31,7 @@ public:
     FMaxTargetsDelegate OnMaxTargetsChanged;
     FLockOnCountDelegate OnLockOnCountChanged;
     FLockonTargetRotationUpdated OnLockonTargetRotationUpdated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AActor* AimTarget;
     float LockOnDamageMultiplier;

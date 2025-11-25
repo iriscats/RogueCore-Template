@@ -14,7 +14,6 @@ class ROGUECORE_API UTrackMovementStateComponent : public UCharacterStateCompone
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAudioComponent* AudioStartComponent;
     

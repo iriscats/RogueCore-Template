@@ -23,7 +23,7 @@ public:
     
     FOnEnemyDamagedDelegate OnTargetDamagedEvent;
     FOnEnemyKilledDelegate OnTargetKilledEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EDamageComponentType DamageComponentType;
     UDamageComponentBase(const FObjectInitializer& ObjectInitializer);

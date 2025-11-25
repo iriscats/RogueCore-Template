@@ -27,5 +27,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float TiltSpeed;
     float WheelSpeedModifier;
-    UPatrolBotAnimInstance();
+    UPatrolBotAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

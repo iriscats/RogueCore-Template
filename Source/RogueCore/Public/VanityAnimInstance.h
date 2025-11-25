@@ -12,7 +12,6 @@ class UVanityAnimInstance : public UAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EVanitySlot VanitySlot;
     

@@ -11,7 +11,6 @@ class UOptionalUIWidget : public UUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UOptionalUICategory* Category;
     

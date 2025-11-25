@@ -10,7 +10,7 @@ class ROGUECORE_API UAttackCooldownComponent : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FAttackCooldown> AttackCooldowns;
     

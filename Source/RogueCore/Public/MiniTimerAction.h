@@ -13,7 +13,7 @@ class UMiniTimerAction : public UTickableActionBase {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FTickDelegate, float, DeltaTime, float, NormalizedTime);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTickDelegate Completed;
     FTickDelegate OnTick;

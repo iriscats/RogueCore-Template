@@ -23,7 +23,6 @@ class AProjectile : public AProjectileBase, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPawnStat* GravityModifier;
     

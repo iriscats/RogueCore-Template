@@ -19,7 +19,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHackedDelegate OnHacked;
     FItemDelegate BeingHackedUpdated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<AHackingToolItem> ItemType;
     TSoftClassPtr<UHackingToolWidget> HackingWidgetType;

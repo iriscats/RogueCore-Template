@@ -20,7 +20,7 @@ public:
     FOxygenDelegate OnOxygenChanged;
     
     FOxygenActiveDelegate OnOxygenReplenishingEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float OxygenGivenOnRevive;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

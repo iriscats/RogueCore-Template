@@ -8,7 +8,6 @@ class UActivationOjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ObjectivesFound, meta=(AllowPrivateAccess=true))
     int32 ObjectivesFound;
     

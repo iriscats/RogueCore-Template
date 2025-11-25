@@ -14,11 +14,14 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_Reset();
     
-protected:
+ 
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_RemoveIntValue_Internal(const FGuid& ItemKey, const FName& ValueKey);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_RemoveFloatValue_Internal(const FGuid& ItemKey, const FName& ValueKey);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_AddIntValue_Internal(const FGuid& ItemKey, const FName& ValueKey, int32 Value);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_AddFloatValue_Internal(const FGuid& ItemKey, const FName& ValueKey, float Value);
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_SetValues(const TArray<FRejoinFloat>& floatValues, const TArray<FRejoinInt>& intValues);

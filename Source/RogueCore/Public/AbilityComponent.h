@@ -27,7 +27,7 @@ public:
     FIntDelegate OnChargesChanged;
     FIntDelegate OnMaxChargesChanged;
     FDelegate OnChargeConsumed;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAbilityData* AbilityData;
     float CoolDownTime;

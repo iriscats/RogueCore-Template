@@ -19,7 +19,6 @@ class ROGUECORE_API AGuardianAbilityItem : public ADualAbilityItem {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FGuardianAbilityItemDelegate);
     
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPerkAsset* RequiredPerkToRepelEnemies;
     UDialogDataAsset* QuickUseShout;

@@ -17,7 +17,7 @@ public:
     
     TArray<FBXEProgressionLevel> Levels;
     UBXEUnlockCollection* SoloDroneCollection;
-protected:
+ 
     TArray<UUnlockCollectionTag*> CollectionTags;
     FRarityWeightsSelection RarityWeights;
     UBXEProgressionSettings();

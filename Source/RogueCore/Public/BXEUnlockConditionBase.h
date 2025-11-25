@@ -9,7 +9,7 @@ class UBXEUnlockConditionBase : public UObject {
     // UPROPERTY fields moved from private section
 public:
     UBXEUnlockConditionBase();
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool InvertResult;
 };

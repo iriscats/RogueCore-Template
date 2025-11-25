@@ -19,7 +19,7 @@ public:
     FCarriableEvent OnPickedUp;
     
     FCarriableEvent OnDropped;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<UDialogDataAsset> ShoutWhileCarrying;
     UItemCharacterAnimationSet* OverrideCarryAnimationSet;

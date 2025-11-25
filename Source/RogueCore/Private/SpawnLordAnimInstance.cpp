@@ -1,6 +1,8 @@
 #include "SpawnLordAnimInstance.h"
 
-USpawnLordAnimInstance::USpawnLordAnimInstance() {
+USpawnLordAnimInstance::USpawnLordAnimInstance(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer)
+{
 }
 
 

@@ -67,7 +67,7 @@ public:
     FPathStateChangedDelegate OnStateChanged;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     bool IsStrafingOverride;
-private:
+ 
     ADeepCSGWorld* CSGWorld;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Path, meta=(AllowPrivateAccess=true))
     FDeepRepPath Path;

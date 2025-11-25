@@ -12,7 +12,7 @@ class UYesNoPromptWidget : public UWindowWidget {
 public:
     DECLARE_DYNAMIC_DELEGATE_OneParam(FOnYesNoClickedDelegate, bool, Yes);
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bDestroyOnClick;
     bool bCloseAllWindows;

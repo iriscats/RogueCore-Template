@@ -18,7 +18,6 @@ class ROGUECORE_API ABioBoosterTerminal : public ARewardDispenserBase {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 RewardCount;
     

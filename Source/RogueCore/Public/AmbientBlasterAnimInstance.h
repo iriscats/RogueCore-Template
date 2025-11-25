@@ -12,7 +12,6 @@ class UAmbientBlasterAnimInstance : public UAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UNiagaraSystem* RechargeParticle;
     

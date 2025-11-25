@@ -24,7 +24,7 @@ public:
     FHackingStageCompletedDelegate OnHackingStageCompleted;
     FHackingCompleteDelegate OnHackingCompleted;
     FHackingUnequipDelegate OnRequestUnequipHackingTool;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UHackingUsableComponent> HackingUsable;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

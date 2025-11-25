@@ -23,7 +23,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float ResourceAmount;
     bool hasBeenReleased;
-protected:
+ 
     AGem(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetResourceAmount(float amount);

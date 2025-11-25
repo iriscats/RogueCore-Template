@@ -12,9 +12,9 @@ class UProspectorAnimInstance : public UEnemyAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FVector2D TiltResult;
-    
+
     FVector2D LookingResult;
     EProspectorRobotState ProspectorState;
     float ArmBusyness;
-    UProspectorAnimInstance();
+    UProspectorAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

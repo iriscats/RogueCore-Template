@@ -9,7 +9,6 @@ class AShieldGeneratorActor : public AThrowableActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     float GeneratorRadius;
     

@@ -12,7 +12,6 @@ class UAnimNotifyState_TimedParticleEffectWithImpactDecals : public UAnimNotifyS
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UMaterialInterface* DecalMaterial;
     

@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnIsFallingToTerrainChanged OnFallToTerrainStateChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool StartActive;
     FVector CurrentLocation;

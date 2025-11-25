@@ -10,7 +10,6 @@ class UPetComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=ReceiveOwningPlayerChanged, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APlayerCharacter> OwningPlayer;
     

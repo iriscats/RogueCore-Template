@@ -12,7 +12,7 @@ class AFlameWallSegment : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* CollisionComponent;
-protected:
+ 
     
     AFlameWallSegment(const FObjectInitializer& ObjectInitializer);
 };

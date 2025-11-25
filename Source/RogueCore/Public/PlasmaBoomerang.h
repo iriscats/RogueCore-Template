@@ -17,7 +17,6 @@ class APlasmaBoomerang : public AGrenade {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
     
@@ -33,7 +32,7 @@ protected:
     float HomingAcceleration;
     bool IsHoming;
     APlasmaBoomerang(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 };

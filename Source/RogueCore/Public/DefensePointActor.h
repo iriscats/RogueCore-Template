@@ -25,7 +25,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USingleUsableComponent* DefendPointUsable;
 
-protected:
+ 
     ADefensePointActor(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

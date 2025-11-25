@@ -11,7 +11,6 @@ class AThrowableHammer : public AChargedWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AHammerProjectile* ThrownHammer;
     

@@ -14,7 +14,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UDebrisBase* DebrisBase;
     
-private:
+ 
     int32 DebrisIndex;
     UDebrisInstances(const FObjectInitializer& ObjectInitializer);
 };

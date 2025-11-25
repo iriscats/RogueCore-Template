@@ -12,7 +12,6 @@ class UIntelChallengeForResource : public UIntelChallenge {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UResourceData* RequiredResource;
     
@@ -22,7 +21,7 @@ protected:
     bool AllowCollectionOverMultipleRuns;
     bool CanTeammatesDeposit;
     UIntelChallengeForResource();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnResourceIncreased(UCappedResource* Resource, const float ChangeAmount);
     void OnResourceDeposited(UResourceData* Resource, const float change);

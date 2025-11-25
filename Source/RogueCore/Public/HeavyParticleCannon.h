@@ -25,7 +25,6 @@ class AHeavyParticleCannon : public AAmmoDrivenWeapon, public IStackingDamageNum
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageComponent* Damage;
     

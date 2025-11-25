@@ -11,7 +11,6 @@ class ROGUECORE_API UPloverAttachmentComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AttachTarget, meta=(AllowPrivateAccess=true))
     AFSDPawn* AttachTarget;
     

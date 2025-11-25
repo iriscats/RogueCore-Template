@@ -32,7 +32,7 @@ public:
     FProgressChangedSig OnProgressBarChanged;
     FProgressChangedSig TimeProgressChanged;
     FStageCompleteSig ObjectivesPerStageChanged;
-protected:
+
     TArray<AEventStarterButton*> StarterObjects;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool bGameEventSetup;
@@ -66,7 +66,7 @@ protected:
     bool ShowProgressBar;
     float ProgressBarPct;
     bool SkipEventStarters;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_EventParticipants, meta=(AllowPrivateAccess=true))
     TArray<AActor*> EventParticipants;
     AGameEvent(const FObjectInitializer& ObjectInitializer);
@@ -84,7 +84,7 @@ protected:
     void SetObjectivesPerStage(int32 NewObjectivesPerStage);
     void RemoveParticipant(AActor* participant);
     void OnStarterObjectUsed(AEventStarterButton* eventStarter);
-protected:
+    
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnStageProgress(float Progress);
 public:

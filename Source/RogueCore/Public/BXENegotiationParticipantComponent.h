@@ -15,7 +15,6 @@ class ROGUECORE_API UBXENegotiationParticipantComponent : public UActorComponent
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FBXENegotiationData NegotiationData;
     

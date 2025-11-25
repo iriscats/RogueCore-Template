@@ -12,7 +12,6 @@ class UEscortMuleAttackerPositioning : public UAttackerPositioningComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UHealthComponentBase* Health;
     

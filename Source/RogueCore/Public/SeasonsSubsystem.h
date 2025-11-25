@@ -39,7 +39,7 @@ public:
     FOnVanityTreeReset OnVanityTreeReset;
     FOnScripChallengeUpdated OnScripChallengeUpdated;
     FClaimStatusChanged OnClaimStatusChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<USpecialEvent> forcedSeasonEvent;
     FTimespan NewChallengeTimeSpan;

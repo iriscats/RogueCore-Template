@@ -14,7 +14,6 @@ class AGenericRewardDispenser : public ARewardDispenserBase {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_PlayerId, meta=(AllowPrivateAccess=true))
     FUniqueNetIdRepl PlayerId;
     

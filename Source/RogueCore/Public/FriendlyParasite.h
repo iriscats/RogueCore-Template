@@ -17,7 +17,6 @@ class AFriendlyParasite : public AEnemyDeepPathfinderCharacter {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FIsAttacking OnIsAttackingEvent;
     
@@ -33,7 +32,7 @@ protected:
     float StartFollowRange;
     float DamageRange;
     float DamageTime;
-private:
+
     float FoldoutRange;
     float SpinRange;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

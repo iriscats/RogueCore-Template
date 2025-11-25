@@ -14,7 +14,6 @@ class UBoltActionRifleUpgrade : public UStandardItemUpgrade {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EBoltActionRifleUpgrades upgradeType;
     

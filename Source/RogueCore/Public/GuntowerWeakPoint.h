@@ -22,7 +22,7 @@ public:
     UEnemyHealthComponent* Health;
     UStaticMeshComponent* mesh;
     UWeakpointGlowComponent* HitGlow;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UEnemyHealthComponent> ParentHealth;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

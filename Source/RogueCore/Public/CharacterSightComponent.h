@@ -26,7 +26,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTargetChangedSignature OnTargetChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float TargetMaxDistance;
     TEnumAsByte<ECollisionChannel> TraceChannel;

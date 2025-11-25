@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UBXENegotiationParticipantComponent> participant;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBXENegotiationData NegotiationData;
     int32 SelectedUnlockIndex;

@@ -17,7 +17,7 @@ public:
     FOnMinigamePushedDelegate OnMiniGamePushed;
     
     FOnMinigamePopDelegate OnMiniGamePop;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UGymMinigameBaseWidget*> MinigameHUDs;
     USpaceRigSubSystem();

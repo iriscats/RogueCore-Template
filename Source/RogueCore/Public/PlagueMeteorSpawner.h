@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMeteorSpawnedDelegate OnSpawnedMeteor;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<APlagueMeteor> MeteorActorClass;
     FRandRange EscortSpawnFromMuleRange;

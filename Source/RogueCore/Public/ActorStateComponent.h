@@ -17,7 +17,7 @@ public:
     
     FStateTickDelegate OnTickState;
     FStateDelegate OnEndState;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, ReplicatedUsing=OnRep_CurrentState, meta=(AllowPrivateAccess=true))
     UActorStateComponent* CurrentState;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

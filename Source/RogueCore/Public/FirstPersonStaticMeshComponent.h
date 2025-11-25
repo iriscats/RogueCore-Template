@@ -9,7 +9,6 @@ class UFirstPersonStaticMeshComponent : public UStaticMeshComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool EnabledFPFOV;
     

@@ -32,7 +32,7 @@ public:
     FLoadoutChangedDelegate OnLoadoutChangedEvent;
     FCharacterProgressChangedSignature OnCharacterStatsChanged;
     FCreditsChangedDelegate OnCreditsChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Credits, meta=(AllowPrivateAccess=true))
     int32 Credits;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
@@ -52,11 +52,17 @@ protected:
     void SetCampaign();
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetVictoryPose(UVictoryPose* Pose);
+    UFUNCTION(Reliable, Server)
     void Server_SetPlayerProgress(const FPlayerProgress& Progress);
+    UFUNCTION(Reliable, Server)
     void Server_SetLoadout(const FItemLoadout& Loadout, const TArray<FItemUpgradeSelection>& weaponLoadouts);
+    UFUNCTION(Reliable, Server)
     void Server_SetCredits(const int32 amount);
+    UFUNCTION(Reliable, Server)
     void Server_SetCharacterStats(const TArray<FCharacterProgress>& Stats);
+    UFUNCTION(Reliable, Server)
     void Server_SetActiveCampaignMission(FActiveCampaingMission Data);
+    UFUNCTION(Reliable, Server)
     void RefreshLoadoutFromSave(UPlayerCharacterID* characterID);
     UFUNCTION()
     void OnRep_PlayerProgress();
@@ -66,6 +72,7 @@ protected:
     void OnRep_Credits();
     UFUNCTION()
     void OnRep_CharacterStats();
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     FCharacterProgress GetCharacterStat(UPlayerCharacterID* characterID);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UStage* GetActiveCampaignMission() const;

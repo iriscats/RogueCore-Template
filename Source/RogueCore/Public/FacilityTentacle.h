@@ -15,7 +15,6 @@ class ROGUECORE_API AFacilityTentacle : public ATentacleBase, public ITriggerAI 
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float SwaySpeed;
     

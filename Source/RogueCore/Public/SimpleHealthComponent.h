@@ -13,7 +13,6 @@ class USimpleHealthComponent : public UHealthComponentBase {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Damage, meta=(AllowPrivateAccess=true))
     float Damage;
     

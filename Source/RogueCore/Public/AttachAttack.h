@@ -11,14 +11,13 @@ class ROGUECORE_API UAttachAttack : public USpecialAttackComponent {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float AdjustedOffset;
     
     float LerpTime;
     UPloverTargetSockets* TargetSettings;
     UAttachAttack(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_StartLerp(FVector From, FVector To);
 };

@@ -11,7 +11,6 @@ class UProjectileLauncherComponent : public UProjectileLauncherBaseComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AProjectileBase> ProjectileClass;
     

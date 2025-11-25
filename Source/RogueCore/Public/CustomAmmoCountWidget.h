@@ -14,7 +14,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveItemSet();
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<AItem> Item;
 };

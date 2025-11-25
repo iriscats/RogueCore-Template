@@ -49,7 +49,7 @@ public:
     UProjectileAttackComponent* RollingRangedAttack;
     UProjectileAttackComponent* FlyingRangedAttack;
     UProjectileAttackComponent* MissileAttack;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MaxMotionSoundVelThresholdFlying;
     float MaxMotionSoundVelThreshold;
@@ -99,7 +99,7 @@ protected:
     bool FiringRockets;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     bool Alerted;
-private:
+ 
     AActor* CurrentTarget;
     APatrolBot(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -109,7 +109,7 @@ private:
     void SetHacked();
     void SetFiringRockets(bool firing);
     void ReviveDrone();
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnStateChangedEvent(EPatrolBotState CurrentState);
 public:
@@ -139,7 +139,8 @@ public:
     void Jumped();
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsHacked() const;
-    void ImpactSound();
+    UFUNCTION(NetMulticast, Unreliable)
+    void ImpactSound_Implementation();
     void EndFireRockets();
     void DisableDrone();
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)

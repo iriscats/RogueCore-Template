@@ -16,7 +16,7 @@ public:
     
     FName AttackName;
     UBTTask_Attack();
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void OnAttackCompleted(UBehaviorTreeComponent* btComponent, const bool& wasSuccess);
 };

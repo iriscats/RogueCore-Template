@@ -14,7 +14,7 @@ public:
     float MissionScale;
     
     float Weight;
-protected:
+ 
     int32 AmountOfStages;
     int32 XpPerStage;
     float XpPerStageNumberMultiplier;

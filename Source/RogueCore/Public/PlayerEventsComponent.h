@@ -36,5 +36,6 @@ public:
     void BroadcastBossSummoned(AActor* BossActor);
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void BroadcastActivatedTurret(AActor* TurretActor);
+    UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void BroadcastActivatedDataTerminal(AActor* TerminalActor);
 };

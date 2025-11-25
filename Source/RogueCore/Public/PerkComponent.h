@@ -14,11 +14,11 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FPerkDelegate);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPerkComponentDelegate, UPerkAsset*, Perk);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPerkDelegate OnActivePerksChanged;
     FPerkComponentDelegate OnPerkUsabilityChanged;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     TArray<UPerkAsset*> ClassPerks;
     TArray<UPerkAsset*> EnhancementPerks;
@@ -41,11 +41,17 @@ private:
     void SetClassPerks(const TArray<UPerkAsset*>& NewClassPerks);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetUseCount(const UPerkAsset* Perk, const int32 NewUseCount);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetPerkBlocked(const UPerkAsset* Perk, const bool IsBlocked);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetMaximumUses(const UPerkAsset* Perk, const int32 NewMaxUses);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetCooldown(const UPerkAsset* Perk, const float NewCooldown);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_ResetPerkStates();
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_ResetPerkState(const UPerkAsset* Perk);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_IncrementUseCount(const UPerkAsset* Perk);
     void ResetPerkStates();
     void ResetPerkState(const UPerkAsset* Perk);

@@ -19,7 +19,7 @@ public:
     FOnCurrencyChanged OnCurrencyChanged;
     
     FOnCurrencyCreated OnCurrencyCreated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AOmegaBartender* Bartender;
     UBarSubSystem();

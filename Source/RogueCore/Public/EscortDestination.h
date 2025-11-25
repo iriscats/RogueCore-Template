@@ -29,7 +29,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     int32 SecondsToDestroyHeartstone;
 
-protected:
+ 
     TArray<float> BreakpointsPercent;
     float Radius;
     float ShellThickness;

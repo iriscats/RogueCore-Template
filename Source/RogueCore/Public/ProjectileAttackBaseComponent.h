@@ -17,7 +17,6 @@ class UProjectileAttackBaseComponent : public UAttackBaseComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UProjectileAttack*> Projectiles;
     

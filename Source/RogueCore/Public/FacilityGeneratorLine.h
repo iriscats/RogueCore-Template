@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     ATetherStation* Station;
 
-protected:
+ 
     
     AFacilityGeneratorLine(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

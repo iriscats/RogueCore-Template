@@ -10,13 +10,12 @@ class UFlyingBugAnimInstance : public USimpleMovingEnemyAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool IsInAttackMode;
     
     bool IsStaggered;
     EFlyingBugDeathAnimationCategory DeathAnimationCategory;
-    UFlyingBugAnimInstance();
+    UFlyingBugAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetDeathAnimation(EFlyingBugDeathAnimationCategory deathAnim);
     UFUNCTION(BlueprintCallable, BlueprintPure)

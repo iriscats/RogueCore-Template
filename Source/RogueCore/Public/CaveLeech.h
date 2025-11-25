@@ -34,7 +34,7 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UHealthComponent* HealthTarget;
-protected:
+ 
     USkeletalMeshComponent* SkeletalMesh;
     UGrabberComponent* GrabberComponent;
     float BitesPerSecond;

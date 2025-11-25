@@ -18,6 +18,7 @@ class UDamageConversionBonus : public UDamageBonusBase {
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool DamageIsAdded;
 
+public:
     UDamageConversionBonus();
 
 };

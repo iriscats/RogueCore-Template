@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInputTranslationTable InputTranslationTable;
     
-protected:
+ 
     TArray<FActionIconMapping> Xbox_KeyIcons;
     TArray<FActionIconMapping> Playstation_KeyIcons;
     TArray<FActionIconMapping> Playstation5_KeyIcons;

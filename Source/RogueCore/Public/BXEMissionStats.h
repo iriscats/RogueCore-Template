@@ -11,5 +11,5 @@ public:
     TArray<FBXEMissionStatRecord> Records;
 
     ROGUECORE_API FBXEMissionStats();
-protected:
+ 
 };

@@ -18,7 +18,7 @@ public:
     UUnlockVisualSettings* VisualSettings;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<URarityConditionBase*> SelectionConditions;
-protected:
+ 
     FString RarityTitle;
     UBXEUnlockRarity();
 };

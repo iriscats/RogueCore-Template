@@ -13,7 +13,7 @@ class UDestructibleSubHealthComponent : public USubHealthComponent {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSubHealthDestroyed, UDestructibleSubHealthComponent*, subHealth);
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MaxHealth;
     float RadialDamageResistance;

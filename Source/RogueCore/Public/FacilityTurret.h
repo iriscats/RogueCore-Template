@@ -19,7 +19,7 @@ public:
     USceneComponent* Root;
     
     USkeletalMeshComponent* mesh;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float IndicatorActivationDelay;
     bool FinishAttackIgnoreLoS;

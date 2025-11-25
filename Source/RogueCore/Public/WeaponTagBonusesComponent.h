@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTagBonusChangedDelegate OnTagBonusChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Bonuses, meta=(AllowPrivateAccess=true))
     TArray<FTagBonuses> Bonuses;
     UWeaponTagBonusesComponent(const FObjectInitializer& ObjectInitializer);

@@ -14,8 +14,7 @@ class AGlowPlant : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* TrunkMesh;
-    
-protected:
+
     UPointLightComponent* mainLight;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float IntensityBase;

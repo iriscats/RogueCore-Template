@@ -18,7 +18,7 @@ public:
 
     UDebrisBase();
 
-private:
+ 
     UCurveFloat* CaveInfluenceCurve;
     UCurveFloat* CaveInflunceSizeCurve;
 };

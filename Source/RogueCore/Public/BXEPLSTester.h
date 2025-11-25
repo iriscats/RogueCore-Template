@@ -32,6 +32,6 @@ public:
     TSubclassOf<UMissionDNA> DnaOverride;
     FRunObjectiveOverrides ObjectiveOverrides;
     FRunMutatorOverrides MutatorOverrides;
-protected:
+ 
     ABXEPLSTester(const FObjectInitializer& ObjectInitializer);
 };

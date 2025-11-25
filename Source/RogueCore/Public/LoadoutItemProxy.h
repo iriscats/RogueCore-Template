@@ -13,7 +13,6 @@ class ALoadoutItemProxy : public AItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UItemCharacterAnimationSet* AnimationSet;
     

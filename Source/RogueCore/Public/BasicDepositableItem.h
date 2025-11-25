@@ -10,7 +10,6 @@ class ABasicDepositableItem : public ABasicThrowableItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UResourceData* DepositableResource;
     

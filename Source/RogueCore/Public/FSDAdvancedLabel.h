@@ -17,7 +17,6 @@ class UFSDAdvancedLabel : public UUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText FormattedText;
     

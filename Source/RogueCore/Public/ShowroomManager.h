@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector ShowroomLocation;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TSubclassOf<AShowroomStage> CurrentStage;
     AShowroomStage* StageInstance;

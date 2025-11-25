@@ -25,7 +25,6 @@ public:
     FAnimNotifyDelegate OnStopLeadingNotify;
     FIsAttackingChangedDelegate OnIsAttackingChanged;
 
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool IsAttacking;
 
@@ -46,8 +45,8 @@ protected:
 
     UPoseCorrectionComponent* PoseCorrectionComponent;
 
-public:
     UEnemyAnimInstance(const FObjectInitializer& ObjectInitializer);
+    UEnemyAnimInstance();
 
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsSlotPlayingAnyAnimation(FName SlotNodeName) const;

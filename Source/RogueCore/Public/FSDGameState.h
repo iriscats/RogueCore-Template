@@ -103,7 +103,7 @@ public:
     FFloatDelegate OnLevelTimeDilationChanged;
     FDelegate OnAbilityUsageBlocked;
     FDelegate OnAbilityUsageUnblocked;
-protected:
+
     TArray<UObject*> RoundEndBlockers;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsAbilityUsageBlocked, meta=(AllowPrivateAccess=true))
     TArray<AActor*> AbilityUsageBlockers;

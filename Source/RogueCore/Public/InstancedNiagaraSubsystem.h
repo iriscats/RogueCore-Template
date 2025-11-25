@@ -12,7 +12,6 @@ class UInstancedNiagaraSubsystem : public UWorldSubsystem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     TMap<UNiagaraSystem*, UInstancedNiagaraComponent*> SystemToComponent;
     

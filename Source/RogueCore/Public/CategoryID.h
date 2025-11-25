@@ -11,7 +11,6 @@ class ROGUECORE_API UCategoryID : public UDataAsset, public ISaveGameIDInterface
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGuid SavegameID;
     

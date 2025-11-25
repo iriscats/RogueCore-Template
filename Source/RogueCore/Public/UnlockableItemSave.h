@@ -11,5 +11,5 @@ public:
     TArray<FGuid> Unlocked;
 
     ROGUECORE_API FUnlockableItemSave();
-protected:
+ 
 };

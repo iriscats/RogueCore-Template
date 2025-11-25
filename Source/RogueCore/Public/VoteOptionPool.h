@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TSet<UVoteOptionAction*> VoteOptionActions;
     
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool LockTelemetryIdentifier;
     FString TelemetryIdentifier;

@@ -25,10 +25,10 @@ class ROGUECORE_API UStage : public UObject {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FStageDelegate);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStageDelegate OnStageSetupChangedDelegate;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     int32 RunSeed;
     int32 StageIndex;

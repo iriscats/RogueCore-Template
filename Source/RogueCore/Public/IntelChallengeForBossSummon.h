@@ -12,14 +12,13 @@ class UIntelChallengeForBossSummon : public UIntelChallenge {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TSoftClassPtr<AActor>> AllowedBosses;
     
     int32 RequiredSummonAmount;
     ERunDepth RequiredRunDepth;
     UIntelChallengeForBossSummon();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnBossSummoned(AActor* boss);
 };

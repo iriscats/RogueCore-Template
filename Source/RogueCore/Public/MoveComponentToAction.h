@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "UObject/UnrealType.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "TickableActionBase.h"
 #include "MoveComponentToAction.generated.h"
 
@@ -16,7 +17,7 @@ class UMoveComponentToAction : public UTickableActionBase {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCompletedDelegate, USceneComponent*, Component);
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<USceneComponent> Component;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

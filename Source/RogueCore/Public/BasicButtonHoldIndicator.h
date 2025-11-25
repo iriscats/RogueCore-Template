@@ -23,7 +23,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHoldingDelegate OnHoldProgressChanged;
     FHoldCompletedDelegate OnHoldCompleted;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UButton> Button;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

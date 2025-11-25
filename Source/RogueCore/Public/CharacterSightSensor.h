@@ -17,7 +17,7 @@ public:
 
     FCharacterSightSensorDelegate OnSensorDeactivated;
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float SensorActiveForMinDuration;
 

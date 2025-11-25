@@ -27,7 +27,7 @@ bool UTrackBuilderConnectPoint::Connect(ATrackBuilderSegment* InSegment) {
     return false;
 }
 
-bool UTrackBuilderConnectPoint::CanConnectWith_Implementation(ATrackBuilderSegment* InSegment, const FTransform& FromWorldTransform) {
+bool UTrackBuilderConnectPoint::CanConnectWith(ATrackBuilderSegment* InSegment, const FTransform& FromWorldTransform) {
     return false;
 }
 

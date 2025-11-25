@@ -14,7 +14,7 @@ public:
 
     int32 TargetIndex;
     ROGUECORE_API FDownCameraSettings();
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MinPitch;
     float MaxPitch;

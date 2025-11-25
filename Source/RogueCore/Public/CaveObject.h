@@ -9,7 +9,7 @@ class ACaveObject : public AActor {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool CanCharacterStandOn;
-protected:
+ 
     
     ACaveObject(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)

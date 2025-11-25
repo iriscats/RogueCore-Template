@@ -10,6 +10,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 PendingPromotionGifts;
     ROGUECORE_API FPromotionRewardsSave();
-protected:
+ 
     TSet<FGuid> ClaimedRewards;
 };

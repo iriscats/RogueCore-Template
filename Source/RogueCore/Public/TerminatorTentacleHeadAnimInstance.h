@@ -11,8 +11,8 @@ class UTerminatorTentacleHeadAnimInstance : public UEnemyAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool Idle;
-    
+
     bool Grabbing;
     bool Grabbed;
-    UTerminatorTentacleHeadAnimInstance();
+    UTerminatorTentacleHeadAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

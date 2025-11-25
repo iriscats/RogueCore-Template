@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVisibilityChangedDelegate OnVisibilityChangedFSD;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlayerCharacter* Character;
     UFSDUserWidget();

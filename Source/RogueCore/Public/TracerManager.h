@@ -11,7 +11,6 @@ class UTracerManager : public UWorldSubsystem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float StartScale;
     

@@ -11,7 +11,6 @@ class AHomingFireModule : public AHostileTargetingGuntowerModule {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName ShootDroneSocket;
     

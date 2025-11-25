@@ -19,5 +19,5 @@ public:
     TMap<EVanitySlot, FGuid> NewVanityItems;
 
     ROGUECORE_API FCharacterVanitySave();
-private:
+ 
 };

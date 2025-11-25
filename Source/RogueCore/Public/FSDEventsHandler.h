@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FDateTime LastRequestTime;
     
-private:
+ 
     int32 NumFailedRequests;
     UFSDEventsHandler();
 };

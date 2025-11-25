@@ -11,6 +11,6 @@ class UJellyBreederAnimInstance : public UFlyingBugAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool ReadyToSpawnEggs;
-    
-    UJellyBreederAnimInstance();
+
+    UJellyBreederAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

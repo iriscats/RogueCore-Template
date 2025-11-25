@@ -16,5 +16,5 @@ public:
     TSet<FGuid> UINotificationSet;
     UFSDSaveGame* SaveGame;
     ROGUECORE_API FItemUINotifications();
-protected:
+ 
 };

@@ -28,7 +28,7 @@ public:
     float AccelerationOnSlopeMultiplier;
     float DecelerationOnSlopeMultiplier;
     float InitialConnectionBlendTime;
-protected:
+ 
     UAnimMontage* GetOnMontageAI;
     UAnimMontage* GetOnMontagePlayer;
     UAnimMontage* LetGoMontageAI;

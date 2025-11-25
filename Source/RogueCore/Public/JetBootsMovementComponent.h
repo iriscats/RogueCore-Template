@@ -29,7 +29,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FJetBootsActive OnJetBootsActiveChanged;
     
-protected:
+ 
     FJetBootsDelegate FuelUpdated;
     FJetBootsDelegate FuelUpdatedNonLocal;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

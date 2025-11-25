@@ -48,7 +48,7 @@ public:
 
     UInventoryList* GetInventoryList() const;
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<UPlayerCharacterID*, UPlayerCharacterData*> CharacterData;
 };

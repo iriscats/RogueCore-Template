@@ -15,7 +15,6 @@ class UGameDLC : public UDLCBase, public ISaveGameIDInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bFakeUnlockedStateInEditor;
     

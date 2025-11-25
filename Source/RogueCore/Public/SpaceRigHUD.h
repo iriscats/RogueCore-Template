@@ -12,7 +12,6 @@ class ASpaceRigHUD : public AFSDHUD {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FNotificationEntry> NotificationQueue;
     

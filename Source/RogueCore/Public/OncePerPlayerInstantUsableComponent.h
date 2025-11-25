@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FUsersChanged OnUsersChangedEvent;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Users, meta=(AllowPrivateAccess=true))
     TArray<FUniqueNetIdRepl> ExcludedUsers;
     UOncePerPlayerInstantUsableComponent(const FObjectInitializer& ObjectInitializer);

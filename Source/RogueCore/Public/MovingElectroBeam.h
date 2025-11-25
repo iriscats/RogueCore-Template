@@ -10,7 +10,6 @@ class AMovingElectroBeam : public AElectroBeam {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     AActor* Source;
     

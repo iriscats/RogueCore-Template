@@ -45,7 +45,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 BonesToSpawn;
 
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, meta=(AllowPrivateAccess=true))
     void SpawnSpikes();
 

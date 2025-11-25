@@ -15,7 +15,7 @@ public:
     PFCollisionType PFColiType;
     bool ShowInTerrainScanner;
     UPathfinderCollisionComponent(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnInitialGenerationDone();
     bool IsInsideConvex(FVector SamplePosition) const;

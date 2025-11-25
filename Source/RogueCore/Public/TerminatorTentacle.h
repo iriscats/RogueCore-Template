@@ -23,7 +23,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnTentacleStateChangedEvent;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimSequenceBase* FlairAnimation;
     float MinFlairAnimCooldown;

@@ -11,7 +11,6 @@ class ROGUECORE_API UPlayerInfoComponent : public UObjectInfoComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<UDialogDataAsset> LookAtShout;
     

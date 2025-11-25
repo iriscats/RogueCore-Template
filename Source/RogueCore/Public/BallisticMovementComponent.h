@@ -22,7 +22,7 @@ public:
     float RotateDelay;
     float LaunchDelay;
     float LandingDelay;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_bIsMoveActive, meta=(AllowPrivateAccess=true))
     bool bIsMoveActive;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_LaunchVelocity, meta=(AllowPrivateAccess=true))

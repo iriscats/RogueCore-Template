@@ -11,7 +11,6 @@ class ROGUECORE_API UInputCaptureWidget : public UUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCustomKeySetting Settings;
     

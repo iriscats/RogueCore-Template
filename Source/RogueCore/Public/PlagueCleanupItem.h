@@ -28,7 +28,7 @@ public:
     UInstantUsable* PickupUsable;
     USphereComponent* UseSphere;
     UCrosshairAggregator* CrosshairAggregator;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* FP_FireAnimation;
     UAnimMontage* TP_FireAnimation;

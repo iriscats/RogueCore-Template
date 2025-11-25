@@ -14,7 +14,6 @@ class ABasicPistol : public AHitscanWeapon {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float BurstArmorDamageMultiplier;
     

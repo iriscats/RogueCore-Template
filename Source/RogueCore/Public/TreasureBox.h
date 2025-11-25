@@ -34,7 +34,7 @@ public:
     UTerrainPlacementComponent* terrainPlacement;
     UStaticMeshComponent* MiddlePlane;
     USkeletalMeshComponent* BoxMesh;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<AActor*> Batteries;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

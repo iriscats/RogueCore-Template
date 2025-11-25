@@ -30,7 +30,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UUserWidget> CrossHairType;
     
-protected:
     FRotator ThrowDirectionOffset;
     TArray<FVector2D> CookTickTimeline;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

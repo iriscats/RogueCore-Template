@@ -16,7 +16,7 @@ public:
     
     float targetFov;
     float TargetFOVSpeed;
-private:
+ 
     APlayerCharacter* Character;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCameraComponent* Camera;

@@ -11,7 +11,6 @@ class AStabberVine : public ATentacleBase {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_DesiredTarget, meta=(AllowPrivateAccess=true))
     FTentacleTarget DesiredTarget;
     

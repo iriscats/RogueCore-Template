@@ -18,7 +18,6 @@ class ARockEnemiesEvent : public AGameEvent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AProjectile> PowerUpClass;
     

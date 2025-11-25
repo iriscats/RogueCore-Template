@@ -1,6 +1,8 @@
 #include "RammerAnimInstance.h"
 
-URammerAnimInstance::URammerAnimInstance() {
+URammerAnimInstance::URammerAnimInstance(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer)
+{
     this->CachedChargeComponent = NULL;
     this->Acceleration = 0.00f;
     this->InterpolatedAcceleration = 0.00f;

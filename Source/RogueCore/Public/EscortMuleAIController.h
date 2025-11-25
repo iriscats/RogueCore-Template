@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEscortObjective* EscortObj;
 
-protected:
+ 
     TArray<FVector> GaragePath;
     int32 PathIndex;
     int32 CurrentRoom;

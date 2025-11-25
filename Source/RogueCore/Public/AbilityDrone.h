@@ -52,7 +52,7 @@ public:
     EAbilityDroneState State;
     float ReviveSearchRange;
     UPerkAsset* RevivePerk;
-protected:
+ 
     AAbilityDrone(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)

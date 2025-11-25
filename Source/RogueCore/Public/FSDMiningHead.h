@@ -10,7 +10,6 @@ class ROGUECORE_API AFSDMiningHead : public ADroppableOutpost {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UResourceBank* ResourceBank;
     

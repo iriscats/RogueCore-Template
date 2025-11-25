@@ -18,7 +18,7 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_RequestTunnelData();
     
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SendTunnelData();
     UFUNCTION(BlueprintCallable)
@@ -30,9 +30,14 @@ protected:
     void ReceivedRoomData(int32 Seed, const TArray<FRoomNode>& Rooms, const TArray<FPathObstacle>& Obstacles);
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_SendTunnelData(const TArray<FTunnelNode>& tunnels);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_SendRoomData(int32 Seed, const TArray<FRoomNode>& Rooms, const TArray<FPathObstacle>& Obstacles);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_RecieveCarverSizes(int32 pass, int32 carverCount);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_ReceivePLSLevelCarver(int32 pass, const FLevelGenerationCarverLists& levelCarvers);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_ReceivePLSInfluencers(const FGeneratedInfluenceSets& influenceSet);
+    UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_ReceivePLSDebris(const TArray<FGeneratedDebrisItem>& levelDebris);
 };

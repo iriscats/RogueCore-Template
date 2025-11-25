@@ -14,7 +14,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRotator AimRotation;
 
-protected:
+ 
     AActor* CurrentTarget;
     AAimingTowerEventModule(const FObjectInitializer& ObjectInitializer);
 };

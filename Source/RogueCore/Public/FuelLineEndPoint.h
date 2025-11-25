@@ -14,7 +14,6 @@ class ROGUECORE_API AFuelLineEndPoint : public AActor {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UFuelLineConnectPoint* ConnectPoint;
     

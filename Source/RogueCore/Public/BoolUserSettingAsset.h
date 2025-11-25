@@ -9,7 +9,6 @@ class ROGUECORE_API UBoolUserSettingAsset : public UDataAsset {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText SettingDisplayTitle;
     

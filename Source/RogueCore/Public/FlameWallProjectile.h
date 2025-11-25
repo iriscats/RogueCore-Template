@@ -14,7 +14,7 @@ class AFlameWallProjectile : public AProjectile {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AFlameWallSegment> SegmentParticleClass;
-protected:
+ 
     
     int32 SegmentCount;
     float WallWidth;

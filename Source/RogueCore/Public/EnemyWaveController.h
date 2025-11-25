@@ -17,7 +17,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void StartWave();
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EWaveControllerType Type;
 

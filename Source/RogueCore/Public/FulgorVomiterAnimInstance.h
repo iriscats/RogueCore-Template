@@ -13,5 +13,5 @@ public:
     
     bool IsAiming;
     FVector2D AimDirection;
-    UFulgorVomiterAnimInstance();
+    UFulgorVomiterAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

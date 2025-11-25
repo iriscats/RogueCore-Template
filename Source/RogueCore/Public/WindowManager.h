@@ -19,7 +19,7 @@ public:
     FWindowManagerDelegate OnFirstWindowOpened;
     
     FWindowManagerDelegate OnLastWindowClosed;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundBase* AudioWindowOpen;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

@@ -13,7 +13,6 @@ class UEnemyShowroomController : public UShowroomController {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AEnemyShowroomItem* EnemyInstance;
     

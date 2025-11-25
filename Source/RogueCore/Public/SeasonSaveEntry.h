@@ -11,7 +11,6 @@ struct FSeasonSaveEntry {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 XP;
     

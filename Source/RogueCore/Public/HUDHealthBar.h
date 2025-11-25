@@ -19,7 +19,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHUDHealthBarSignature OnOwnerDead;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLinearColor BackgroundColor;
     FLinearColor HealthColor;

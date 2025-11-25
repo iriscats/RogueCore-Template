@@ -20,7 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnFireComplete;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UDamageComponent* DamageComponent;
     UDamageAsset* Damage;
@@ -33,7 +33,7 @@ protected:
     float RicochetChance;
     bool RicochetOnWeakspotOnly;
     float RicochetMaxRange;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPawnStatsComponent> ParentPawnStats;
     TArray<UElementType*> ActiveElementTypes;

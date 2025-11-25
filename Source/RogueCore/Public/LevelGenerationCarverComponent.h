@@ -34,7 +34,7 @@ public:
     CarveOptionsCellSize CarveCellSize;
     bool PreviewEnabled;
     bool CarvingDisabled;
-protected:
+ 
     bool SelfActivate;
     ULevelGenerationCarverComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)

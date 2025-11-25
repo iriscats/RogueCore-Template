@@ -13,7 +13,7 @@ class UFSDLookupSessionId : public UOnlineBlueprintCallProxyBase {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFoundSessionResult OnSuccess;
     

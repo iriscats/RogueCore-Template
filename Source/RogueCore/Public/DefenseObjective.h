@@ -10,7 +10,6 @@ class UDefenseObjective : public UObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     int32 DefensePoints;
     

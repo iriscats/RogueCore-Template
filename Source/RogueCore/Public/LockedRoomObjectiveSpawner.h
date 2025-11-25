@@ -11,7 +11,6 @@ class ALockedRoomObjectiveSpawner : public AStructureSpawner {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Replicated, Transient, meta=(AllowPrivateAccess=true))
     UBXELockedRoomObjective* Objective;
     

@@ -29,7 +29,7 @@ public:
     TArray<int32> GymCurrencyAmount;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_GymCurrencyData, meta=(AllowPrivateAccess=true))
     TArray<UResourceData*> GymCurrencyData;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName MugSocketName;
     FName DetachNotifyName;
@@ -66,7 +66,8 @@ protected:
     void SetDrink(UDrinkableDataAsset* Drink);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_PlayerSaluted();
-    void Server_MugTaken(ADrinkableActor* Mug);
+    UFUNCTION(Reliable, Server)
+    void Server_MugTaken_Implementation(ADrinkableActor* Mug);
     void RemovePlayerInside(APlayerCharacter* Player);
     void PlayOmegaSaluteMontage(UAnimMontage* Montage);
     void PlayOmegaPourMontage(UAnimMontage* Montage);
@@ -93,7 +94,8 @@ protected:
     void BroadcastNewGymGoal(UDrinkableDataAsset* Order);
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void All_MugFilled(int32 Index);
-    void All_ChangeMugSlot(int32 Index, bool Empty);
+    UFUNCTION(NetMulticast, Reliable)
+    void All_ChangeMugSlot_Implementation(int32 Index, bool Empty);
     void AddPlayerInside(APlayerCharacter* Player);
     void ActivateButton();
 };

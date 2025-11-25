@@ -20,14 +20,14 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnCharacterDataLoaded OnCharacterDataLoaded;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UCharacterBuildDataUtil* CharacterBuildDataUtil;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDamageLogger Logger;
     bool HasSavedRecentRun;
     FRunHistoryBasicCooperStats BasicCooperStats;
-private:
+ 
     TMap<int32, FParsedRunHistoryEntry> CachedHistoryEntries;
     TMap<int32, FParsedRunHistoryEntry> SentPlayerStateEntries;
     URunHistoryManager();

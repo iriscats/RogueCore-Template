@@ -17,7 +17,6 @@ class AThrowableItem : public AAnimatedItem, public IUpgradable {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AThrowableActor> ThrowableClass;
     

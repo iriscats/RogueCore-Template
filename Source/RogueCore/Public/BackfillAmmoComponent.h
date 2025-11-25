@@ -10,7 +10,6 @@ class ROGUECORE_API UBackfillAmmoComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve IntervalGrowthCurve;
     

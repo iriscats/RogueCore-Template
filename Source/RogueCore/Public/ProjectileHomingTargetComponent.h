@@ -11,7 +11,6 @@ class UProjectileHomingTargetComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FOverlapResult> Targets;
     

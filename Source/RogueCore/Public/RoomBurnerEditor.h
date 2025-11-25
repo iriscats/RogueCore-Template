@@ -27,7 +27,6 @@ class ARoomBurnerEditor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool LiveUpdateEditor;
     
@@ -63,7 +62,7 @@ protected:
     FRunMutatorOverrides MutatorOverrides;
     ADeepCSGWorld* CSGWorld;
     AProceduralSetup* PLSLiveEditor;
-private:
+ 
     URoomGenerator* LiveEditRoomGenerator;
     ARoomBurnerEditor(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)

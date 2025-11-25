@@ -9,7 +9,6 @@ struct FGeneratedInstantCarvers {
     // UPROPERTY fields moved from private section
 
 public:
-private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FLevelCarverPass> LevelCarverPasses;
     

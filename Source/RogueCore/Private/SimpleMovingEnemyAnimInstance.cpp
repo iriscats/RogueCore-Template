@@ -11,6 +11,9 @@ USimpleMovingEnemyAnimInstance::USimpleMovingEnemyAnimInstance(const FObjectInit
     this->IsMoving = false;
 }
 
+USimpleMovingEnemyAnimInstance::USimpleMovingEnemyAnimInstance() : USimpleMovingEnemyAnimInstance(FObjectInitializer::Get()) {
+}
+
 void USimpleMovingEnemyAnimInstance::SetMeshScale(float NewScale) {
 }
 

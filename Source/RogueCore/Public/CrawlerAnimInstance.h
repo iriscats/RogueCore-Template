@@ -19,5 +19,5 @@ public:
     float AttackMoveBlend;
     TArray<UAnimMontage*> HeadIdleBreakMontages;
     FVector2D IdleBreakTimeRange;
-    UCrawlerAnimInstance();
+    UCrawlerAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

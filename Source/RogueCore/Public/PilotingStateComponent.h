@@ -10,7 +10,6 @@ class UPilotingStateComponent : public UCharacterStateComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Vehicle, meta=(AllowPrivateAccess=true))
     AActor* Vehicle;
     
@@ -18,6 +17,7 @@ protected:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_MoveRight(float Value);
+    UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_MoveForward(float Value);
     UFUNCTION(BlueprintCallable)
     void OnRep_Vehicle();

@@ -13,7 +13,7 @@ class UCaveLeechAnimInstance : public UAnimInstance {
 public:
     UCaveLeechAnimInstance();
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float HeadOffset;
 

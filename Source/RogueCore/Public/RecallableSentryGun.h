@@ -15,7 +15,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSentryIndexChanged OnSentryIndexChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_SentryIndex, meta=(AllowPrivateAccess=true))
     int32 SentryIndex;
     ARecallableSentryGun(const FObjectInitializer& ObjectInitializer);

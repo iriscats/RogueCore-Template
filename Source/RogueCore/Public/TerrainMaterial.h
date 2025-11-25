@@ -34,7 +34,7 @@ public:
     UDialogDataAsset* ShoutLookAt;
     UDialogDataAsset* ShoutOnDig;
     UTerrainType* TerrainType;
-protected:
+ 
     FText InGameName;
     FText InGameDescription;
     uint8 Precious: 1;

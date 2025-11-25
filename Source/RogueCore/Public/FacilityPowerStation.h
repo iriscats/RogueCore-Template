@@ -14,7 +14,7 @@ public:
     FHackprogress_Delegate OnHackingProgressDelegate;
     
     FHackprogress_Delegate OnProgresspointDelegate;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ProgressPoint;
     int32 ProgresPointCount;

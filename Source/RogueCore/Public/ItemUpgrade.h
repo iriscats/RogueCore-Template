@@ -32,7 +32,7 @@ public:
     FItemUpgradeSignature OnUnequipped;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UItemUpgradeFilter* SelectionFilter;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText Name;
     FText Description;

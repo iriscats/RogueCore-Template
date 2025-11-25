@@ -14,7 +14,6 @@ class AJetBootsBoxSpawner : public AActor {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<AActor> JetBootsBoxClass;
     

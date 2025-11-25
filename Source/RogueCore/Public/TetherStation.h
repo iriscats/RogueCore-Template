@@ -18,7 +18,7 @@ public:
     USceneComponent* SceneRoot;
     
     USkeletalMeshComponent* BaseMesh;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AFacilityGeneratorLine> FacilityGeneratorLineType;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AreGeneratorsReady, meta=(AllowPrivateAccess=true))

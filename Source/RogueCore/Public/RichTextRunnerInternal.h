@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Styling/SlateTypes.h"
-#include "UMG/RichTextBlock.h"
+#include "Components/RichTextBlock.h"
 #include "RichTextRunnerInternal.generated.h"
 
 UCLASS(Blueprintable)

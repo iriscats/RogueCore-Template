@@ -35,7 +35,7 @@ public:
     bool ScaleToHazardLevel;
     bool ShowSeparatelyInEndScreen;
     TSoftClassPtr<AFSDPhysicsActor> Spawnable;
-protected:
+ 
     bool IsWholeNumberResource;
     int32 CreditValue;
     int32 XPValue;

@@ -17,7 +17,7 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCustomWidgetDelegate, UUserWidget*, InWidget);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBossFightDelegate, const TScriptInterface<IBossFightInterface>&, BossFight);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBossFightDelegate OnNewBossFight;
     FBossFightDelegate OnBossFightRemoved;

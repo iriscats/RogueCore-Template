@@ -20,7 +20,6 @@ class AGuntowerModule : public AFSDPawn, public IEventParticipant {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* ExposeWeakpointSound;
     

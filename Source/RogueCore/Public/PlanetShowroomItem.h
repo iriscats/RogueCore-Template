@@ -26,7 +26,7 @@ public:
     UMaterialInterface* HoverWhenLockedMaterial;
     UMaterialInterface* NoHoverWhenUnavailableMaterial;
     UMaterialInterface* HoverWhenUnavailableMaterial;
-protected:
+ 
     TArray<UMaterialInstance*> PlanetDepthMaterials;
     TArray<FName> ScalarParametersToCopyFromDepthMat;
     TArray<FName> TextureParametersToCopyFromDepthMat;

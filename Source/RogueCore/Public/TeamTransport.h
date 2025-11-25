@@ -28,7 +28,7 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     FVector TargetLocation;
-protected:
+ 
     UCurveFloat* DropCurve;
     UCurveFloat* ArriveCurve;
     UCurveFloat* DepartCurve;
@@ -94,6 +94,11 @@ protected:
     void ExitSpacerig();
     static void DropToTarget(UObject* WorldContextObject, TSubclassOf<ATeamTransport> podClass, const FTransform& dropLocation, int32 DropDelay);
     static ATeamTransport* DropToMission(UObject* WorldContextObject, TSubclassOf<ATeamTransport> podClass, const FVector& Location);
+    void DepositAllPlayersMaterials();
+    void Depart();
+    void CorrectLocationsForSpawnedOnLocation();
+    UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObjet"))
+    static FVector AdjustLandingLocationToGround(UObject* WorldContextObjet, const FVector& initialLocation, float maxDownAdjustment, bool canAdjustUpwards);
     // Fix for true pure virtual functions not being implemented
     bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override PURE_VIRTUAL(HasMatchingGameplayTag, return false;);
     bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override PURE_VIRTUAL(HasAnyMatchingGameplayTags, return false;);

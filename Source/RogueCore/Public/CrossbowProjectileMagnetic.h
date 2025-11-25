@@ -12,11 +12,10 @@ class UCrossbowProjectileMagnetic : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UStatusEffect>> ElectricEffects;
     
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<AFSDPawn> TargetEnemy;
     float OverlapCheckSize;

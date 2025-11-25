@@ -11,7 +11,6 @@ class USpiderLobberAnimInstance : public UShootingSpiderAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FVector EffectiveLiquidInBum;
     
@@ -21,7 +20,7 @@ protected:
     float LiquidInBumEaseInExp;
     float LiquidInBumTimeToMax;
     float LiquidInBumTimeToMaxShort;
-    USpiderLobberAnimInstance();
+    USpiderLobberAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void SetAttackIndex(int32 Index);
     void ResetLiquidInBum();

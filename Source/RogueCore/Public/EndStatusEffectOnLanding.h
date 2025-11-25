@@ -12,7 +12,6 @@ class UEndStatusEffectOnLanding : public UActorComponent, public IStatusAddedCom
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UStatusEffect> EffectToCancel;
     

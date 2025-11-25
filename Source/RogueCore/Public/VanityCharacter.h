@@ -26,7 +26,6 @@ class AVanityCharacter : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UChildActorComponent* ChildActorComponent;
     

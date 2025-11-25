@@ -13,7 +13,6 @@ class APostProcessingManager : public AActor {
 
 
 public:
-protected:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<TWeakObjectPtr<AFSDPostProcessingActor>> RegisteredActors;
     

@@ -7,7 +7,7 @@ UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UCombinedUpgrade : public UItemUpgrade {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TSoftObjectPtr<UItemUpgrade>> CombinedUpgrades;
 

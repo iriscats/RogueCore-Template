@@ -11,7 +11,6 @@ class ASawedOffShotgun : public AMultiHitscanWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageAsset* ShockwaveDamage;
     

@@ -13,6 +13,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageAsset* DamageAsset;
 
-protected:
+ 
     AAmbientChargeBlasterProjectile(const FObjectInitializer& ObjectInitializer);
 };

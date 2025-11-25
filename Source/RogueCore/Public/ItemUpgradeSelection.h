@@ -15,7 +15,7 @@ public:
     FGuid EquippedOverclock;
     TArray<FGuid> EquippedSkins;
     bool OverclockingUnlocked;
-private:
+ 
     FGuid EquippedSkinColor;
     FGuid EquippedSkinMesh;
     ROGUECORE_API FItemUpgradeSelection();

@@ -17,7 +17,6 @@ class ROGUECORE_API UStageTemplate : public USavableDataAsset {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText StageName;
     

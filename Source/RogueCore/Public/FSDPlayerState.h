@@ -49,7 +49,7 @@ public:
     FEnemyKilledSignature OnEnemyKilledEvent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     FEquippedVanity LatestEquipedVanity;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBXEPlayerStateComponent* BXEStateComponent;
     UBXENegotiationParticipantComponent* BXENegotiationParticipant;

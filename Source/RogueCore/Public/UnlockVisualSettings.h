@@ -17,7 +17,7 @@ public:
     FLinearColor RarityTextColor;
     USoundCue* SelectedSound_Generic;
     USoundCue* SelectedSound_Weapons;
-protected:
+ 
     TSoftObjectPtr<UTexture2D> FrameSoftPtr;
     UUnlockVisualSettings();
     UFUNCTION(BlueprintCallable, BlueprintPure)

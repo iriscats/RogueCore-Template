@@ -22,7 +22,7 @@ public:
     USoundBase* SlidingOnIceSound;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnJumpOffDelegate OnJumpOff;
-protected:
+ 
     float LedgeClimbZVelocity;
     float MovementPenalty;
     APlayerCharacter* Character;

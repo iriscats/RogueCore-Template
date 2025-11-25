@@ -23,7 +23,7 @@ public:
     FSetObjectivesVisible SetObjectivesVisible;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHudVisibilityChanged OnHUDVisibilityChanged;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     uint8 IsVisibleFlags;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

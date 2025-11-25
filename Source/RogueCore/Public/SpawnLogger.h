@@ -13,7 +13,6 @@ class USpawnLogger : public UObject {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FVector> SpawnLocations;
     

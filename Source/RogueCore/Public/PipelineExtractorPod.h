@@ -11,7 +11,6 @@ class ROGUECORE_API APipelineExtractorPod : public ARessuplyPod {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ConnectedSegment, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<APipelineSegment> ConnectedSegment;
     

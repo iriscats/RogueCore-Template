@@ -10,7 +10,6 @@ class USimpleMovingEnemyAnimInstance : public UEnemyAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float Speed;
     
@@ -24,6 +23,7 @@ protected:
     float MeshScale;
     bool IsMoving;
     USimpleMovingEnemyAnimInstance(const FObjectInitializer& ObjectInitializer);
+    USimpleMovingEnemyAnimInstance();
     UFUNCTION(BlueprintCallable)
     void SetMeshScale(float NewScale);
     UFUNCTION(BlueprintCallable, BlueprintPure)

@@ -45,6 +45,6 @@ public:
     UMissionStat* JettyBootCreditsSpent;
     TArray<UMissionStat*> AllMissionStats;
     ROGUECORE_API FGDMissionStats();
-protected:
+ 
     TMap<UPlayerCharacterID*, UMissionStat*> CharacterMissionsCompleted;
 };

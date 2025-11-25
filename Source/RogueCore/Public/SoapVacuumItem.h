@@ -23,7 +23,7 @@ public:
     UNiagaraComponent* NS_Vacuum_TP;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlagueCleanerResourceChanged OnCurrentVolumeChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float VacuumCooldown;
     float VacuumRadius;

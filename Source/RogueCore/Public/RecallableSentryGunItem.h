@@ -23,7 +23,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRecallableSentryGunItemSignature OnActiveItemsChanged;
     FRecallableSentryGunSignature OnSelectedItemChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 MaxSentryCount;
     float MinDistanceBetweenSentries;

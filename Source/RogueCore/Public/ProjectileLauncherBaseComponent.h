@@ -24,18 +24,19 @@ public:
     float HorizontalSpread;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FProjectileSpawned OnProjectileSpawned;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UItemUpgrade*> ProjectileUpgrades;
     float ArcStartAngle;
     bool TransferCharacterVelocityToProjectile;
     bool CameraToMuzzleFireCheck;
     UProjectileLauncherBaseComponent(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UPawnStatsComponent> OwnerPawnStat;
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_StopFire();
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_Fire(FVector Origin, FVector_NetQuantizeNormal Direction, FVector_NetQuantizeNormal initialBonusVelocity, AProjectileBase* DormentProjectile, bool notifyClients);
     UFUNCTION(BlueprintCallable)
     void OnWeaponRemovedFromStorage();

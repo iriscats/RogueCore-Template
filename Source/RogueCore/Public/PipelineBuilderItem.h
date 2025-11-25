@@ -10,7 +10,6 @@ class ROGUECORE_API APipelineBuilderItem : public ATrackBuilderItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UItemPlacerAggregator* SegmentPlacer;
     

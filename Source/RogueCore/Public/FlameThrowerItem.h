@@ -40,7 +40,7 @@ public:
     float DecalDelay;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float CurrentDecalDelay;
-protected:
+ 
     UFXSystemAsset* ImpactParticles;
     UFXSystemComponent* ImpactParticleInstance;
     UFXSystemAsset* FP_LongReachParticles;

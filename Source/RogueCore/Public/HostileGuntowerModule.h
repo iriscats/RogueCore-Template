@@ -22,7 +22,7 @@ public:
     
     UParticleSystemComponent* DestroyedSmoke;
     UNiagaraComponent* DestroyedSmokeNS;
-protected:
+
     UEnemyComponent* EnemyComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ModuleMaxHealth, meta=(AllowPrivateAccess=true))
     float ModuleMaxHealth;

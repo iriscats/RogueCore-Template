@@ -3,6 +3,8 @@
 #include "FSDOnlineDelegates.h"
 #include "Net/OnlineBlueprintCallProxyBase.h"
 #include "OnlineSubsystemTypes.h"
+#include "OnlineSessionInterface.h"
+#include "Online/OnlineSessionSettings.h"
 #include "FSDJoinSessionCallbackProxy.generated.h"
 
 class APlayerController;
@@ -17,10 +19,10 @@ public:
     FEmptyOnlineDelegate OnSuccess;
     
     FEmptyOnlineDelegate OnFailure;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UObject* WorldContextObject;
     UFSDJoinSessionCallbackProxy();
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContextObject"))
-    static UFSDJoinSessionCallbackProxy* FSDJoinSession(UObject* NewWorldContextObject, APlayerController* PlayerController, const FBlueprintSessionResult& SearchResult, const FString& fsdpassword, bool fromInvite);
+    static UFSDJoinSessionCallbackProxy* FSDJoinSession(UObject* NewWorldContextObject, APlayerController* PlayerController, const FOnlineSessionSearchResult& SearchResult, const FString& fsdpassword, bool fromInvite);
 };

@@ -20,7 +20,7 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UHealthComponent> Target;
-protected:
+ 
     float IdleSwingSpeed;
     float ChaseSpeed;
     float MaxReach;

@@ -5,7 +5,7 @@
 #include "UObject/UnrealType.h"
 #include "Engine/NetSerialization.h"
 #include "GameplayTagContainer.h"
-#include "GameplayTags/GameplayTagAssetInterface.h" 
+#include "GameplayTagAssetInterface.h" 
 #include "AcceptInviteSignatureDelegate.h"
 #include "ActionHoldEventDelegate.h"
 #include "AnalogAimSettings.h"
@@ -249,7 +249,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPerkActivationWidget* BoundPerkActivationW;
     float PerkActivationTimer;
-protected:
+ 
     FCloseToFlareChanged OnCloseToFlareChanged;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsCloseToFlare, meta=(AllowPrivateAccess=true))
     bool IsCloseToFlare;

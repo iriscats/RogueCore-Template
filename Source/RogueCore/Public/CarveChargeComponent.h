@@ -35,7 +35,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBoolDelegate OnRepIsTelegraphing;
     FBoolDelegate OnRepIsCharging;
-protected:
+ 
     FGenericSignature EventBeginCharge;
     FGenericSignature EventEndCharge;
     FGenericSignature EventTelegraphCharge;
@@ -44,7 +44,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* BumpCollider;
     USceneComponent* CarveLocation;
-private:
+ 
     TMap<APawn*, float> BumpCooldowns;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_Curve, meta=(AllowPrivateAccess=true))
     FInterpCurveVector Curve;

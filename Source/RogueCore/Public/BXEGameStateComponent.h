@@ -16,7 +16,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnEndLevelFadeOutFinished;
-protected:
+ 
     FNewDeficultyDelegate OnNewDifficulty;
     FDelegate OnNewDifficultySoonWarning;
 

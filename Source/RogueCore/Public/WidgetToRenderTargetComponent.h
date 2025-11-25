@@ -17,7 +17,6 @@ class UWidgetToRenderTargetComponent : public UActorComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UUserWidget> WidgetClass;
     

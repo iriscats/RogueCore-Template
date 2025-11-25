@@ -37,7 +37,7 @@ public:
     int32 RepsRemaining;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_SetsRemainingChanged, meta=(AllowPrivateAccess=true))
     int32 SetsRemaining;
-protected:
+ 
     AFitnessGym(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

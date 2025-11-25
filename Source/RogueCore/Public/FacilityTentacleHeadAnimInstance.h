@@ -14,5 +14,5 @@ public:
     
     bool Melee;
     bool RangedAttack;
-    UFacilityTentacleHeadAnimInstance();
+    UFacilityTentacleHeadAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

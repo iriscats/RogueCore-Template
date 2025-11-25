@@ -14,7 +14,7 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRageValueChanged, float, Value);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FRageComponentDelegate);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRageValueChanged OnRageValueChanged;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

@@ -11,7 +11,6 @@ class ROGUECORE_API UBXEBlueprintControlledObjective : public UObjective {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<TWeakObjectPtr<AActor>> SpawnedObjectiveActors;
     

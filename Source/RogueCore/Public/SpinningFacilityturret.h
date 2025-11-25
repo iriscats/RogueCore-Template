@@ -11,7 +11,6 @@ class ASpinningFacilityturret : public AFacilityTurret {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     FRotator TargetRotation;
     

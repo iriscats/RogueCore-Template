@@ -10,7 +10,6 @@ class AInsectSwarmEnemy : public AEnemyDeepPathfinderCharacter {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneComponent* SwarmParticles;
     

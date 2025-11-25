@@ -17,7 +17,6 @@ class UStatusEffectsComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FActiveStatusEffectBank> ActiveStatusEffects;
     

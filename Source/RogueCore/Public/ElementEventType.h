@@ -16,7 +16,7 @@ public:
     USoundCue* OnDeactivateSoundCue;
     UNiagaraSystem* OnActivateParticleSystem;
     UNiagaraSystem* OnDeactivateParticleSystem;
-protected:
+ 
     float DamageBonus;
     FElementEventSetup EventSetup;
     bool PlayerOverrideSetup;

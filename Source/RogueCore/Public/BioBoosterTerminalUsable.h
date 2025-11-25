@@ -20,7 +20,7 @@ public:
     FCanUseDelegate OnCanUseChanged;
     FUsedDelegate OnUsedBy;
     FProgressDelegate OnProgress;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBioBoosterInterfaceAudio Audio;
     float UseDuration;

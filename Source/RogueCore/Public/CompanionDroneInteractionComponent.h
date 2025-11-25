@@ -16,7 +16,7 @@ public:
     FDelegate OnStoppedUsing;
     FDelegate OnUsed;
     FFloatDelegate OnUseProgressUpdated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float InteractionTime;
     bool CanUse;

@@ -18,7 +18,7 @@ public:
     USceneComponent* Root;
 
     UCapsuleComponent* Collision;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool CheckStartOverlaps;
     bool CheckEndOverlaps;
@@ -30,7 +30,7 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     ABosco* GetBosco() const;
 
-private:
+ 
     friend struct Z_Construct_UClass_ADroneStream_Statics;
     ADroneStream(const FObjectInitializer& ObjectInitializer);
 };

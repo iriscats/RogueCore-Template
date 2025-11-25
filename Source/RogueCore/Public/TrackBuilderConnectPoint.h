@@ -17,7 +17,7 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FConnectionDelegate OnConnectedWithSegment;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<ATrackBuilderSegment> ConnectType;
     UPROPERTY(EditAnywhere, Transient, ReplicatedUsing=OnRep_ConnectedSegment, meta=(AllowPrivateAccess=true))

@@ -9,7 +9,7 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCustomObjectAttackerPositioning : public UAttackerPositioningComponent {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UHealthComponentBase* Health;
 

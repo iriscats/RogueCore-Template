@@ -23,7 +23,7 @@ public:
     void OnRep_IsFlareOn();
     void OnFlareIgnite();
     void OnFlareExtinguish();
-protected:
+ 
     void OnDroppodImpact(ATeamTransport* DropPod);
     void Inhibit();
     void ActivateFlare();

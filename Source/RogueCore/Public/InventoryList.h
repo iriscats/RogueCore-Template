@@ -24,7 +24,7 @@ public:
     UItemID* LaserPointerItem;
     UItemID* TerrainScannerItem;
     UItemID* ResupplyItem;
-protected:
+ 
     TArray<UItemID*> Armors;
     TArray<UItemID*> Flares;
     TArray<UItemID*> MiningTools;

@@ -1,6 +1,6 @@
 #include "FacilityTurretAnimInstance.h"
 
-UFacilityTurretAnimInstance::UFacilityTurretAnimInstance() {
+UFacilityTurretAnimInstance::UFacilityTurretAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->IsEngaged = false;
 }
 

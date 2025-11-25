@@ -18,7 +18,7 @@ public:
     TArray<UObject*> PermanentReferences;
     
     UAsyncManager();
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     TArray<UClass*> SyncLoadClasses(const TArray<TSoftClassPtr<UObject>>& Assets, const EAsyncPersistence persistence);
     UClass* SyncLoadClass(TSoftClassPtr<UObject> Asset, const EAsyncPersistence persistence);

@@ -7,7 +7,7 @@ UCLASS(Blueprintable, NonTransient)
 class UEventStarterAnimInstance : public UAnimInstance {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float UseProgress;
 

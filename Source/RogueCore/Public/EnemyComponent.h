@@ -15,7 +15,7 @@ class UEnemyComponent : public USimpleObjectInfoComponent {
 public:
     UEnemyComponent(const FObjectInitializer& ObjectInitializer);
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UEnemyFamily* Family;
 

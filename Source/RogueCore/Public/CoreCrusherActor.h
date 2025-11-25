@@ -46,7 +46,7 @@ public:
     float DrainImmunityTime;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnPartInserted;
-protected:
+ 
     void RepairableUsableOnUsedBy(APlayerCharacter* User, EInputKeys Key);
     void ReceiveStateChange(ECoreCrusherState InState);
     void OnRunningRepairUsedBy(APlayerCharacter* User, EInputKeys Key);

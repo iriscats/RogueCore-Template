@@ -70,7 +70,7 @@ public:
     float DebugEnemySpeedMod;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ADeepPathfinderCharacter* DebugEnemyLast;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UTerrainLatejoinComponent* LateJoinComponent;
     bool IsOnSpaceRig;

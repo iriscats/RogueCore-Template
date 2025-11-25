@@ -3,6 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "Engine/GameInstance.h"
 #include "OnlineSubsystemTypes.h"
+#include "OnlineSessionInterface.h"
 #include "BXEDroneChangedDelegate.h"
 #include "BoscoChangedDelegate.h"
 #include "CravityChangedSignatureDelegate.h"
@@ -170,7 +171,7 @@ public:
     bool ShowMinerManualWorkInProgress;
     FMinersManualNotification OnMinersManualNotification;
     FNewHUDWarningDelegate OnNewHUDWarning;
-protected:
+ 
     float LastDreadnaughtKillTime;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UWindowWidget> ActiveEscapeMenu;
@@ -287,7 +288,7 @@ protected:
     FVector2D GetViewportSize();
     TSoftClassPtr<AProceduralSetup> GetSoftReferenceToPLS();
     EOnlineSessionType GetSessionType() const;
-    TArray<FBlueprintSessionResult> GetServersFriendsArePlaying(TArray<FBlueprintSessionResult> servers);
+    TArray<FOnlineSessionSearchResult> GetServersFriendsArePlaying(TArray<FOnlineSessionSearchResult> servers);
     UFUNCTION(BlueprintCallable, BlueprintPure, meta=(WorldContext="WorldContextObject"))
     static FString GetSeedString(UObject* WorldContextObject);
     TArray<UMutator*> GetMutators(TSubclassOf<UMutator> mutatorClass) const;

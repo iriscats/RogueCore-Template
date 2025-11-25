@@ -36,7 +36,7 @@ public:
     FUsableChangedSignature OnUsableChanged;
     FUserCountChangedDelegate OnUserCountChanged;
     FOnFailed OnFailed;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* AudioBeginUse;
     USoundCue* AudioFailedUse;

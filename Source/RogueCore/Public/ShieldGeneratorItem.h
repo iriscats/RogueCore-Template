@@ -14,7 +14,6 @@ class AShieldGeneratorItem : public AThrowableItem, public IUpgradableGear, publ
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCapacityHoldingItemAggregator* ChargeCapacity;
     

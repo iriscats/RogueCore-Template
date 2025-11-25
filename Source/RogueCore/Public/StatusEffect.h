@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPawnStat* DurationModifier;
     
-protected:
+ 
     UPawnAffliction* PawnAffliction;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UStatusEffectItem*> StatusEffects;

@@ -24,7 +24,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCampaignCompletedDelegate OnCampaignCompleted;
     FCampaignChangedDelegate OnCampaignChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UCampaign> MainCampaign;
     TArray<TSubclassOf<UCampaign>> WeeklyCampaigns;

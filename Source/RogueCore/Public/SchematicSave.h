@@ -12,7 +12,7 @@ public:
 
     bool bFirstSchematicMessageShown;
     ROGUECORE_API FSchematicSave();
-protected:
+ 
     TArray<FGuid> ForgedSchematics;
     TArray<FGuid> OwnedSchematics;
     int32 SkinFixupCounter;

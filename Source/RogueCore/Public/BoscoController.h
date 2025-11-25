@@ -30,7 +30,7 @@ public:
     FFollowTargetChanged OnFollowTargetChangedDelegate;
     UTerrainMaterial* HearthstoneCrystalMaterial;
     TArray<UTerrainMaterial*> PlagueMaterials;
-protected:
+ 
     TArray<TSubclassOf<AActor>> VacuumableTypes;
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<TWeakObjectPtr<AActor>> VacuumTargets;
@@ -56,7 +56,7 @@ protected:
     UFUNCTION(BlueprintCallable)
     void ReviveTarget();
     void ResetToFollowState();
-private:
+ 
     void RegisterPlayer(APlayerCharacter* aPlayerCharacter);
     void PickupItem();
     void OnUseDone(int32 timesUsed);

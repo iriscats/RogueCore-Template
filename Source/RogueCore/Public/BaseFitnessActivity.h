@@ -27,7 +27,7 @@ public:
     FOnAnimationChangedDelegate OnAnimationChanged;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UArrowComponent* ActorPlacement;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     AFitnessGym* OwnerGym;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

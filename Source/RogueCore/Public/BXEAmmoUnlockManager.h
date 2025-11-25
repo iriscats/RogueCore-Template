@@ -14,7 +14,6 @@ class UBXEAmmoUnlockManager : public UObject {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<APlayerCharacter*, FAmmoUnlockItem> Modifiers;
     

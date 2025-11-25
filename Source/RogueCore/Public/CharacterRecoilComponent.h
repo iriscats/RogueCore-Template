@@ -8,7 +8,7 @@ UCLASS(Blueprintable, MinimalAPI, ClassGroup=Custom, meta=(BlueprintSpawnableCom
 class UCharacterRecoilComponent : public UActorComponent {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FVector Recoil;
 

@@ -37,7 +37,7 @@ public:
     TArray<FText> LoreInfo;
     bool AlwaysUnlocked;
     int32 InfoUnlockSpeed;
-protected:
+ 
     TSoftObjectPtr<UTexture2D> EnemyIcon;
     TSoftClassPtr<AEnemyShowroomItem> PreviewActor;
     UEnemyMinersManualData();

@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOutlineChanged OnOutlineChanged;
     FDelegate OnPingedByLaserPointer;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EOutline DefaultOutline;
     bool ActiveOnHoldTAB;

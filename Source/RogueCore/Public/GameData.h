@@ -90,7 +90,7 @@ public:
     FGVisibilityGroups VisibilityGroups;
     
     UPromotionRewardsSettings* PromotionRewardsSettings;
-protected:
+ 
     UKPISettings* KPI_Settings;
     UPerkSettingsAsset* PerkSettings;
     UAbilitySettings* AbilitySettings;
@@ -151,7 +151,7 @@ protected:
     UPlayerCharacterID* DefaultCharacterID;
     FGameplayTag XBoxExcludeRoomTag;
     FAssetsToLoadSettings AssetsToLoad;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<FGuid, UAccessCondition*> AccessConditions;
     UGameData();

@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UNiagaraSystem* ImpactEffect;
     UNiagaraSystem* BeamEffect;

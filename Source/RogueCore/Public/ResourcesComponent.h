@@ -22,7 +22,7 @@ public:
     FResourceAddedSignature OnResourceIncreased;
     FResourceFullSignature OnResourceFull;
     FResourceAdded OnResourceAdded;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_Resources, meta=(AllowPrivateAccess=true))
     TArray<UCappedResource*> Resources;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

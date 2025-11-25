@@ -57,7 +57,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MissingMachineParts, meta=(AllowPrivateAccess=true))
     int32 MissingMachineParts;
     bool bHasRunInitialActivation;
-protected:
+
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHardRockBreakerProgressSignature OnProgress;
     FDelegateEvent OnReadyToStart;

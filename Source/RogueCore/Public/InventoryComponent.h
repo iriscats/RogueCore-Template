@@ -53,7 +53,7 @@ public:
     FFlareProductionDelegate OnFlareProduction;
     FResupplyDelegate OnResuppliedEvent;
     FCarriableChangedDelegate OnCarriableChangedEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UInventoryList* InventoryList;
     TSubclassOf<AThrownGrenadeItem> ThrownGrenadeClass;

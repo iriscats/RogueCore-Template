@@ -18,7 +18,7 @@ public:
     UNiagaraComponent* TP_BeamEffect;
     UNiagaraComponent* ValidTargetImpactEffect;
     UNiagaraComponent* InvalidTargetImpactEffect;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* EndBeamAnim;
     float Interval;

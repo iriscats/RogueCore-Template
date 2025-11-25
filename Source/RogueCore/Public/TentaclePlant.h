@@ -13,7 +13,6 @@ class ATentaclePlant : public AShootingPlant {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsVulnerable, meta=(AllowPrivateAccess=true))
     bool IsVulnerable;
     

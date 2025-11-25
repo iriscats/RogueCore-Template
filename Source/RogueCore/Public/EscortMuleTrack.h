@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer GameplayTags;
 
-protected:
+ 
 
     AEscortMuleTrack(const FObjectInitializer& ObjectInitializer);
     // Fix for true pure virtual functions not being implemented

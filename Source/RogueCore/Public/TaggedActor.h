@@ -11,7 +11,6 @@ class ATaggedActor : public AActor, public IGameplayTagAssetInterface {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer GameplayTags;
     

@@ -12,7 +12,6 @@ class ROGUECORE_API UResourceObjective : public UResourceBasedObjective {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UResourceData* Resource;
     

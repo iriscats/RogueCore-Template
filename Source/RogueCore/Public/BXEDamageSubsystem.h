@@ -17,7 +17,7 @@ class ROGUECORE_API UBXEDamageSubsystem : public UWorldSubsystem {
 
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FAsyncRadialData> AsyncData;
     

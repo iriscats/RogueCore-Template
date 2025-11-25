@@ -17,7 +17,6 @@ class ROGUECORE_API UBeamTrackingAttackComponent : public UAttackBaseComponent {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBeamSweepHitSignature OnBeamSweepHit;
     
@@ -37,7 +36,7 @@ protected:
     UClass* ActorClassFilter;
     TSubclassOf<UStatusEffect> InflictedStatusEffect;
     bool IsTelegraphFinished;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AActor* TargetedActor;
     FVector CurrentDirection;

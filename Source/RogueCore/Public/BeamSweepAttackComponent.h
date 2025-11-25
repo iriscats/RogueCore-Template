@@ -17,7 +17,6 @@ class ROGUECORE_API UBeamSweepAttackComponent : public UAttackBaseComponent {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBeamSweepHitSignature OnBeamSweepHit;
     
@@ -31,7 +30,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool IsAttacking;
     TEnumAsByte<ETraceTypeQuery> TraceChannel;
-private:
+ 
     AActor* TargetedActor;
     TSet<AActor*> StatusEffectActors;
     UBeamSweepAttackComponent(const FObjectInitializer& ObjectInitializer);

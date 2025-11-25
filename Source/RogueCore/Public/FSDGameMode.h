@@ -62,7 +62,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ATeamTransport> DropPodClass;
 
-protected:
+ 
     UFormationsManagerComponent* FormationsManager;
     TSoftClassPtr<AMolly> MuleClass;
     TSoftClassPtr<ATeamTransport> DropodEscapeClass;

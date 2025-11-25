@@ -31,5 +31,5 @@ public:
     bool IdleToDownWalkLock;
     bool DownWalkToDownTurnRightLock;
     bool IdleToDownTurnRightLock;
-    UWoodLouseAnimInstance();
+    UWoodLouseAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

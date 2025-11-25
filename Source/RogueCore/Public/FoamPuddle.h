@@ -26,7 +26,7 @@ public:
     UNiagaraComponent* NS_Foam;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve ScaleCurve;
-protected:
+
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FChangeVacuumStateDelegate OnChangeVacuumStateDelegate;
     TArray<TSubclassOf<AActor>> VacuumableActors;

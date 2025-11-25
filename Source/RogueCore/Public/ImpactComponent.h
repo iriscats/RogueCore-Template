@@ -16,7 +16,7 @@ public:
     FImpactedSignature OnImpactedEvent;
     
     FHightAccelerationSignature OnHighAcceleration;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool DebugText;
     bool TrackAcceleration;

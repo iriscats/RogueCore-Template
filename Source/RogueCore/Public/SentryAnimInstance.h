@@ -13,5 +13,5 @@ public:
     float Sway;
     
     float Surge;
-    USentryAnimInstance();
+    USentryAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

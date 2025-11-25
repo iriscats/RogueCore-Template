@@ -30,7 +30,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UMaterialInterface*> CachedMaterials;
 
-protected:
+ 
     UPawnStatsComponent* Stats;
     UEnemyPawnAfflictionComponent* Affliction;
     UEnemyComponent* Enemy;

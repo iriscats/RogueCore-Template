@@ -33,7 +33,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UAIPlayerControlComponent* AIPlayerControlComponentCache;
 
-protected:
+ 
     UDeepPatherFinderCharacterAfflictionComponent* Affliction;
     bool CanPlayerStandOn;
     bool UseDormancy;

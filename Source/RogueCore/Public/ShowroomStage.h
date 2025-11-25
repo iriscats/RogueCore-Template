@@ -20,7 +20,7 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneCaptureComponent2D* ActiveCaptureComponent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TSubclassOf<UShowroomController> ControllerClass;
     UShowroomController* ControllerInstance;

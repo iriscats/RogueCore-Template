@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFSDEventsRefreshDelegate OnFSDEventsRefresh;
     FFSDEventActivateChanged OnEventActiveChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TSet<FName> PendingActiveEvents;
     TSet<FName> ActiveEvents;

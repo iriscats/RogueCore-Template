@@ -11,7 +11,7 @@ public:
     bool DisableHeadLightOnEnter;
     
     bool EnableHeadLightOnExit;
-protected:
+ 
     float MaxPitch;
     UAttachedStateComponent(const FObjectInitializer& ObjectInitializer);
 };

@@ -11,7 +11,6 @@ class AHydraWeedShooter : public AShootingPlant {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AHydraWeedCore* Core;
     

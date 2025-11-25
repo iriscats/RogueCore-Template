@@ -14,7 +14,7 @@ UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UCampaignMission : public UDataAsset {
     GENERATED_BODY()
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPlanetZone* PlanetZone;
 

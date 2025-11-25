@@ -23,7 +23,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_QueuedMontage, meta=(AllowPrivateAccess=true))
     FQueuedMontage QueuedMontage;
 
-protected:
+ 
     AEnemyDeepPathfinderCharacter(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, BlueprintPure=false)

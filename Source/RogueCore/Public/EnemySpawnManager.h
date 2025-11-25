@@ -29,7 +29,7 @@ public:
     
     FEnemyDestroyedSignature OnEnemyDied;
     FEnemySpawnedSignature OnEnemySpawned;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USpawnEffectsComponent* SpawnEffects;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -47,7 +47,7 @@ protected:
     FGameplayTag SwarmerTag;
     FGameplayTag RegularTag;
     FGameplayTag CritterTag;
-private:
+ 
     AProceduralSetup* ProceduralSetup;
     TArray<FSpawnQueueItem> HotSpawnQueue;
     TArray<FSpawnQueueItem> SpawnQueue;

@@ -10,7 +10,7 @@ class UPuddleTrackerComponent : public UActorComponent {
     GENERATED_BODY()
 public:
     UPuddleTrackerComponent(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void OnPuddleDestroyed(AActor* DestroyedActor);
     

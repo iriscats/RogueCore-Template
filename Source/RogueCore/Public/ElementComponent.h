@@ -29,7 +29,7 @@ public:
     FElementEventDelegate OnElementEventAdded;
     
     FElementEventDelegate OnElementEventRemoved;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UElementType*> SupportedElements;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

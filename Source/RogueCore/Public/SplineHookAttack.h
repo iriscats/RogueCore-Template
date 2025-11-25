@@ -25,7 +25,7 @@ public:
     USkeletalMeshComponent* HeadMesh;
     USkeletalMeshComponent* TailMesh;
     UHitReactionComponent* HitReacts;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve MovementCurve;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

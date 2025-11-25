@@ -9,7 +9,7 @@ class UTentacleBusyComponent : public UEnemyLineOfSightComponent {
     GENERATED_BODY()
 public:
     UTentacleBusyComponent(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void ReleasedActor(AActor* Escape, bool fullGrab);
     

@@ -12,7 +12,6 @@ class UPawnStatsComponent : public UActorComponent, public IDamageRelevant {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=Onrep_Stats, meta=(AllowPrivateAccess=true))
     FPawnStatEntriesArray Stats;
     

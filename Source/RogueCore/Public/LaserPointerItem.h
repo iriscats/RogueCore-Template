@@ -29,7 +29,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMarkerPlacedDelegate OnMarkerPlaced;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<ALaserPointerMarker> MarkerType;
     TSubclassOf<ALaserPointerMarker> SecondaryMarkerType;
@@ -62,10 +62,10 @@ protected:
     void ServerPlaceMarker(FVector Location, AActor* Actor, UPrimitiveComponent* Cmponent, UTerrainMaterial* TerrainMaterial, ELaserPointerMarkerType eMarkerType);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_SecondaryUse_Implementation();
-private:
+ 
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void RevealTerrainScannerMeshesForMarkedActorInternal(AActor* InActor);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void RevealTerrainScannerMeshesForMarkedActor(AActor* InActor);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

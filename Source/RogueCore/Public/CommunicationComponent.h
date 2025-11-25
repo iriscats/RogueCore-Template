@@ -34,7 +34,7 @@ public:
     FMissionShoutDelegate OnMissionShout;
     FMissionShoutEndDelegate OnMissionShoutEnd;
     FMissionShoutEndDelegate OnMissionControlFinished;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool ShoutingEnabled;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -48,7 +48,7 @@ protected:
     bool bMissionControlPaused;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAudioComponent* MissionControlAudioComponent;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     TArray<UShoutWidget*> ActiveShouts;
     TArray<FActiveOutline> ActiveOutlines;

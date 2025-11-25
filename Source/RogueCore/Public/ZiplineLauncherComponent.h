@@ -14,7 +14,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TEnumAsByte<ECollisionChannel>> HitCollisionChannels;
     
-protected:
+ 
     float ProjectileLocationOffset;
     TSubclassOf<AZipLineProjectile> ProjectileClass;
     UZiplineLauncherComponent(const FObjectInitializer& ObjectInitializer);

@@ -21,7 +21,7 @@ public:
     
     FHealthChangedSig OnHealthChanged;
     FSubHealthComponentDelegate OnCanTakeDamageChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EHealthbarType HealthbarType;
     bool passthroughDamageWhenDisabled;

@@ -15,7 +15,7 @@ public:
     FBoscoAnimNotifyDelegate OnWeaponsReady;
     
     FBoscoAnimNotifyDelegate OnWeaponsNotReady;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float DigAnimPlayRate;
     EDroneAIState CurrentState;

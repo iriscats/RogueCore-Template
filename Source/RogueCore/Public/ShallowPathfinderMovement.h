@@ -13,7 +13,7 @@ public:
     
     float AvoidanceRadius;
     float CoherenceRadius;
-private:
+ 
     ASPFCrowdManager* CrowdManager;
     UShallowPathfinderMovement(const FObjectInitializer& ObjectInitializer);
 };

@@ -1,6 +1,7 @@
 #include "TallboyAnimInstance.h"
 
-UTallboyAnimInstance::UTallboyAnimInstance() {
+UTallboyAnimInstance::UTallboyAnimInstance(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
     this->IsAiming = false;
 }
 

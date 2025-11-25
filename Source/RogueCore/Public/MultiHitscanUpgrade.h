@@ -15,7 +15,6 @@ class UMultiHitscanUpgrade : public UStandardItemUpgrade {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EMultiHitscanUpgradeType upgradeType;
     

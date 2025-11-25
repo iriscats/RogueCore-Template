@@ -16,7 +16,6 @@ class UInfectionMasterComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> WeakpointPopSTE;
     
@@ -32,7 +31,7 @@ protected:
     UMaterialInterface* GlowMat;
     TArray<UStaticMesh*> InfectionPointMeshes;
     TArray<UStaticMesh*> InfectionSpikeMeshes;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UHealthComponent* HealthComponent;
     TArray<UStaticMeshComponent*> MeshComponents;

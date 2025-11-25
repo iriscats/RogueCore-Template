@@ -26,7 +26,7 @@ public:
 
     UFSDLabelWidget* GetDamageLabel();
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UFSDLabelWidget* DamageLabel;
 

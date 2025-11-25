@@ -18,7 +18,7 @@ public:
     bool CarvingDisabled;
     int32 PreviewSeed;
     FCSGOptions CarverSettings;
-protected:
+ 
     bool SelfActivate;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UCSGPreviewComponent* PreviewComponent;

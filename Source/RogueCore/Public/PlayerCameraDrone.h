@@ -19,7 +19,6 @@ class APlayerCameraDrone : public APawn {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPawnMovementComponent* Movement;
     

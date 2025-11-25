@@ -11,7 +11,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UBXEProspectingLogsObjective* Objective;
 
-protected:
+ 
     ABXEProspectingLogsActor(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void LogFound();

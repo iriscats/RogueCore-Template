@@ -23,7 +23,7 @@ public:
     UAnimMontage* TP_FireAnimation;
     float DeactivationTime;
     float FireRate;
-private:
+ 
     ADartLauncher(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_ShowFire();

@@ -24,7 +24,7 @@ public:
     TArray<UBXEUnlockConditionBase*> SelectionConditions;
     bool UnlockUsesRandomRarity;
     UDialogDataAsset* ShoutNegotiationSelected;
-protected:
+ 
     UBXEUnlockRarity* DefaultRarity;
     UUnlockVisualSettings* VisualSettingsOverride;
     EUnlockType UnlockType;

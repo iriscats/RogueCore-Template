@@ -27,7 +27,7 @@ public:
     UMaterialParameterCollection* GlobalMaterialParameterCollection;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FLocalVoiceStatus OnPlayerVoiceStatusChanged;
-protected:
+
     bool bStartWithBlackScreen;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UWindowManager* WindowManager;

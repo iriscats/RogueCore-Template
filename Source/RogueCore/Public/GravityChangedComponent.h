@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bAwakeOnGravityChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     TArray<UPrimitiveComponent*> PrimitiveComponents;
     UGravityChangedComponent(const FObjectInitializer& ObjectInitializer);

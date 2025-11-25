@@ -236,8 +236,8 @@ EOnlineSessionType UFSDGameInstance::GetSessionType() const {
     return EOnlineSessionType::Solo;
 }
 
-TArray<FBlueprintSessionResult> UFSDGameInstance::GetServersFriendsArePlaying(TArray<FBlueprintSessionResult> servers) {
-    return TArray<FBlueprintSessionResult>();
+TArray<FOnlineSessionSearchResult> UFSDGameInstance::GetServersFriendsArePlaying(TArray<FOnlineSessionSearchResult> servers) {
+    return TArray<FOnlineSessionSearchResult>();
 }
 
 FString UFSDGameInstance::GetSeedString(UObject* WorldContextObject) {

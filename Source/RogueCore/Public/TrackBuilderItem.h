@@ -17,7 +17,6 @@ class ROGUECORE_API ATrackBuilderItem : public AAnimatedItem, public IPlaceableI
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCrosshairAggregator* CrosshairAggregator;
     

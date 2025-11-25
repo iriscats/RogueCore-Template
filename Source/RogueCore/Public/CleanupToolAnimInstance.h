@@ -10,11 +10,10 @@ class UCleanupToolAnimInstance : public UAnimInstance {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool isUsing;
     
-private:
+ 
     APlagueCleanupItem* CleaningTool;
     UCleanupToolAnimInstance();
 };

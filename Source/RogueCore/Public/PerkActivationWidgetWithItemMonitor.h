@@ -9,7 +9,6 @@ UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkActivationWidgetWithItemMonitor : public UPerkActivationWidget {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AItem> ItemToMonitor;
 
@@ -18,6 +17,7 @@ protected:
     UPerkActivationWidgetWithItemMonitor();
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnStopMonitoring();
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnStartMonitoring();
     UFUNCTION(BlueprintCallable)
     void OnItemUnequipped(AItem* Item);

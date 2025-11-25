@@ -15,7 +15,6 @@ class USimpleObjectInfoComponent : public UObjectInfoComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText InGameName;
     

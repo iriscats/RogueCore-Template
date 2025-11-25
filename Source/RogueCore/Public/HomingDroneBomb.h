@@ -14,7 +14,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEnemyHealthComponent* Health;
 
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* ArmingSound;
     float HomingUpdateInterval;

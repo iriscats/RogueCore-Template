@@ -11,7 +11,6 @@ class ARandomSubRoomItem : public AGenerationItem {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     URoomGeneratorGroup* RoomGroup;
     

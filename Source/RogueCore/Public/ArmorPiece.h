@@ -19,7 +19,6 @@ class AArmorPiece : public AActor, public ISaveGameIDInterface, public IItemIDIn
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UUpgradableGearComponent* Upgradable;
     

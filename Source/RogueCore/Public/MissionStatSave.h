@@ -16,5 +16,5 @@ public:
     bool bCampaignsCompletedFixed;
     bool WeaponUpgradesFixed;
     ROGUECORE_API FMissionStatSave();
-protected:
+ 
 };

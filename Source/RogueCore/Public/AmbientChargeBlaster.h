@@ -22,6 +22,6 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UChargedProjectileLauncherComponent* LauncherComponent;
 
-protected:
+ 
     AAmbientChargeBlaster(const FObjectInitializer& ObjectInitializer);
 };

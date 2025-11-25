@@ -13,18 +13,17 @@ class UProceduralVeinsComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FVeinResource> VeinResources;
     
     UProceduralVeinsComponent(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, meta=(Latent, LatentInfo="LatentInfo"))
-    static void GenerateResourceVeins_Async(const AProceduralSetup*& setup, FLatentActionInfo LatentInfo);
+    static void GenerateResourceVeins_Async(const AProceduralSetup* setup, FLatentActionInfo LatentInfo);
     UFUNCTION(BlueprintCallable)
     void GenerateResourceVeins();
-    static void GenerateMissingResourceVeins_Async(const AProceduralSetup*& setup, FLatentActionInfo LatentInfo);
+    static void GenerateMissingResourceVeins_Async(const AProceduralSetup* setup, FLatentActionInfo LatentInfo);
     void GenerateMissingResourceVeins();
-    static void GenerateDebrisVeins_Async(const AProceduralSetup*& setup, EDebrisCarvedType CarverType, FLatentActionInfo LatentInfo);
+    static void GenerateDebrisVeins_Async(const AProceduralSetup* setup, EDebrisCarvedType CarverType, FLatentActionInfo LatentInfo);
     void GenerateDebrisVeins(EDebrisCarvedType CarverType);
     void CountGeneratedResourcesInVeins();
     void CountFinalGeneratedResourcesInVeins();

@@ -9,7 +9,7 @@ class ROGUECORE_API UPerkLogic : public UActorComponent {
     GENERATED_BODY()
 public:
     UPerkLogic(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void StartLogic(int32 Rank);
     

@@ -26,7 +26,6 @@ class ROGUECORE_API UUpgradableGearComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UItemData* ItemData;
     

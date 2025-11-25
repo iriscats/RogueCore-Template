@@ -20,7 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPawnStatsComponent* PawnStats;
 
-protected:
+ 
     float MaxRagdollSpeed;
     UHitReactionComponent* HitReactions;
     UPawnSensingComponent* PawnSensing;

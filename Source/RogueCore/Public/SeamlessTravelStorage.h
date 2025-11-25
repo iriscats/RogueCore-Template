@@ -26,7 +26,7 @@ public:
     TMap<FName, float> StoredFloatValues;
     TMap<FName, int32> StoredIntValues;
     TSet<USeamlessTravelEventKey*> EventKeys;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FUniqueNetIdRepl, FPlayerDataStorage> StoredPlayerData;
     TSet<AActor*> OtherStoredActors;

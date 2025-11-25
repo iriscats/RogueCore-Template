@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnEquippedActorChanged;
     
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ActorsSelectable, meta=(AllowPrivateAccess=true))
     TArray<AActor*> ActorsSelectable;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ActorsNonSelectable, meta=(AllowPrivateAccess=true))
@@ -36,7 +36,7 @@ public:
     void Server_EquipExternalActor_Implementation(AActor* Actor);
     UFUNCTION(BlueprintCallable)
     void OnRep_EquippedActor(FEquippedActorData& OldActor);
-protected:
+ 
     UFUNCTION()
     void OnRep_ActorsSelectable(TArray<AActor*> lastSelectable);
     UFUNCTION()

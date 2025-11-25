@@ -36,7 +36,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDeathTyped OnDeathTyped;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> CrossbowChemicalExplosionStatusEffect;
     TSubclassOf<UStatusEffect> PlasmaExplosionStatusEffect;
@@ -81,7 +81,7 @@ protected:
     ULimbDismembermentList* LimbDismembermentList;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_DeathType, meta=(AllowPrivateAccess=true))
     FDeathTypeData DeathType;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* HeadGoreMesh;
     USkeletalMeshComponent* SkeletalMesh;

@@ -10,7 +10,6 @@ class UPerkEffectComponentBerserk : public UPerkEffectComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPawnStat* BoostedStat;
     

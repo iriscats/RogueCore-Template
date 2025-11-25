@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;
 
-protected:
+ 
     UStaticMeshComponent* SocketMesh;
     UChildActorComponent* FuelLineEndPoint;
     AConnectCableObjectiveSocketActor(const FObjectInitializer& ObjectInitializer);

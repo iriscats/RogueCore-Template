@@ -10,7 +10,6 @@ class AShootingPlant : public AEnemyPawn {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     bool IsVisible;
     

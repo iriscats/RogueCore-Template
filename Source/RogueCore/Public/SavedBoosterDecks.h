@@ -11,5 +11,5 @@ public:
     TArray<FGuid> DeckIDs;
 
     ROGUECORE_API FSavedBoosterDecks();
-protected:
+ 
 };

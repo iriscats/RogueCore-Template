@@ -13,7 +13,6 @@ class AResourcePouch : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCarriableInstantUsable* usable;
     

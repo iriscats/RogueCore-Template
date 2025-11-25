@@ -13,7 +13,6 @@ class UShieldProjectorBeltUnlockComponent : public UPerkInputUnlockComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AActor> Shield;
     

@@ -25,7 +25,7 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnAsyncAoE_Complete OnAsyncAoE_Complete;
-protected:
+ 
     UDamageImpulse* DamageImpulse;
     float Damage;
     float armorDamageMultiplier;

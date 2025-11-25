@@ -69,7 +69,7 @@ public:
     USpecialEvent* ForcedOtherEvent;
     TSoftClassPtr<ADebrisDataActor> StageDebrisActor;
     TMap<TSubclassOf<AActor>, FGeneratedTerrainActor> SpawnedTerrainActors;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UNoisyPathfinderComponent* NoisyPathfinder;
     UProceduralTunnelComponent* ProceduralTunnel;

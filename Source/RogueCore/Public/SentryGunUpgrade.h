@@ -15,7 +15,6 @@ class USentryGunUpgrade : public UStandardItemUpgrade {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ESentryGunUpgradeType upgradeType;
     

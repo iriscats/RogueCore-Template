@@ -13,7 +13,7 @@ class UPlayerAfflictionComponent : public UPawnAfflictionComponent {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOverlayDelegate, UPlayerAfflictionOverlay*, Overlay);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOverlayDelegate OnShowOverlay;
     FOverlayDelegate OnHideOverlay;

@@ -10,7 +10,6 @@ class ROGUECORE_API UGatherGemsObjective : public UResourceBasedObjective {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 GemsRequired;
     

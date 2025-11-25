@@ -24,7 +24,7 @@ class AWoodLouse : public AEnemyDeepPathfinderCharacter {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* RollingCenter;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EWoodLouseState forceState;
     float RollingCenterOffsetOnStanding;

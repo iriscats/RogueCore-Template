@@ -11,7 +11,7 @@ UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnable
 class UFirstPersonWidgetComponent : public UWidgetComponent {
     GENERATED_BODY()
 
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UStaticMesh* mesh;
 

@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FItemRackDelegate OnHasItemChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UUsableComponent* UsableComponent;
     USceneComponent* AttachToComponent;

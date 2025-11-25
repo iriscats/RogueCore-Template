@@ -18,7 +18,7 @@ public:
     FInstancedEffectTriggeredDelegate OnEffectTriggered;
     
     FInstancedEffectTriggeredDelegate OnActorEnterLeave;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UStatusEffect*> StatusEffects;
     TArray<UStatusEffect*> LeaveTriggerEffects;

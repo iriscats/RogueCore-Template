@@ -15,7 +15,7 @@ public:
     TArray<FGuid> CompletedCampaigns;
     int32 ActiveCampaignWeek;
     ROGUECORE_API FCampaignSave();
-protected:
+ 
     FWeeklyCampaignItem WeeklySave;
     FWeeklyCampaignItem MaxtrixCoreHuntSave;
     FWeeklyCampaignItem SeededRandomSave;

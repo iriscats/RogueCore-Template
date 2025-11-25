@@ -16,7 +16,7 @@ public:
     
     USceneComponent* InnerScaler;
     USceneComponent* OuterScaler;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRuntimeFloatCurve OuterGrowthCurve;
     FRuntimeFloatCurve InnerGrowthCurve;

@@ -12,7 +12,7 @@ class UTerminatorAnimInstance : public UEnemyAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRotator Lean;
-    
+
     float ForwardLean;
-    UTerminatorAnimInstance();
+    UTerminatorAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

@@ -17,5 +17,5 @@ public:
     bool CheckCurve;
     TWeakObjectPtr<AActor> targetActor;
     FVector LookAtLocation;
-    UShootingSpiderAnimInstance();
+    UShootingSpiderAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

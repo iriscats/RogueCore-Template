@@ -15,7 +15,6 @@ class UDamageUpgrade : public UStandardItemUpgrade {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EDamageUpgrade upgradeType;
     

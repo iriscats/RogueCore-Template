@@ -19,7 +19,6 @@ class ROGUECORE_API USplineTrailComponent : public USceneComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<UStaticMesh> StaticMesh;
     

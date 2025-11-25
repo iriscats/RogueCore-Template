@@ -15,7 +15,6 @@ class AAutoShotgun : public AMultiHitscanWeapon {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> CQCKillBuff;
     

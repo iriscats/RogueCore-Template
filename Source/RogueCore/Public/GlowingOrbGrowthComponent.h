@@ -11,7 +11,6 @@ class ROGUECORE_API UGlowingOrbGrowthComponent : public UActorComponent, public 
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<float> GrothwMutliplierByPlayer;
     

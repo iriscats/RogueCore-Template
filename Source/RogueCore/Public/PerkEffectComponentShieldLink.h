@@ -11,7 +11,6 @@ class UPerkEffectComponentShieldLink : public UPerkEffectComponent {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> BoostedStatusEffect;
     

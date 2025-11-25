@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FModeDelegate OnModeChanged;
     FVisibilityDelegate OnVisibilityChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EHUDVisibilityGroups GroupID;
     FText Title;

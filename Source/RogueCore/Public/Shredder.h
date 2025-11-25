@@ -11,7 +11,7 @@ class AShredder : public AEnemyDeepPathfinderCharacter {
 
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float FoldoutRange;
     

@@ -6,13 +6,13 @@ UProceduralResources::UProceduralResources(const FObjectInitializer& ObjectIniti
 void UProceduralResources::GenerateResources() {
 }
 
-void UProceduralResources::GenerateMissingCarvedResources_Async(const AProceduralSetup*& setup, FLatentActionInfo LatentInfo) {
+void UProceduralResources::GenerateMissingCarvedResources_Async(const AProceduralSetup* setup, FLatentActionInfo LatentInfo) {
 }
 
 void UProceduralResources::GenerateMissingCarvedResources() {
 }
 
-void UProceduralResources::GenerateCarvedResources_Async(const AProceduralSetup*& setup, FLatentActionInfo LatentInfo) {
+void UProceduralResources::GenerateCarvedResources_Async(const AProceduralSetup* setup, FLatentActionInfo LatentInfo) {
 }
 
 void UProceduralResources::GenerateCarvedResources() {

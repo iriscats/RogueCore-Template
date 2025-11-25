@@ -23,7 +23,7 @@ public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FLineEffectHide);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FLineDestroy, const FHitResult&, Result);
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FScaledEffect EletricHitEffect;
     FScaledEffect ProjectileDisappearEffect;

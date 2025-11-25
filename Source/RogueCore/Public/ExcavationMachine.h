@@ -37,7 +37,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_VisualsEnabled, meta=(AllowPrivateAccess=true))
     bool VisualsEnabled;
 
-protected:
+ 
     AExcavationMachine(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

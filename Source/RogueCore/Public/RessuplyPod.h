@@ -3,7 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "GameFramework/Actor.h"
 #include "GameplayTagContainer.h"
-// // #include "GameplayTags/GameplayTagAssetInterface.h" // UE5中已移除 // UE5中已移除
+#include "GameplayTagAssetInterface.h"
 #include "ERessuplyPodState.h"
 #include "Templates/SubclassOf.h"
 #include "RessuplyPod.generated.h"
@@ -23,7 +23,7 @@ public:
 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRessuplyPodStateDelegate OnStateChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer GameplayTags;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

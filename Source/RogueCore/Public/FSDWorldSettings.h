@@ -12,7 +12,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UInventoryList* DebugInventoryList;
     
-protected:
+ 
     UPlayerCharacterID* DefaultCharacterClass;
     UPlayerCharacterID* ClientCharacterClass;
     bool bSpawnInGameActors;

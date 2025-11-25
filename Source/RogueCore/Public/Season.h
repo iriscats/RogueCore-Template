@@ -38,7 +38,7 @@ public:
     float SeasonWaveInMissionChance;
     URiskVector* SeasonWarning;
     USeason();
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void AddUnassignedReward(int32 Index, UReward* Reward);
     void AddLevel(int32 Index, UReward* Reward, UReward* specialReward);

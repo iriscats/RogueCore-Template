@@ -16,7 +16,7 @@ class UYesNoPromptAction : public UBlueprintAsyncActionBase {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FYesNoOutputPin);
     
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FYesNoOutputPin Yes;
     FYesNoOutputPin No;

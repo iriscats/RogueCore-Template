@@ -32,7 +32,7 @@ public:
     UWeakpointGlowComponent* WeakpointGlow;
     UParticleSystemComponent* SmokeParticles;
     UParticleSystemComponent* SmokeParticlesNS;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FRotator MainBodyRotation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

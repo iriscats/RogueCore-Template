@@ -13,7 +13,6 @@ class USplineLevelGenerationCarverComponent : public USplineComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTerrainType* TerrainType;
     

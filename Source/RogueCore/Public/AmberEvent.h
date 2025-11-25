@@ -22,7 +22,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UAmberEventEnemyPool> CurrentPool;
 
-protected:
+ 
     TArray<AFSDPawn*> spawnedEnemies;
     float InitialDelayBeforeSpawn;
     float MaxSpawnRange;

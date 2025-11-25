@@ -19,7 +19,7 @@ public:
     
     USkeletalMeshComponent* BaseMesh;
     UDamageComponent* EndExplosionDamage;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FGuntowerModuleLevel> GuntowerLevels;
     FName ModuleAttachBone;

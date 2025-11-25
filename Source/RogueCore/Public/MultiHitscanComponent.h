@@ -11,11 +11,11 @@ class UMultiHitscanComponent : public UHitscanBaseComponent {
     GENERATED_BODY()
 
 public:
-private:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FHitDelegate OnHit;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 BulletsPerShot;
     float GeneralImpactAudioVolume;

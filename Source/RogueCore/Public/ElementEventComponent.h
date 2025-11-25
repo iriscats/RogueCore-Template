@@ -13,14 +13,13 @@ class UElementEventComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UElementEventType* EventType;
     
     UElementType* TriggeredByElementType;
     AActor* Source;
     UElementEventComponent(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UFUNCTION(BlueprintCallable)
     bool FindEventState(FElementEventState& EventState);
 };

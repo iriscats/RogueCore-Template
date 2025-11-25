@@ -13,6 +13,6 @@ public:
     TArray<FGuid> UnlockedVictoryPoses;
 
     ROGUECORE_API FVictoryPoseSave();
-protected:
+ 
     TArray<FGuid> EquippedVictoryPoses;
 };

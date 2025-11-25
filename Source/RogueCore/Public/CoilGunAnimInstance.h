@@ -16,7 +16,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float HandleExtend;
     float MaxCoilSpeed;
-private:
+ 
     ACoilGun* CoilGun;
     UCoilGunAnimInstance();
     UFUNCTION(BlueprintCallable, BlueprintPure)

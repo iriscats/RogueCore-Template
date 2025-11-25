@@ -21,7 +21,7 @@ public:
     
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<TWeakObjectPtr<AActor>> IgnoreActors;
-protected:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMarkerDelegate OnMarkerSpawned;
     FPlacementUpdatedDelegate OnPlacementChanged;

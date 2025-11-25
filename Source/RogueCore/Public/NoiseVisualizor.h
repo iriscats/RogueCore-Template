@@ -11,7 +11,6 @@ class ANoiseVisualizor : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UFloodFillSettings* FloodFillSettings;
     

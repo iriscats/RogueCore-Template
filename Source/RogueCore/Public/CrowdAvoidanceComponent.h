@@ -14,7 +14,7 @@ public:
     
     FVector AvoidanceDirection;
     int32 AvoidanceCount;
-private:
+ 
     ACrowdAvoidanceManager* CrowdAvoidanceManager;
     UCrowdAvoidanceComponent(const FObjectInitializer& ObjectInitializer);
 };

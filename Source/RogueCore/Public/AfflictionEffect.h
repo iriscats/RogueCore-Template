@@ -12,7 +12,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     bool ShouldInstantiate() const;
     
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveEndEffect(UPawnAfflictionComponent* Target);
     void ReceiveBeginEffect(UPawnAfflictionComponent* Target);

@@ -48,7 +48,7 @@ public:
     float EnabledDuration;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float TraceStepTime;
-protected:
+ 
     ADamageEnhancer(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable)
     void HitByHitScan(UHitscanBaseComponent* Component, const FVector& Origin, const FHitResult& HitResult);

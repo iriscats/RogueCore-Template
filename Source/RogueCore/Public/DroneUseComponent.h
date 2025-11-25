@@ -23,7 +23,7 @@ public:
     FDelegateEvent OnBeginUse;
     FDelegateEvent OnStopUse;
     FDroneUseProgress OnProgress;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDialogDataAsset* BoscoLaserpointerShout;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))

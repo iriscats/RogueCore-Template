@@ -11,7 +11,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UResourceData*> Resources;
     
-protected:
+ 
     float Modifier;
     UResourceMutator();
 };

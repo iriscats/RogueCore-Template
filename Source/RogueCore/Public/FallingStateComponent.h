@@ -20,7 +20,6 @@ class UFallingStateComponent : public UCharacterStateComponent, public IInputCom
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageClass* FallingDamageClass;
     

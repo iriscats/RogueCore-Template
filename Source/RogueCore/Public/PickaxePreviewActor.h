@@ -19,7 +19,6 @@ class APickaxePreviewActor : public AActor, public IPickaxePartEquip, public IIt
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* TP_Root;
     

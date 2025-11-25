@@ -12,7 +12,6 @@ class USpawnEffectsComponent : public UActorComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UMaterialInstance* BiomeMaterialOverride;
     

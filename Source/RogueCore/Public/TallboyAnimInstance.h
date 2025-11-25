@@ -11,8 +11,8 @@ class ROGUECORE_API UTallboyAnimInstance : public USpiderAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool IsAiming;
-    
-    UTallboyAnimInstance();
+
+    UTallboyAnimInstance(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     float GetUpperBodyBlend() const;
 };

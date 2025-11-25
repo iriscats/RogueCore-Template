@@ -16,7 +16,7 @@ public:
     int32 BuildRestrictions;
     
     int32 PlatformRestrictions;
-protected:
+ 
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool EnableDangerousSaveGameIDEditing;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

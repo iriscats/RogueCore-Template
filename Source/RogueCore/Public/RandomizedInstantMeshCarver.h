@@ -16,7 +16,6 @@ class ARandomizedInstantMeshCarver : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UStaticMesh*> CarvingMeshes;
     

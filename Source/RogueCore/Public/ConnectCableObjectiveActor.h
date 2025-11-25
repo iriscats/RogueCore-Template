@@ -25,7 +25,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ObjectiveCompleted, meta=(AllowPrivateAccess=true))
     bool ObjectiveCompleted;
 
-protected:
+ 
     UDebrisPositioning* DebrisPositioning;
     int32 NumAllowedChecks;
     TArray<FGeneratorSpawnData> GeneratorDistancesPerPlayerCount;

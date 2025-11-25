@@ -40,7 +40,7 @@ public:
     TArray<FSpawnActor> OnActivationSpawnActorUpgrades;
     TArray<TSubclassOf<AProjectileBase>> OnActivationProjectileUpgrades;
     TArray<UProjectileAbilityUpgrade*> ProjectileUpgrades;
-protected:
+ 
     float UnEquipTime;
     float ActivationDelay;
     int32 EquipCost;

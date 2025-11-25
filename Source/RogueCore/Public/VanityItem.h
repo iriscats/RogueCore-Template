@@ -24,7 +24,6 @@ class ROGUECORE_API UVanityItem : public USavablePrimaryDataAsset, public ICraft
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText ItemName;
     

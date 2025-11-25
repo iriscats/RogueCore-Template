@@ -9,7 +9,6 @@ class UWallMouthAnimInstance : public UAnimInstance {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool IsPuking;
     

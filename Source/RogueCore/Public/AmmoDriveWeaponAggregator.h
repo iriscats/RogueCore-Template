@@ -8,7 +8,6 @@ UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UAmmoDriveWeaponAggregator : public UClipBasedItemAggregator {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AAmmoDrivenWeapon* Weapon;
     

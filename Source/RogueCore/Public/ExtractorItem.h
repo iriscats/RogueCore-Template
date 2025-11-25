@@ -82,7 +82,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_CurrentLoad, meta=(AllowPrivateAccess=true))
     float CurrentLoad;
 
-protected:
+ 
     UFXSystemAsset* VacuumEffect;
     UFXSystemAsset* ChunkSplatEffect;
     USoundCue* ChunkSplatSound;

@@ -24,7 +24,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_Mesh, meta=(AllowPrivateAccess=true))
     UStaticMesh* mesh;
 
-protected:
+ 
     AExample01Actor(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)

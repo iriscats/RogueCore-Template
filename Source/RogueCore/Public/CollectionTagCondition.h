@@ -9,7 +9,7 @@ UCLASS(Blueprintable, EditInlineNew)
 class UCollectionTagCondition : public URarityConditionBase {
     GENERATED_BODY()
 
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UUnlockCollectionTag* CollectionCondition;
 

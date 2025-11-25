@@ -21,7 +21,7 @@ public:
     TArray<TWeakObjectPtr<UActorComponent>> SpecialBonuses;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UWeaponTagBase* Tag;
-private:
+ 
     float DamageBonus;
     float DamageMultiplier;
     float WeakpointMultiplier;

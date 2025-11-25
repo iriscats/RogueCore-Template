@@ -12,7 +12,7 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool PersistentExplosion;
-protected:
+ 
     bool AoEDamageInFlight;
     float DirectDamageReduction;
     AChargedProjectile(const FObjectInitializer& ObjectInitializer);

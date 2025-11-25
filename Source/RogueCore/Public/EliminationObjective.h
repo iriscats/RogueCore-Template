@@ -18,7 +18,6 @@ class ROGUECORE_API UEliminationObjective : public UObjective {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 ObjectCount;
     

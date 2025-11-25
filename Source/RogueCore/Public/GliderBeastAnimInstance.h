@@ -16,5 +16,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FGliderAnimSync AnimSync;
     bool IsFrozen;
-    UGliderBeastAnimInstance();
+    UGliderBeastAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

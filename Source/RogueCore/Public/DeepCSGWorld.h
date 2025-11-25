@@ -116,7 +116,7 @@ public:
     void TerrainOp_CarveCollider(const FCarveWithColliderOperationData& Data);
     UFUNCTION(BlueprintImplementableEvent)
     void RemoveDebrisInstance_TerrainOp2(int32 instance, int32 Component);
-protected:
+ 
     ADebrisDataActor* DebrisActorInstance;
     int32 DebrisActorIndex;
     AProceduralSetup* ProceduralSetup;

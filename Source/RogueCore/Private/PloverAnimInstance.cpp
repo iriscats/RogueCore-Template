@@ -1,6 +1,6 @@
 #include "PloverAnimInstance.h"
 
-UPloverAnimInstance::UPloverAnimInstance() {
+UPloverAnimInstance::UPloverAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
 }
 
 

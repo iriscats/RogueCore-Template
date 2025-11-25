@@ -25,7 +25,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FObjectiveUpdatedSignature OnObjectiveUpdated;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UObjectiveWidget> ObjectiveWidgetClass;
     FMissionShouts MissionShouts;
@@ -58,6 +58,7 @@ protected:
     bool IsTutorialObjective() const;
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsPrimary() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     bool IsObjectiveResource(UResourceData* InResource) const;
     bool IsNeededForMissionCompletion() const;
     bool IsFinalBattle() const;
@@ -66,6 +67,7 @@ protected:
     TSubclassOf<UObjectiveWidget> GetWidgetClassOrDefault(TSubclassOf<UObjectiveWidget> DefaultWidgetClass);
     int32 GetRewardXP() const;
     FCreditsReward GetRewardCredits() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     TSubclassOf<UOptionalObjectiveWidget> GetOptionalMissionWidget() const;
     FText GetObjectiveText() const;
     static UTexture2D* GetObjectiveIconFromClass(TSubclassOf<UObjective> objectiveClass);
@@ -77,7 +79,10 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, BlueprintPure)
     int32 GetObjectiveAmount(float missionLength) const;
     FObjectiveMissionIcon GetMissionIcon() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     FText GetInMissionText() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     FText GetInMissionCounterText() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     UTexture2D* GetInMissionCounterIcon() const;
 };

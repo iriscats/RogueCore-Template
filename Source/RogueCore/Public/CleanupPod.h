@@ -14,7 +14,7 @@ public:
     USphereComponent* RemovePlagueCollision;
     
     ACleanupPod(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnObjectiveChanged(UObjective* Objective);
     UFUNCTION(BlueprintCallable)

@@ -54,7 +54,7 @@ public:
     UMissionStat* CampaignCompletedMissionStat;
     UGameActivityAssignmentType* CampaignActivity;
     TSubclassOf<UCampaign> ReplacesOldCampaignCampaign;
-protected:
+ 
     UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     ECampaignMutators Mutators;
     UCampaign();

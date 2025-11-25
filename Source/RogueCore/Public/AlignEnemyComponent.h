@@ -9,7 +9,6 @@ class UAlignEnemyComponent : public UActorComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_RotateWhileStationary, meta=(AllowPrivateAccess=true))
     bool RotateWhileStationary;
     

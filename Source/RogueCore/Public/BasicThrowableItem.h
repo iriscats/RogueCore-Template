@@ -30,14 +30,14 @@ public:
     UInstantUsable* UsableComp;
     UStaticMeshComponent* WorldMeshComp;
     UFirstPersonStaticMeshComponent* ViewMeshComp;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* ImpactSound;
     float SquaredMinImpactForce;
     float ImpactAudioResetTime;
     float SquaredMinThrowforce;
     ABasicThrowableItem(const FObjectInitializer& ObjectInitializer);
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void ResetImpactSound();
     void OnUsed(APlayerCharacter* User, EInputKeys Key);

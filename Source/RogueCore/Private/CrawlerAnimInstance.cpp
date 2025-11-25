@@ -1,6 +1,6 @@
 #include "CrawlerAnimInstance.h"
 
-UCrawlerAnimInstance::UCrawlerAnimInstance() {
+UCrawlerAnimInstance::UCrawlerAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->TotalProgressionTime = 1.00f;
     this->bIsInBallisticMove = false;
     this->BallisticPitch = 0.00f;

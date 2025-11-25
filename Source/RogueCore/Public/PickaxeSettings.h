@@ -16,7 +16,7 @@ public:
     UAnimMontage* Salute_FP;
     
     UAnimMontage* Salute_TP;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UPickaxePart*> Parts;
     FDefaultPickaxeParts DefaultPickaxeParts;

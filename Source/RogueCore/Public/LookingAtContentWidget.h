@@ -16,7 +16,6 @@ class ULookingAtContentWidget : public UUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<AActor> CurrentTarget;
     

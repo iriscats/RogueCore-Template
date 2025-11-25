@@ -17,7 +17,6 @@ class ROGUECORE_API ASpawnLordEnemy : public ACoreSpawnEnemyBase, public IBossFi
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDestructibleSubHealthComponent* DestructibleSubHealthHead;
     
@@ -41,7 +40,7 @@ protected:
     void OnRep_SpawnLordState();
     UFUNCTION()
     void OnRep_HasBossfightStarted();
-private:
+ 
     void OnInitialGenerationDone();
     void DamageStateTimer(float damageInSeconds);
     // Fix for true pure virtual functions not being implemented

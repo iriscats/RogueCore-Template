@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UNiagaraSystem* TrackingEffect;
     float ChargeupTime;
-protected:
+ 
     TArray<APlayerCharacter*> playersInside;
     bool IsTracking;
     UPlayersNegotiationSphere(const FObjectInitializer& ObjectInitializer);
@@ -29,6 +29,7 @@ protected:
     void SetTrackPlayers(bool shouldTrack);
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetTrackingEffectActive(bool IsActive);
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void SetHeaderText(const FText& inHeaderText);
     APlayerCharacter* GetLastPlayerInside_ServerOnly();
 };

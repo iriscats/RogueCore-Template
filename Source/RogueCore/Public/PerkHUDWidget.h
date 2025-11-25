@@ -11,7 +11,6 @@ class UPerkHUDWidget : public UUserWidget {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPerkAsset* PerkAsset;
     

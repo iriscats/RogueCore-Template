@@ -26,7 +26,7 @@ public:
     UFloodFillSettings* Noise;
     float Range;
     float NoiseRange;
-protected:
+ 
     TArray<TSoftObjectPtr<UDebrisBase>> Debris;
     float InfluencerRange;
     UVeinResourceCreator();

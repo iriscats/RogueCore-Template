@@ -26,7 +26,7 @@ public:
     FShowPawnHealthDelegate OnShowPawnHealth;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool bShowPawnHealth;
-protected:
+ 
     int32 RoomJumpCount;
     float PreviousMaxDistanceBeforeCleanup;
     bool UnlimitedScoutFlareDuration;

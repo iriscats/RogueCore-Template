@@ -21,7 +21,6 @@ class ROGUECORE_API USalvageObjective : public UObjective {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 SalvageActorCount;
     

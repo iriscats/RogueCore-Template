@@ -4,11 +4,12 @@
 #include "SystemSettings.generated.h"
 
 USTRUCT(BlueprintType)
-struct FSystemSettings {
+struct FRogueSystemSettings {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FEmitterConnection> EmitterParamConnections;
-    
-    ROGUECORE_API FSystemSettings();
+
+    FRogueSystemSettings() {
+    }
 };

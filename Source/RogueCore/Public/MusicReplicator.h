@@ -10,7 +10,6 @@ class AMusicReplicator : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ActiveMusic, meta=(AllowPrivateAccess=true))
     TArray<FActiveMusicItem> ActiveMusic;
     

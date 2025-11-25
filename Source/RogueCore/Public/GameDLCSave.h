@@ -10,5 +10,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSet<FGuid> AnnouncedIDs;
     ROGUECORE_API FGameDLCSave();
-protected:
+ 
 };

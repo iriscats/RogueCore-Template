@@ -17,7 +17,7 @@ public:
     USpinDeathComponent* SpinDeathComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsDataDroneFleeing, meta=(AllowPrivateAccess=true))
     bool IsDataDroneFleeing;
-protected:
+ 
     ADataDrone(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

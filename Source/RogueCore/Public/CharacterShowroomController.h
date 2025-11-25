@@ -17,7 +17,6 @@ class UCharacterShowroomController : public UShowroomController {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlayerCharacter* CharacterInstance;
     

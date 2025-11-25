@@ -10,7 +10,6 @@ class ABoil : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UFSDPhysicalMaterial*> PhysicalMaterials;
     

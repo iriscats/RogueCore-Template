@@ -16,7 +16,6 @@ class UPlayerBufferComponent : public UActorComponent {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UStatusEffect> StatusEffect;
     

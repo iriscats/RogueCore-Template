@@ -10,7 +10,6 @@ class UProjectileAttackComponent : public UProjectileAttackBaseComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ManualyComplete;
     

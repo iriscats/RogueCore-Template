@@ -58,8 +58,11 @@ public:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void ServerSetSpeedBoostActivated(bool InBoostActivated);
+    UFUNCTION(Reliable, Server)
     void ServerJumpPressed(bool JumpForward);
+    UFUNCTION(Reliable, Server)
     void ServerForwardInputChanged(float Input);
+    UFUNCTION(Reliable, Server)
     void ServerChangeDirection();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveSpeedBoostDeactivated();

@@ -13,7 +13,6 @@ class UTutorialComponent : public UActorComponent {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bTutorialEnabled;
     

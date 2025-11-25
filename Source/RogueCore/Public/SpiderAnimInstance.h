@@ -25,7 +25,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FIKEffectorData> IKEffectors;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float Speed;
     FVector Velocity;
@@ -86,6 +86,7 @@ protected:
     ESpiderDeathAnimationCategory DeathAnimationCategory;
     float AimHorizontal;
     float AimVertical;
+    USpiderAnimInstance(const FObjectInitializer& ObjectInitializer);
     USpiderAnimInstance();
     UFUNCTION(BlueprintCallable)
     void SetMeshScale(float NewScale);

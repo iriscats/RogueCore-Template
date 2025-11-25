@@ -14,7 +14,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UTexture2D* GenericVictoryPoseIcon;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UVictoryPose*> LoadedVictoryPoses;
     UVictoryPose* RandomVictoryPose;

@@ -31,7 +31,6 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBoolDelegate OnFrozenEvent;
     
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStatusEffectsComponent* StatusEffects;
     UElementComponent* element;

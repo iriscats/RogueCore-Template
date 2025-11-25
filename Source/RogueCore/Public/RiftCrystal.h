@@ -6,7 +6,7 @@
 #include "Curves/CurveFloat.h"
 #include "Engine/NetSerialization.h"
 #include "GameplayTagContainer.h"
-// // #include "GameplayTags/GameplayTagAssetInterface.h" // UE5中已移除 // UE5中已移除
+#include "GameplayTagAssetInterface.h"
 #include "BossFightInterface.h"
 #include "DamageData.h"
 #include "ERiftCrystalState.h"
@@ -74,7 +74,7 @@ public:
     UDamageComponent* EndExplosionDamage;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRiftCrystalDelegate OnStateChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName BeamTargetParamName;
     FGameplayTagContainer GameplayTags;
@@ -148,10 +148,12 @@ protected:
     void CarvePillar(bool showEffects);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_ShowRiftSpawnEffects(FVector_NetQuantize riftLocation);
+    UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_AddKnockBack(FVector_NetQuantize Direction, float Force);
     // Fix for true pure virtual functions not being implemented
-    bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override PURE_VIRTUAL(HasMatchingGameplayTag, return false;);
-    bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override PURE_VIRTUAL(HasAnyMatchingGameplayTags, return false;);
-    bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override PURE_VIRTUAL(HasAllMatchingGameplayTags, return false;);
-    FGameplayTagContainer BP_GetOwnedGameplayTags() const override PURE_VIRTUAL(BP_GetOwnedGameplayTags, return FGameplayTagContainer{};);
+    bool HasMatchingGameplayTag(FGameplayTag TagToCheck) const override;
+    bool HasAnyMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
+    bool HasAllMatchingGameplayTags(const FGameplayTagContainer& TagContainer) const override;
+    void GetOwnedGameplayTags(FGameplayTagContainer& TagContainer) const override;
+    FGameplayTagContainer BP_GetOwnedGameplayTags() const override;
 };

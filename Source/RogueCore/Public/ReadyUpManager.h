@@ -20,7 +20,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FReadyUpEvent OnReadyUpStarted;
     FReadyUpEvent OnReadyUpFinished;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FReadyUpState State;
     FSingleDelegate OnCompletedCallback;

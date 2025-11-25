@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FStateChanged OnStateChanged;
     FMediaPlayerEvent OnEndReached;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSlateBrush Brush;
     UFileMediaSource* MediaSource;

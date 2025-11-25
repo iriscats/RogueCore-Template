@@ -10,7 +10,6 @@ class AMeteorDefenseEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FProgressShout> ProgressShouts;
     
@@ -20,7 +19,7 @@ protected:
     APlagueMeteor* meteor;
     AMeteorDefenseEvent(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
-private:
+ 
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
     void SetMeteor(APlagueMeteor* NewMeteor);
     UFUNCTION(BlueprintCallable, BlueprintPure)

@@ -17,7 +17,6 @@ class AFulgorVomiter : public AEnemyPawn {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitReactionComponent* HitReactions;
     
@@ -34,7 +33,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     FVector TargetDirection;
     USceneComponent* ConeOrigin;
-private:
+
     APlayerCharacter* Target;
     AFulgorVomiter(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

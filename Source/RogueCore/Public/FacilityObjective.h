@@ -31,7 +31,7 @@ public:
     
     TSoftClassPtr<AActor> GeneratorBeaconClass;
     int32 GeneratorCount;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ObjectivesStage, meta=(AllowPrivateAccess=true))
     int32 ObjectivesStage;
     TArray<FSubObjective> SubObjectives;

@@ -49,12 +49,12 @@ public:
     FRunManagerRunDelegate OnGeneratedRun;
     FRunManagerStageDelegate OnActiveStageChanged;
     FDelegate OnExpeniteMined;
-protected:
+ 
     FIntDelegate OnXpChanged;
     FIntDelegate OnLevelChanged;
     FDelegate OnArtifactChanged;
     FDelegate OnPotentExpeniteChanged;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UBXENegotiationManager* NegotiationManager;
     UReadyUpManager* ReadyUpManager;

@@ -18,7 +18,6 @@ class ROGUECORE_API AJettyBootsArcadeActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UJettyBootUsableComponent* StartGameUsable;
     

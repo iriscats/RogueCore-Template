@@ -11,7 +11,6 @@ class UCoolDownItemAggregator : public UItemAggregator {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float CooldownDuration;
     

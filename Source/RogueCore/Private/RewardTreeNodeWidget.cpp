@@ -15,12 +15,6 @@ URewardTreeNodeWidget::URewardTreeNodeWidget() : UUserWidget(FObjectInitializer:
 void URewardTreeNodeWidget::ShowDetailsText_Implementation(bool InShow) {
 }
 
-void URewardTreeNodeWidget::SetSelectedEditor_Implementation(bool inIsSelected) {
-}
-
-void URewardTreeNodeWidget::SetIsEditing_Implementation(bool inIsEditing) {
-}
-
 void URewardTreeNodeWidget::SetIsBought(bool inIsBought) {
 }
 

@@ -32,7 +32,7 @@ public:
     float Progress;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Finished, meta=(AllowPrivateAccess=true))
     bool Finished;
-protected:
+ 
     TArray<FName> AttachmentPoints;
     float PerPlayerMultiplier;
     float TurnSpeed;

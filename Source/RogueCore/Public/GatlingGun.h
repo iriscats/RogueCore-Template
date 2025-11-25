@@ -32,7 +32,7 @@ public:
     UDamageAsset* BarrelProximityDamage;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;
-protected:
+ 
     AGatlingGun(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)

@@ -15,7 +15,6 @@ class ROGUECORE_API UTremorAttackComponent : public USpecialDamageAttackComponen
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsAttackActive, meta=(AllowPrivateAccess=true))
     bool IsAttackActive;
     

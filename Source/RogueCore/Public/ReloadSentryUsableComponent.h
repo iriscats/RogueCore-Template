@@ -13,7 +13,6 @@ class UReloadSentryUsableComponent : public UUsableComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText OutOfAmmoText;
     

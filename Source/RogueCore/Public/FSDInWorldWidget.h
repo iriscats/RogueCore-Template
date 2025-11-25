@@ -13,7 +13,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveHUDVisibilityChanged(bool InHudVisible);
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bHUDVisibile;
 

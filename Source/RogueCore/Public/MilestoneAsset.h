@@ -22,7 +22,7 @@ public:
     FOnMilestoneClaimed OnMilestoneClaimed;
     
     FOnMilestoneReached OnMilestoneReached;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGuid SavegameID;
     TSoftObjectPtr<UTexture2D> LargeImage;

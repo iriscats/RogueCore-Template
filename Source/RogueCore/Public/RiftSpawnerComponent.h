@@ -22,7 +22,7 @@ public:
     
     FDelegate OnFinishedSpawningRifts;
     FDelegate OnAllRiftsOpened;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Spawned, meta=(AllowPrivateAccess=true))
     TArray<AActor*> spawned;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

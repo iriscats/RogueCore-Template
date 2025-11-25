@@ -17,7 +17,6 @@ class AFlyingEnemyDeepPathfinderCharacter : public AEnemyDeepPathfinderCharacter
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPhysicalMaterial* FrozenMaterial;
     

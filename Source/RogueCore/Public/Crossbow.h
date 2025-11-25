@@ -41,7 +41,7 @@ public:
     bool SwitchIsQueued;
     UPROPERTY(EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     ECrossbowSwitchState SwitchState;
-protected:
+ 
     TSubclassOf<UStatusEffect> BattleFrenzyStatusEffect;
     TSubclassOf<ACrossbowProjectileStuck> BasicSpawnableStuckProjectile;
     int32 SpecialAmmoMax;

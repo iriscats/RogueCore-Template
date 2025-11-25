@@ -16,7 +16,7 @@ public:
     
     FRepairedDelegate OnAllResourcesAquiredEvent;
     FRepairedDelegate OnRepairedEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UGemResourceData* RequiresCarriedResource;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_ResourcesRequired, meta=(AllowPrivateAccess=true))

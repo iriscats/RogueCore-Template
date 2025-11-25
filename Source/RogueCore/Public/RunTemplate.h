@@ -31,7 +31,7 @@ public:
     TSoftClassPtr<AProceduralSetup> DefaultPLS;
     TArray<TSubclassOf<UMissionDNA>> DefaultDNA;
     TArray<FResourceSpawner> DefaultResourceDistribution;
-protected:
+ 
     ERunDepth TutorialDepth;
     TSubclassOf<UMissionDNA> TutorialDNA;
     UPrimaryMutator* TutorialMutator;

@@ -14,7 +14,7 @@ class UFXTelemetry : public UGameInstanceSubsystem {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FString TelSessionID;
     

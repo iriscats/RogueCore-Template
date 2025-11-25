@@ -13,7 +13,6 @@ class ATentaclePlantNode : public AEnemyPawn {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* mesh;
     

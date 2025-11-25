@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Styling/SlateColor.h"
 #include "Runtime/SlateCore/Public/Fonts/SlateFontInfo.h"
-#include "UMG/RichTextBlock.h"
+#include "Components/RichTextBlock.h"
 #include "TextStyleOverride.h"
 #include "RichTextStylable.generated.h"
 

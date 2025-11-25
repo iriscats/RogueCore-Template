@@ -15,8 +15,7 @@ class AFacilityTurretController : public AFSDAIController {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UAIPerceptionComponent* Perception;
-    
-private:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float RememberTargetTime;
     float RetargetOnAttackChance;

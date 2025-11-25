@@ -25,7 +25,7 @@ public:
     FFuelLineConnectedDelegate OnFuelLineConnected;
     FFuelLineStartedDelegate OnFuelLineStarted;
     FFirstFuelLineDelegate OnFirstFuelLineSegment;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticMeshComponent* StaticMesh;
     UOutlineComponent* OutlineComponent;

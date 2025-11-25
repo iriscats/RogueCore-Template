@@ -1,6 +1,6 @@
 #include "StationaryEnemyAnimInstance.h"
 
-UStationaryEnemyAnimInstance::UStationaryEnemyAnimInstance() {
+UStationaryEnemyAnimInstance::UStationaryEnemyAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->Target = NULL;
     this->Yaw = 0.00f;
     this->MappedYaw = 0.00f;

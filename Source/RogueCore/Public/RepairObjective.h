@@ -13,7 +13,6 @@ class URepairObjective : public UObjective {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_RepairedObjectives, meta=(AllowPrivateAccess=true))
     int32 RepairedObjectives;
     

@@ -25,7 +25,7 @@ public:
     FGrabbedActorSig OnGrabbedActor;
     
     FReleasedActorSig OnReleasedActor;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagQuery TagFilter;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

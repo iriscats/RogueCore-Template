@@ -15,5 +15,5 @@ public:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<UDeepPathfinderMovement> Movement;
-    UPloverAnimInstance();
+    UPloverAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

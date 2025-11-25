@@ -10,5 +10,5 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FGuid, float> OwnedResources;
     ROGUECORE_API FResourcesSave();
-protected:
+ 
 };

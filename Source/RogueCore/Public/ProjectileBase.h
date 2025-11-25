@@ -34,7 +34,7 @@ public:
     FProjectileImpact ProjectileImpact;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageAsset* ImpactDamage;
-protected:
+ 
     FPrefetchedData PrefetchedData;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UShapeComponent* CollisionComponent;
@@ -68,7 +68,9 @@ protected:
     void StopMovement();
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_SetState(FVector_NetQuantize position, FVector_NetQuantize Velocity);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_Penetrated(const FProjectileImpact& Impact);
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_Impacted(const FProjectileImpact& Impact);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnUpgradeElementAdded(UProjectileUpgradeElement* element);

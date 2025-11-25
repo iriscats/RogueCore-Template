@@ -36,7 +36,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     bool HasThrownPack;
 
-protected:
+ 
     TSubclassOf<AItem> LoadoutProxy;
     UAnimMontage* FPThrowMontage;
     UAnimMontage* TPThrowMontage;

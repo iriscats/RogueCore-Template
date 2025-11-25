@@ -14,7 +14,6 @@ class ROGUECORE_API USkinnableComponent : public UActorComponent {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UItemSkin* EquippedSkinColor;
     

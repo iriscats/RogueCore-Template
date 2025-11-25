@@ -24,7 +24,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 CallbackKeys;
     FActorUsableDelegate OnUseDenied;
-protected:
+ 
     float UseCooldown;
     UUseAnimationSetting* AnimationSettings;
     int32 Priority;

@@ -21,6 +21,6 @@ public:
     UAnimationAsset* RetractAnimation;
     UAudioComponent* Audio;
 
-protected:
+ 
     AExtruderPlant(const FObjectInitializer& ObjectInitializer);
 };

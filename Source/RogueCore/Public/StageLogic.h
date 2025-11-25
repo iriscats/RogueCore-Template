@@ -8,7 +8,7 @@ class UStageLogic : public UObject {
     GENERATED_BODY()
 public:
     UStageLogic();
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void StartLogic();
     

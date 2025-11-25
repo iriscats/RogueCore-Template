@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "AnimationSharing/AnimationSharingStateProcessor.h"
+#include "AnimationSharingTypes.h"
 #include "PipelineAnimationSharingProcessor.generated.h"
 
 UCLASS(Blueprintable)

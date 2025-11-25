@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSimpleArmorRadialDamagedDelegate OnRadialArmorPartsDestroyedEvent;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ArmorStrength;
     TMap<FName, FDestructableBodypartItem> PhysBoneToArmor;

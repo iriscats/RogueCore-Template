@@ -25,7 +25,7 @@ public:
     UContinuousUsableComponent* RepairUsable;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRockCrackerStateDelegate OnRockCrackerStateChanged;
-protected:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DrainPerSecond;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_PodState, meta=(AllowPrivateAccess=true))

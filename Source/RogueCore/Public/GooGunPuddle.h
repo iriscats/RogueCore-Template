@@ -19,7 +19,6 @@ class AGooGunPuddle : public AActor {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* SphereTrigger;
     
@@ -32,13 +31,13 @@ protected:
     int32 ActiveStatusEffectTriggersMask;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     float Lifetime;
-private:
+
     bool CollisionOnClients;
     AGooGunPuddle(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable)
     void SetStatusEffect(TSubclassOf<UStatusEffect> NewStatusEffect);
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnStatusEffectAdded(const FGooPuddleStatusEffectTrigger& Trigger);
 public:

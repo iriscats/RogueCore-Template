@@ -7,7 +7,7 @@ UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnable
 class UFirstPersonPointLightComponent : public UPointLightComponent {
     GENERATED_BODY()
 
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool CorrectionEnabled;
 

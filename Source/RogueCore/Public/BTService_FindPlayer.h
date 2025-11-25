@@ -12,7 +12,6 @@ class UBTService_FindPlayer : public UBTService {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBlackboardKeySelector TargetKey;
     

@@ -15,7 +15,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText ItemRackedText;
     FText ItemUnRackedText;
-protected:
+ 
     bool AddToCharacterInventory;
     int32 RackKey;
     URackableItemComponent(const FObjectInitializer& ObjectInitializer);

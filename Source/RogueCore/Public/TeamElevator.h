@@ -24,7 +24,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FElevatorDelegate OnElevatorPoweredUp;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     AGeneratorLine* ElevatorCableInstance;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
@@ -54,11 +54,14 @@ protected:
     void InitializeNextLevel(const int32 NextStageIndex);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     ETeamElevatorType GetType() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     UElevatorGearsAnimInstance* GetGearsAnimInstance() const;
     AGeneratorLine* GetElevatorCableInstance() const;
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     FVector GetBottomLocation() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     TArray<FTransform> GetAllElevatorCableStartPoints() const;
+    UFUNCTION(BlueprintCallable, BlueprintNativeEvent, BlueprintPure)
     TArray<FTransform> GetAllElevatorCableEndPoints() const;
     static FTransform FindTeamElevatorSpawnTransform(AProceduralSetup* setup, UDebrisPositioning* DebrisPositioning, TSubclassOf<AActor> terrainPlacement, bool AllowInvalidRoomsAsFallback, float blockDistFromLandingZone, const bool rotateFacingLastTunnel);
 };

@@ -20,7 +20,7 @@ public:
     FDashSig OnStartDashEvent;
     
     FDashSig OnStopDashEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     FVector_NetQuantize DashLocation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

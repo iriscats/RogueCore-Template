@@ -25,7 +25,7 @@ public:
     FTetherConnectionChanged_Deletage OnConnectionChanged;
     FTeherMessage_Delegate OnTetherMessage;
     FTetherRangeChanged OnConnectionRangeUpdated;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UMeshComponent* TetherMesh;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -12,5 +12,5 @@ public:
     TMap<FGuid, FItemUpgradeSelection> Loadout;
 
     ROGUECORE_API FUpgradeLoadout();
-protected:
+ 
 };

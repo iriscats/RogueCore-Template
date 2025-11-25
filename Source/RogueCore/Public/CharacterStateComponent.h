@@ -37,7 +37,7 @@ public:
 
     UPlayerMovementComponent* GetCharacterMovement() const;
 
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     uint8 StateId;
 

@@ -13,7 +13,6 @@ class UDamageNumberManager : public UTickableWorldSubsystem {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<UWidgetAnimation*> DirectionAnims;
     

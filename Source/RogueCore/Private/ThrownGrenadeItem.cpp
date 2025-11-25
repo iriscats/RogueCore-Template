@@ -30,10 +30,10 @@ void AThrownGrenadeItem::Server_ThrowGrenade_Implementation(const FVector& Start
 void AThrownGrenadeItem::Server_SetState_Implementation(EThrownGrenadeItemState itemState) {
 }
 
-void AThrownGrenadeItem::Server_Resupply_Implementation(float percentage) {
+void AThrownGrenadeItem::Server_Resupply(float percentage) {
 }
 
-void AThrownGrenadeItem::Server_HasReturnedToSender_Implementation() {
+void AThrownGrenadeItem::Server_HasReturnedToSender() {
 }
 
 void AThrownGrenadeItem::ResupplyGrenadesAmount(const int32& amount) {

@@ -36,7 +36,7 @@ public:
     FValueChangedDelegate OnValueChanged;
     FOnRepTimerChangedDelegate OnRepTimerChanged;
     FThresholdChangedDelegate OnThresholdChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UInputComponent* FitnessInputComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_GymActivity, meta=(AllowPrivateAccess=true))

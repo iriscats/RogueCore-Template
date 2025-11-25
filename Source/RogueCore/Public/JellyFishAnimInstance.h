@@ -10,7 +10,7 @@ class UJellyFishAnimInstance : public UEnemyAnimInstance {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     float HorizontalAngle;
-    
+
     float VerticalSpeed;
-    UJellyFishAnimInstance();
+    UJellyFishAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

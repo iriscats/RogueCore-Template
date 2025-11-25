@@ -13,7 +13,6 @@ class ABeltDrivenWeapon : public AAmmoDrivenWeapon {
 
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UAudioComponent* BarrelAudio;
     

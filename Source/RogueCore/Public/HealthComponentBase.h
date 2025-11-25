@@ -36,7 +36,7 @@ public:
     FOnRadialDamage OnRadialDamage;
     FOnHitByHitScan OnHitByHitScan;
     FCanTakeDamageDelegate OnCanTakeDamageChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool ShowLaserPointMarkerWhenDead;
     bool canTakeDamage;

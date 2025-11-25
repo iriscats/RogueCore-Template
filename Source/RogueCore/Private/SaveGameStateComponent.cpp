@@ -27,7 +27,7 @@ void USaveGameStateComponent::Server_SetCharacterStats_Implementation(const TArr
 void USaveGameStateComponent::Server_SetActiveCampaignMission_Implementation(FActiveCampaingMission Data) {
 }
 
-void USaveGameStateComponent::RefreshLoadoutFromSave(UPlayerCharacterID* characterID) {
+void USaveGameStateComponent::RefreshLoadoutFromSave_Implementation(UPlayerCharacterID* characterID) {
 }
 
 void USaveGameStateComponent::OnRep_PlayerProgress() {

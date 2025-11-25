@@ -28,7 +28,6 @@ class ROGUECORE_API UEnemyDescriptor : public UDataAsset {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UEnemyID* EnemyID;
     

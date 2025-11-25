@@ -11,6 +11,9 @@ UEnemyAnimInstance::UEnemyAnimInstance(const FObjectInitializer& ObjectInitializ
     this->PoseCorrectionComponent = NULL;
 }
 
+UEnemyAnimInstance::UEnemyAnimInstance() : UEnemyAnimInstance(FObjectInitializer::Get()) {
+}
+
 bool UEnemyAnimInstance::IsSlotPlayingAnyAnimation(FName SlotNodeName) const {
     return false;
 }

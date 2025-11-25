@@ -15,7 +15,6 @@ class ROGUECORE_API AFuelLineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USplineMeshComponent* FuelLineSplineMesh;
     
@@ -28,7 +27,7 @@ protected:
     float MaxLength;
     bool bHasMaxTurnAngle;
     float MaxTurnAngle;
-private:
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool bHaveFlowingLiquid;
     AFuelLineSegment(const FObjectInitializer& ObjectInitializer);
@@ -37,7 +36,7 @@ private:
     void PropagateFlowingLiquid(const bool NewHaveFlowingLiquid);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool HaveFlowingLiquid() const;
-protected:
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnFlowingLiquidChanged();
     UFUNCTION(BlueprintCallable, Client, Unreliable)

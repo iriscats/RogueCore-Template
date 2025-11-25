@@ -17,7 +17,7 @@ public:
     FFadingDone OnFadeInComplete;
     
     FFadingDone OnFadeOutComplete;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFadeData Fading;
     UFadeScreenSubSystem();

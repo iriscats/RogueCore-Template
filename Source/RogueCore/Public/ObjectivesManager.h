@@ -18,7 +18,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnObjectivesChanged;
     FDelegateEvent OnAllRequiredReturnObjectivesCompleted;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UObjective* Objective;
     TArray<UObjective*> SecondaryObjectives;

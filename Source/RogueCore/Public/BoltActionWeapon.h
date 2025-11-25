@@ -26,7 +26,7 @@ public:
     FBoltActionWeaponFullyFocusedDelegate FullyFocusedEvent;
     
     FBoltActionWeaponFullyFocusedDelegate FocusLostEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UDamageComponent* DamageComponent;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

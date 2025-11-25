@@ -19,7 +19,7 @@ public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FShadowQualityChanged OnShadowQualityChanged;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FFlareMeta> FlaresMeta;
     UFlareController();

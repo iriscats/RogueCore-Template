@@ -20,7 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     TArray<FPlacementObstruction> Obstructions;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UNiagaraComponent* DebrisLightSystem;
     UPlagueUsable* CallWeaponPodUsable;

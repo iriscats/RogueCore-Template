@@ -12,7 +12,6 @@ class UPawnDebugComponent : public UActorComponent {
     GENERATED_BODY()
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UWidgetComponent* WidgetComponent;
     

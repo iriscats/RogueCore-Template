@@ -12,7 +12,7 @@ class UInstancedNiagaraSettings : public UDataAsset {
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TMap<UNiagaraSystem*, FSystemSettings> SystemSettings;
+    TMap<UNiagaraSystem*, FRogueSystemSettings> SystemSettings;
     
     UInstancedNiagaraSettings();
 };

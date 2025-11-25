@@ -35,7 +35,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IsMoving, meta=(AllowPrivateAccess=true))
     bool IsMoving;
 
-protected:
+ 
     float UpgradedStaggerDuration;
     float UpgradedFearFactor;
     float IncreasedStaggerRadius;

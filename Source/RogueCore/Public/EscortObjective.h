@@ -35,7 +35,7 @@ public:
     bool DidRescueDorettaHead;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_AreasToScan, meta=(AllowPrivateAccess=true))
     int32 AreasToScan;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     int32 ScanCount;
     TArray<FVector> ScanLocations;

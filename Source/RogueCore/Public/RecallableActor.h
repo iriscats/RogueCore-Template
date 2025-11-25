@@ -22,7 +22,7 @@ public:
     FRecallableActorStateChanged OnStateChanged;
     FReturnedSignature OnReturnFinish;
     FReturnedSignature OnRelocateFinished;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float AcceptanceRadius;
     float AutoRecallDistance;
@@ -41,9 +41,11 @@ protected:
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void SetRecallTarget(AActor* NewTarget);
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Relocate(FVector NewLocation, FRotator NewRotation);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveOnStateChanged();
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Recall();
     void OnReturnSucceeded();
     void OnReturnFailed();

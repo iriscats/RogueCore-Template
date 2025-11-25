@@ -7,5 +7,5 @@ UCLASS(Blueprintable, NonTransient)
 class ROGUECORE_API USpawnLordAnimInstance : public USpiderAnimInstance {
     GENERATED_BODY()
 public:
-    USpawnLordAnimInstance();
+    USpawnLordAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

@@ -21,7 +21,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bIsInitialized;
     bool bHasBeenReplicated;
-protected:
+ 
     TMap<UDifficultySetting*, int32> DifficultyModifiers;
     UNiagaraSystem* CleanedParticles;
     float particleScale;

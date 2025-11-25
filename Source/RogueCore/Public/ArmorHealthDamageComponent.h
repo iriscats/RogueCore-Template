@@ -20,7 +20,7 @@ public:
     FArmorPartDamagedDelegate OnArmorPartDamagedEvent;
     FAmorPartDestroyedDelegate OnSocketPartDestroyedEvent;
     FArmorPartDamagedDelegate OnSocketPartDamagedEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<FName, FArmorHealthItem> PhysBoneToArmor;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ArmorDamageInfo, meta=(AllowPrivateAccess=true))

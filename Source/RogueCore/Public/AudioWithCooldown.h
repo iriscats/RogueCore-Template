@@ -10,7 +10,7 @@ struct FAudioWithCooldown {
 
 public:
     ROGUECORE_API FAudioWithCooldown();
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USoundCue* Audio;
 

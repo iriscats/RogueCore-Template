@@ -16,7 +16,6 @@ class AWallSaw : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UCapsuleComponent* HitCapsule;
     

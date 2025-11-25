@@ -16,7 +16,6 @@ class UActorTrackingWidget : public UFSDUserWidget {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))
     TWeakObjectPtr<USceneComponent> TargetComponent;
     

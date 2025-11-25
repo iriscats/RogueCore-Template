@@ -30,7 +30,7 @@ public:
     FDelegate IsEditingChanged;
     UReward* Reward;
     bool bIsPlaceholder;
-protected:
+ 
     bool IsEditing;
     TArray<UUserWidget*> NodeConnections;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
@@ -39,7 +39,9 @@ protected:
     URewardTreeNodeWidget();
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void ShowDetailsText(bool InShow);
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SetSelectedEditor(bool inIsSelected);
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SetIsEditing(bool inIsEditing);
     UFUNCTION(BlueprintCallable)
     void SetIsBought(bool inIsBought);

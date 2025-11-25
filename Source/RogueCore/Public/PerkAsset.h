@@ -22,7 +22,6 @@ class ROGUECORE_API UPerkAsset : public USavableDataAsset {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText Title;
     
@@ -37,7 +36,7 @@ protected:
     FCoolDownProgressStyle CooldownUI;
     TSoftClassPtr<UPerkHUDIconWidget> HudIconWidgetClass;
     TArray<TSoftClassPtr<UPerkActivationWidget>> HudActivationWidgets;
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool bIsHighlighted;
     UPerkAsset();

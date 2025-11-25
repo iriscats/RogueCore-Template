@@ -30,7 +30,7 @@ public:
     UNiagaraComponent* FrontBottomLaserMuzzleNS;
     UNiagaraComponent* BackTopLaserMuzzleNS;
     UNiagaraComponent* BackBottomLaserMuzzleNS;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     FRotator OtherCurrentRotation;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

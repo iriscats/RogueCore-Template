@@ -13,7 +13,7 @@ class UCrossbowProjectileRicochet : public UActorComponent {
     // UPROPERTY fields moved from private section
 
 public:
-private:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UNiagaraSystem* NiagaraTrailParticleSystem;
     
@@ -22,7 +22,7 @@ private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     ACrossbowProjectileBase* CastedOwner;
     UCrossbowProjectileRicochet(const FObjectInitializer& ObjectInitializer);
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void Ricochet(const FHitResult& HitResult, const FVector& RelativeLocation);
 };

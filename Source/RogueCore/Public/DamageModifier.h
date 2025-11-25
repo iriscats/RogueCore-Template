@@ -14,6 +14,9 @@ class UDamageModifier : public UDataAsset {
 
     TArray<FDamageModifierItem> Modifiers;
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    UDamageCondition* Condition;
+
     UDamageModifier();
 
 };

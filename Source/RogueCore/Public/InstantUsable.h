@@ -15,7 +15,7 @@ public:
     FUsedBySignature OnUsedBy;
     
     FUsableChangedSignature OnUsableChanged;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bShowUsingUI;
     USoundCue* AudioCompletedUse;

@@ -11,7 +11,6 @@ class USpecialAttackComponent : public UAttackBaseComponent {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UAnimMontage*> Montages;
     

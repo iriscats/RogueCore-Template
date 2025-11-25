@@ -29,7 +29,7 @@ public:
     USimpleHealthComponent* Health;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FWormSpawnDelegate OnWormSpawned;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_Grown, meta=(AllowPrivateAccess=true))
     bool Grown;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

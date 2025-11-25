@@ -14,5 +14,5 @@ public:
     FRotator AimRotation;
     
     bool IsEngaged;
-    UFacilityTurretAnimInstance();
+    UFacilityTurretAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

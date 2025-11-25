@@ -18,7 +18,7 @@ public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float SearchChunksRadius;
-protected:
+ 
     float SearchChunksInterval;
     ACaveWorm(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, meta=(WorldContext="WorldContext"))

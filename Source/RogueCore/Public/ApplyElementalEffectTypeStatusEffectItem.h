@@ -11,12 +11,11 @@ class UApplyElementalEffectTypeStatusEffectItem : public UStatusEffectItem {
     // UPROPERTY fields moved from private section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UElementType* ElementalType;
     
     UApplyElementalEffectTypeStatusEffectItem();
-private:
+ 
     UFUNCTION(BlueprintCallable)
     void OnItemUnequipped(AItem* Item);
     void OnItemEquipped(AItem* Item);

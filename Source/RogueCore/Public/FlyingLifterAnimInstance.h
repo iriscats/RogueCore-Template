@@ -17,5 +17,5 @@ public:
     bool ChaseToWanderLock;
     bool ToCarryLock;
     EGrabberState GrabberState;
-    UFlyingLifterAnimInstance();
+    UFlyingLifterAnimInstance(const FObjectInitializer& ObjectInitializer);
 };

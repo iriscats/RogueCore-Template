@@ -22,7 +22,7 @@ public:
     FDelegate OnStartFallingEvent;
     
     FDelegate OnFreezeImpactEvent;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPhysicalMaterial* FrozenMaterial;
     UPhysicsAsset* FrozenAsset;

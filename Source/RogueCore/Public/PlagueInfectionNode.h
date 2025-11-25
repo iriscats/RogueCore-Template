@@ -22,7 +22,7 @@ public:
     FFirstPlayerNearCenter OnFirstPlayerNearCenter;
     
     FPlagueCenterKilled OnPlagueCenterKilled;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USimpleHealthComponent* HealthComponent;
     FDelegate TriggerCleanupTutorial;

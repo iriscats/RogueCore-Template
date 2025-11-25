@@ -1,13 +1,13 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "CarriableItem.h"
+#include "NiagaraComponent.h"
 #include "Tether.generated.h"
 
 class UCarriableComponent;
 class UDamageComponent;
 class UFXSystemAsset;
 class UInstantUsable;
-class UNiagaraComponent;
 class USkeletalMeshComponent;
 class USoundCue;
 class USphereComponent;
@@ -25,7 +25,7 @@ public:
     UNiagaraComponent* TetherBeam;
     USphereComponent* PysicalCollision;
     UDamageComponent* ExplosionDamage;
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UFXSystemAsset* ExplosionParticle;
     USoundCue* ExplosionSound;

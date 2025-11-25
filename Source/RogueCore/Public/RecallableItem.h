@@ -15,7 +15,6 @@ class ARecallableItem : public AAnimatedItem, public IUpgradable {
     // UPROPERTY fields moved from protected section
 
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<ARecallableActor> ItemType;
     
