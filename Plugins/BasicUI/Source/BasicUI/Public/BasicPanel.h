@@ -14,7 +14,6 @@ UCLASS(Blueprintable)
 class BASICUI_API UBasicPanel : public UPanelWidget {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     EBasicPanelType Type;
     

@@ -22,7 +22,8 @@ void ATeamElevator::SpawnElevatorCable(const FTransform& Start, const TArray<FTr
 void ATeamElevator::Receive_SetIsMoving_Implementation(bool Moving) {
 }
 
-
+void ATeamElevator::OnRepNextLevelName() {
+}
 
 void ATeamElevator::InitializeNextLevel(const int32 NextStageIndex) {
 }

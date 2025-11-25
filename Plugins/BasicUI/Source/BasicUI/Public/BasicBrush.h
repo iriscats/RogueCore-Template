@@ -9,7 +9,6 @@ USTRUCT(BlueprintType)
 struct BASICUI_API FBasicBrush {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bFromAsset;
     

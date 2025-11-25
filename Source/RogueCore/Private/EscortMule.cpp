@@ -59,6 +59,17 @@ void AEscortMule::OnRep_MovementState() {
 void AEscortMule::OnRep_ExtractorSlots() {
 }
 
+void AEscortMule::OnRep_IsCarvingTunnel() {
+}
+
+void AEscortMule::OnObjectiveStateChanged(EEscortMissionState oldState) {
+}
+
+void AEscortMule::OnExtractorSlotChanged(const FEscortMuleExtractorSlot& Slot, int32 Index) {
+}
+
+void AEscortMule::OnExtractorDetached(AExtractorItem* Item) {
+}
 
 
 

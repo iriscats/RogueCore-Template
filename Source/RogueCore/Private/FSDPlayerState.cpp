@@ -167,7 +167,7 @@ UBXENegotiationParticipantComponent* AFSDPlayerState::GetBXENegotiationParticipa
 
 void AFSDPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(AFSDPlayerState, FractionLevelGenerated);
     DOREPLIFETIME(AFSDPlayerState, LevelGenerationState);
     DOREPLIFETIME(AFSDPlayerState, LatestEquipedVanity);
@@ -179,6 +179,18 @@ void AFSDPlayerState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutL
     DOREPLIFETIME(AFSDPlayerState, PlayerSortId);
     DOREPLIFETIME(AFSDPlayerState, SupplyAmmoStatus);
     DOREPLIFETIME(AFSDPlayerState, SupplyHealthStatus);
+}
+
+bool AFSDPlayerState::Server_SetGameOwnerStatus_Validate(int32 NewGameOwnerStatus) {
+    return true;
+}
+
+bool AFSDPlayerState::Server_SetSupplyStatus_Validate(uint8 StatusHealth, uint8 StatusAmmo) {
+    return true;
+}
+
+bool AFSDPlayerState::ServerInitializePerks_Validate(const TArray<UPerkAsset*>& ClassPerks, const TArray<UPerkAsset*>& EnhancementPerks) {
+    return true;
 }
 
 

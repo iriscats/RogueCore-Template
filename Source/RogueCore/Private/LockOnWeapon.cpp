@@ -48,34 +48,74 @@ void ALockOnWeapon::UpdateRifleEye() {
 void ALockOnWeapon::Server_TriggerAoe_Implementation(FVector Location) {
 }
 
+bool ALockOnWeapon::Server_TriggerAoe_Validate(FVector Location) {
+    return true;
+}
+
 void ALockOnWeapon::Server_SetTotalLockCount_Implementation(int32 totalLockCount) {
+}
+
+bool ALockOnWeapon::Server_SetTotalLockCount_Validate(int32 totalLockCount) {
+    return true;
 }
 
 void ALockOnWeapon::Server_SetLockCount_Implementation(const FLockCounter& LockCounter) {
 }
 
+bool ALockOnWeapon::Server_SetLockCount_Validate(const FLockCounter& LockCounter) {
+    return true;
+}
+
 void ALockOnWeapon::Server_SetIsMovementSlowed_Implementation(bool bisMovementSlowed) {
+}
+
+bool ALockOnWeapon::Server_SetIsMovementSlowed_Validate(bool bisMovementSlowed) {
+    return true;
 }
 
 void ALockOnWeapon::Server_SetIsLatestShotLockedOn_Implementation(bool bisShotLockedOn) {
 }
 
+bool ALockOnWeapon::Server_SetIsLatestShotLockedOn_Validate(bool bisShotLockedOn) {
+    return true;
+}
+
 void ALockOnWeapon::Server_SetIsChargingShot_Implementation(bool bisCharging) {
+}
+
+bool ALockOnWeapon::Server_SetIsChargingShot_Validate(bool bisCharging) {
+    return true;
 }
 
 void ALockOnWeapon::Server_PushStatusEffect_Implementation(AActor* Target) {
 }
 
+bool ALockOnWeapon::Server_PushStatusEffect_Validate(AActor* Target) {
+    return true;
+}
+
 void ALockOnWeapon::Server_PopStatusEffect_Implementation(AActor* Target) {
+}
+
+bool ALockOnWeapon::Server_PopStatusEffect_Validate(AActor* Target) {
+    return true;
 }
 
 void ALockOnWeapon::Server_FiringComplete_Implementation(int32 ShotsFired) {
 }
 
+bool ALockOnWeapon::Server_FiringComplete_Validate(int32 ShotsFired) {
+    return true;
+}
+
 void ALockOnWeapon::RefundAmmo_Implementation() {
 }
 
+void ALockOnWeapon::OnRep_AimTarget() {
+}
 
+void ALockOnWeapon::OnMovementSlowed(bool isSlowed) {
+}
 
 void ALockOnWeapon::OnHitDeadTarget() {
 }

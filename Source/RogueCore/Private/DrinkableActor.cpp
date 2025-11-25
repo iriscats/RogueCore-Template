@@ -12,7 +12,11 @@ ADrinkableActor::ADrinkableActor(const FObjectInitializer& ObjectInitializer) : 
 void ADrinkableActor::Pickup(APlayerCharacter* byCharacter) {
 }
 
+void ADrinkableActor::Fill() {
+}
 
+void ADrinkableActor::OnRep_DrinkableData() {
+}
 
 void ADrinkableActor::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);

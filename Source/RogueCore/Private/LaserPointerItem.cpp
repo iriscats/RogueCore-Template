@@ -25,7 +25,15 @@ void ALaserPointerItem::ToggleLaserVisible_Implementation(bool aVisible) {
 void ALaserPointerItem::ServerPlaceMarker_Implementation(FVector Location, AActor* Actor, UPrimitiveComponent* Cmponent, UTerrainMaterial* TerrainMaterial, ELaserPointerMarkerType eMarkerType) {
 }
 
+bool ALaserPointerItem::ServerPlaceMarker_Validate(FVector Location, AActor* Actor, UPrimitiveComponent* Cmponent, UTerrainMaterial* TerrainMaterial, ELaserPointerMarkerType eMarkerType) {
+    return true;
+}
+
 void ALaserPointerItem::Server_SecondaryUse_Implementation() {
+}
+
+bool ALaserPointerItem::Server_SecondaryUse_Validate() {
+    return true;
 }
 
 void ALaserPointerItem::RevealTerrainScannerMeshesForMarkedActorInternal_Implementation(AActor* InActor) {

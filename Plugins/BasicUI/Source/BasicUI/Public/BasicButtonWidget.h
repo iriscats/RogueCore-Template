@@ -13,7 +13,7 @@ class BASICUI_API UBasicButtonWidget : public UBasicUserWidget {
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBasicButtonDelegate, UBasicButtonWidget*, InButton);
     
-private:
+ 
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBasicButtonDelegate OnButtonClicked;
     
@@ -23,7 +23,7 @@ private:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBasicButtonDelegate OnButtonUnhovered;
     
-protected:
+ 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UButton* InnerButton;
     
@@ -45,7 +45,7 @@ protected:
 public:
     UBasicButtonWidget();
 
-protected:
+ 
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveButtonUnhovered();
     

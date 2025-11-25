@@ -12,7 +12,7 @@ class UBasicPanelFunctionLibrary : public UBlueprintFunctionLibrary {
 public:
     UBasicPanelFunctionLibrary();
 
-private:
+ 
     UFUNCTION(BlueprintCallable)
     static void ApplySizeBoxSettings(USizeBox* InSizeBox, FBasicPanelSize InSizeSettings);
     

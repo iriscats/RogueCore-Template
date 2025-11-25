@@ -61,11 +61,14 @@ public:
     UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_ShowTPRecall();
     void Server_ShowTPActivation();
-    UFUNCTION(BlueprintCallable, Reliable, Server)
+
     //void Server_SavedRewindSpot(FRewindData Data);
     //void Server_RewindStarted(FRewindData Data);
     //void Server_Rewind(FRewindData Data);
+
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_DeactivateEffects();
+
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_RewindPointPlaced();
     void Receive_Rewind();

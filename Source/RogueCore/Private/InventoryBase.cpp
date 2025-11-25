@@ -47,10 +47,18 @@ bool UInventoryBase::CanSelectActor(const AActor* Actor) const {
 
 void UInventoryBase::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(UInventoryBase, ActorsSelectable);
     DOREPLIFETIME(UInventoryBase, ActorsNonSelectable);
     DOREPLIFETIME(UInventoryBase, ReplicatedEquippedActor);
+}
+
+bool UInventoryBase::Server_SetEquippedActor_Validate(const FEquippedActorData& Actor, bool CallClientDelayed) {
+    return true;
+}
+
+bool UInventoryBase::Server_EquipExternalActor_Validate(AActor* Actor) {
+    return true;
 }
 
 

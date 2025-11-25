@@ -8,7 +8,6 @@ UCLASS(Blueprintable)
 class BASICUI_API UBasicTextStyleAsset : public UDataAsset {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FTextBlockStyle Style;
     

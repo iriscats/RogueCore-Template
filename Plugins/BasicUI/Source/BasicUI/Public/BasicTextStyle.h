@@ -9,7 +9,6 @@ USTRUCT(BlueprintType)
 struct BASICUI_API FBasicTextStyle {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bFromAsset;
     

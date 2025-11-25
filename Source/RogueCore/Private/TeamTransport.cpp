@@ -53,6 +53,35 @@ void ATeamTransport::PoweredUp() {
 void ATeamTransport::OnRep_State() {
 }
 
+void ATeamTransport::OnRep_RampState() {
+}
+
+void ATeamTransport::OnPrepForTakeOff() {
+}
+
+void ATeamTransport::OnPoweringUp() {
+}
+
+void ATeamTransport::OnPoweredUp() {
+}
+
+void ATeamTransport::OnHostInsidePod(bool isInside) {
+}
+
+void ATeamTransport::OnDropStarted() {
+}
+
+void ATeamTransport::OnDroppodImpact() {
+}
+
+void ATeamTransport::OnDrillingStarted() {
+}
+
+void ATeamTransport::OnDeparting() {
+}
+
+void ATeamTransport::OnAllDwavesInsidePod(bool AllInside) {
+}
 
 
 

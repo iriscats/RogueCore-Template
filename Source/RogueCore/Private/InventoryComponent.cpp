@@ -161,10 +161,26 @@ void UInventoryComponent::AddItemClass(TSubclassOf<AItem> itemClass) {
 
 void UInventoryComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(UInventoryComponent, flareClass);
     DOREPLIFETIME(UInventoryComponent, AmmoBag);
     DOREPLIFETIME(UInventoryComponent, ItemSlots);
+}
+
+bool UInventoryComponent::Server_ThrowFlare_Validate() {
+    return true;
+}
+
+bool UInventoryComponent::Server_SwapItems_Validate(AItem* A, AItem* B) {
+    return true;
+}
+
+bool UInventoryComponent::Server_SetSlotItemId_Validate(FItemSlotIndex Slot, FInventoryId ID) {
+    return true;
+}
+
+bool UInventoryComponent::Server_RemoveItem_Validate(AItem* A) {
+    return true;
 }
 
 

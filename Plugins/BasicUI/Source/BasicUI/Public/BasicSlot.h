@@ -11,7 +11,6 @@ UCLASS(Blueprintable)
 class BASICUI_API UBasicSlot : public UPanelSlot {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FSlateChildSize Size;
     

@@ -31,10 +31,22 @@ UJetBootsMovementComponent::UJetBootsMovementComponent(const FObjectInitializer&
 void UJetBootsMovementComponent::Server_SetOverheated_Implementation(bool Current) {
 }
 
+bool UJetBootsMovementComponent::Server_SetOverheated_Validate(bool Current) {
+    return true;
+}
+
 void UJetBootsMovementComponent::Server_SetIsUsing_Implementation(bool Current, bool Last, bool NewIsFromTakeOff) {
 }
 
+bool UJetBootsMovementComponent::Server_SetIsUsing_Validate(bool Current, bool Last, bool NewIsFromTakeOff) {
+    return true;
+}
+
 void UJetBootsMovementComponent::Server_SetCurrentJetFuel_Implementation(float Current) {
+}
+
+bool UJetBootsMovementComponent::Server_SetCurrentJetFuel_Validate(float Current) {
+    return true;
 }
 
 void UJetBootsMovementComponent::RemoveJetBoots() {

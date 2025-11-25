@@ -98,6 +98,74 @@ void AFSDPlayerController::Server_NewMessage_Implementation(const FString& Sende
 void AFSDPlayerController::Server_DrawProjectileDebugPath_Implementation(bool bDraw) {
 }
 
+bool AFSDPlayerController::Server_DrawProjectileDebugPath_Validate(bool bDraw) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_NewMessage_Validate(const FString& Sender, const FString& Text, EChatSenderType SenderType) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_ReceiveClientDamageRapport_Validate(const FClientDamageRapport& rapport) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_ReceiveClientRadialDamageRapport_Validate(const FClientRadialDamageRapport& rapport) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_Relay_SetArmorIndexDestroyed_Validate(USimpleArmorDamageComponent* ArmorComponent, int32 Index, EArmorDamageType DamageType) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_ResetHUD_Validate() {
+    return true;
+}
+
+bool AFSDPlayerController::Server_ResetNamedCountdown_Validate(const FName Name) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetControllerReady_Validate() {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetDebugEnemy_Validate(ADeepPathfinderCharacter* NewDebugEnemy) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetGenerationDone_Validate() {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetGenerationFraction_Validate(float Fraction) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetGenerationStatus_Validate(const FString& status, float Fraction) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_SetLateJoinDone_Validate() {
+    return true;
+}
+
+bool AFSDPlayerController::Server_StartNamedCountdown_Validate(const FName Name, const int32 CountdownSeconds) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_StartNamedCountdownWithQuickFinish_Validate(const FName Name, const int32 CountdownSeconds) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_TakeDamageFrom_Validate(UDamageComponent* Damage, FVector Location) {
+    return true;
+}
+
+bool AFSDPlayerController::Server_TravelDone_Validate() {
+    return true;
+}
+
 void AFSDPlayerController::SendLevelUpStatistics(const int32 currentRank) {
 }
 

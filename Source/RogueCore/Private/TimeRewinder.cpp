@@ -41,7 +41,7 @@ void ATimeRewinder::Server_ShowTPActivation() {
 //void ATimeRewinder::Server_Rewind(FRewindData Data) {
 //}
 
-void ATimeRewinder::Server_DeactivateEffects() {
+void ATimeRewinder::Server_DeactivateEffects_Implementation() {
 }
 
 

@@ -8,7 +8,6 @@ UCLASS(Blueprintable)
 class BASICUI_API UScrollBoxAsset : public UDataAsset {
     GENERATED_BODY()
 public:
-protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FScrollBoxSettings Settings;
     

@@ -15,7 +15,7 @@ public:
     
     UDiscordSDKInterface();
 
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void RejectInvite(const FString& UserId);
     
@@ -26,7 +26,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static UDiscordSDKInterface* Get();
     
-protected:
+ 
     UFUNCTION(BlueprintCallable)
     void AcceptInvite(const FString& UserId);
     
