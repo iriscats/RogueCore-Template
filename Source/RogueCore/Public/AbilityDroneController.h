@@ -14,7 +14,7 @@ class UDialogDataAsset;
 class UInputComponent;
 class USkeletalMeshComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAbilityDroneController : public AAbilityItem {
     GENERATED_BODY()
 public:

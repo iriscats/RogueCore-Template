@@ -3,7 +3,7 @@
 #include "Projectile.h"
 #include "BoxProjectile.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABoxProjectile : public AProjectile {
     GENERATED_BODY()
 public:

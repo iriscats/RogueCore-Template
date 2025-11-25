@@ -14,7 +14,7 @@ class UNiagaraComponent;
 class UPointLightComponent;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ANeedleSprayer : public AActor, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -11,7 +11,7 @@ class UHealthComponentBase;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHostileGuntowerModule : public AGuntowerModule, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -6,7 +6,7 @@
 
 class UEnemyHealthComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHomingDroneBomb : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -16,7 +16,7 @@ class UMaterialInterface;
 class UNiagaraComponent;
 class UNiagaraSystem;
 class USoundBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATimeRewinder : public AAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -43,7 +43,7 @@ public:
     TWeakObjectPtr<UNiagaraComponent> ActiveTrailInstance;
     TWeakObjectPtr<UAudioComponent> LoopSoundInstance;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FRewindData RewindData;
+    //FRewindData RewindData;
     FTimerHandle Handle_RewindindTimeLimit;
     FTimerHandle Handle_RewindStarted;
     FTimerHandle Handle_RewindUnEquip;
@@ -62,9 +62,9 @@ public:
     void Server_ShowTPRecall();
     void Server_ShowTPActivation();
     UFUNCTION(BlueprintCallable, Reliable, Server)
-    void Server_SavedRewindSpot(FRewindData Data);
-    void Server_RewindStarted(FRewindData Data);
-    void Server_Rewind(FRewindData Data);
+    //void Server_SavedRewindSpot(FRewindData Data);
+    //void Server_RewindStarted(FRewindData Data);
+    //void Server_Rewind(FRewindData Data);
     void Server_DeactivateEffects();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Receive_RewindPointPlaced();

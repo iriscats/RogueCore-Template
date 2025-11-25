@@ -11,7 +11,7 @@ class UEnemyGroupDescriptor;
 class UFXSystemAsset;
 class UHealthComponentBase;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARockEnemiesEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

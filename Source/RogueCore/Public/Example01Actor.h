@@ -7,7 +7,7 @@
 class UExample01ActorComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AExample01Actor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

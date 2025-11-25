@@ -5,7 +5,7 @@
 
 class UCappedResource;
 class USeamlessTravelEventKey;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGameStats : public AInfo {
     GENERATED_BODY()
 public:

@@ -10,7 +10,7 @@
 class APlayerCharacter;
 class AProjectileBase;
 class UProjectileLauncherComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APlagueSoaperItem : public APlagueCleanupItem, public IWeaponFireOwner {
     GENERATED_BODY()
 public:

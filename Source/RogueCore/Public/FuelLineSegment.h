@@ -10,7 +10,7 @@ class USimpleHealthComponent;
 class USplineComponent;
 class USplineMeshComponent;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

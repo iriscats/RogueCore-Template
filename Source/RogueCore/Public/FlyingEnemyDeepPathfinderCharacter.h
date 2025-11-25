@@ -11,7 +11,7 @@ class UPhysicalMaterial;
 class UPhysicsAsset;
 class UPrimitiveComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFlyingEnemyDeepPathfinderCharacter : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

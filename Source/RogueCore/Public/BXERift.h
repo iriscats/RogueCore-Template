@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "BXERift.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXERift : public AActor {
     GENERATED_BODY()
 public:

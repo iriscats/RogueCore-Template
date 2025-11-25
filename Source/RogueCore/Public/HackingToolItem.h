@@ -4,7 +4,7 @@
 #include "HackingToolItem.generated.h"
 
 class UHackingUsableComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AHackingToolItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -15,7 +15,7 @@ class UAnimMontage;
 class UDrinkableDataAsset;
 class UResourceData;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AOmegaBartender : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -67,7 +67,7 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_PlayerSaluted();
     UFUNCTION(Reliable, Server)
-    void Server_MugTaken_Implementation(ADrinkableActor* Mug);
+    void Server_MugTaken(ADrinkableActor* Mug);
     void RemovePlayerInside(APlayerCharacter* Player);
     void PlayOmegaSaluteMontage(UAnimMontage* Montage);
     void PlayOmegaPourMontage(UAnimMontage* Montage);
@@ -95,7 +95,7 @@ public:
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void All_MugFilled(int32 Index);
     UFUNCTION(NetMulticast, Reliable)
-    void All_ChangeMugSlot_Implementation(int32 Index, bool Empty);
+    void All_ChangeMugSlot(int32 Index, bool Empty);
     void AddPlayerInside(APlayerCharacter* Player);
     void ActivateButton();
 };

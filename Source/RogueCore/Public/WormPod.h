@@ -16,7 +16,7 @@ class USceneComponent;
 class USimpleHealthComponent;
 class USkeletalMeshComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AWormPod : public ATaggedActor, public ITargetable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

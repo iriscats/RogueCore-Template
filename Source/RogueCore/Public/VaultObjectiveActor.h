@@ -4,7 +4,7 @@
 #include "VaultObjectiveActor.generated.h"
 
 class USceneComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AVaultObjectiveActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

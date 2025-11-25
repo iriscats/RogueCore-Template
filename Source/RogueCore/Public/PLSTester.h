@@ -15,7 +15,7 @@ class URunTemplate;
 class USpecialEvent;
 class UStageTemplateDifficulty;
 class UStageTemplateOverride;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APLSTester : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

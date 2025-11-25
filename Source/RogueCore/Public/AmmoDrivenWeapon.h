@@ -32,7 +32,7 @@ class USoundBase;
 class USoundCue;
 class UWeaponFireComponent;
 class UWeaponTagContainerComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AAmmoDrivenWeapon : public AAnimatedItem, public IWeaponFireOwner, public IUpgradable, public IUpgradableGear {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

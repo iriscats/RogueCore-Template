@@ -4,7 +4,7 @@
 #include "RockCrackerDrill.generated.h"
 
 class USingleUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARockCrackerDrill : public AFuelLineEndPoint {
     GENERATED_BODY()
 public:

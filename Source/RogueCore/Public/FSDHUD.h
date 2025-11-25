@@ -10,7 +10,7 @@ class APlayerCharacter;
 class APlayerController;
 class UFSDMainHUDWidget;
 class URadarPointComponent;
-UCLASS(Blueprintable, NoExport, NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class AFSDHUD : public AHUD {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

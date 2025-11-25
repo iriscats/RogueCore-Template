@@ -16,7 +16,7 @@ class UBehaviorTree;
 class UDroneUseComponent;
 class UHealthComponentBase;
 class UTerrainMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABoscoController : public AFSDAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

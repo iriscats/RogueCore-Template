@@ -11,7 +11,7 @@ class APawn;
 class ASpawnLordAdEnemy;
 class UDestructibleSubHealthComponent;
 class UEnemyDescriptor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ASpawnLordEnemy : public ACoreSpawnEnemyBase, public IBossFightInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

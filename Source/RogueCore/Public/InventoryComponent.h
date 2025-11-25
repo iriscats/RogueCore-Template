@@ -91,10 +91,6 @@ public:
     void SwapItems(AItem* A, AItem* B);
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_ThrowItem(AActor* Item, FVector Force, bool PlayMontage);
-    void Server_ThrowFlare();
-    void Server_SwapItems(AItem* A, AItem* B);
-    void Server_SetSlotItemId(FItemSlotIndex Slot, FInventoryId ID);
-    void Server_RemoveItem(AItem* A);
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
     void Resupply(float percentage);
     void RemoveItem(AItem* A);
@@ -133,13 +129,13 @@ public:
     void All_PlayThrowMontage(AActor* Item);
 public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_ThrowFlare_Implementation();
+    void Server_ThrowFlare();
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SwapItems_Implementation(AItem* A, AItem* B);
+    void Server_SwapItems(AItem* A, AItem* B);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetSlotItemId_Implementation(FItemSlotIndex Slot, FInventoryId ID);
+    void Server_SetSlotItemId(FItemSlotIndex Slot, FInventoryId ID);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_RemoveItem_Implementation(AItem* A);
+    void Server_RemoveItem(AItem* A);
     AItem* AddItemToSlot(UItemID* ItemID, FItemSlotIndex Slot);
     void AddItemClass(TSubclassOf<AItem> itemClass);
 };

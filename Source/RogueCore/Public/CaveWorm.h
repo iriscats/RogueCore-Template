@@ -9,7 +9,7 @@ class UHealthComponentBase;
 class UObject;
 class UResourceData;
 class USimpleHealthComponent;
-UCLASS(Blueprintable, MinimalAPI, NoExport)
+UCLASS(Blueprintable, MinimalAPI)
 class ACaveWorm : public ADeepPathfinderCharacter {
     GENERATED_BODY()
 public:

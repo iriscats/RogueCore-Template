@@ -7,7 +7,7 @@
 class AEnemyPawn;
 class ATentaclePlantNode;
 class UDebrisPositioning;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATentaclePlant : public AShootingPlant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

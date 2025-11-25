@@ -12,7 +12,7 @@ class AVanityCharacter;
 class UAnimationAsset;
 class UPawnMovementComponent;
 class UPrimitiveComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlayerCameraDrone : public APawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

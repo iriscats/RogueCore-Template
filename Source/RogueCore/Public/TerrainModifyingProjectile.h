@@ -7,7 +7,7 @@
 
 class UStaticMesh;
 class UTerrainMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATerrainModifyingProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

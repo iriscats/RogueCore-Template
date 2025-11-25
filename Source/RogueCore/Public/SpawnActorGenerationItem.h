@@ -6,7 +6,7 @@
 
 class AActor;
 class UBoxComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpawnActorGenerationItem : public AGenerationItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

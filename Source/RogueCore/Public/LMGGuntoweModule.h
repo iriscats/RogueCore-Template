@@ -10,7 +10,7 @@ class UFXSystemAsset;
 class UHitscanComponent;
 class USceneComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ALMGGuntoweModule : public AHostileTargetingGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

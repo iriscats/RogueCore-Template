@@ -6,7 +6,7 @@
 #include "EscortMuleAIController.generated.h"
 
 class UEscortObjective;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEscortMuleAIController : public AFSDAIController, public IAsyncPathRequestsInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

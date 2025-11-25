@@ -4,7 +4,7 @@
 #include "StabberVineRoot.generated.h"
 
 class AStabberVine;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AStabberVineRoot : public AEnemyPawn {
     GENERATED_BODY()
 public:

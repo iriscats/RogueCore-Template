@@ -11,7 +11,7 @@ class UEnemyHealthComponent;
 class UMaterialInterface;
 class UMeshComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEnemyDeepPathfinderCharacter : public ADeepPathfinderCharacter, public INetMontageAble {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -13,7 +13,7 @@ class USoundCue;
 class USplineComponent;
 class USplineMeshComponent;
 class UStaticMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ASplinePlant : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "Shredder.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AShredder : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

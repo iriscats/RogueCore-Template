@@ -6,7 +6,7 @@
 #include "SpacerigStart.generated.h"
 
 class AFSDPlayerController;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpacerigStart : public APlayerStart {
     GENERATED_BODY()
 public:

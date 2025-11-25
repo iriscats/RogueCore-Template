@@ -5,7 +5,7 @@
 #include "NoiseVisualizor.generated.h"
 
 class UFloodFillSettings;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ANoiseVisualizor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

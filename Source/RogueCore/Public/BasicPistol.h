@@ -7,7 +7,7 @@
 class UFSDPhysicalMaterial;
 class UHealthComponentBase;
 class UPrimitiveComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABasicPistol : public AHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

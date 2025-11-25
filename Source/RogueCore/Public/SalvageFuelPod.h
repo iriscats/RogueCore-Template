@@ -3,7 +3,7 @@
 #include "RessuplyPod.h"
 #include "SalvageFuelPod.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASalvageFuelPod : public ARessuplyPod {
     GENERATED_BODY()
 public:

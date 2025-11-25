@@ -16,7 +16,7 @@ class UKeepInsideWorld;
 class UObjective;
 class USoundCue;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API APlagueCleanupItem : public AAnimatedItem, public IThrowable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

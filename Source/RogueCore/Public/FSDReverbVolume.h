@@ -5,7 +5,7 @@
 
 class UReverbEffect;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDReverbVolume : public AActor {
     GENERATED_BODY()
 public:

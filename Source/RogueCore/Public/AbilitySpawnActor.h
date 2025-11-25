@@ -4,7 +4,7 @@
 #include "EAbilityAmountType.h"
 #include "AbilitySpawnActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AAbilitySpawnActor : public AActor {
     GENERATED_BODY()
 public:

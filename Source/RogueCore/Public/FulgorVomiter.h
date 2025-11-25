@@ -11,7 +11,7 @@ class UAnimMontage;
 class UHitReactionComponent;
 class UOutlineComponent;
 class USceneComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFulgorVomiter : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

@@ -8,7 +8,7 @@
 
 class UCapacityHoldingItemAggregator;
 class UDialogDataAsset;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AShieldGeneratorItem : public AThrowableItem, public IUpgradableGear, public IRejoinListener {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

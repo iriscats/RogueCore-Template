@@ -13,7 +13,7 @@ class ALoadoutItemProxy;
 class UItemID;
 class UPawnStat;
 class UUpgradableGearComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AArmorPiece : public AActor, public ISaveGameIDInterface, public IItemIDInterface, public ILoadoutItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

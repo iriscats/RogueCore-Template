@@ -4,7 +4,7 @@
 #include "MiniMule.generated.h"
 
 class AGem;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AMiniMule : public AMULE {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

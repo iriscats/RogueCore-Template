@@ -8,7 +8,7 @@ class UAnimMontage;
 class UItemCharacterAnimationSet;
 class UPlayerAnimInstance;
 class USkeletalMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADualAnimatedItem : public AItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

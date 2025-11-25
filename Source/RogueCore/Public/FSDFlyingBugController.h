@@ -4,7 +4,7 @@
 #include "FSDFlyingBugController.generated.h"
 
 class UBehaviorTree;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDFlyingBugController : public AFSDAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

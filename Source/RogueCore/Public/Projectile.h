@@ -18,7 +18,7 @@ class UObject;
 class UPawnStat;
 class UPrimitiveComponent;
 class USceneComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AProjectile : public AProjectileBase, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

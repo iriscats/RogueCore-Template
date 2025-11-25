@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "CorespawnRift.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACorespawnRift : public AActor {
     GENERATED_BODY()
 public:

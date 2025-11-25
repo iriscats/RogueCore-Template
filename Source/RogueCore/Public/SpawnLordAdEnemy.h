@@ -7,7 +7,7 @@
 class AActor;
 class ASpawnLordEnemy;
 class UGrabberComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ASpawnLordAdEnemy : public ACoreSpawnEnemyBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

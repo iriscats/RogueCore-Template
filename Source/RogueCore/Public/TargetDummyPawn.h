@@ -6,7 +6,7 @@
 #include "Targetable.h"
 #include "TargetDummyPawn.generated.h"
 
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ATargetDummyPawn : public AActor, public IGameplayTagAssetInterface, public ITargetable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

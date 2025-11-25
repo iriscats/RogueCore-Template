@@ -5,7 +5,7 @@
 
 class AHydraWeedHealer;
 class AHydraWeedShooter;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHydraWeedCore : public AEnemyPawn {
     GENERATED_BODY()
 public:

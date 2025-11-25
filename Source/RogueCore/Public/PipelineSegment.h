@@ -22,7 +22,7 @@ class USplineMeshComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
 class UTrackBuilderUsable;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APipelineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

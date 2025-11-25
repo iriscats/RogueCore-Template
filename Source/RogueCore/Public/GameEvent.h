@@ -16,7 +16,7 @@ class ARessuplyPod;
 class UChildActorComponent;
 class UDebrisPositioning;
 class UDialogDataAsset;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AGameEvent : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

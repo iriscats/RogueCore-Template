@@ -9,7 +9,7 @@ class AActor;
 class ARessuplyPod;
 class UItemPlacerAggregator;
 class UResourceData;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACalldownItem : public AAnimatedItem {
     GENERATED_BODY()
 public:

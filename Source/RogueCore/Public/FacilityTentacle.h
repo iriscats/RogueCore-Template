@@ -10,7 +10,7 @@
 class UAnimMontage;
 class UDebrisPositioning;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AFacilityTentacle : public ATentacleBase, public ITriggerAI {
     GENERATED_BODY()
 

@@ -58,7 +58,7 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_ToggleGodMode();
     UFUNCTION(BlueprintCallable, Reliable, Server)
-    void Server_SetGodMode_Implementation(bool Active);
+    void Server_SetGodMode(bool Active);
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
     void Resupply(float percentage);
     UFUNCTION()

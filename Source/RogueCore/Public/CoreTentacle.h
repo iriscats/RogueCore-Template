@@ -9,7 +9,7 @@
 #include "CoreTentacle.generated.h"
 
 class UDebrisPositioning;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ACoreTentacle : public ATentacleBase, public ITriggerAI {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
@@ -20,6 +20,8 @@ public:
     ECoreTentacleState TentacleState;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     FCoreTentacleSwayTarget SwayTarget;
+
+    ACoreTentacle(const FObjectInitializer& ObjectInitializer);
     void SetTentacleState(const ECoreTentacleState NewState);
     void SetSwayTarget(const FCoreTentacleSwayTarget& Target, const bool SwayImmediately);
     void SetMovementTarget(const FCoreTentacleMovementTarget& Target);

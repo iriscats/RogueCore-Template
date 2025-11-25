@@ -4,7 +4,7 @@
 #include "SubRoomItem.generated.h"
 
 class URoomGenerator;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASubRoomItem : public AGenerationItem {
     GENERATED_BODY()
 

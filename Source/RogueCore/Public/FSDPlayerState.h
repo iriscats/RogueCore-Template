@@ -31,7 +31,7 @@ class UPlayerStatsComponent;
 class URunHistoryStateComponent;
 class USaveGameStateComponent;
 class UVoteParticipantComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AFSDPlayerState : public APlayerState {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

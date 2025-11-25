@@ -4,7 +4,7 @@
 #include "HydraWeedHealer.generated.h"
 
 class AHydraWeedCore;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHydraWeedHealer : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

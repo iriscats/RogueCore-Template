@@ -5,7 +5,7 @@
 #include "LaserPointerMarker.generated.h"
 
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ALaserPointerMarker : public AActor {
     GENERATED_BODY()
 public:

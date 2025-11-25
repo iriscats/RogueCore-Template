@@ -3,7 +3,7 @@
 #include "ProjectileWeapon.h"
 #include "AmbientBlaster.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAmbientBlaster : public AProjectileWeapon {
     GENERATED_BODY()
 public:

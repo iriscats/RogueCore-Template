@@ -5,7 +5,7 @@
 #include "GameplayTagContainer.h"
 #include "TaggedActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATaggedActor : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

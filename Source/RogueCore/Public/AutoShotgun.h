@@ -9,7 +9,7 @@ class UFSDPhysicalMaterial;
 class UHealthComponentBase;
 class UPrimitiveComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAutoShotgun : public AMultiHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

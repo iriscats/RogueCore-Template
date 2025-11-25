@@ -7,7 +7,7 @@
 
 class UAutoCarverComponent;
 class UCurveFloat;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ADropPod : public ATeamTransport {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

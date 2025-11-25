@@ -10,7 +10,7 @@ class APipelineSegment;
 class APipelineStart;
 class ATrackBuilderSegment;
 class UTrackBuilderUsable;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APipelineStart : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

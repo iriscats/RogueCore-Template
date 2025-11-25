@@ -9,7 +9,7 @@ class UFXSystemAsset;
 class UFXSystemComponent;
 class UNiagaraSystem;
 class USoundBase;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AChargedWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
 public:

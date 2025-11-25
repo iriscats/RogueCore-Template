@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "SpawnTrigger.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpawnTrigger : public AActor {
     GENERATED_BODY()
 public:

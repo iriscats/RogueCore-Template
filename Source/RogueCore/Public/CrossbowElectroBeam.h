@@ -3,7 +3,7 @@
 #include "MovingElectroBeam.h"
 #include "CrossbowElectroBeam.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACrossbowElectroBeam : public AMovingElectroBeam {
     GENERATED_BODY()
 public:

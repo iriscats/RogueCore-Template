@@ -4,7 +4,7 @@
 #include "BoxGenerationItem.generated.h"
 
 class UBoxGenerationComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABoxGenerationItem : public AGenerationItem {
     GENERATED_BODY()
 public:

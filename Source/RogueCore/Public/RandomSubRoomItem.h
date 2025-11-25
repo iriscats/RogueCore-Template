@@ -5,7 +5,7 @@
 #include "RandomSubRoomItem.generated.h"
 
 class URoomGeneratorGroup;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARandomSubRoomItem : public AGenerationItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -10,7 +10,7 @@ class UFXSystemAsset;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARandomFiringGuntowerModule : public AHostileGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

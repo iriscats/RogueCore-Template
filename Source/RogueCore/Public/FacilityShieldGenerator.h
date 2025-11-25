@@ -5,7 +5,7 @@
 #include "GameplayTagAssetInterface.h"
 #include "FacilityShieldGenerator.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFacilityShieldGenerator : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -10,7 +10,7 @@
 #include "FSDAIController.generated.h"
 
 class APlayerCharacter;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDAIController : public AAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

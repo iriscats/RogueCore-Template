@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "DroneDestinationMarker.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADroneDestinationMarker : public AActor {
     GENERATED_BODY()
 public:

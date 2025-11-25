@@ -7,7 +7,7 @@ class UBXEProspectingLogsObjective;
 class USceneComponent;
 class UTerrainPlacementComponent;
 class UTerrainScannerStaticMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEProspectingRewardActor : public AActor {
     GENERATED_BODY()
 public:

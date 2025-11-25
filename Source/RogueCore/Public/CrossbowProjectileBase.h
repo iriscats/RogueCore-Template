@@ -20,7 +20,7 @@ class USoundCue;
 class UStaticMesh;
 class UStatusEffect;
 class UTexture2D;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACrossbowProjectileBase : public AProjectile {
     GENERATED_BODY()
 public:

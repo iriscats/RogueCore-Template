@@ -7,7 +7,7 @@ class UAnimMontage;
 class UFXSystemAsset;
 class UFirstPersonSkeletalMeshComponent;
 class USkeletalMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADualWieldWeapon : public AHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

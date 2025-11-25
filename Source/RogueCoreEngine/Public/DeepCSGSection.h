@@ -5,7 +5,7 @@
 
 class UDeepProceduralMeshComponent;
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECOREENGINE_API ADeepCSGSection : public AActor {
     GENERATED_BODY()
 public:

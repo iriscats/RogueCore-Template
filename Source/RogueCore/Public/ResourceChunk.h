@@ -11,7 +11,7 @@ class UObject;
 class UResourceData;
 class USimpleObjectInfoComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AResourceChunk : public AFSDPhysicsActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -9,7 +9,7 @@ class UCSGGroupComponent;
 class UCSGPreviewScene;
 class UTerrainMaterialCore;
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECOREENGINE_API ACSGBuilder : public ACSGBuilderBase {
     GENERATED_BODY()
 public:

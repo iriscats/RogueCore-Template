@@ -9,7 +9,7 @@ class APlayerCharacter;
 class UAnimMontage;
 class UNiagaraSystem;
 class UProjectileLauncherComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ADartLauncher : public AAbilityItem, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

@@ -3,7 +3,7 @@
 #include "ThrowableActor.h"
 #include "ShieldGeneratorActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AShieldGeneratorActor : public AThrowableActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

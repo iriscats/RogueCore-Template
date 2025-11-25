@@ -8,7 +8,7 @@
 class ADeepCSGWorld;
 class UDamageComponent;
 class UTerrainMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AEscortDestination : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

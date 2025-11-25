@@ -6,7 +6,7 @@
 
 class AActor;
 class AFlameWallSegment;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFlameWallProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -12,7 +12,7 @@ class ASentryElectroBeam;
 class UActorTrackingComponent;
 class UOutlineComponent;
 class USkeletalMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ARedeployableSentryGun : public ASentryGun {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

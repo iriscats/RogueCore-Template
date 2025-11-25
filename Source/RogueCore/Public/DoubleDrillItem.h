@@ -24,7 +24,7 @@ class UFXSystemAsset;
 class UFirstPersonNiagaraComponent;
 class UForceFeedbackEffect;
 class UWeaponTagContainerComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADoubleDrillItem : public ADualAnimatedItem, public IUpgradable, public IUpgradableGear, public IRejoinListener {
     GENERATED_BODY()
 public:

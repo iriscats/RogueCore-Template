@@ -11,7 +11,7 @@ class UCurveFloat;
 class USceneComponent;
 class USoundCue;
 class USplineMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AElevatorPlant : public AActor {
     GENERATED_BODY()
 

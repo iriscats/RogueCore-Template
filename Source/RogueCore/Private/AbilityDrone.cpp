@@ -25,9 +25,6 @@ void AAbilityDrone::SetState(EAbilityDroneState NewState) {
 void AAbilityDrone::Server_SecondaryUsed_Implementation(const FDroneControllerUseInfo& Info) {
 }
 
-void AAbilityDrone::Server_PrimaryUsed_Implementation(const FDroneControllerUseInfo& Info) {
-}
-
 void AAbilityDrone::SearchPulse() {
 }
 
@@ -51,7 +48,7 @@ void AAbilityDrone::All_TeleportDrone_Implementation(FVector Location, FRotator 
 
 void AAbilityDrone::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(AAbilityDrone, TeleportLocation);
     DOREPLIFETIME(AAbilityDrone, ShotCounter);
     DOREPLIFETIME(AAbilityDrone, State);

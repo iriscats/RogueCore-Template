@@ -14,7 +14,7 @@ class UActorTrackingWidget;
 class UDamageComponent;
 class UHitscanComponent;
 class UStatusEffect;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ALockOnWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -84,21 +84,21 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_TriggerAoe(FVector Location);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetTotalLockCount_Implementation(int32 totalLockCount);
+    void Server_SetTotalLockCount(int32 totalLockCount);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetLockCount_Implementation(const FLockCounter& LockCounter);
+    void Server_SetLockCount(const FLockCounter& LockCounter);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetIsMovementSlowed_Implementation(bool bisMovementSlowed);
+    void Server_SetIsMovementSlowed(bool bisMovementSlowed);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetIsLatestShotLockedOn_Implementation(bool bisShotLockedOn);
+    void Server_SetIsLatestShotLockedOn(bool bisShotLockedOn);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetIsChargingShot_Implementation(bool bisCharging);
+    void Server_SetIsChargingShot(bool bisCharging);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_PushStatusEffect_Implementation(AActor* Target);
+    void Server_PushStatusEffect(AActor* Target);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_PopStatusEffect_Implementation(AActor* Target);
+    void Server_PopStatusEffect(AActor* Target);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_FiringComplete_Implementation(int32 ShotsFired);
+    void Server_FiringComplete(int32 ShotsFired);
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void RefundAmmo();
     UFUNCTION()

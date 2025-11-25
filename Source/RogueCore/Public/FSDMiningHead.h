@@ -4,7 +4,7 @@
 #include "FSDMiningHead.generated.h"
 
 class UResourceBank;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AFSDMiningHead : public ADroppableOutpost {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

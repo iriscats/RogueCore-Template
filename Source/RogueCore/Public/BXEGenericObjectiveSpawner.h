@@ -8,7 +8,7 @@ class UBXEBlueprintControlledObjective;
 class UCurveFloat;
 class UDebrisPositioning;
 class UObject;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEGenericObjectiveSpawner : public AActor {
     GENERATED_BODY()
 public:

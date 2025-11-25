@@ -20,7 +20,7 @@ class UNiagaraSystem;
 class UPrimitiveComponent;
 class UProjectileLauncherComponent;
 class UStickyFlameSpawner;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ACryosprayItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
 public:

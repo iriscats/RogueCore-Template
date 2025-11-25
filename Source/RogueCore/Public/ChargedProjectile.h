@@ -3,7 +3,7 @@
 #include "Projectile.h"
 #include "ChargedProjectile.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AChargedProjectile : public AProjectile {
     GENERATED_BODY()
 public:

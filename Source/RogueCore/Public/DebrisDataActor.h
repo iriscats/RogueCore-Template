@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "DebrisDataActor.generated.h"
 
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADebrisDataActor : public AActor {
     GENERATED_BODY()
 public:

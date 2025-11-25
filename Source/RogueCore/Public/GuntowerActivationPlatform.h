@@ -14,7 +14,7 @@ class UHealthComponentBase;
 class UPrimitiveComponent;
 class USceneComponent;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGuntowerActivationPlatform : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

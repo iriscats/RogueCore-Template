@@ -9,7 +9,7 @@ class UMaterialInterface;
 class USceneComponent;
 class USplineComponent;
 class USplineMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ALockOnBeam : public AActor {
     GENERATED_BODY()
 

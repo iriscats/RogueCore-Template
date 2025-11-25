@@ -9,7 +9,7 @@
 class UDialogDataAsset;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADisplayCase : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

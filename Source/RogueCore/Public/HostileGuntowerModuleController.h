@@ -6,7 +6,7 @@
 
 class AActor;
 class UAIPerceptionComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHostileGuntowerModuleController : public AFSDAIController {
     GENERATED_BODY()
 public:

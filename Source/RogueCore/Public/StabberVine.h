@@ -4,7 +4,7 @@
 #include "TentacleTarget.h"
 #include "StabberVine.generated.h"
 
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AStabberVine : public ATentacleBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

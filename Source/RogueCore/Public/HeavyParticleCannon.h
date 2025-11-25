@@ -19,7 +19,7 @@ class UReflectionHitscanComponent;
 class USoundBase;
 class UStickyFlameSpawner;
 class UTerrainType;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHeavyParticleCannon : public AAmmoDrivenWeapon, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

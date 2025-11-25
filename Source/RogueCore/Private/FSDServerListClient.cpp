@@ -15,8 +15,8 @@ bool UFSDServerListClient::StartHosting(const FString& RunName) {
 void UFSDServerListClient::ListLobbys() {
 }
 
-FOnlineSessionSearchResult UFSDServerListClient::CreateSessionData(FServerlistLobby FromLobby) {
-    return FOnlineSessionSearchResult{};
+FSessionSearchResultWrapper UFSDServerListClient::CreateSessionData(FServerlistLobby FromLobby) {
+    return FSessionSearchResultWrapper{};
 }
 
 int32 UFSDServerListClient::CalculateRemoteServerPing(const FString& RemoteServerSteamLocation) {

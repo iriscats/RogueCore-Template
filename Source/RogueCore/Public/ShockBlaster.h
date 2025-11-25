@@ -12,7 +12,7 @@ class UHitscanComponent;
 class UNiagaraSystem;
 class UPhysicalMaterial;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AShockBlaster : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

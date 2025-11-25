@@ -48,7 +48,7 @@ class USoundCue;
 class USpotLightComponent;
 class UTerrainMaterial;
 class UUpgradableBoscoComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ABosco : public ADeepPathfinderCharacter, public IWeaponFireOwner, public IUpgradableGear, public IUpgradable, public ISaveGameIDInterface, public ISkinnable, public IItemIDInterface, public INotifyMessageReceiver, public IMinion {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -169,7 +169,7 @@ public:
     void ReviveCounterChanged(int32 remainingCharges);
     void Respond();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void PlaySalute_Implementation();
+    void PlaySalute();
     void OnWeaponFired(const FVector& Location);
     void OnTargetBurrowChange(bool burrowed);
     UFUNCTION()
@@ -179,7 +179,7 @@ public:
     void OnHit(float amount, float BaseAmount, const FDamageData& DamageData);
     void OnGrabbedGem();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    void MineEffects_Implementation(UTerrainMaterial* aTerrainMaterial, FVector_NetQuantize aLocation, FRotator aRotation);
+    void MineEffects(UTerrainMaterial* aTerrainMaterial, FVector_NetQuantize aLocation, FRotator aRotation);
     UUpgradableBoscoComponent* GetUpgradeComponent();
     UFUNCTION(BlueprintCallable, BlueprintPure)
     TArray<FBXEUnlockInstance> GetUnlocks() const;

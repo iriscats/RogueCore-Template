@@ -24,7 +24,7 @@ class UNiagaraSystem;
 class UPrimitiveComponent;
 class UStaticMesh;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ACoilGun : public AChargedWeapon, public IStackingDamageNumberSource {
     GENERATED_BODY()
 public:

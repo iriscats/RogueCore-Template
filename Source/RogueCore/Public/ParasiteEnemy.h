@@ -10,7 +10,7 @@ class USceneComponent;
 class USkeletalMeshComponent;
 class USoundBase;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AParasiteEnemy : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

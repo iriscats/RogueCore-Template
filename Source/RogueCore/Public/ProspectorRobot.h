@@ -6,7 +6,7 @@
 
 class AActor;
 class UMaterialInstanceDynamic;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AProspectorRobot : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -6,7 +6,7 @@
 #include "OldZiplineSalvage.generated.h"
 
 class AZipLineProjectile;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AOldZiplineSalvage : public AActor {
     GENERATED_BODY()
 public:

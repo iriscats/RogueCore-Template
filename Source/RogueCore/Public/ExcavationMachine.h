@@ -8,7 +8,7 @@
 #include "ExcavationMachine.generated.h"
 
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AExcavationMachine : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

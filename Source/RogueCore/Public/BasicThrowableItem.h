@@ -16,7 +16,7 @@ class UPrimitiveComponent;
 class USoundCue;
 class USphereComponent;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ABasicThrowableItem : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

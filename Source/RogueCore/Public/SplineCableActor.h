@@ -12,7 +12,7 @@ class UMaterialInterface;
 class USplineComponent;
 class USplineMeshComponent;
 class UStaticMesh;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ASplineCableActor : public AActor {
     GENERATED_BODY()
     

@@ -11,7 +11,7 @@ class AItem;
 class AThrowableActor;
 class UAnimMontage;
 class UItemUpgrade;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AThrowableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

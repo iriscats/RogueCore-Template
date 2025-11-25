@@ -8,7 +8,7 @@ class UAnimMontage;
 class UFXSystemComponent;
 class UNiagaraSystem;
 class USoundBase;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AGooGun : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

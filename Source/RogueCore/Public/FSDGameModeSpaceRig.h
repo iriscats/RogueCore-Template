@@ -6,7 +6,7 @@
 
 class AActor;
 class AFSDPlayerController;
-UCLASS(Blueprintable, MinimalAPI, NoExport, NonTransient)
+UCLASS(Blueprintable, MinimalAPI, NonTransient)
 class AFSDGameModeSpaceRig : public AFSDGameMode {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

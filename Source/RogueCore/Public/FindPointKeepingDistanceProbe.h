@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "FindPointKeepingDistanceProbe.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFindPointKeepingDistanceProbe : public AActor {
     GENERATED_BODY()
 public:

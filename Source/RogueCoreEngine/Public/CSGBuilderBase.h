@@ -9,7 +9,7 @@ class UBakeConfig;
 class UCSGPreviewComponent;
 class UTerrainMaterialCore;
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECOREENGINE_API ACSGBuilderBase : public AActor {
     GENERATED_BODY()
 public:

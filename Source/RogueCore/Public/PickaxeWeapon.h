@@ -3,7 +3,7 @@
 #include "PickaxeItem.h"
 #include "PickaxeWeapon.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APickaxeWeapon : public APickaxeItem {
     GENERATED_BODY()
 public:

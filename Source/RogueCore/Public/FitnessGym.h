@@ -12,7 +12,7 @@ class AGymDisplay;
 class AOmegaBartender;
 class APlayerCharacter;
 class UTexture2D;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFitnessGym : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

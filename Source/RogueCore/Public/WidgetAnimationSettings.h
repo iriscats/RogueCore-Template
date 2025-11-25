@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/UnrealType.h"
-//#include "UMG/Public/UMG.h"  // Causing issues in UE5.6
+#include "Animation/WidgetAnimation.h"
+#include "Blueprint/UMGSequencePlayMode.h"
 #include "WidgetAnimationSettings.generated.h"
 
 USTRUCT(BlueprintType)

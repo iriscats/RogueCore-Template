@@ -9,7 +9,7 @@
 
 class UAnimMontage;
 class UStatusEffect;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AAutoCannon : public AHitscanWeapon, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

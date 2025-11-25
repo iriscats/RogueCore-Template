@@ -9,7 +9,7 @@
 class AActor;
 class ARecallableActor;
 class ARedeployableSentryGun;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ARecallableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

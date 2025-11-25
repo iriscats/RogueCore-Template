@@ -9,7 +9,7 @@ class UPrimitiveComponent;
 class USceneComponent;
 class USphereComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAuraBubble : public AActor {
     GENERATED_BODY()
 

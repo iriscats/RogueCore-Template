@@ -5,7 +5,7 @@
 #include "DataDrone.generated.h"
 
 class USpinDeathComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADataDrone : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

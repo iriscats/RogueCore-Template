@@ -4,7 +4,7 @@ UFSDJoinSessionCallbackProxy::UFSDJoinSessionCallbackProxy() {
     this->WorldContextObject = NULL;
 }
 
-UFSDJoinSessionCallbackProxy* UFSDJoinSessionCallbackProxy::FSDJoinSession(UObject* NewWorldContextObject, APlayerController* PlayerController, const FOnlineSessionSearchResult& SearchResult, const FString& fsdpassword, bool fromInvite) {
+UFSDJoinSessionCallbackProxy* UFSDJoinSessionCallbackProxy::FSDJoinSession(UObject* NewWorldContextObject, APlayerController* PlayerController, const FSessionSearchResultWrapper& SearchResultWrapper, const FString& fsdpassword, bool fromInvite) {
     return NULL;
 }
 

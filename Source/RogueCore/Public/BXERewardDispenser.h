@@ -4,7 +4,7 @@
 #include "RewardDispenserReward.h"
 #include "BXERewardDispenser.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXERewardDispenser : public AGenericRewardDispenser {
     GENERATED_BODY()
 public:

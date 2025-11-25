@@ -10,7 +10,7 @@ class UNiagaraSystem;
 class USkeletalMeshComponent;
 class USoundCue;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHangingFireCracker : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

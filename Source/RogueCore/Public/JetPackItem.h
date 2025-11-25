@@ -5,7 +5,7 @@
 
 class UCurveFloat;
 class UPlayerMovementComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AJetPackItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -31,9 +31,9 @@ public:
     AJetPackItem(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_StopThruster_Implementation();
+    void Server_StopThruster();
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_StartThruster_Implementation();
+    void Server_StartThruster();
     UFUNCTION(BlueprintCallable)
     void OnRep_Fuel(float OldFuel);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

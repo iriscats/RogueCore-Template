@@ -4,7 +4,7 @@
 #include "ProjectileWeapon.generated.h"
 
 class UProjectileLauncherComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AProjectileWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

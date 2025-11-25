@@ -4,7 +4,7 @@
 #include "Maggot.generated.h"
 
 class USimpleHealthComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMaggot : public ADeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -7,7 +7,7 @@
 class AActor;
 class UFSDPhysicalMaterial;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAssaultRifle : public AHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

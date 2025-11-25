@@ -7,7 +7,7 @@ class UAnimMontage;
 class UChargedProjectileLauncherComponent;
 class UCurveFloat;
 class UNiagaraSystem;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAmbientChargeBlaster : public AChargedWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

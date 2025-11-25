@@ -14,7 +14,7 @@ class UDialogDataAsset;
 class UForceFeedbackEffect;
 class UItemUpgrade;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADetPackItem : public AAnimatedItem, public IUpgradable, public IUpgradableGear {
     GENERATED_BODY()
 

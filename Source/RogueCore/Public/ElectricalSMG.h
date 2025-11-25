@@ -11,7 +11,7 @@ class UHealthComponentBase;
 class UPrimitiveComponent;
 class USoundCue;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AElectricalSMG : public AHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

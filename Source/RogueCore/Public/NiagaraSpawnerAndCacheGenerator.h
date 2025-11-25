@@ -5,7 +5,7 @@
 
 class UFXSystemAsset;
 class UFXSystemComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ANiagaraSpawnerAndCacheGenerator : public AActor {
     GENERATED_BODY()
 public:

@@ -34,7 +34,7 @@ class UPheromoneSpawnerComponent;
 class UStageManager;
 class UStaticSpawnPointManager;
 class UWidget;
-UCLASS(Blueprintable, NoExport, NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class ROGUECORE_API AFSDGameMode : public AGameMode {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

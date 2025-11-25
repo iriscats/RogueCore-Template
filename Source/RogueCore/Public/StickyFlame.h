@@ -8,7 +8,7 @@
 class UAudioComponent;
 class UNiagaraComponent;
 class UStatusEffectTriggerComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AStickyFlame : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

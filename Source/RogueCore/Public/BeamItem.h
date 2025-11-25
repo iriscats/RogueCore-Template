@@ -6,7 +6,7 @@
 
 class UAnimMontage;
 class UNiagaraComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ABeamItem : public AAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

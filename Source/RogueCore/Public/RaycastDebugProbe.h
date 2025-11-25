@@ -4,7 +4,7 @@
 #include "RaycastDebugProbe.generated.h"
 
 class UTerrainType;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARaycastDebugProbe : public AActor {
     GENERATED_BODY()
 public:

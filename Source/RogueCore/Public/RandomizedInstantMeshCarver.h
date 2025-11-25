@@ -10,7 +10,7 @@ class USTLMeshCarver;
 class UStaticMesh;
 class UStaticMeshCarver;
 class UTerrainMaterialBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARandomizedInstantMeshCarver : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

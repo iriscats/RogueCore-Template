@@ -6,7 +6,7 @@
 
 class ALaserPointerItem;
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ALaserPointerWaypoint : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

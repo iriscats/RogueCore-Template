@@ -10,7 +10,7 @@ class UCapsuleComponent;
 class UNiagaraComponent;
 class UPrimitiveComponent;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASoapVacuumItem : public APlagueCleanupItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -9,7 +9,7 @@
 class AGrapplingHookGun;
 class UAnimMontage;
 class UCoolDownItemAggregator;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AGrapplingHookGun : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

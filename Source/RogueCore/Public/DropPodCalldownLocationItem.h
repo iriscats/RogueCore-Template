@@ -5,7 +5,7 @@
 #include "DropPodCalldownLocationItem.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADropPodCalldownLocationItem : public AGenerationItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

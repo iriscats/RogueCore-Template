@@ -19,7 +19,7 @@ class UAIPerceptionComponent;
 class UPawnStatsComponent;
 class USoundBase;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAFlyingBug : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
 public:

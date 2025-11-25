@@ -8,7 +8,7 @@
 
 class USkinEffect;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMagazine : public AActor, public ISkinnable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

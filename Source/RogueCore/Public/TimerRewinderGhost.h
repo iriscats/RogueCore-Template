@@ -7,7 +7,7 @@ class UAnimSequence;
 class UMaterialInterface;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATimerRewinderGhost : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "Boil.generated.h"
 
 class UFSDPhysicalMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABoil : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

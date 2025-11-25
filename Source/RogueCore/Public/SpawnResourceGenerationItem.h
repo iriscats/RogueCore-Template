@@ -5,7 +5,7 @@
 
 class UResourceData;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpawnResourceGenerationItem : public AGenerationItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

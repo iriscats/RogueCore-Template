@@ -20,7 +20,7 @@ class UAudioComponent;
 class UBehaviorTree;
 class UDamageNumberAggregator;
 class UPerkAsset;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAbilityDrone : public ADeepPathfinderCharacter, public IMinion {
     GENERATED_BODY()
 public:

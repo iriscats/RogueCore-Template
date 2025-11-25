@@ -17,7 +17,7 @@ class USoundCue;
 class UStaticMesh;
 class UStaticMeshComponent;
 class UWeakpointGlowComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATowerEventModule : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

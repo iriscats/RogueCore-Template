@@ -11,7 +11,7 @@ class UDebrisPositioning;
 class USceneComponent;
 class USpawnActorWithDebrisPosComponent;
 class UTrackBuilderConnectPoint;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AConnectCableObjectiveActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

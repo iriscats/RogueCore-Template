@@ -9,7 +9,7 @@
 class AGameEvent;
 class APlayerCharacter;
 class USingleUsableComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADefensePointActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

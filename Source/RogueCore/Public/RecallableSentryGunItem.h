@@ -11,7 +11,7 @@ class ARecallableSentryGunItem;
 class UCapacityHoldingItemAggregator;
 class UItemPlacerAggregator;
 class UItemUpgrade;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARecallableSentryGunItem : public ARecallableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

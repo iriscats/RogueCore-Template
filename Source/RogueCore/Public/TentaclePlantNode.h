@@ -7,7 +7,7 @@
 class ASplineCableActor;
 class ATentaclePlant;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATentaclePlantNode : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

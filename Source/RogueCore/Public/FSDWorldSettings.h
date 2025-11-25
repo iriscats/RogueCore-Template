@@ -5,7 +5,7 @@
 
 class UInventoryList;
 class UPlayerCharacterID;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDWorldSettings : public AWorldSettings {
     GENERATED_BODY()
 public:

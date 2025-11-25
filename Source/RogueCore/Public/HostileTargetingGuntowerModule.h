@@ -5,7 +5,7 @@
 #include "HostileTargetingGuntowerModule.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHostileTargetingGuntowerModule : public AHostileGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

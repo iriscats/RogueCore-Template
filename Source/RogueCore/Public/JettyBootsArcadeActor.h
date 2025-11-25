@@ -13,7 +13,7 @@ class APlayerCharacter;
 class UAnimMontage;
 class UJettyBootUsableComponent;
 class USceneComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AJettyBootsArcadeActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

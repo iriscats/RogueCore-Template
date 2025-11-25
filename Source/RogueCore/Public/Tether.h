@@ -11,7 +11,7 @@ class UInstantUsable;
 class USkeletalMeshComponent;
 class USoundCue;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATether : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

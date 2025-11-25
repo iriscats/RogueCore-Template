@@ -7,7 +7,7 @@
 class USDFUnionOpComponent;
 class UTerrainMaterialCore;
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECOREENGINE_API ASDFBuilder : public ACSGBuilderBase {
     GENERATED_BODY()
 public:

@@ -47,7 +47,7 @@ class UResourceData;
 class URoomGeneratorBase;
 class USpecialEvent;
 class UTunnelParameters;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AProceduralSetup : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -7,7 +7,7 @@ class UDecorationSplineComponent;
 class URoomSphereCollisionComponent;
 class USceneComponent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATunnelDecoration : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

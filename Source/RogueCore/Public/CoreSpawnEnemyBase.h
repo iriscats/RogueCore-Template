@@ -10,7 +10,7 @@ class UOutlineComponent;
 class UPawnAlertComponent;
 class UPawnSensingComponent;
 class UPawnStatsComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ACoreSpawnEnemyBase : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
 public:

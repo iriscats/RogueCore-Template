@@ -81,8 +81,7 @@ void AAbilityDroneController::All_ShowActivation_Implementation(bool sentOut) {
 
 void AAbilityDroneController::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(AAbilityDroneController, DroneInstances);
 }
-
 

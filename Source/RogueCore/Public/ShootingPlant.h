@@ -4,7 +4,7 @@
 #include "ShootingPlant.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AShootingPlant : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

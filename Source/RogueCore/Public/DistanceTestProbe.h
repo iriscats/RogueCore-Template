@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "DistanceTestProbe.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADistanceTestProbe : public AActor {
     GENERATED_BODY()
 public:

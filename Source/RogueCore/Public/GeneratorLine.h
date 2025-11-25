@@ -10,7 +10,7 @@ class USplineComponent;
 class USplineDecoratorComponent;
 class USplineMeshComponent;
 class UStaticMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGeneratorLine : public AActor {
     GENERATED_BODY()
 

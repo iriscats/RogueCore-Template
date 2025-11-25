@@ -9,7 +9,7 @@ class AHeliumTank;
 class APlayerCharacter;
 class UAudioComponent;
 class UCurveFloat;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHeliumTank : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -11,7 +11,7 @@ class UOutlineComponent;
 class USimpleObjectInfoComponent;
 class UStaticMeshComponent;
 class UTrackBuilderUsable;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineStart : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

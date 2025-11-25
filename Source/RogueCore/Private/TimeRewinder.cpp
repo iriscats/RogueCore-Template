@@ -32,14 +32,14 @@ void ATimeRewinder::Server_ShowTPRecall_Implementation() {
 void ATimeRewinder::Server_ShowTPActivation() {
 }
 
-void ATimeRewinder::Server_SavedRewindSpot_Implementation(FRewindData Data) {
-}
+//void ATimeRewinder::Server_SavedRewindSpot_Implementation(FRewindData Data) {
+//}
 
-void ATimeRewinder::Server_RewindStarted(FRewindData Data) {
-}
+//void ATimeRewinder::Server_RewindStarted(FRewindData Data) {
+//}
 
-void ATimeRewinder::Server_Rewind(FRewindData Data) {
-}
+//void ATimeRewinder::Server_Rewind(FRewindData Data) {
+//}
 
 void ATimeRewinder::Server_DeactivateEffects() {
 }

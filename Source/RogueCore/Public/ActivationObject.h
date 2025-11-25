@@ -6,7 +6,7 @@
 
 class APlayerCharacter;
 class USingleUsableComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AActivationObject : public AActor {
     GENERATED_BODY()
 public:

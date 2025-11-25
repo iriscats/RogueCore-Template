@@ -41,7 +41,7 @@ class USkeletalMeshComponent;
 class USoundCue;
 class USpawnActorWithDebrisPosComponent;
 class UTerrainDetectComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARiftCrystal : public AActor, public IGameplayTagAssetInterface, public IBossFightInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

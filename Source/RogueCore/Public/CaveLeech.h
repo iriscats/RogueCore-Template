@@ -15,7 +15,7 @@ class UHealthComponentBase;
 class UPawnAffliction;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ACaveLeech : public AEnemyPawn, public IAttackingPointInterface {
     GENERATED_BODY()
 public:

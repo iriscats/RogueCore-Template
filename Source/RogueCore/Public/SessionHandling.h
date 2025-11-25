@@ -3,7 +3,6 @@
 #include "UObject/NoExportTypes.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "OnlineSubsystemTypes.h"
-#include "OnlineSessionInterface.h"
 #include "OnlineSessionClient.h"
 #include "EDisconnectReason.h"
 #include "EFSDMissionStatus.h"

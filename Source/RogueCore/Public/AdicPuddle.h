@@ -10,7 +10,7 @@ class UPrimitiveComponent;
 class USoundBase;
 class USphereComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAdicPuddle : public AActor {
     GENERATED_BODY()
 public:

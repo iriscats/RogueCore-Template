@@ -10,7 +10,7 @@ class UPlayerAnimInstance;
 class USkeletalMeshComponent;
 class USkinnableComponent;
 class UUpperBodyCharacterAnimationSet;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AAnimatedItem : public AItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

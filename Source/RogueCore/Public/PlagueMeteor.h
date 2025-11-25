@@ -16,7 +16,7 @@ class USceneComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API APlagueMeteor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

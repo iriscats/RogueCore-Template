@@ -3,7 +3,7 @@
 #include "ThrowableItem.h"
 #include "HolidayThrowableItem.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHolidayThrowableItem : public AThrowableItem {
     GENERATED_BODY()
 public:

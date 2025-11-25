@@ -9,7 +9,7 @@ class ADeepCSGWorld;
 class UFloodFillSettings;
 class UTunnelParameters;
 class UTunnelSegmentSetting;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ANoisyPathfinderTest : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

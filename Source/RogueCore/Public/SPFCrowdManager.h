@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "SPFCrowdManager.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ASPFCrowdManager : public AActor {
     GENERATED_BODY()
 public:

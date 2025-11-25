@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "RewardDispenserBase.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARewardDispenserBase : public AActor {
     GENERATED_BODY()
 public:

@@ -5,7 +5,7 @@
 #include "ZipLineConnector.generated.h"
 
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AZipLineConnector : public AActor {
     GENERATED_BODY()
 public:

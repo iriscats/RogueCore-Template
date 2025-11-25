@@ -28,7 +28,7 @@ class USplineMeshComponent;
 class UStaticMesh;
 class UUnlockCollectionTag;
 class UUserWidget;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXECompanionDrone : public ADeepPathfinderCharacter {
     GENERATED_BODY()
 public:

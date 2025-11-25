@@ -13,7 +13,7 @@ class UPlanetZone;
 class URunTemplate;
 class UStageTemplateDifficulty;
 class UStageTemplateOverride;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEPLSTester : public AActor {
     GENERATED_BODY()
 public:

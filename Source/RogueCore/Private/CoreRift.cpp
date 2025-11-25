@@ -24,12 +24,6 @@ ACoreRift::ACoreRift(const FObjectInitializer& ObjectInitializer) : Super(Object
     this->terrainPlacement->SetupAttachment(RootComponent);
 }
 
-void ACoreRift::SpawnSpikes() {
-}
-
-void ACoreRift::ScaleUp() {
-}
-
 void ACoreRift::OnRep_Seed() {
 }
 

@@ -5,7 +5,7 @@
 
 class UDamageAsset;
 class UDamageComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASawedOffShotgun : public AMultiHitscanWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -11,10 +11,9 @@ class UHealthComponentBase;
 class UProjectileMovementComponent;
 class USimpleHealthComponent;
 class USingleUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADetPack : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

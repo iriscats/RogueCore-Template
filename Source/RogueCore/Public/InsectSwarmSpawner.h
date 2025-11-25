@@ -7,7 +7,7 @@
 class AActor;
 class AInsectSwarmEnemy;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AInsectSwarmSpawner : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

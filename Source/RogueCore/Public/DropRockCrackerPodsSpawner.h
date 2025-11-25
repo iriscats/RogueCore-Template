@@ -5,7 +5,7 @@
 
 class AActor;
 class APlagueMeteor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADropRockCrackerPodsSpawner : public ADebrisLocationFinder {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

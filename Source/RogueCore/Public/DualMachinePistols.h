@@ -5,7 +5,7 @@
 #include "DualMachinePistols.generated.h"
 
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADualMachinePistols : public ADualWieldWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

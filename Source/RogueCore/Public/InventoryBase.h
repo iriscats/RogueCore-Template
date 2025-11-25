@@ -33,7 +33,7 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_SetEquippedActor(const FEquippedActorData& Actor, bool CallClientDelayed);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_EquipExternalActor_Implementation(AActor* Actor);
+    void Server_EquipExternalActor(AActor* Actor);
     UFUNCTION(BlueprintCallable)
     void OnRep_EquippedActor(FEquippedActorData& OldActor);
  

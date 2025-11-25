@@ -9,7 +9,7 @@
 
 class APlagueControlActor;
 class APlagueInfectionNode;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACleanupPodItem : public ARessuplyPodItem, public IPlaceableInterface {
     GENERATED_BODY()
 public:

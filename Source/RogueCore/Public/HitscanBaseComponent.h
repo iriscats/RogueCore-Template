@@ -41,5 +41,5 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server)
     void Server_StopFire();
     UFUNCTION(BlueprintCallable, Reliable, Server)
-    void Server_RemoveDebris_Implementation(int32 instance, int32 Component);
+    void Server_RemoveDebris(int32 instance, int32 Component);
 };

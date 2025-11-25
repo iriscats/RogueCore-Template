@@ -5,7 +5,7 @@
 
 class UCaveInfluencer;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AInfluenceTester : public AActor {
     GENERATED_BODY()
 public:

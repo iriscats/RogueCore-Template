@@ -4,7 +4,7 @@
 #include "DirtQueryResult.h"
 #include "DirtDecoration.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADirtDecoration : public AActor {
     GENERATED_BODY()
 public:

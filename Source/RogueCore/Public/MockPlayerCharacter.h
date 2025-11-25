@@ -3,7 +3,7 @@
 #include "PlayerCharacter.h"
 #include "MockPlayerCharacter.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMockPlayerCharacter : public APlayerCharacter {
     GENERATED_BODY()
 public:

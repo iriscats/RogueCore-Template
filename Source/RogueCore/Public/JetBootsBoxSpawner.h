@@ -7,7 +7,7 @@
 class AJetBootsBox;
 class UDebrisPositioning;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AJetBootsBoxSpawner : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

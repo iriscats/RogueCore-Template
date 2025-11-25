@@ -13,7 +13,7 @@ class APlayerCharacter;
 class UArrowComponent;
 class UPlayerCharacterID;
 class USpringArmComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ABaseFitnessActivity : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

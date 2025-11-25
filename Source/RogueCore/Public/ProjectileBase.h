@@ -20,7 +20,7 @@ class UProjectileUpgradeElement;
 class UShapeComponent;
 class USoundCue;
 class UTerrainMaterial;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AProjectileBase : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

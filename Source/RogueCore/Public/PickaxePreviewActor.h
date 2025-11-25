@@ -13,7 +13,7 @@ class UItemID;
 class UMaterialInterface;
 class UPickaxePart;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APickaxePreviewActor : public AActor, public IPickaxePartEquip, public IItemIDInterface, public ISpawnReleasedActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

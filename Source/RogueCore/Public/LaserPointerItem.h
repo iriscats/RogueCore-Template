@@ -20,7 +20,7 @@ class UPrimitiveComponent;
 class USceneComponent;
 class UTerrainMaterial;
 class UTexture2D;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ALaserPointerItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -61,7 +61,7 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void ServerPlaceMarker(FVector Location, AActor* Actor, UPrimitiveComponent* Cmponent, UTerrainMaterial* TerrainMaterial, ELaserPointerMarkerType eMarkerType);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SecondaryUse_Implementation();
+    void Server_SecondaryUse();
  
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)
     void RevealTerrainScannerMeshesForMarkedActorInternal(AActor* InActor);

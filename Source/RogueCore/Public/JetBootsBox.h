@@ -6,7 +6,7 @@
 
 class USpecialEvent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AJetBootsBox : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

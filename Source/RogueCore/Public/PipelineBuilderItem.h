@@ -4,7 +4,7 @@
 #include "PipelineBuilderItem.generated.h"
 
 class UItemPlacerAggregator;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineBuilderItem : public ATrackBuilderItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

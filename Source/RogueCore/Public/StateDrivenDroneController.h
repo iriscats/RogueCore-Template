@@ -3,7 +3,7 @@
 #include "DroneControllerBase.h"
 #include "StateDrivenDroneController.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AStateDrivenDroneController : public ADroneControllerBase {
     GENERATED_BODY()
 public:

@@ -35,7 +35,7 @@ class UTreasureRewarder;
 class UTutorialContentWidget;
 class UVanityItem;
 class UVictoryPose;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AFSDPlayerController : public AFSDPlayerControllerBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

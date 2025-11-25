@@ -22,7 +22,7 @@ class UNiagaraComponent;
 class UPrimitiveComponent;
 class USoundCue;
 class USphereComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ASharkEnemy : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "HitscanWeapon.generated.h"
 
 class UHitscanComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHitscanWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

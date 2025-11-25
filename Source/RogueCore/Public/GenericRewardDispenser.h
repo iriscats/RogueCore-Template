@@ -8,7 +8,7 @@
 class AEventRewardFrame;
 class AFSDPlayerState;
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AGenericRewardDispenser : public ARewardDispenserBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

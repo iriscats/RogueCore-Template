@@ -9,4 +9,3 @@ AActivationObject::AActivationObject(const FObjectInitializer& ObjectInitializer
 void AActivationObject::OnUsedBy(APlayerCharacter* User, EInputKeys Key) {
 }
 
-

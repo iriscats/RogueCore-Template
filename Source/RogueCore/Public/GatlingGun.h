@@ -8,7 +8,7 @@ class UDamageAsset;
 class UFSDPhysicalMaterial;
 class UFXSystemAsset;
 class UHitscanComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGatlingGun : public ABeltDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

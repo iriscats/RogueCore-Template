@@ -11,7 +11,7 @@ class UMaterialInstanceDynamic;
 class UPointLightComponent;
 class UStatusEffect;
 class UTimelineComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AZipLineProjectile : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

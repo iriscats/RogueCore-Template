@@ -9,7 +9,7 @@ class UDamageComponent;
 class UNiagaraComponent;
 class UParticleSystemComponent;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGuntowerLineProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

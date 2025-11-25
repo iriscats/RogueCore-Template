@@ -4,7 +4,7 @@
 #include "Vacuumable.h"
 #include "PlaguePuddle.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APlaguePuddle : public AAdicPuddle, public IVacuumable {
     GENERATED_BODY()
 public:

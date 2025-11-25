@@ -13,7 +13,7 @@ class UNiagaraComponent;
 class UPrimitiveComponent;
 class USceneComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFoamPuddle : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

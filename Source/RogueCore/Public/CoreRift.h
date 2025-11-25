@@ -9,7 +9,7 @@ class UInstancedStaticMeshComponent;
 class USceneComponent;
 class USplineComponent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACoreRift : public AActor {
     GENERATED_BODY()
 
@@ -45,7 +45,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     int32 BonesToSpawn;
 
- 
+    ACoreRift(const FObjectInitializer& ObjectInitializer);
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, meta=(AllowPrivateAccess=true))
     void SpawnSpikes();
 

@@ -6,7 +6,7 @@
 
 class UDroneStateComponentBase;
 class UPointLightComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADroneBase : public ADeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

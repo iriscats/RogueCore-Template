@@ -14,7 +14,7 @@ class UPlanetZone;
 class URoomGenerator;
 class URunTemplate;
 class UStageTemplateDifficulty;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ARoomBurnerInGame : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

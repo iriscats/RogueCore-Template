@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "SpacerigConsole.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ASpacerigConsole : public AActor {
     GENERATED_BODY()
 public:

@@ -1,10 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
+#include "Online/CoreOnline.h"
+#include "SessionSearchResultTypes.h"
 #include "UObject/NoExportTypes.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "OnlineSubsystemTypes.h"
-#include "OnlineSessionInterface.h"
-#include "Online/OnlineSessionSettings.h"
 #include "GetLobbiesResultDelegate.h"
 #include "ServerlistLobby.h"
 #include "FindSessionsCallbackProxy.h"
@@ -16,8 +15,8 @@ class UFSDServerListClient : public UGameInstanceSubsystem {
     // UPROPERTY fields moved from private section
 
 public:
-    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBlueprintFindSessionsResultDelegate, const TArray<FOnlineSessionSearchResult>&, Results);
-    
+    DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBlueprintFindSessionsResultDelegate, const TArray<FSessionSearchResultWrapper>&, Results);
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FServerlistLobby> Lobbies;
     FServerlistLobby MyActiveLobbyData;
@@ -25,7 +24,7 @@ public:
     FString FilterRunName;
     bool IsInProgress;
     FString CurrentSessionId;
- 
+
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGetLobbiesResult ListDelegate;
     UFSDServerListClient();
@@ -33,6 +32,6 @@ public:
     bool StopHosting();
     bool StartHosting(const FString& RunName);
     void ListLobbys();
-    FOnlineSessionSearchResult CreateSessionData(FServerlistLobby FromLobby);
+    FSessionSearchResultWrapper CreateSessionData(FServerlistLobby FromLobby);
     int32 CalculateRemoteServerPing(const FString& RemoteServerSteamLocation);
 };

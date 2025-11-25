@@ -10,7 +10,7 @@ class UPathfinderCollisionComponent;
 class USceneComponent;
 class UStairSettings;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ADynamicStaircase : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

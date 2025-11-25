@@ -8,7 +8,7 @@
 class AActor;
 class UDamageComponent;
 class UFSDPhysicalMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARevoler : public AHitscanWeapon, public IStackingDamageNumberSource {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

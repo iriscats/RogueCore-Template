@@ -8,7 +8,7 @@ class UChildActorComponent;
 class USceneComponent;
 class UStaticMeshComponent;
 class UTrackBuilderConnectPoint;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AConnectCableObjectiveSocketActor : public AActor {
     GENERATED_BODY()
 public:

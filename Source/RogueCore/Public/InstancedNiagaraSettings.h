@@ -11,8 +11,8 @@ class UInstancedNiagaraSettings : public UDataAsset {
     // UPROPERTY fields moved from protected section
 
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    TMap<UNiagaraSystem*, FRogueSystemSettings> SystemSettings;
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //TMap<UNiagaraSystem*, FRogueSystemSettings> SystemSettings;
     
     UInstancedNiagaraSettings();
 };

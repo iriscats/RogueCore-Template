@@ -5,7 +5,7 @@
 
 class AHammerProjectile;
 class URecallableProjectileComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AThrowableHammer : public AChargedWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

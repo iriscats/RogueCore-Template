@@ -14,7 +14,7 @@ class UBarMenuWidget;
 class UBoxComponent;
 class UDrinkableDataAsset;
 class UInstantUsable;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ASpaceRigBar : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

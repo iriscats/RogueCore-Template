@@ -8,7 +8,7 @@
 class UDeepPathfinderMovement;
 class UHealthComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APathfinderVehicle : public APawn, public ITargetable, public ISteerable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

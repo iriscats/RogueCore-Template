@@ -6,7 +6,7 @@
 
 class AGenericRewardDispenser;
 class USpecialEventUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEventRewardFrame : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

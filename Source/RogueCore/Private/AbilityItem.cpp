@@ -49,4 +49,3 @@ USkeletalMeshComponent* AAbilityItem::GetFPMesh() const {
 void AAbilityItem::AnimFinished(UAnimMontage* Montage, bool interrupted) {
 }
 
-

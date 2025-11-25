@@ -10,7 +10,7 @@ class UNiagaraComponent;
 class UPrimitiveComponent;
 class USceneComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACoilgunWeaponTrail : public AActor {
     GENERATED_BODY()
 public:

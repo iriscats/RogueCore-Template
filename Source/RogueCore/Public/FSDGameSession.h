@@ -4,7 +4,7 @@
 #include "Engine/NetSerialization.h"
 #include "FSDGameSession.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDGameSession : public AGameSession {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

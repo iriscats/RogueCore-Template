@@ -8,7 +8,7 @@
 class UHealthComponent;
 class USceneComponent;
 class USplineMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ACaveVine : public AActor {
     GENERATED_BODY()
 public:

@@ -4,7 +4,7 @@
 #include "AsyncLevelPersistanceActor.generated.h"
 
 class UObject;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAsyncLevelPersistanceActor : public AActor {
     GENERATED_BODY()
 public:

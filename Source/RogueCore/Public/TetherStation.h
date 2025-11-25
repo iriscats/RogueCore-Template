@@ -8,7 +8,7 @@
 class AFacilityGeneratorLine;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATetherStation : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

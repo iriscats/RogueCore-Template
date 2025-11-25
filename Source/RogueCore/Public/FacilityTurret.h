@@ -9,7 +9,7 @@ class AActor;
 class USceneComponent;
 class USkeletalMeshComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFacilityTurret : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

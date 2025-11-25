@@ -7,7 +7,7 @@
 class AActor;
 class UAIPerceptionComponent;
 class UHealthComponentBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFacilityTurretController : public AFSDAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

@@ -24,7 +24,7 @@ class UOutlineComponent;
 class URestrictedResourceBank;
 class USimpleObjectInfoComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AEscortMule : public AFSDPawn, public ITriggerAI {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -5,7 +5,7 @@
 #include "RandRange.h"
 #include "SpinningFacilityturret.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpinningFacilityturret : public AFacilityTurret {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

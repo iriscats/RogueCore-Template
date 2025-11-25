@@ -7,7 +7,7 @@ class AFSDPlayerController;
 class APlayerCharacter;
 class UFSDSaveGame;
 class UTutorialComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ATutorialManager : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

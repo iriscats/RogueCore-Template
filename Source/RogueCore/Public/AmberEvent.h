@@ -8,7 +8,7 @@ class APawn;
 class UAmberEventEnemyPool;
 class UDamageComponent;
 class UHealthComponentBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAmberEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

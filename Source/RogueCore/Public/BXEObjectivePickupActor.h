@@ -5,7 +5,7 @@
 
 class UBXEObjectiveLostDronesTreasure;
 class UTerrainScannerStaticMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEObjectivePickupActor : public AFSDPhysicsActor {
     GENERATED_BODY()
 public:

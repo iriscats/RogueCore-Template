@@ -7,7 +7,7 @@
 class AStabberVineRoot;
 class USceneComponent;
 class USplineComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ATentacleBase : public AEnemyPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

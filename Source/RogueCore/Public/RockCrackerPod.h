@@ -13,7 +13,7 @@ class UContinuousUsableComponent;
 class UDialogDataAsset;
 class UFriendlyHealthComponent;
 class UHealthComponentBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARockCrackerPod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "PlacementDeviceActor.generated.h"
 
 class UPawnStat;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlacementDeviceActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

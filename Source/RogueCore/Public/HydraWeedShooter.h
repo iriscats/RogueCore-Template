@@ -4,7 +4,7 @@
 #include "HydraWeedShooter.generated.h"
 
 class AHydraWeedCore;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHydraWeedShooter : public AShootingPlant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

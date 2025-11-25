@@ -23,7 +23,7 @@ class UPointLightComponent;
 class UResourceData;
 class USkeletalMeshComponent;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AExtractorItem : public AAnimatedItem, public IThrowable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

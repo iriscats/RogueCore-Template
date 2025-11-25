@@ -4,7 +4,7 @@
 #include "ShowroomItem.h"
 #include "EnemyShowroomItem.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEnemyShowroomItem : public AShowroomItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

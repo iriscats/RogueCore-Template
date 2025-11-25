@@ -10,7 +10,7 @@ class ADroppableOutpost;
 class UAutoCarverComponent;
 class UCurveFloat;
 class UObject;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ADroppableOutpost : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

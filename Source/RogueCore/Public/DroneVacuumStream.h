@@ -5,7 +5,7 @@
 
 class AFoamPuddle;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADroneVacuumStream : public ADroneStream {
     GENERATED_BODY()
 public:

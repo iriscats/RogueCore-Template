@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "LostPack.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ALostPack : public AActor {
     GENERATED_BODY()
 public:

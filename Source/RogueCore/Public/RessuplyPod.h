@@ -13,7 +13,7 @@ class UCurveFloat;
 class UDamageComponent;
 class UDialogDataAsset;
 class UObject;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARessuplyPod : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

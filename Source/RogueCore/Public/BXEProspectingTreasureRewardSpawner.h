@@ -9,7 +9,7 @@ class UBXEObjectiveLostDronesTreasure;
 class UCurveFloat;
 class UDebrisPositioning;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEProspectingTreasureRewardSpawner : public AActor {
     GENERATED_BODY()
 public:

@@ -10,7 +10,7 @@ class ARivalBomb;
 class ARivalBombNode;
 class ASplineCableActor;
 class UHackingUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARivalBombNode : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

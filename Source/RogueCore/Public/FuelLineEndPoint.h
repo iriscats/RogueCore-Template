@@ -9,7 +9,7 @@ class ATrackBuilderSegment;
 class UFuelLineConnectPoint;
 class UStaticMeshComponent;
 class UTrackBuilderConnectPoint;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineEndPoint : public AActor {
     GENERATED_BODY()
 

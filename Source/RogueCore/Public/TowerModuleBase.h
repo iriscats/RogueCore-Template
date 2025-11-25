@@ -13,7 +13,7 @@ class USkeletalMesh;
 class USkeletalMeshComponent;
 class USoundCue;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATowerModuleBase : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

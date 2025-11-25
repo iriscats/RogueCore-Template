@@ -14,7 +14,7 @@ class UGrenadeCountAggregator;
 class UItemCharacterAnimationSet;
 class UPlayerAnimInstance;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AThrownGrenadeItem : public AItem, public IRejoinListener {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

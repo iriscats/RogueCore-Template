@@ -3,7 +3,7 @@
 #include "FlyingEnemyDeepPathfinderCharacter.h"
 #include "Plover.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API APlover : public AFlyingEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
 public:

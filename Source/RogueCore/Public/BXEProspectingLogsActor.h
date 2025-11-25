@@ -4,7 +4,7 @@
 #include "BXEProspectingLogsActor.generated.h"
 
 class UBXEProspectingLogsObjective;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEProspectingLogsActor : public AActor {
     GENERATED_BODY()
 public:

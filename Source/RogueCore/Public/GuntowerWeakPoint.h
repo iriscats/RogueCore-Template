@@ -10,7 +10,7 @@ class USceneComponent;
 class USoundCue;
 class UStaticMeshComponent;
 class UWeakpointGlowComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGuntowerWeakPoint : public AFSDPawn {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -23,7 +23,7 @@ class UPrimitiveComponent;
 class UProjectileAttackComponent;
 class USoundCue;
 class USphereComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APatrolBot : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section
@@ -140,7 +140,7 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsHacked() const;
     UFUNCTION(NetMulticast, Unreliable)
-    void ImpactSound_Implementation();
+    void ImpactSound();
     void EndFireRockets();
     void DisableDrone();
     UFUNCTION(BlueprintCallable, NetMulticast, Reliable)

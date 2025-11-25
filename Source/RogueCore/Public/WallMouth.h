@@ -4,7 +4,7 @@
 #include "WallMouth.generated.h"
 
 class UWallMouthAnimInstance;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AWallMouth : public AFSDPawn {
     GENERATED_BODY()
 

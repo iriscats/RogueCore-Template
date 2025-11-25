@@ -11,7 +11,7 @@ class ATrackBuilderSegment;
 class UCrosshairAggregator;
 class UTrackBuilderConnectPoint;
 class UTrackBuilderUsable;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ATrackBuilderItem : public AAnimatedItem, public IPlaceableInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

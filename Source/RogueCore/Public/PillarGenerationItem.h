@@ -4,7 +4,7 @@
 #include "PillarGenerationItem.generated.h"
 
 class UPillarGenerationComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APillarGenerationItem : public AGenerationItem {
     GENERATED_BODY()
 public:

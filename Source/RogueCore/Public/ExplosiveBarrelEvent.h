@@ -4,7 +4,7 @@
 #include "ExplosiveBarrelEvent.generated.h"
 
 class UDamageComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AExplosiveBarrelEvent : public AGameEvent {
     GENERATED_BODY()
 public:

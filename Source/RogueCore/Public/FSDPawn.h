@@ -22,7 +22,7 @@ class UMaterialInterface;
 class UPawnStatsComponent;
 class UPrimitiveComponent;
 class UStatusEffectsComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFSDPawn : public APawn, public IGameplayTagAssetInterface, public ITargetable, public IProjectileSpawner {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

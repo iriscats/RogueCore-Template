@@ -6,7 +6,7 @@
 class UAnimMontage;
 class USceneCaptureComponent2D;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATerrainScannerItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

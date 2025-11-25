@@ -11,7 +11,7 @@ class APlayerCharacter;
 class UNiagaraComponent;
 class UPlagueUsable;
 class UTerrainMaterial;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APlagueControlActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

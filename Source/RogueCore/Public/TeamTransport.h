@@ -17,7 +17,7 @@ class UCurveFloat;
 class UObject;
 class UObjectivesManager;
 class UOutlineComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATeamTransport : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -12,7 +12,7 @@ class UMaterialInstanceDynamic;
 class UMaterialInterface;
 class UObject;
 class UPostProcessComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFSDPostProcessingActor : public AActor {
     GENERATED_BODY()
 

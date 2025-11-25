@@ -14,7 +14,7 @@ class URecallableProjectileComponent;
 class USceneComponent;
 class USphereComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACrossbowProjectileStuck : public AFSDPhysicsActor {
     GENERATED_BODY()
 public:

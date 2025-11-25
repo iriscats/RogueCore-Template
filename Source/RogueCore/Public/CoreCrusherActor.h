@@ -16,7 +16,7 @@ class URepairableUsable;
 class USceneComponent;
 class USingleUsableComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ACoreCrusherActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -46,7 +46,8 @@ public:
     float DrainImmunityTime;
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnPartInserted;
- 
+
+    ACoreCrusherActor(const FObjectInitializer& ObjectInitializer);
     void RepairableUsableOnUsedBy(APlayerCharacter* User, EInputKeys Key);
     void ReceiveStateChange(ECoreCrusherState InState);
     void OnRunningRepairUsedBy(APlayerCharacter* User, EInputKeys Key);

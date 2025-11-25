@@ -14,7 +14,7 @@ class UBehaviorTree;
 class UCompanionDroneInteractionComponent;
 class UDialogDataAsset;
 class UResourceData;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXECompanionDroneController : public AFSDAIController {
     GENERATED_BODY()
 public:

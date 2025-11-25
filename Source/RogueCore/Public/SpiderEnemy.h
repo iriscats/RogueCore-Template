@@ -9,7 +9,7 @@ class UHitReactionComponent;
 class UPawnStatsComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASpiderEnemy : public AEnemyDeepPathfinderCharacter, public IEnemyAttacker {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

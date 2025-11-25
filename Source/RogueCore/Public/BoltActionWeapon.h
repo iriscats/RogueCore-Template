@@ -16,7 +16,7 @@ class UPrimitiveComponent;
 class USoundBase;
 class USoundCue;
 class UStatusEffect;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ABoltActionWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -6,7 +6,7 @@
 
 class AFSDPlayerState;
 class APlayerCharacter;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADroneControllerBase : public AAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -17,7 +17,7 @@ class UCurveFloat;
 class UItemID;
 class ULightComponent;
 class USoundCue;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFlare : public AFSDPhysicsActor, public ISaveGameIDInterface, public IItemIDInterface, public ILoadoutItem, public IUpgradableGear {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

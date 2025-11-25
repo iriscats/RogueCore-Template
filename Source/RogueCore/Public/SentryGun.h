@@ -22,7 +22,7 @@ class USkeletalMeshComponent;
 class USoundBase;
 class USoundCue;
 class UWeaponFireComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ASentryGun : public AActor, public IWeaponFireOwner, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

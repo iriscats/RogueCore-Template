@@ -4,7 +4,7 @@
 #include "EncounterActor.generated.h"
 
 class APawn;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEncounterActor : public AActor {
     GENERATED_BODY()
 public:

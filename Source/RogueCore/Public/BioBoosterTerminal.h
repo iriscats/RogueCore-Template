@@ -12,7 +12,7 @@ class UBioBoosterTerminalUsable;
 class UHackingUsableComponent;
 class USkeletalMeshComponent;
 class UWidgetComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ABioBoosterTerminal : public ARewardDispenserBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

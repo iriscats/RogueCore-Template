@@ -3,7 +3,7 @@
 #include "FuelLineSegment.h"
 #include "TetherFuelLineSegment.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATetherFuelLineSegment : public AFuelLineSegment {
     GENERATED_BODY()
 public:

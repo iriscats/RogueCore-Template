@@ -7,7 +7,7 @@ class ALineCutterProjectile;
 class AProjectileBase;
 class UItemUpgrade;
 class UProjectileLauncherComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ALineCutter : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -28,9 +28,9 @@ public:
     ALineCutter(const FObjectInitializer& ObjectInitializer);
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_StopRotatingProjectile_Implementation();
+    void Server_StopRotatingProjectile();
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_ReverseLastProjectile_Implementation();
+    void Server_ReverseLastProjectile();
     UFUNCTION(BlueprintCallable, Server, Unreliable, WithValidation)
     void Server_DestroyOldProjectile();
     UFUNCTION(BlueprintCallable)

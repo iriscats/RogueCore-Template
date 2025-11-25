@@ -7,7 +7,7 @@ class UCurveFloat;
 class UDebrisPositioning;
 class USceneComponent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AStructureActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

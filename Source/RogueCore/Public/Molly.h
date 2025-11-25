@@ -10,7 +10,7 @@ class UDialogDataAsset;
 class UNiagaraSystem;
 class UOutlineComponent;
 class UResourceBank;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AMolly : public AMULE {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

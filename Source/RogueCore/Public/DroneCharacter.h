@@ -6,7 +6,7 @@
 class UHealthComponent;
 class UOutlineComponent;
 class USimpleObjectInfoComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADroneCharacter : public ADeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

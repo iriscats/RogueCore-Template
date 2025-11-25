@@ -3,7 +3,7 @@
 #include "GenerationItem.h"
 #include "RandomSelectorItem.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARandomSelectorItem : public AGenerationItem {
     GENERATED_BODY()
 public:

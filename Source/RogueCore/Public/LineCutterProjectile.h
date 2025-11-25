@@ -12,7 +12,7 @@
 
 class UDamageComponent;
 class UNiagaraComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ALineCutterProjectile : public AProjectile {
     GENERATED_BODY()
 

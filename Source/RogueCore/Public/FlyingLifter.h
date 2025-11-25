@@ -15,7 +15,7 @@ class UInDangerComponent;
 class UPointLightComponent;
 class UPrimitiveComponent;
 class USoundBase;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFlyingLifter : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

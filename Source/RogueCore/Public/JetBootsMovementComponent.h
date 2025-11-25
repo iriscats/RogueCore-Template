@@ -73,9 +73,9 @@ public:
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
     void Server_SetOverheated(bool Current);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetIsUsing_Implementation(bool Current, bool Last, bool NewIsFromTakeOff);
+    void Server_SetIsUsing(bool Current, bool Last, bool NewIsFromTakeOff);
     UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation)
-    void Server_SetCurrentJetFuel_Implementation(float Current);
+    void Server_SetCurrentJetFuel(float Current);
     UFUNCTION(BlueprintCallable)
     void RemoveJetBoots();
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

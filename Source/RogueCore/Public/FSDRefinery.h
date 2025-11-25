@@ -15,7 +15,7 @@ class APlayerCharacter;
 class ATrackBuilderItem;
 class UDialogDataAsset;
 class USingleUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AFSDRefinery : public ADroppableOutpost {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -6,4 +6,3 @@ AAbilitySpawnActor::AAbilitySpawnActor(const FObjectInitializer& ObjectInitializ
     this->Type = EAbilityAmountType::Damage;
 }
 
-

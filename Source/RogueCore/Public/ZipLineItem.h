@@ -5,7 +5,7 @@
 #include "ZipLineItem.generated.h"
 
 class UDialogDataAsset;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AZipLineItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

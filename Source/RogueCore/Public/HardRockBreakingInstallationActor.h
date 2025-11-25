@@ -22,7 +22,7 @@ class USpawnActorWithDebrisPosComponent;
 class USphereComponent;
 class UTerrainPlacementComponent;
 class UWidgetComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AHardRockBreakingInstallationActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

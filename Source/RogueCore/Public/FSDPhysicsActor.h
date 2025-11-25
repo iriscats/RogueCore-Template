@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "FSDPhysicsActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDPhysicsActor : public AActor {
     GENERATED_BODY()
 public:

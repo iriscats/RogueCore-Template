@@ -6,7 +6,7 @@
 
 class UObjective;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACleanupPod : public ARessuplyPod {
     GENERATED_BODY()
 public:

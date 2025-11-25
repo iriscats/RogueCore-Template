@@ -5,7 +5,7 @@
 #include "DefenseEvent.generated.h"
 
 class UWidget;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADefenseEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

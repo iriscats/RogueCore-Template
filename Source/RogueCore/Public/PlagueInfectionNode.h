@@ -12,7 +12,7 @@ class UDebrisPositioning;
 class UHealthComponentBase;
 class USimpleHealthComponent;
 class UTerrainMaterial;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlagueInfectionNode : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

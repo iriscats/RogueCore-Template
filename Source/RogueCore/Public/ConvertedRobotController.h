@@ -4,7 +4,7 @@
 #include "EnemyAIController.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "ConvertedRobotController.generated.h"
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AConvertedRobotController : public AEnemyAIController {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

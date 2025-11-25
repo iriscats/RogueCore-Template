@@ -4,7 +4,7 @@
 #include "Projectile.h"
 #include "HydraWeedSpawnProjectile.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHydraWeedSpawnProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

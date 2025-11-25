@@ -4,7 +4,7 @@
 #include "FuelLineBuilderItem.generated.h"
 
 class UItemPlacerAggregator;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineBuilderItem : public ATrackBuilderItem {
     GENERATED_BODY()
 

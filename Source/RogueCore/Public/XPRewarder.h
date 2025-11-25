@@ -4,7 +4,7 @@
 #include "XPRewarder.generated.h"
 
 class UBXEBlueprintControlledObjective;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AXPRewarder : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -10,7 +10,7 @@ class UPrimitiveComponent;
 class USceneComponent;
 class USkeletalMeshComponent;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAnchorTurner : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

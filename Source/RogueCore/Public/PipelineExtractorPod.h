@@ -5,7 +5,7 @@
 
 class APipelineSegment;
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineExtractorPod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

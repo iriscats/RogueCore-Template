@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "CaveObject.generated.h"
 
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ACaveObject : public AActor {
     GENERATED_BODY()
 public:

@@ -5,7 +5,7 @@
 #include "ImpactIndicator.generated.h"
 
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AImpactIndicator : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -14,7 +14,7 @@ class UAnimSequenceBase;
 class UGrabberComponent;
 class UHealthComponentBase;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATerminatorTentacle : public ATentacleBase, public ITriggerAI, public IAttackingPointInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

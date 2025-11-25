@@ -6,7 +6,7 @@
 #include "VanityTestCharacter.generated.h"
 
 class USkeletalMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AVanityTestCharacter : public ACharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

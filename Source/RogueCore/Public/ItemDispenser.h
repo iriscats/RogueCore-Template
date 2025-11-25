@@ -10,7 +10,7 @@ class ACarriableItem;
 class APlayerCharacter;
 class UInstantUsable;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AItemDispenser : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

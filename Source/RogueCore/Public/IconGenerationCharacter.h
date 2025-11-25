@@ -7,7 +7,7 @@ class UBeardColorVanityItem;
 class UIconSceneCaptureComponent;
 class UMaterialInterface;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AIconGenerationCharacter : public AIconGenerationBase {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

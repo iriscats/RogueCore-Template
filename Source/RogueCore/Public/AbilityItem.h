@@ -15,8 +15,8 @@ class UItemCharacterAnimationSet;
 class UProjectileAbilityUpgrade;
 class USkeletalMeshComponent;
 class UUpperBodyCharacterAnimationSet;
-UCLASS(Blueprintable, NoExport)
-class AAbilityItem : public AItem, public IUpgradable {
+UCLASS(Blueprintable)
+class ROGUECORE_API AAbilityItem : public AItem, public IUpgradable {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

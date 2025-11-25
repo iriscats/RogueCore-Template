@@ -8,7 +8,7 @@
 class APlayerCharacter;
 class USceneComponent;
 class USingleUsableComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEventStarterButton : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -15,7 +15,7 @@ class UNiagaraSystem;
 class USceneComponent;
 class USoundCue;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABouncyBoomerang : public AGrenade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

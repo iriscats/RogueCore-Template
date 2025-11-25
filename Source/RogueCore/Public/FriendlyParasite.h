@@ -11,7 +11,7 @@ class UDamageComponent;
 class UHealthComponentBase;
 class UPrimitiveComponent;
 class USphereComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFriendlyParasite : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

@@ -13,7 +13,7 @@ class USimpleHealthComponent;
 class USoundBase;
 class USphereComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGooGunPuddle : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

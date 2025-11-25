@@ -4,7 +4,7 @@
 #include "FlareGunProjectile.generated.h"
 
 class ATeamTransport;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFlareGunProjectile : public AProjectile {
     GENERATED_BODY()
 public:

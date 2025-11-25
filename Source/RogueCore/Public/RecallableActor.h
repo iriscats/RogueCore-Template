@@ -10,7 +10,7 @@
 
 class AActor;
 class ARecallableActor;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ARecallableActor : public ADeepPathfinderCharacter, public IUpgradable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

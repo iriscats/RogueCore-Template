@@ -4,7 +4,7 @@
 #include "SentryGunItem.generated.h"
 
 class UItemUpgrade;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASentryGunItem : public APlaceableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

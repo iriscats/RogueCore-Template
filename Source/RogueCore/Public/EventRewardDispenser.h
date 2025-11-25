@@ -4,7 +4,7 @@
 #include "RewardDispenserReward.h"
 #include "EventRewardDispenser.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AEventRewardDispenser : public AGenericRewardDispenser {
     GENERATED_BODY()
 public:

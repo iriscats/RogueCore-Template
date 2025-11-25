@@ -12,7 +12,7 @@ class UPassthroughSubHealthComponent;
 class UPawnStatsComponent;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ACaretaker : public AFSDPawn {
     GENERATED_BODY()
 public:

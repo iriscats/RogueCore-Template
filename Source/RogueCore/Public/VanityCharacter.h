@@ -20,7 +20,7 @@ class UMoustacheVanityItem;
 class USideburnsVanityItem;
 class USkeletalMeshComponent;
 class USkinColorVanityItem;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AVanityCharacter : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

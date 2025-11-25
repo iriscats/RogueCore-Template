@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "CoilGunTrailSegment.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACoilGunTrailSegment : public AActor {
     GENERATED_BODY()
 public:

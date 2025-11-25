@@ -8,7 +8,7 @@
 class AActor;
 class UCarriableInstantUsable;
 class USoundCue;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AResourcePouch : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -11,7 +11,7 @@ class UItemAquisitionSource;
 class UOncePerPlayerInstantUsableComponent;
 class USceneComponent;
 class UTreasureRewarder;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATreasureContainer : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

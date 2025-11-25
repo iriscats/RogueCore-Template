@@ -6,7 +6,7 @@
 
 class AFSDPostProcessingActor;
 class UMaterialInstanceDynamic;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APostProcessingManager : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

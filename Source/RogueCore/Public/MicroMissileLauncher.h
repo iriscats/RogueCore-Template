@@ -7,7 +7,7 @@
 class UAnimMontage;
 class UChargedProjectileLauncherComponent;
 class USoundCue;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AMicroMissileLauncher : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

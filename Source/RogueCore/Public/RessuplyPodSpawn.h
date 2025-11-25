@@ -5,7 +5,7 @@
 
 class AFSDPlayerController;
 class APlayerCharacter;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARessuplyPodSpawn : public ARessuplyPod {
     GENERATED_BODY()
 public:

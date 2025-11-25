@@ -9,7 +9,7 @@ class AActor;
 class ARessuplyPod;
 class UItemPlacerAggregator;
 class UObject;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARessuplyPodItem : public AAnimatedItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

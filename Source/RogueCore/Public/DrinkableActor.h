@@ -6,7 +6,7 @@
 
 class APlayerCharacter;
 class UDrinkableDataAsset;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADrinkableActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

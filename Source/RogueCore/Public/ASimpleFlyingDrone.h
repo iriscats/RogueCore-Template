@@ -7,7 +7,7 @@
 class UAnimInstance;
 class UAnimMontage;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AASimpleFlyingDrone : public ADeepPathfinderCharacter, public INetMontageAble {
     GENERATED_BODY()
 public:

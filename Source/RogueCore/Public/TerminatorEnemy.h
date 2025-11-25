@@ -7,7 +7,7 @@
 class AActor;
 class UAnimMontage;
 class UHitReactionComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATerminatorEnemy : public AEnemyDeepPathfinderCharacter, public IMultiTargeter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

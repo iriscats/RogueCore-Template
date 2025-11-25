@@ -9,7 +9,7 @@
 class AActor;
 class UFakeMoverSettings;
 class UPrimitiveComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFakePhysicsProjectile : public AProjectileBase {
     GENERATED_BODY()
 public:

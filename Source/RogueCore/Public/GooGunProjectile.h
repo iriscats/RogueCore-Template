@@ -8,7 +8,7 @@
 class AActor;
 class AGooGunPuddle;
 class UPrimitiveComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGooGunProjectile : public AProjectile {
     GENERATED_BODY()
 

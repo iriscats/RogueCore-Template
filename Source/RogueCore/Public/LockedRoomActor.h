@@ -4,7 +4,7 @@
 #include "LockedRoomActor.generated.h"
 
 class UBXEBlueprintControlledObjective;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ALockedRoomActor : public AStructureActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

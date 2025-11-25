@@ -15,7 +15,7 @@ class UElevatorGearsAnimInstance;
 class URiskVector;
 class USceneComponent;
 class UStage;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATeamElevator : public ATeamTransport {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

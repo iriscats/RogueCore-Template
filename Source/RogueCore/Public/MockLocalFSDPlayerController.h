@@ -3,7 +3,7 @@
 #include "FSDPlayerController.h"
 #include "MockLocalFSDPlayerController.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMockLocalFSDPlayerController : public AFSDPlayerController {
     GENERATED_BODY()
 public:

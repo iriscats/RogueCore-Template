@@ -4,7 +4,7 @@
 #include "ShowroomItem.generated.h"
 
 class AShowroomStage;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AShowroomItem : public AActor {
     GENERATED_BODY()
 public:

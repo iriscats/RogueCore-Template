@@ -13,7 +13,7 @@ class UHealthComponentBase;
 class UNiagaraComponent;
 class USceneComponent;
 class UStatusEffect;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AElectroBeam : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

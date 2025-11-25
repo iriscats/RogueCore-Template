@@ -10,7 +10,7 @@ class UCapsuleComponent;
 class UCurveFloat;
 class UFXSystemComponent;
 class UPrimitiveComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AWallSaw : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

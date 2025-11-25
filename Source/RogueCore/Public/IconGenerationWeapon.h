@@ -4,7 +4,7 @@
 #include "IconGenerationWeapon.generated.h"
 
 class UWeaponIconSceneCaptureComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AIconGenerationWeapon : public AIconGenerationBase {
     GENERATED_BODY()
 public:

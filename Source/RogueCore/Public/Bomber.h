@@ -15,7 +15,7 @@ class UNiagaraComponent;
 class UParticleSystemComponent;
 class UPrimitiveComponent;
 class USoundBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABomber : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

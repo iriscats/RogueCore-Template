@@ -6,7 +6,7 @@
 
 class UDebrisPositioning;
 class UTerrainPlacementComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ADebrisLocationFinder : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

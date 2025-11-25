@@ -4,7 +4,7 @@
 #include "ActiveMusicItem.h"
 #include "MusicReplicator.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMusicReplicator : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

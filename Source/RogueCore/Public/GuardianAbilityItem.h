@@ -11,7 +11,7 @@ class AAuraBubble;
 class UAnimMontage;
 class UDialogDataAsset;
 class UPerkAsset;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AGuardianAbilityItem : public ADualAbilityItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -42,7 +42,7 @@ public:
     UFUNCTION(BlueprintCallable, Server, Unreliable)
     void Server_ToggleAura(bool Active, FVector_NetQuantize Origin, FRotator Rotation);
     UFUNCTION(Server, Unreliable)
-    void Server_QuickUse_Implementation(FVector_NetQuantize Origin, FRotator Rotation);
+    void Server_QuickUse(FVector_NetQuantize Origin, FRotator Rotation);
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool IsAuraAvailable() const;
     bool IsAuraActive() const;
@@ -53,5 +53,5 @@ public:
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_ToggleAura(bool Active, FVector_NetQuantize Origin, FRotator Rotation);
     UFUNCTION(NetMulticast, Unreliable)
-    void All_QuickUse_Implementation(FVector_NetQuantize Origin, FRotator Rotation);
+    void All_QuickUse(FVector_NetQuantize Origin, FRotator Rotation);
 };

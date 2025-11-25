@@ -8,7 +8,7 @@ class ABosco;
 class UCapsuleComponent;
 class UPrimitiveComponent;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADroneStream : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

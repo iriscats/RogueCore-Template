@@ -6,7 +6,7 @@
 #include "RadialFireModule.generated.h"
 
 class AProjectile;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARadialFireModule : public AHostileGuntowerModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "ActorTrackingCheatInterface.h"
 #include "TrackedActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ATrackedActor : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
 public:

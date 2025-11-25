@@ -7,7 +7,7 @@ class UBXEObjectiveLostDronesTreasure;
 class USceneComponent;
 class UTerrainPlacementComponent;
 class UTerrainScannerStaticMesh;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEScannableRewardActor : public AActor {
     GENERATED_BODY()
 public:

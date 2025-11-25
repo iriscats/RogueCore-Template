@@ -14,7 +14,7 @@ class UMaterialInterface;
 class UMeshComponent;
 class UPawnStatsComponent;
 class USkeletalMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AEnemyPawn : public AFSDPawn, public INetMontageAble {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -4,7 +4,7 @@
 #include "MovingElectroBeam.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AMovingElectroBeam : public AElectroBeam {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

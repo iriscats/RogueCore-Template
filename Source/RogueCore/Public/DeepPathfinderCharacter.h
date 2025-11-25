@@ -14,7 +14,7 @@ class UMaterialInterface;
 class UObject;
 class UPawnAffliction;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADeepPathfinderCharacter : public AFSDPawn, public ITriggerAI, public IVisualLoggerDebugSnapshotInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

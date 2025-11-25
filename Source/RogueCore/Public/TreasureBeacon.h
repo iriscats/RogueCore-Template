@@ -10,7 +10,7 @@ class UCurveFloat;
 class UDebrisPositioning;
 class USceneComponent;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ATreasureBeacon : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

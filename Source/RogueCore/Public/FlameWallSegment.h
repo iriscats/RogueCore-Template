@@ -4,7 +4,7 @@
 #include "FlameWallSegment.generated.h"
 
 class USphereComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFlameWallSegment : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

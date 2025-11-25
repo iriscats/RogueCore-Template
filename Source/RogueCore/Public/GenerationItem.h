@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "GenerationItem.generated.h"
 
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AGenerationItem : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

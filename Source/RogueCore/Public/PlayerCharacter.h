@@ -154,7 +154,7 @@ class UUseAnimationSetting;
 class UWeaponTagBonusesComponent;
 class UWidgetInteractionComponent;
 class UZipLineStateComponent;
-UCLASS(Abstract, Blueprintable, NoExport, Config=Engine)
+UCLASS(Abstract, Blueprintable, Config=Engine)
 class ROGUECORE_API APlayerCharacter : public ACharacter, public ITargetable, public IRejoinListener, public IPlaySoundInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -451,42 +451,75 @@ public:
     void SetInsideShieldGenerator(AShieldGeneratorActor* Shield);
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable)
     void SetInCharacterSelectionWorld();
+    UFUNCTION(Server, Reliable)
     void SetHeadLight(bool On);
     void SetFallbackPhysicalMaterial(UFSDPhysicalMaterial* PhysMat);
     void SetCameraMode(ECharacterCameraMode newCameraMode);
     void SetAvailableAirJumps(int32 InAmount);
     void SetAttached(USceneComponent* AttachTo, bool DelayUntilLanded);
+    UFUNCTION(Server, Reliable)
     void Server_TriggerDash();
+    UFUNCTION(Server, Reliable)
     void Server_TestGenerationDesync();
+    UFUNCTION(Server, Reliable)
     void Server_StartSalute(UAnimMontage* startSalute);
+    UFUNCTION(Server, Reliable)
     void Server_SpawnEnemies(UEnemyDescriptor* descriptor, int32 count);
+    UFUNCTION(Server, Reliable)
     void Server_Shouted();
+    UFUNCTION(Server, Reliable)
     void Server_SetUsing(bool characterIsUsing);
+    UFUNCTION(Server, Reliable)
     void Server_SetRunning(bool characterIsRunning);
+    UFUNCTION(Server, Reliable)
     void Server_SetRunBoostActive(bool IsActive);
+    UFUNCTION(Server, Reliable)
     void Server_SetIsThrowingCarriable(bool isThrowing);
+    UFUNCTION(Server, Reliable)
     void Server_SetIsPressingMovementInput(bool aIsPushingInput);
+    UFUNCTION(Server, Reliable)
     void Server_SetIsJumpPressed(bool InJumpPressed);
+    UFUNCTION(Server, Reliable)
     void Server_SetDispenserReward(ARewardDispenserBase* Dispenser, UDataAsset* Reward);
+    UFUNCTION(Server, Reliable)
     void Server_SetClientReady();
+    UFUNCTION(Server, Reliable)
     void Server_InstantRevive(APlayerCharacter* ReviveTarget, EInputKeys Key);
+    UFUNCTION(Server, Reliable)
     void Server_GenerationDesyncDataRecieved(const FTestGenerationPacket& InClientPacket);
+    UFUNCTION(Server, Reliable)
     void Server_EscapeFromGrabber();
+    UFUNCTION(Server, Reliable)
     void Server_ClearBiomeEffects();
+    UFUNCTION(Server, Reliable)
     void Server_CheatRevive();
+    UFUNCTION(Server, Reliable)
     void Server_CheatKillAllFriendly();
+    UFUNCTION(Server, Reliable)
     void Server_CheatKillAll();
+    UFUNCTION(Server, Reliable)
     void Server_CheatJetBoots();
+    UFUNCTION(Server, Reliable)
     void Server_CheatGodMode();
+    UFUNCTION(Server, Reliable)
     void Server_CheatFlyMode(bool Active);
+    UFUNCTION(Server, Reliable)
     void Server_CheatDebugFastMode(bool fast);
+    UFUNCTION(Server, Reliable)
     void Server_CheatAddAllResourcesToInventory(float amount);
+    UFUNCTION(Server, Reliable)
     void Server_CancelThrowingCarriable();
+    UFUNCTION(Server, Reliable)
     void Server_CallDonkey();
+    UFUNCTION(Server, Reliable)
     void Server_BiomeEffectsEnabled(bool Enabled);
+    UFUNCTION(Server, Reliable)
     void Server_AddToTraceQueue(ADamageEnhancer* Target, FEnhancedTrace Item);
+    UFUNCTION(Server, Reliable)
     void Server_AddImpulseToActor(AFSDPhysicsActor* Target, FVector_NetQuantize Impulse, FVector_NetQuantize Location, FVector_NetQuantize AngularImpulse);
+    UFUNCTION(Server, Reliable)
     void Server_AddImpulse(const FVector_NetQuantizeNormal& Direction, float Force);
+    UFUNCTION(Server, Reliable)
     void Server_ActivateTemporaryBuff(UTemporaryBuff* buff);
     void ReviveProgress(float Progress);
     void RevivePlayer();
@@ -551,6 +584,7 @@ public:
     bool IsDown() const;
     bool IsBuried() const;
     bool IsAlive() const;
+    UFUNCTION(BlueprintCallable, Reliable, Server)
     void InvalidateTeleport();
     void InstantRevive(APlayerCharacter* ReviveTarget, EInputKeys Key);
     void IgnoreInvite();
@@ -603,8 +637,11 @@ public:
     void ConsumeCycleItemButton();
     UFUNCTION(BlueprintCallable, Client, Reliable)
     void Client_TestGenerationDesync();
+    UFUNCTION(Client, Reliable)
     void Client_OpenMinersManual();
+    UFUNCTION(Client, Reliable)
     void Client_AddImpulse(const FVector_NetQuantizeNormal& Direction, float Force);
+    UFUNCTION(Client, Reliable)
     void Client_ActivateTemporaryBuff(UTemporaryBuff* buff);
     void ChangeState(ECharacterState NewState);
     void ChangeIfDifferentState(ECharacterState NewState);
@@ -616,9 +653,13 @@ public:
     void AnnounceSchematicCollected(USchematic* InSchematic);
     UFUNCTION(BlueprintCallable, NetMulticast, Unreliable)
     void All_StartSalute(UAnimMontage* saluteMontage);
+    UFUNCTION(NetMulticast, Unreliable)
     void All_ShowImpactEffects(UFXSystemAsset* Particles, FVector_NetQuantize Location, FVector_NetQuantizeNormal Orientation) const;
+    UFUNCTION(NetMulticast, Reliable)
     void All_ShowFieldMedicInstantReviveEffects();
+    UFUNCTION(NetMulticast, Reliable)
     void All_PlayCompletedUseMontage(UUseAnimationSetting* useSetting);
+    UFUNCTION(NetMulticast, Reliable)
     void All_OnCharacterUsedAirJump(APlayerCharacter* InPlayer);
     void AddRunningBoostEffects(TArray<TSubclassOf<UStatusEffect>> effects);
     void AddRunningBoostEffect(TSubclassOf<UStatusEffect> Effect);
@@ -627,6 +668,7 @@ public:
     void AddImpulseFromVector(const FVector& Vector);
     void AddImpulseFromDirectionAndForce(const FVector& Direction, float Force);
     void AddCloseFlare();
+    UFUNCTION(NetMulticast, Reliable)
     void AcknowledgeCharacterState(ECharacterState eState);
     void AcceptInvite();
 };

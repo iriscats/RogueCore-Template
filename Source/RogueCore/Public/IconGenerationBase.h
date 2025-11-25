@@ -5,7 +5,7 @@
 
 class UMaterialInterface;
 class USceneCaptureComponent2D;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AIconGenerationBase : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

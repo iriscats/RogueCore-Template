@@ -5,7 +5,7 @@
 
 class AFSDPlayerController;
 class UPlayerCharacterID;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFSDPlayerStart : public AActor {
     GENERATED_BODY()
 public:

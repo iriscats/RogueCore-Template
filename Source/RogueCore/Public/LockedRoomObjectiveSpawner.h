@@ -6,7 +6,7 @@
 class AActor;
 class ALockedRoomActor;
 class UBXELockedRoomObjective;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ALockedRoomObjectiveSpawner : public AStructureSpawner {
     GENERATED_BODY()
 

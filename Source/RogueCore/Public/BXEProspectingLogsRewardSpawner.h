@@ -8,7 +8,7 @@ class UBXEProspectingLogsObjective;
 class UCurveFloat;
 class UDebrisPositioning;
 class UTerrainPlacementComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABXEProspectingLogsRewardSpawner : public AActor {
     GENERATED_BODY()
 public:

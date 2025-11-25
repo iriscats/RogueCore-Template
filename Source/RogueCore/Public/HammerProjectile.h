@@ -3,7 +3,7 @@
 #include "Projectile.h"
 #include "HammerProjectile.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHammerProjectile : public AProjectile {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -9,7 +9,7 @@
 class UIconGenerationCameraKey;
 class UItemSkin;
 class USkinEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AItemPreviewActor : public AActor, public ISkinnable, public IIconGeneratable {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

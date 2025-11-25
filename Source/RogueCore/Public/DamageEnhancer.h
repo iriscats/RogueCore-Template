@@ -18,7 +18,7 @@ class UPrimitiveComponent;
 class UReflectionHitscanComponent;
 class USphereComponent;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ADamageEnhancer : public AGrenade, public ITargetable {
     GENERATED_BODY()
 public:

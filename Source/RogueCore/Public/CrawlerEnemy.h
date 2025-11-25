@@ -5,10 +5,11 @@
 
 class UBallisticMovementComponent;
 class UMeleeAttackComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ACrawlerEnemy : public ACoreSpawnEnemyBase {
     GENERATED_BODY()
 public:
+    ACrawlerEnemy(const FObjectInitializer& ObjectInitializer);
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBallisticMovementComponent* BallisticMovement;
 

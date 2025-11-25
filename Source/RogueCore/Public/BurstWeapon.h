@@ -7,7 +7,7 @@ class UDamageAsset;
 class UFSDPhysicalMaterial;
 class UHealthComponentBase;
 class UPrimitiveComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABurstWeapon : public AHitscanWeapon {
     GENERATED_BODY()
 public:

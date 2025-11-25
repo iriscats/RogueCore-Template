@@ -4,7 +4,7 @@
 #include "PlanetShowroomStage.generated.h"
 
 class USceneComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlanetShowroomStage : public AShowroomStage {
     GENERATED_BODY()
 public:

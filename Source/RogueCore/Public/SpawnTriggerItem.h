@@ -5,7 +5,7 @@
 #include "SpawnTriggerItem.generated.h"
 
 class AActor;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ASpawnTriggerItem : public AGenerationItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

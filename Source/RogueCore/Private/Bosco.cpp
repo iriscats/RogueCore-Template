@@ -125,9 +125,6 @@ void ABosco::ReviveCounterChanged(int32 remainingCharges) {
 void ABosco::Respond() {
 }
 
-void ABosco::PlaySalute_Implementation() {
-}
-
 void ABosco::OnWeaponFired(const FVector& Location) {
 }
 
@@ -147,9 +144,6 @@ void ABosco::OnHit(float amount, float BaseAmount, const FDamageData& DamageData
 }
 
 void ABosco::OnGrabbedGem() {
-}
-
-void ABosco::MineEffects_Implementation(UTerrainMaterial* aTerrainMaterial, FVector_NetQuantize aLocation, FRotator aRotation) {
 }
 
 UUpgradableBoscoComponent* ABosco::GetUpgradeComponent() {

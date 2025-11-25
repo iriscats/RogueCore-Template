@@ -4,7 +4,7 @@
 #include "BasicDepositableItem.generated.h"
 
 class UResourceData;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ABasicDepositableItem : public ABasicThrowableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

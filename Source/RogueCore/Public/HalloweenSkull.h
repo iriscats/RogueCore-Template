@@ -5,7 +5,7 @@
 #include "EnemyDeepPathfinderCharacter.h"
 #include "HalloweenSkull.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AHalloweenSkull : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

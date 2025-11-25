@@ -6,7 +6,7 @@
 #include "PlagueMeteorSpawner.generated.h"
 
 class APlagueMeteor;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlagueMeteorSpawner : public ADebrisLocationFinder {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

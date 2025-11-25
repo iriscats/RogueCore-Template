@@ -8,7 +8,7 @@
 
 class UFakeMoverSettings;
 class USceneComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFakePhysicsMover : public AActor {
     GENERATED_BODY()
 public:

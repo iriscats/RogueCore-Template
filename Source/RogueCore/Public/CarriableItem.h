@@ -9,7 +9,7 @@
 
 class AActor;
 class APlayerCharacter;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ACarriableItem : public AFSDPhysicsActor, public IThrowable {
     GENERATED_BODY()
 public:

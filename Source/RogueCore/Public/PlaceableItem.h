@@ -10,7 +10,7 @@
 class AActor;
 class UCapacityHoldingItemAggregator;
 class UItemPlacerAggregator;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class APlaceableItem : public AAnimatedItem, public IUpgradable, public IPlaceableInterface {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

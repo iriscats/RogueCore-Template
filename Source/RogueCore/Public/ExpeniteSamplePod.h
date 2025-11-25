@@ -4,7 +4,7 @@
 #include "ExpeniteSamplePod.generated.h"
 
 class UCurveFloat;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AExpeniteSamplePod : public ARessuplyPod {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -6,7 +6,7 @@
 
 class APlayerCharacter;
 class ASentryGun;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ARecallableSentryGun : public ARecallableActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

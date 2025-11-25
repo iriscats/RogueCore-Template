@@ -25,7 +25,7 @@ class UNiagaraSystem;
 class UPrimitiveComponent;
 class USoundCue;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API AMicrowaveWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

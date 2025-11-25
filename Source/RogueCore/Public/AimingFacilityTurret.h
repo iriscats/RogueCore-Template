@@ -6,7 +6,7 @@
 #include "AimingFacilityTurret.generated.h"
 
 class UFXSystemComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAimingFacilityTurret : public AFacilityTurret {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
@@ -57,6 +57,7 @@ public:
     bool UseTraceForLockOn;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FInt32Interval BurstCount;
+    AAimingFacilityTurret(const FObjectInitializer& ObjectInitializer);
     void SetupAimindicator(UFXSystemComponent* NewAimIndicator, UFXSystemComponent* NewAimIndicatorLock);
     UFUNCTION()
     void OnRep_IsLockedOn();

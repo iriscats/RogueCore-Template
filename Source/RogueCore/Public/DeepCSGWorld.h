@@ -48,7 +48,7 @@ class UStaticMeshCarver;
 class UTerrainMaterial;
 class UTerrainMaterialsCollection;
 class UTerrainType;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ROGUECORE_API ADeepCSGWorld : public AActor, public IVisualLoggerDebugSnapshotInterface {
     GENERATED_BODY()
 

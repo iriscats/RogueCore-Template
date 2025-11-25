@@ -11,7 +11,7 @@ class UDamageComponent;
 class UPrimitiveComponent;
 class USceneComponent;
 class UStaticMeshComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class APlasmaBoomerang : public AGrenade {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

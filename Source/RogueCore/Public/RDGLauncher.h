@@ -4,7 +4,7 @@
 #include "RDGLauncher.generated.h"
 
 class URDGComponent;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ARDGLauncher : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

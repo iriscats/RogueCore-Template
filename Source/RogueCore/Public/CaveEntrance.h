@@ -5,7 +5,7 @@
 #include "CaveEntrance.generated.h"
 
 class UCaveEntranceComponent;
-UCLASS(Blueprintable, CollapseCategories, NoExport)
+UCLASS(Blueprintable, CollapseCategories)
 class ACaveEntrance : public AGenerationItem {
     GENERATED_BODY()
 public:

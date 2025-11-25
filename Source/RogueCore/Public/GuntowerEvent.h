@@ -8,7 +8,7 @@ class AGuntowerModule;
 class UDamageComponent;
 class USceneComponent;
 class USkeletalMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AGuntowerEvent : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

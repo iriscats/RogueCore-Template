@@ -33,7 +33,7 @@ class USoundBase;
 class USoundCue;
 class USpotLightComponent;
 class UStaticMeshComponent;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AConvertedRobot : public AEnemyDeepPathfinderCharacter, public IWeaponFireOwner {
     GENERATED_BODY()
     // UPROPERTY fields moved from private section

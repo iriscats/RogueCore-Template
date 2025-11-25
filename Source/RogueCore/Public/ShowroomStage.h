@@ -9,7 +9,7 @@ class USceneCaptureComponent2D;
 class USceneComponent;
 class UShowroomController;
 class UTextureRenderTarget2D;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AShowroomStage : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

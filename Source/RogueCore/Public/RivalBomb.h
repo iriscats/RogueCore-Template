@@ -9,7 +9,7 @@ class AGem;
 class ARivalBombNode;
 class UCurveFloat;
 class UDebrisPositioning;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ARivalBomb : public AGameEvent {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

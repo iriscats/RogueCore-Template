@@ -5,7 +5,7 @@
 #include "AimingTowerEventModule.generated.h"
 
 class AActor;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AAimingTowerEventModule : public ATowerEventModule {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

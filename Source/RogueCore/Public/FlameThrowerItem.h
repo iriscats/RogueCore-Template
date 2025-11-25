@@ -20,7 +20,7 @@ class UProjectileLauncherBaseComponent;
 class USoundCue;
 class UStatusEffect;
 class UStickyFlameSpawner;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class AFlameThrowerItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

@@ -14,7 +14,7 @@ class ARessuplyPod;
 class ATrackBuilderSegment;
 class USingleUsableComponent;
 class UTrackBuilderConnectPoint;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineFinish : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

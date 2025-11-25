@@ -3,7 +3,7 @@
 #include "AmmoDrivenWeapon.h"
 #include "FlareGun.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AFlareGun : public AAmmoDrivenWeapon {
     GENERATED_BODY()
 public:

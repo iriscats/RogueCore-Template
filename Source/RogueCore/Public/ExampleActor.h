@@ -4,7 +4,7 @@
 #include "ExampleUpdatedDelegateDelegate.h"
 #include "ExampleActor.generated.h"
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AExampleActor : public AActor {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

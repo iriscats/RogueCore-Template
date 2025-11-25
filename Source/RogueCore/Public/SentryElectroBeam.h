@@ -4,7 +4,7 @@
 #include "SentryElectroBeam.generated.h"
 
 class ARedeployableSentryGun;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ASentryElectroBeam : public AElectroBeam {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

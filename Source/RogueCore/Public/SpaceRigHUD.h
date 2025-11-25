@@ -6,7 +6,7 @@
 
 class UObject;
 class UWindowWidget;
-UCLASS(Blueprintable, NoExport, NonTransient)
+UCLASS(Blueprintable, NonTransient)
 class ASpaceRigHUD : public AFSDHUD {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

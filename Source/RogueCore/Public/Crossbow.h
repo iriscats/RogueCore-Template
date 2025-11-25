@@ -17,7 +17,7 @@ class USoundCue;
 class UStaticMesh;
 class UStaticMeshComponent;
 class UStatusEffect;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ACrossbow : public AAmmoDrivenWeapon {
     GENERATED_BODY()
 public:

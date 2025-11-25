@@ -15,7 +15,7 @@ class UEscapeMenuWindow;
 class UMaterialParameterCollection;
 class UPlayerCharacterID;
 class UWindowManager;
-UCLASS(Blueprintable, NoExport, Config=Engine)
+UCLASS(Blueprintable, Config=Engine)
 class AFSDPlayerControllerBase : public APlayerController {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

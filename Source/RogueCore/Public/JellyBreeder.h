@@ -11,7 +11,7 @@ class UEnemyDescriptor;
 class UFXSystemAsset;
 class UPhysicalMaterial;
 class USoundBase;
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class AJellyBreeder : public AAFlyingBug {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section

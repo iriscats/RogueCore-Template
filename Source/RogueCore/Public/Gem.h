@@ -6,7 +6,7 @@
 class UBXEBlueprintControlledObjective;
 class UCarriableInstantUsable;
 class UResourceData;
-UCLASS(Abstract, Blueprintable, NoExport)
+UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AGem : public ACarriableItem {
     GENERATED_BODY()
     // UPROPERTY fields moved from protected section
