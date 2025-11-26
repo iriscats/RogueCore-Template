@@ -43,3 +43,8 @@
 Binaries
 Intermediate
 .DS_Store
+.vs
+Content/__ExternalActors__
+Content/__ExternalObjects__
+Saved
+DerivedDataCache
