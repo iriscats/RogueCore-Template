@@ -8,9 +8,9 @@ struct FBlitzMovementState {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector TargetPoint;
+    FVector TargetPoint = FVector::ZeroVector;
     
     FVector StoppingPoint;
     bool IsBlitzing;
-    ROGUECORE_API FBlitzMovementState();
+
 };

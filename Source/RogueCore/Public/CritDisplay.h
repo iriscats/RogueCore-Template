@@ -10,10 +10,10 @@ struct FCritDisplay {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FLinearColor DisplayColor;
+    FLinearColor DisplayColor = FLinearColor::White;
     
     FSlateFontInfo DisplayFont;
     FString Suffix;
     USoundBase* SoundEffect;
-    ROGUECORE_API FCritDisplay();
+
 };

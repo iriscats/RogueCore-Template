@@ -9,7 +9,7 @@ struct FFakeSawMover {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector PrevPos;
+    FVector PrevPos = FVector::ZeroVector;
     
     FVector NextPos;
     FVector Velocity;
@@ -17,11 +17,11 @@ public:
     UCurveFloat* VelOverTime;
     float SpeedCof;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float TickRate;
+    float TickRate = 0.0f;
     float TickTime;
     float AccumulatedTime;
     float TotalTime;
     bool Moving;
     float GravityTimer;
-    ROGUECORE_API FFakeSawMover();
+
 };

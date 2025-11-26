@@ -8,9 +8,9 @@ struct FCSGRaycastHitInfo {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector position;
+    FVector position = FVector::ZeroVector;
     
     FVector Normal;
     int32 Material;
-    ROGUECORE_API FCSGRaycastHitInfo();
+
 };

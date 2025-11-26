@@ -8,17 +8,16 @@ struct FCSGGridDuplicatorProperties {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    int32 NumA;
-    
+    int32 NumA = 0;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    int32 NumB;
-    
+    int32 NumB = 0;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector DirectionA;
-    
+    FVector DirectionA = FVector::ZeroVector;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector DirectionB;
-    
-    ROGUECOREENGINE_API FCSGGridDuplicatorProperties();
+    FVector DirectionB = FVector::ZeroVector;
+
 };
 

@@ -9,10 +9,10 @@ struct FDroneControllerUseInfo {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector CameraLocation;
+    FVector CameraLocation = FVector::ZeroVector;
     
     FRotator ViewAngle;
     TWeakObjectPtr<AActor> Target;
     FVector HitLocation;
-    ROGUECORE_API FDroneControllerUseInfo();
+
 };

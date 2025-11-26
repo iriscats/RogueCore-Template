@@ -8,8 +8,8 @@ struct FPathObstacle {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f position;
+    FVector3f position = FVector3f::ZeroVector;
     
     float Radius;
-    ROGUECORE_API FPathObstacle();
+
 };

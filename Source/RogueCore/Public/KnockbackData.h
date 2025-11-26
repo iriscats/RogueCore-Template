@@ -8,9 +8,9 @@ struct FKnockbackData {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Direction;
+    FVector Direction = FVector::ZeroVector;
     
     float Force;
     float Progress;
-    ROGUECORE_API FKnockbackData();
+
 };

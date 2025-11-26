@@ -8,8 +8,8 @@ struct FScanPath {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector Start;
+    FVector Start = FVector::ZeroVector;
     
     FVector End;
-    ROGUECORE_API FScanPath();
+
 };

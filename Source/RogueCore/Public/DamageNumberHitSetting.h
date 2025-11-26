@@ -9,10 +9,10 @@ struct FDamageNumberHitSetting {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FLinearColor HitColor;
+    FLinearColor HitColor = FLinearColor::White;
     
     UTexture2D* HitTypeIcon;
     bool IsIconTintAlwaysSameAsHitColor;
     FLinearColor HitTypeIconTint;
-    ROGUECORE_API FDamageNumberHitSetting();
+
 };

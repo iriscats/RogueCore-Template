@@ -10,15 +10,13 @@ struct BASICUI_API FBasicColor {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool bFromAsset;
-    
+    bool bFromAsset = false;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    UBasicColorAsset* Asset;
-    
+    UBasicColorAsset* Asset = nullptr;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FLinearColor Value;
-    
-public:
-    FBasicColor();
+    FLinearColor Value = FLinearColor::White;
+
 };
 

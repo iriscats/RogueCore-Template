@@ -10,12 +10,12 @@ struct FRoomEntrance {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f Location;
+    FVector3f Location = FVector3f::ZeroVector;
     
     FVector3f Direction;
     bool IsBlocked;
     ECaveEntranceType EntranceType;
     ECaveEntrancePriority Priority;
     int32 PathObstacleID;
-    ROGUECORE_API FRoomEntrance();
+
 };

@@ -12,7 +12,7 @@ struct FAttachMeshesAfflictionItem {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Offset;
+    FVector Offset = FVector::ZeroVector;
     
     FRotator Rotation;
     USkeletalMesh* SkeletalMesh;
@@ -25,5 +25,5 @@ public:
     bool RandomRotaiton;
     bool RandomScale;
     bool CastShadows;
-    ROGUECORE_API FAttachMeshesAfflictionItem();
+
 };

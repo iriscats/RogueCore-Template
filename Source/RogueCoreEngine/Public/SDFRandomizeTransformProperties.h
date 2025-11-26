@@ -10,40 +10,39 @@ struct FSDFRandomizeTransformProperties {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBox Translation;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMinZ;
-    
+    float RotationMinZ = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMaxZ;
-    
+    float RotationMaxZ = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMinY;
-    
+    float RotationMinY = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMaxY;
-    
+    float RotationMaxY = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMinX;
-    
+    float RotationMinX = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float RotationMaxX;
-    
+    float RotationMaxX = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector ScaleMin;
-    
+    FVector ScaleMin = FVector::ZeroVector;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector ScaleMax;
-    
+    FVector ScaleMax = FVector::ZeroVector;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool ScaleAxesIndependent;
-    
+    bool ScaleAxesIndependent = false;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    bool DisableRandomize;
-    
+    bool DisableRandomize = false;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    int32 Seed;
-    
-    ROGUECOREENGINE_API FSDFRandomizeTransformProperties();
+    int32 Seed = 0;
+
 };
 

@@ -9,13 +9,13 @@ struct FBoomerangMover {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FRotator StartRotation;
+    FRotator StartRotation = FRotator::ZeroRotator;
     
     FVector PrevPos;
     FVector NextPos;
     FVector Velocity;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float Speed;
+    float Speed = 0.0f;
     float TimeScale;
     float TickRate;
     float TickTime;
@@ -24,5 +24,5 @@ public:
     float StartSmoothTime;
     UCurveVector* ArcCurve;
     bool IsGoingBack;
-    ROGUECORE_API FBoomerangMover();
+
 };

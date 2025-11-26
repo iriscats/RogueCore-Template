@@ -8,11 +8,11 @@ struct FBoomerangSyncer {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector PrevPos;
+    FVector PrevPos = FVector::ZeroVector;
     
     FVector NextPos;
     FVector Velocity;
     bool IsGoingBack;
     float TotalTime;
-    ROGUECORE_API FBoomerangSyncer();
+
 };

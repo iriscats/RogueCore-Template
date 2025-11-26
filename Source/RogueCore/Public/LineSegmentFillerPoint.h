@@ -9,10 +9,10 @@ struct FLineSegmentFillerPoint {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector position;
+    FVector position = FVector::ZeroVector;
     
     FRandRange RandomRange;
     FRandRange RandomNoiseRange;
     FRandRange FillAmount;
-    ROGUECORE_API FLineSegmentFillerPoint();
+
 };

@@ -9,9 +9,9 @@ struct FResourceLocation {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Location;
+    FVector Location = FVector::ZeroVector;
     
     UResourceData* Resource;
     float BaseAmount;
-    ROGUECORE_API FResourceLocation();
+
 };

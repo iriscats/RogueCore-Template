@@ -8,9 +8,10 @@ public class RogueCoreGameTarget : TargetRules {
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_6;
 		CppStandard = CppStandardVersion.Cpp20;
+        bUseUnityBuild = false;
 
-		// Disable FormatStringSanitizer in UE 5.6 to avoid compilation errors
-		AdditionalCompilerArguments = "-d2-fmt+";
+        // Disable FormatStringSanitizer in UE 5.6 to avoid compilation errors
+        AdditionalCompilerArguments = "-d2-fmt+";
 
 		ExtraModuleNames.AddRange(new string[] {
 			"RogueCore",

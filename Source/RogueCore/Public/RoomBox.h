@@ -10,11 +10,11 @@ struct FRoomBox {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector position;
+    FVector position = FVector::ZeroVector;
     
     FRotator_NoQuantize Rotation;
     FVector Extends;
     float NoiseRange;
     UFloodFillSettings* Noise;
-    ROGUECORE_API FRoomBox();
+
 };

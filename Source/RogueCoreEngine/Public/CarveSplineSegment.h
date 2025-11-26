@@ -7,21 +7,20 @@ USTRUCT(BlueprintType)
 struct ROGUECOREENGINE_API FCarveSplineSegment {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f SplineStart;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f SplineStartTangent;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f SplineEnd;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f SplineEndTangent;
-    
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float Radius;
-    
-    FCarveSplineSegment();
-};
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FVector3f SplineStart = FVector3f::ZeroVector;
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FVector3f SplineStartTangent = FVector3f::ZeroVector;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FVector3f SplineEnd = FVector3f::ZeroVector;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    FVector3f SplineEndTangent = FVector3f::ZeroVector;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    float Radius = 0.0f;
+
+    FCarveSplineSegment() = default;
+};

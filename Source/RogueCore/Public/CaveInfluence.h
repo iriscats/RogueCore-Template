@@ -8,8 +8,7 @@ struct FCaveInfluence {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector Center;
+    FVector Center = FVector::ZeroVector;
     
     float Range;
-    ROGUECORE_API FCaveInfluence();
 };

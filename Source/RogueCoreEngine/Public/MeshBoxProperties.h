@@ -8,14 +8,13 @@ struct FMeshBoxProperties {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector HalfSize;
-    
+    FVector HalfSize = FVector::ZeroVector;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    int32 BevelSegments;
-    
+    int32 BevelSegments = 0;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float BevelSize;
-    
-    ROGUECOREENGINE_API FMeshBoxProperties();
+    float BevelSize = 0.0f;
+
 };
 

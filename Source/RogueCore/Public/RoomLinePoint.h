@@ -8,7 +8,7 @@ struct FRoomLinePoint {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector3f Location;
+    FVector3f Location = FVector3f::ZeroVector;
     
     float HRange;
     float VRange;
@@ -19,5 +19,5 @@ public:
     float HeightScale;
     float FloorDepth;
     float FloorAngle;
-    ROGUECORE_API FRoomLinePoint();
+
 };

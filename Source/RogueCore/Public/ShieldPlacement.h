@@ -8,8 +8,8 @@ struct FShieldPlacement {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Location;
+    FVector Location = FVector::ZeroVector;
     
     FRotator Rotation;
-    ROGUECORE_API FShieldPlacement();
+
 };

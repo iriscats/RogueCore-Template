@@ -8,8 +8,7 @@ struct FSDFBoxProperties {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector HalfSize;
+    FVector HalfSize = FVector::ZeroVector;
     
-    ROGUECOREENGINE_API FSDFBoxProperties();
 };
 

@@ -8,9 +8,9 @@ struct FBoscoLightSetting {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FColor Color;
+    FColor Color = FColor::Black;
     
     float Intensity;
     float Radius;
-    ROGUECORE_API FBoscoLightSetting();
+
 };

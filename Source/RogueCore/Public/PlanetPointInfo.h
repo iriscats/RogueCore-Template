@@ -10,10 +10,10 @@ struct FPlanetPointInfo {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
-    USceneComponent* Point;
+    USceneComponent* Point = nullptr;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector2D ScreenLocation;
+    FVector2D ScreenLocation = FVector2D::ZeroVector;
     EPointVisibility Visibility;
-    ROGUECORE_API FPlanetPointInfo();
+
 };

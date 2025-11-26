@@ -9,9 +9,9 @@ struct FTerrainPlacementBox {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector min;
+    FVector min = FVector::ZeroVector;
     
     FVector max;
     ETerrainPlacementBoxType PlacementType;
-    ROGUECORE_API FTerrainPlacementBox();
+
 };

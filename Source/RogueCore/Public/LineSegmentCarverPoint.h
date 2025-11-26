@@ -8,7 +8,7 @@ struct FLineSegmentCarverPoint {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector position;
+    FVector position = FVector::ZeroVector;
     
     float HRange;
     float VRange;
@@ -16,5 +16,5 @@ public:
     float CielingNoiseRange;
     float WallNoiseRange;
     float FloorNoiseRange;
-    ROGUECORE_API FLineSegmentCarverPoint();
+
 };

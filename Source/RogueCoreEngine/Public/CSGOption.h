@@ -9,16 +9,15 @@ struct ROGUECOREENGINE_API FCSGOption {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName Key;
-    
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    int32 IntValue;
-    
+    int32 IntValue = 0;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    float FloatValue;
-    
+    float FloatValue = 0.0f;
+
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector VectorValue;
-    
-    FCSGOption();
+    FVector VectorValue = FVector::ZeroVector;
+
 };
 

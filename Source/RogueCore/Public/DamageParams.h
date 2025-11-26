@@ -19,12 +19,12 @@ struct FDamageParams {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Location;
+    FVector Location = FVector::ZeroVector;
     
     TArray<AActor*> IgnoreActors;
     AActor* Target;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
-    UPrimitiveComponent* HitComponent;
+    UPrimitiveComponent* HitComponent = nullptr;
     UHealthComponentBase* TargetHealth;
     UBaseArmorDamageComponent* TargetArmorDamage;
     UPawnStatsComponent* TargetStats;
@@ -40,12 +40,12 @@ public:
     UPawnStatsComponent* MinionOwnerPawnStat;
     UFSDPhysicalMaterial* PhysicalMaterial;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    UDamageImpulse* Impulse;
+    UDamageImpulse* Impulse = nullptr;
     float PrefetchedCritRoll;
     float PrefetchedCritChance;
     int32 OverriddenCritLevel;
     int32 ClipCount;
     int32 BoneIndex;
     bool CollectBonuses;
-    ROGUECORE_API FDamageParams();
+
 };

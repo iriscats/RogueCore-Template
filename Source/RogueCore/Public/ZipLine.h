@@ -8,8 +8,8 @@ struct FZipLine {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Start;
+    FVector Start = FVector::ZeroVector;
     
     FVector End;
-    ROGUECORE_API FZipLine();
+
 };

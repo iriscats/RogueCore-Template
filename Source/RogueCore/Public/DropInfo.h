@@ -8,9 +8,9 @@ struct FDropInfo {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector From;
+    FVector From = FVector::ZeroVector;
     
     FVector To;
     bool HasLanded;
-    ROGUECORE_API FDropInfo();
+
 };

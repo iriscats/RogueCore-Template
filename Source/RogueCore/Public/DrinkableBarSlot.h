@@ -9,8 +9,8 @@ struct FDrinkableBarSlot {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector WorldLocation;
+    FVector WorldLocation = FVector::ZeroVector;
     
     TWeakObjectPtr<ADrinkableActor> DrinkableActor;
-    ROGUECORE_API FDrinkableBarSlot();
+
 };

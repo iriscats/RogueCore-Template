@@ -8,8 +8,8 @@ struct FTerrainPlacementSpawnSphere {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector SpawnCenter;
+    FVector SpawnCenter = FVector::ZeroVector;
     
     float SpawnRadius;
-    ROGUECORE_API FTerrainPlacementSpawnSphere();
+
 };

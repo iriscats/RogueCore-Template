@@ -8,8 +8,8 @@ struct FHealthBarLooks {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FLinearColor HealthColor;
+    FLinearColor HealthColor = FLinearColor::White;
     
     FLinearColor DamageColor;
-    ROGUECORE_API FHealthBarLooks();
+
 };

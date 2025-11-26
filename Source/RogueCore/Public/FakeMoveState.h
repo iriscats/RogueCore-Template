@@ -8,9 +8,9 @@ struct FFakeMoveState {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
-    FVector Pos1;
+    FVector Pos1 = FVector::ZeroVector;
     
     FVector Pos2;
     FVector Vel;
-    ROGUECORE_API FFakeMoveState();
+
 };

@@ -8,8 +8,8 @@ struct FFormationDataItem {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Direction;
+    FVector Direction = FVector::ZeroVector;
     
     float Distance;
-    ROGUECORE_API FFormationDataItem();
+
 };

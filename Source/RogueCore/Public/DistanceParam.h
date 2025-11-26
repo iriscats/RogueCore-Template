@@ -8,9 +8,9 @@ struct FDistanceParam {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Location;
+    FVector Location = FVector::ZeroVector;
     
     float MinDistance;
     float MaxDistance;
-    ROGUECORE_API FDistanceParam();
+
 };

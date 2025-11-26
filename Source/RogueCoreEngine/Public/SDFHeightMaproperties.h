@@ -8,8 +8,7 @@ struct FSDFHeightMaproperties {
     GENERATED_BODY()
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
-    FVector Scale;
-    
-    ROGUECOREENGINE_API FSDFHeightMaproperties();
+    FVector Scale = FVector::ZeroVector;
+
 };
 
