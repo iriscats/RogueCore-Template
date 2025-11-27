@@ -30,6 +30,7 @@ public:
     UOutlineComponent* Outline;
     UAIPerceptionComponent* Senses;
     UPawnAlertComponent* Alert;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* ExplosionSphere;
     UAudioComponent* WingSoundComponent;
     UFrozenPawnImpactComponent* FrozenImpact;

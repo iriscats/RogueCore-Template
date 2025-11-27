@@ -10,7 +10,7 @@ UCLASS(Blueprintable)
 class ACleanupPod : public ARessuplyPod {
     GENERATED_BODY()
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* RemovePlagueCollision;
     
     ACleanupPod(const FObjectInitializer& ObjectInitializer);

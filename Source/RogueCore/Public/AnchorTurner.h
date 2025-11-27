@@ -20,9 +20,13 @@ public:
     USceneComponent* Root;
     
     USkeletalMeshComponent* mesh;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* PushCollider1;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* PushCollider2;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* PushCollider3;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* PushCollider4;
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegateEvent OnSpunUp;

@@ -24,7 +24,8 @@ class ABasicThrowableItem : public ACarriableItem {
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UBoxComponent* BoxComp;
-    
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* UseSphere;
     UCarriableComponent* CarriableComp;
     UInstantUsable* UsableComp;

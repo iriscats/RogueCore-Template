@@ -18,7 +18,7 @@ public:
     TArray<FIKLegSetup> LegSetups;
     TArray<FIKSyncGroup> SyncGroups;
     FIKStyle IKStyle;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* BodyColi;
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FEndEffector> Effectors;

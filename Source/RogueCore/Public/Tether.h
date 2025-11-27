@@ -21,8 +21,10 @@ public:
     
     UInstantUsable* UsableComponent;
     UCarriableComponent* Carry;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* UseTrigger;
     UNiagaraComponent* TetherBeam;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* PysicalCollision;
     UDamageComponent* ExplosionDamage;
  

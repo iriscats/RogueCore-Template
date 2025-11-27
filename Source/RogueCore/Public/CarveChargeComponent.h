@@ -41,7 +41,7 @@ public:
     FGenericSignature EventTelegraphCharge;
     FGenericSignature EventEnterTerrain;
     FGenericSignature EventExitTerrain;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* BumpCollider;
     USceneComponent* CarveLocation;
  

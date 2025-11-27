@@ -4,13 +4,7 @@
 #include "Net/UnrealNetwork.h"
 
 AAuraBubble::AAuraBubble(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
-    this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComp"));
-    this->Root = (USceneComponent*)RootComponent;
-    this->AuraShape = CreateDefaultSubobject<USphereComponent>(TEXT("AuraShapeComp"));
-    this->RepelEnemies = true;
-    this->RepelInterval = 0.50f;
-    this->IsActive = false;
-    this->AuraShape->SetupAttachment(RootComponent);
+
 }
 
 

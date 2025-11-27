@@ -9,23 +9,7 @@
 #include "ReflectionHitscanComponent.h"
 
 ADamageEnhancer::ADamageEnhancer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
-    this->RootComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("Root"));
-    this->RootCollision = (UBoxComponent*)RootComponent;
-    this->HealthComponent = CreateDefaultSubobject<UHealthComponent>(TEXT("Health"));
-    this->DamageComponent = CreateDefaultSubobject<UDamageComponent>(TEXT("Damage"));
-    this->mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("mesh"));
-    this->Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
-    this->Box = CreateDefaultSubobject<UBoxComponent>(TEXT("Box"));
-    this->HitscanComponent = CreateDefaultSubobject<UHitscanComponent>(TEXT("HitScan"));
-    this->ReflectionHitscanComponent = CreateDefaultSubobject<UReflectionHitscanComponent>(TEXT("ReflectionHitScan"));
-    this->CapsuleHitscanComponent = CreateDefaultSubobject<UCapsuleHitscanComponent>(TEXT("CapsuleHitScan"));
-    this->EnhanceDamageBy = 2.00f;
-    this->LifetimeMaxDamage = 1000.00f;
-    this->EnabledDuration = 15.00f;
-    this->TraceStepTime = 0.04f;
-    this->Box->SetupAttachment(RootComponent);
-    this->Sphere->SetupAttachment(RootComponent);
-    this->mesh->SetupAttachment(RootComponent);
+
 }
 
 void ADamageEnhancer::HitByHitScan(UHitscanBaseComponent* Component, const FVector& Origin, const FHitResult& HitResult) {

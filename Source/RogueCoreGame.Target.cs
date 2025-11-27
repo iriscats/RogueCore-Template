@@ -10,8 +10,8 @@ public class RogueCoreGameTarget : TargetRules {
 		CppStandard = CppStandardVersion.Cpp20;
         bUseUnityBuild = false;
 
-        // Disable FormatStringSanitizer in UE 5.6 to avoid compilation errors
-        AdditionalCompilerArguments = "-d2-fmt+";
+        // Override build environment to avoid conflicts
+        bOverrideBuildEnvironment = true;
 
 		ExtraModuleNames.AddRange(new string[] {
 			"RogueCore",

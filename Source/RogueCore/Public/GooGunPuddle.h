@@ -19,7 +19,7 @@ class AGooGunPuddle : public AActor {
     // UPROPERTY fields moved from private section
 
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* SphereTrigger;
     
     USimpleHealthComponent* SimpleHealth;

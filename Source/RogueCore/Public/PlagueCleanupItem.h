@@ -26,6 +26,7 @@ public:
     UBoxComponent* DroppedCollider;
     
     UInstantUsable* PickupUsable;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* UseSphere;
     UCrosshairAggregator* CrosshairAggregator;
  

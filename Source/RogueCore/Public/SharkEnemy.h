@@ -25,10 +25,11 @@ class USphereComponent;
 UCLASS(Abstract, Blueprintable)
 class ASharkEnemy : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
-
+ 
 public:
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* CollisionSphere;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* NearTargetSphere;
     UNiagaraComponent* AirParticles;
     UNiagaraComponent* GroundParticles;

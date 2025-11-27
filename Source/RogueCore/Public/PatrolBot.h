@@ -32,7 +32,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHackingUsableComponent* HackingUsable;
 
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* CollisionSphere;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* NearTargetSphere;
     UParticleSystemComponent* LaserBeam;
     UParticleSystemComponent* TearingGroundParticles;

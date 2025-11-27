@@ -34,6 +34,7 @@ public:
     UTerrainPlacementComponent* terrainPlacement;
     USkeletalMeshComponent* TerminalMesh;
     UWidgetComponent* TerminalDisplayWidget;
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* TerminalUsableCollider;
     USceneComponent* ExpeniteSpawnPoint;
     UPathfinderCollisionComponent* PathfinderCollision;

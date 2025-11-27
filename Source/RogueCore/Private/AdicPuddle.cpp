@@ -3,12 +3,7 @@
 #include "Components/SphereComponent.h"
 
 AAdicPuddle::AAdicPuddle(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
-    this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("RootComponent"));
-    this->SphereTrigger = CreateDefaultSubobject<USphereComponent>(TEXT("SphereTrigger"));
-    this->SpawnSound = NULL;
-    this->InflictedStatusEffect = NULL;
-    this->Lifetime = 0.00f;
-    this->SphereTrigger->SetupAttachment(RootComponent);
+
 }
 
 

@@ -10,7 +10,7 @@ class AFlameWallSegment : public AActor {
     // UPROPERTY fields moved from protected section
 
 public:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* CollisionComponent;
  
     

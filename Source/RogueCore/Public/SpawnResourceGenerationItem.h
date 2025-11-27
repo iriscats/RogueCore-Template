@@ -15,7 +15,7 @@ public:
     UResourceData* Resource;
     
     float BaseAmount;
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))
     USphereComponent* Sphere;
     ASpawnResourceGenerationItem(const FObjectInitializer& ObjectInitializer);
 };
