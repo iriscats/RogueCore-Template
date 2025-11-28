@@ -11,7 +11,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class UDamageClass : public UPrimaryDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

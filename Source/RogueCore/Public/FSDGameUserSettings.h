@@ -37,7 +37,7 @@ class USoundClass;
 UCLASS(Blueprintable, Config=Engine)
 class UFSDGameUserSettings : public UGameUserSettings {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDelegate OnSettingsChanged;

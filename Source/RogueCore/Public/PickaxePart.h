@@ -9,7 +9,7 @@ class UPickaxePartItem;
 UCLASS(Blueprintable)
 class ROGUECORE_API UPickaxePart : public USavablePrimaryDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FText Title;

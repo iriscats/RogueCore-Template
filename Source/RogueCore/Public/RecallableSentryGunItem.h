@@ -14,7 +14,7 @@ class UItemUpgrade;
 UCLASS(Blueprintable)
 class ARecallableSentryGunItem : public ARecallableItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRecallableSentryGunSignature, ARecallableSentryGun*, SentryGun);

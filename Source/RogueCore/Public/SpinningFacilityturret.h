@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class ASpinningFacilityturret : public AFacilityTurret {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

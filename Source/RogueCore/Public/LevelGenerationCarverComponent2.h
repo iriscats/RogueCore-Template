@@ -10,7 +10,7 @@ class UCSGPreviewComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ULevelGenerationCarverComponent2 : public UPrimitiveComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<ACSGBuilder> Carver;

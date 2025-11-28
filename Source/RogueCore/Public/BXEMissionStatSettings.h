@@ -7,7 +7,7 @@ class UBXEMissionStat;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXEMissionStatSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UBXEMissionStat* MidStationReached;

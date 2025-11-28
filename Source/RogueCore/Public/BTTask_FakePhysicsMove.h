@@ -8,7 +8,7 @@ class UFakeMoverSettings;
 UCLASS(Blueprintable)
 class UBTTask_FakePhysicsMove : public UBTTask_BlackboardBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

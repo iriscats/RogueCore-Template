@@ -10,7 +10,7 @@ class USoundSubmixBase;
 UCLASS(Blueprintable)
 class ROGUECORE_API UDialogDataAsset : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
 

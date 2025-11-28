@@ -8,7 +8,7 @@ class UDebrisPositioning;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDefenseObjective : public UObjective {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))
     int32 DefensePoints;

@@ -8,7 +8,7 @@ class UVanityItem;
 UCLASS(Blueprintable, EditInlineNew)
 class UVanityReward : public UUnlockReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UVanityItem* VanityItem;

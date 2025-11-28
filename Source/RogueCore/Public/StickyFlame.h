@@ -11,7 +11,7 @@ class UStatusEffectTriggerComponent;
 UCLASS(Blueprintable)
 class AStickyFlame : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

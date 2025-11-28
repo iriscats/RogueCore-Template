@@ -19,7 +19,7 @@ class UDialogDataAsset;
 UCLASS(Blueprintable)
 class ROGUECORE_API AGameEvent : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -12,7 +12,7 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable)
 class ADisplayCase : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

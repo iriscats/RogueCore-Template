@@ -9,7 +9,7 @@ class AFSDPlayerController;
 UCLASS(Blueprintable, MinimalAPI, NonTransient)
 class AFSDGameModeSpaceRig : public AFSDGameMode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

@@ -8,7 +8,7 @@ class ABXEProspectingRewardActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UBXEProspectingLogsObjective : public UBXEBlueprintControlledObjective {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     ABXEProspectingRewardActor* SpawnedReward;

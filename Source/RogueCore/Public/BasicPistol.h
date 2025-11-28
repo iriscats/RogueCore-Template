@@ -10,7 +10,7 @@ class UPrimitiveComponent;
 UCLASS(Blueprintable)
 class ABasicPistol : public AHitscanWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

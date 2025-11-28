@@ -14,7 +14,7 @@ class UTerrainMaterial;
 UCLASS(Blueprintable)
 class APlagueControlActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, meta=(AllowPrivateAccess=true))

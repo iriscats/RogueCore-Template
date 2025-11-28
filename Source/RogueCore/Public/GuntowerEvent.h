@@ -11,7 +11,7 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable)
 class AGuntowerEvent : public AGameEvent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

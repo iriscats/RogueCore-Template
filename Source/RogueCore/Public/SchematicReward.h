@@ -8,7 +8,7 @@ class USchematic;
 UCLASS(Blueprintable, EditInlineNew)
 class USchematicReward : public UUnlockReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ESchematicType SchematicType;

@@ -7,7 +7,7 @@ class UPawnStat;
 UCLASS(Blueprintable, EditInlineNew)
 class UPawnStatAbilityUpgrade : public UAbilityUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

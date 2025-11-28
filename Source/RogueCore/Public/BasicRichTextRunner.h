@@ -8,7 +8,7 @@ class URichTextRunnerInternal;
 UCLASS(Blueprintable, EditInlineNew)
 class UBasicRichTextRunner : public UBasicUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

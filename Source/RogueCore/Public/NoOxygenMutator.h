@@ -8,7 +8,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, EditInlineNew)
 class UNoOxygenMutator : public UMutator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

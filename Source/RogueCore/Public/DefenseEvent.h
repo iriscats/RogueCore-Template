@@ -8,7 +8,7 @@ class UWidget;
 UCLASS(Blueprintable)
 class ADefenseEvent : public AGameEvent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

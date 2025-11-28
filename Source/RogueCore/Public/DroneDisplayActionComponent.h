@@ -8,7 +8,7 @@ class UTextRenderComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDroneDisplayActionComponent : public USceneComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

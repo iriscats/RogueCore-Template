@@ -11,7 +11,7 @@ class UDialogDataAsset;
 UCLASS(Blueprintable)
 class AShieldGeneratorItem : public AThrowableItem, public IUpgradableGear, public IRejoinListener {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UPlayerArmorDamageStatusEffectItem : public UStatusEffectItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

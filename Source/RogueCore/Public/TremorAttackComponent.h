@@ -11,7 +11,7 @@ class UPrimitiveComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UTremorAttackComponent : public USpecialDamageAttackComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

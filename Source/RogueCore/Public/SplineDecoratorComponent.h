@@ -9,7 +9,7 @@ class USplineComponent;
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API USplineDecoratorComponent : public UInstancedStaticMeshComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DistanceBetweenInstances;

@@ -16,7 +16,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class ATowerModuleBase : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

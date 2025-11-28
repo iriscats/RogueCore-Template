@@ -8,7 +8,7 @@ class APlayerCharacter;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineExtractorPod : public ARessuplyPod {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_ConnectedSegment, meta=(AllowPrivateAccess=true))

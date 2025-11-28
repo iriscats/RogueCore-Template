@@ -28,7 +28,7 @@ class UStatusEffect;
 UCLASS(Blueprintable)
 class ROGUECORE_API AMicrowaveWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageComponent* DamageComp;

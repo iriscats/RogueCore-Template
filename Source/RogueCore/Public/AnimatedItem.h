@@ -13,7 +13,7 @@ class UUpperBodyCharacterAnimationSet;
 UCLASS(Abstract, Blueprintable)
 class AAnimatedItem : public AItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(AssetRegistrySearchable, BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -13,7 +13,7 @@ class UWeaponTypeTag;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UWeaponTagContainerComponent : public UActorComponent, public IDamageRelevant, public IDamageListener {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

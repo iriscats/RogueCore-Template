@@ -8,7 +8,7 @@ class ACryosprayItem;
 UCLASS(Blueprintable, NonTransient)
 class UCryoSprayAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

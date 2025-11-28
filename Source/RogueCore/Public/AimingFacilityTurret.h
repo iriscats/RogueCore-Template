@@ -9,7 +9,7 @@ class UFXSystemComponent;
 UCLASS(Blueprintable)
 class AAimingFacilityTurret : public AFacilityTurret {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_IndicatorMode, meta=(AllowPrivateAccess=true))
     EIndicatorMode IndicatorMode;

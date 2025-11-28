@@ -10,7 +10,7 @@ class UObject;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UPickaxeMaterialPart : public UPickaxePartItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

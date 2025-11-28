@@ -12,7 +12,7 @@ class UMeshComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class USpinDeathComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

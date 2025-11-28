@@ -25,7 +25,7 @@ class UWidgetComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API AHardRockBreakingInstallationActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

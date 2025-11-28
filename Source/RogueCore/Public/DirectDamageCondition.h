@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UDirectDamageCondition : public UDamageCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -7,7 +7,7 @@ class UDamageClass;
 UCLASS(Blueprintable, EditInlineNew)
 class UDamageConversionBonus : public UDamageBonusBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UDamageClass* DamageClass;

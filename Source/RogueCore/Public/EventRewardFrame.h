@@ -9,7 +9,7 @@ class USpecialEventUsableComponent;
 UCLASS(Blueprintable)
 class AEventRewardFrame : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

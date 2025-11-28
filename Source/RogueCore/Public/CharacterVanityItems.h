@@ -12,7 +12,7 @@ class UVanityItem;
 UCLASS(Blueprintable)
 class UCharacterVanityItems : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

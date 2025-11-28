@@ -9,7 +9,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class USpawnSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, EditFixedSize, meta=(AllowPrivateAccess=true))

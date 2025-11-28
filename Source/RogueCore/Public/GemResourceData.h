@@ -12,7 +12,7 @@ class UGemResourceCreator;
 UCLASS(Blueprintable)
 class UGemResourceData : public UResourceData {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDebrisPositioning* DebrisPositioning;

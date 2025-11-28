@@ -7,7 +7,7 @@
 UCLASS(Abstract, Blueprintable)
 class UBurningAfflictionEffect : public UAfflictionEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected sectio
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

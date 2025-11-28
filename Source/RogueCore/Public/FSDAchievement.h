@@ -10,7 +10,7 @@ class UObject;
 UCLASS(Blueprintable)
 class UFSDAchievement : public USavableDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

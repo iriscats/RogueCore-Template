@@ -7,7 +7,7 @@ class UAnimMontage;
 UCLASS(Abstract, Blueprintable)
 class APlasmaCarbine : public AProjectileWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

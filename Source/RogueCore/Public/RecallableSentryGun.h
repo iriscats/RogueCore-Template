@@ -9,7 +9,7 @@ class ASentryGun;
 UCLASS(Abstract, Blueprintable)
 class ARecallableSentryGun : public ARecallableActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSentryIndexChanged, int32, Index);
     

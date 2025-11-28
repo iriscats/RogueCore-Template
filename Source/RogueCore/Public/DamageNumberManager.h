@@ -9,7 +9,7 @@ class UWidgetAnimation;
 UCLASS(Blueprintable)
 class UDamageNumberManager : public UTickableWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

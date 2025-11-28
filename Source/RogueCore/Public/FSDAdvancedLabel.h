@@ -14,7 +14,7 @@ class UTexture2D;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UFSDAdvancedLabel : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

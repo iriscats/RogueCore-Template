@@ -9,7 +9,7 @@ class UOptionalUICategory;
 UCLASS(Blueprintable)
 class UOptionalUICategory : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FVisibilityChanged, UOptionalUICategory*, Category, bool, IsVisible);

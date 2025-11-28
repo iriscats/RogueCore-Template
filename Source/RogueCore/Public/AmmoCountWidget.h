@@ -9,7 +9,7 @@ class UItemAggregator;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UAmmoCountWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     APlayerCharacter* Character;

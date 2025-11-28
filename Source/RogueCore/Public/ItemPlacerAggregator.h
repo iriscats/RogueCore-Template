@@ -13,7 +13,7 @@ class UDialogDataAsset;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UItemPlacerAggregator : public UItemAggregator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPlacementUpdatedDelegate, bool, InPlacementValid, const FTransform&, InPlacement);

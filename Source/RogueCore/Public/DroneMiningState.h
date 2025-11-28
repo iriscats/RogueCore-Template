@@ -8,7 +8,7 @@ class UTerrainMaterial;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDroneMiningState : public UDroneStateComponentBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

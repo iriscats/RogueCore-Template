@@ -8,7 +8,7 @@ class URoomGenerator;
 UCLASS(Blueprintable, EditInlineNew)
 class USubRoomFeature : public URoomFeature {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

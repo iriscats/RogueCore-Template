@@ -9,7 +9,7 @@ class AActor;
 UCLASS(Blueprintable, EditInlineNew)
 class UDropPodCalldownLocationFeature : public URoomFeature {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FVector Location;

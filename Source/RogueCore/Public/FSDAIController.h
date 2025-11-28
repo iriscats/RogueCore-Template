@@ -13,7 +13,7 @@ class APlayerCharacter;
 UCLASS(Blueprintable)
 class AFSDAIController : public AAIController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

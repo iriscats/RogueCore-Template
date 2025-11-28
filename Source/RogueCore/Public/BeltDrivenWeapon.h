@@ -9,7 +9,7 @@ class USoundCue;
 UCLASS(Abstract, Blueprintable)
 class ABeltDrivenWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UMultiDamageCondition : public UDamageCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     TArray<UDamageCondition*> Conditions;

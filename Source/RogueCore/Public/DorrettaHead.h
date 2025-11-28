@@ -8,7 +8,7 @@ class UCarriableInstantUsable;
 UCLASS(Blueprintable)
 class ADorrettaHead : public ACarriableItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -14,7 +14,7 @@ class UTrackBuilderUsable;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ATrackBuilderItem : public AAnimatedItem, public IPlaceableInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

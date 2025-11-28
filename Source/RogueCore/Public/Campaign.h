@@ -22,7 +22,7 @@ class UTexture2D;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API UCampaign : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

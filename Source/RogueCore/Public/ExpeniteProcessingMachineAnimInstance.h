@@ -7,7 +7,7 @@ class UCurveVector;
 UCLASS(Blueprintable, NonTransient)
 class UExpeniteProcessingMachineAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float ExpenitePotZOffset;

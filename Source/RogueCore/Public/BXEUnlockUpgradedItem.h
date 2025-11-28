@@ -9,7 +9,7 @@ class UItemUpgrade;
 UCLASS(Blueprintable)
 class UBXEUnlockUpgradedItem : public UBXEUnlockItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

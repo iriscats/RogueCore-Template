@@ -10,7 +10,7 @@ class UProjectileLauncherComponent;
 UCLASS(Blueprintable)
 class ALineCutter : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

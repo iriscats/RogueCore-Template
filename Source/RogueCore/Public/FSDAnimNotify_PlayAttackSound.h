@@ -7,7 +7,7 @@ class USoundAttenuation;
 UCLASS(Blueprintable, CollapseCategories)
 class UFSDAnimNotify_PlayAttackSound : public UAnimNotify_PlaySound {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName IsTargetLocalPlayerParameter;

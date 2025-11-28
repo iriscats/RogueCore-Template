@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class UBTServer_ChaseTarget : public UBTService {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

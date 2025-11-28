@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UUnlockMultiCondition : public UBXEUnlockConditionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

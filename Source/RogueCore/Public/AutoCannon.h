@@ -12,7 +12,7 @@ class UStatusEffect;
 UCLASS(Abstract, Blueprintable)
 class AAutoCannon : public AHitscanWeapon, public IStackingDamageNumberSource {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float StartingFireRate;

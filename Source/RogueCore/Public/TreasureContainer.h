@@ -14,7 +14,7 @@ class UTreasureRewarder;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATreasureContainer : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

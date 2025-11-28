@@ -7,7 +7,7 @@ class UPawnStat;
 UCLASS(Abstract, Blueprintable)
 class APlacementDeviceActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DefaultRadius;

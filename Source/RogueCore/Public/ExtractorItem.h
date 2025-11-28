@@ -26,7 +26,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class ROGUECORE_API AExtractorItem : public AAnimatedItem, public IThrowable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

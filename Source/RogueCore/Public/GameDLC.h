@@ -13,7 +13,7 @@ class UWindowWidget;
 UCLASS(Blueprintable)
 class UGameDLC : public UDLCBase, public ISaveGameIDInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bFakeUnlockedStateInEditor;

@@ -8,7 +8,7 @@ class UHealthComponentBase;
 UCLASS(Blueprintable, NonTransient)
 class USpiderLobberAnimInstance : public UShootingSpiderAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

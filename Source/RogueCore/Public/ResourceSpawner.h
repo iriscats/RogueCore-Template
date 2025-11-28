@@ -8,7 +8,7 @@ class UResourceData;
 USTRUCT(BlueprintType)
 struct ROGUECORE_API FResourceSpawner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

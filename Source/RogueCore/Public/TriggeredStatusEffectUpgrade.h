@@ -12,7 +12,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UTriggeredStatusEffectUpgrade : public UItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

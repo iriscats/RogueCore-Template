@@ -9,7 +9,7 @@ class UDrinkableDataAsset;
 UCLASS(Abstract, Blueprintable)
 class ADrinkableActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnPickedUpelegate OnPickedUp;

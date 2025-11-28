@@ -7,7 +7,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXEUnlockGenericBase : public UBXEUnlockBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

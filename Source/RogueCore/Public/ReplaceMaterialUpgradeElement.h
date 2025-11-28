@@ -7,7 +7,7 @@ class UMaterialInterface;
 UCLASS(Blueprintable, EditInlineNew)
 class UReplaceMaterialUpgradeElement : public UItemUpgradeElement {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

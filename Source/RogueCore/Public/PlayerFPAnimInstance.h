@@ -8,7 +8,7 @@ class UAnimSequence;
 UCLASS(Blueprintable, NonTransient)
 class UPlayerFPAnimInstance : public UPlayerAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FRotator WeaponRecoil;

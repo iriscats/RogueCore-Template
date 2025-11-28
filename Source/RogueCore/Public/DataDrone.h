@@ -8,7 +8,7 @@ class USpinDeathComponent;
 UCLASS(Blueprintable)
 class ADataDrone : public AAFlyingBug {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

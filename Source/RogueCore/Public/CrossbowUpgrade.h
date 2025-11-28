@@ -12,7 +12,7 @@ class AItem;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UCrossbowUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ECrossbowUpgrades upgradeType;

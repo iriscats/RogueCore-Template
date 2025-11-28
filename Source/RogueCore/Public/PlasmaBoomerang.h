@@ -14,7 +14,7 @@ class UStaticMeshComponent;
 UCLASS(Abstract, Blueprintable)
 class APlasmaBoomerang : public AGrenade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

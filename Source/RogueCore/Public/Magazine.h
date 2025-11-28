@@ -11,7 +11,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class AMagazine : public AActor, public ISkinnable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

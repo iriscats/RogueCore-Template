@@ -8,7 +8,7 @@ class USpawnLogger;
 UCLASS(Blueprintable)
 class USpawnLogSubsystem : public UWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

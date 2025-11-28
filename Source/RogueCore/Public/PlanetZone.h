@@ -9,7 +9,7 @@ class UFSDSaveGame;
 UCLASS(Blueprintable)
 class UPlanetZone : public USavableDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

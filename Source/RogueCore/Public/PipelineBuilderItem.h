@@ -7,7 +7,7 @@ class UItemPlacerAggregator;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineBuilderItem : public ATrackBuilderItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

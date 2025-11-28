@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class ASavableActor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

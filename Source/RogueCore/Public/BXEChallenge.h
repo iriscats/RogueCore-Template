@@ -8,7 +8,7 @@ class UObject;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXEChallenge : public UMilestoneAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

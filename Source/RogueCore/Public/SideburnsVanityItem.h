@@ -8,7 +8,7 @@ class UVanityAnimInstance;
 UCLASS(Blueprintable, EditInlineNew)
 class USideburnsVanityItem : public UVanityItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

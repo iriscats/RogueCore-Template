@@ -8,7 +8,7 @@ class UItemSkin;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API USkinSchematicItem : public USchematicItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -14,7 +14,7 @@ class UUseConditionSet;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UUsableComponentBase : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FUsableHoveredEvent, APlayerCharacter*, InUser);
     

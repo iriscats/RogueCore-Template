@@ -6,7 +6,7 @@
 UCLASS(Blueprintable)
 class UBTDecorator_IsFacing : public UBTDecorator_BlackboardBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

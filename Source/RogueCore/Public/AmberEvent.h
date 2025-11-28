@@ -11,7 +11,7 @@ class UHealthComponentBase;
 UCLASS(Blueprintable)
 class AAmberEvent : public AGameEvent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

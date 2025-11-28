@@ -14,7 +14,7 @@ class UItemUpgrade;
 UCLASS(Blueprintable)
 class AThrowableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

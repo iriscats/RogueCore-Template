@@ -6,7 +6,7 @@
 UCLASS(Blueprintable)
 class UBXEUnlockCategory : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
  
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName CategoryName;

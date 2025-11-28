@@ -8,7 +8,7 @@ class UStatusEffect;
 UCLASS(Blueprintable)
 class UStatusEffectReactiveTerrain : public UReactiveTerrain {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

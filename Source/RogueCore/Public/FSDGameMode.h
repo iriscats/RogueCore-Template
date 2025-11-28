@@ -37,7 +37,7 @@ class UWidget;
 UCLASS(Blueprintable, NonTransient)
 class ROGUECORE_API AFSDGameMode : public AGameMode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -8,7 +8,7 @@ class UTutorialContentWidget;
 UCLASS(Blueprintable, EditInlineNew)
 class UTutorialLevelWidget : public UFSDUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

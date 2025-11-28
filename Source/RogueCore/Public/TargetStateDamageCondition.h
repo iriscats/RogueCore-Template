@@ -8,7 +8,7 @@ class UElementEventType;
 UCLASS(Blueprintable, EditInlineNew)
 class UTargetStateDamageCondition : public UDamageCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -18,7 +18,7 @@ class UStageTemplateOverride;
 UCLASS(Blueprintable)
 class APLSTester : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -9,7 +9,7 @@ class UTexture2D;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UObjectiveWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FObjectiveWidgetDelegate, UObjectiveWidget*, InObjectiveWidget);

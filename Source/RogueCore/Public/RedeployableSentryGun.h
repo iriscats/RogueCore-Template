@@ -15,7 +15,7 @@ class USkeletalMeshComponent;
 UCLASS(Abstract, Blueprintable)
 class ARedeployableSentryGun : public ASentryGun {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStateChanged, ARedeployableSentryGun*, Sender, ERedeployableSentryGunState, NewState);

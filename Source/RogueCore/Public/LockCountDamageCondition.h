@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class ULockCountDamageCondition : public UDamageCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

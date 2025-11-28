@@ -6,7 +6,7 @@
 UCLASS(Blueprintable)
 class UBTTask_TriggerAI : public UBTTaskNode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

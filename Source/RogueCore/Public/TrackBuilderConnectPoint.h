@@ -10,7 +10,7 @@ class UTrackBuilderConnectPoint;
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UTrackBuilderConnectPoint : public USphereComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FConnectionDelegate, UTrackBuilderConnectPoint*, InConnectPoint, ATrackBuilderSegment*, InSegment);

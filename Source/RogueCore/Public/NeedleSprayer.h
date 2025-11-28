@@ -17,7 +17,7 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable)
 class ANeedleSprayer : public AActor, public IWeaponFireOwner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

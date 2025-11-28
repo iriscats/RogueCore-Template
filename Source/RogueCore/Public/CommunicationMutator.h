@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UCommunicationMutator : public UMutator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float PitchMultiplier;

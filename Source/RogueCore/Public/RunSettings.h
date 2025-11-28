@@ -14,7 +14,7 @@ class URunTemplate;
 UCLASS(Blueprintable)
 class URunSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -11,7 +11,7 @@ class UStatusEffect;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UPerkEffectComponentThorns : public UPerkEffectComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

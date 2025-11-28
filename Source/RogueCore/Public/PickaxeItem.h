@@ -34,7 +34,7 @@ class UWeaponTagContainerComponent;
 UCLASS(Abstract, Blueprintable)
 class APickaxeItem : public AItem, public IUpgradableGear, public IPickaxePartEquip, public IStackingDamageNumberSource {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

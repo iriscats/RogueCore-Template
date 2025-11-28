@@ -13,7 +13,7 @@ class UTerrainPlacementComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATreasureBeacon : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* RootComp;

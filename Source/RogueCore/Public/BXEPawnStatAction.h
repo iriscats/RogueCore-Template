@@ -7,7 +7,7 @@ class UPawnStat;
 UCLASS(Blueprintable, EditInlineNew)
 class UBXEPawnStatAction : public UBXEUnlockAction {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

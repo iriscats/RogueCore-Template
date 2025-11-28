@@ -7,7 +7,7 @@ class UCurveFloat;
 UCLASS(Blueprintable)
 class AExpeniteSamplePod : public ARessuplyPod {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))

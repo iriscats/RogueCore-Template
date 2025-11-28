@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UOverheatingAggregator : public UItemAggregator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOverheatingProgressChanged, float, Progress);

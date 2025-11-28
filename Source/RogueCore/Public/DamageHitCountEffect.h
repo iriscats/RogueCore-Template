@@ -11,7 +11,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UDamageHitCountEffect : public UWeaponHitCountEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

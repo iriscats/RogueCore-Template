@@ -11,7 +11,7 @@ class AFSDPlayerState;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class URandomDamageUpgrade : public UDamageBonusBaseUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

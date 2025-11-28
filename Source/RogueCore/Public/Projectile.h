@@ -21,7 +21,7 @@ class USceneComponent;
 UCLASS(Abstract, Blueprintable)
 class AProjectile : public AProjectileBase, public IStackingDamageNumberSource {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UPawnStat* GravityModifier;

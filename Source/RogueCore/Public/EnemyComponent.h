@@ -10,7 +10,7 @@ class UTexture2D;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UEnemyComponent : public USimpleObjectInfoComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UEnemyComponent(const FObjectInitializer& ObjectInitializer);

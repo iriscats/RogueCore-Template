@@ -7,7 +7,7 @@ class UResourceData;
 UCLASS(Blueprintable, EditInlineNew)
 class UYesNoPromptWidget : public UWindowWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_DELEGATE_OneParam(FOnYesNoClickedDelegate, bool, Yes);

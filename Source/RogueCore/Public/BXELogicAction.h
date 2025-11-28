@@ -8,7 +8,7 @@ class UBXELogicUnlockComponent;
 UCLASS(Blueprintable, EditInlineNew)
 class UBXELogicAction : public UBXEUnlockAction {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

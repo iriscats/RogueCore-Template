@@ -9,7 +9,7 @@ class UMaterialInterface;
 UCLASS(Abstract, Blueprintable)
 class UScalingMeshAfflictionEffect : public UAfflictionEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

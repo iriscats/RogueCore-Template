@@ -8,7 +8,7 @@ class AProjectile;
 UCLASS(Blueprintable, EditInlineNew)
 class UNormalProjectileAttack : public UProjectileAttack {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

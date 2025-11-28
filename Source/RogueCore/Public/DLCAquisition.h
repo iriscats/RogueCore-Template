@@ -7,7 +7,7 @@ class UDLCBase;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UDLCAquisition : public UItemAquisitionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

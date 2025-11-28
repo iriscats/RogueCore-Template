@@ -25,7 +25,7 @@ class UTrackBuilderUsable;
 UCLASS(Abstract, Blueprintable)
 class APipelineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FPipelineStateDelegate, EPipelineBuildState, InPipelineState);

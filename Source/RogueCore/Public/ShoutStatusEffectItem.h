@@ -7,7 +7,7 @@ class UDialogDataAsset;
 UCLASS(Blueprintable, EditInlineNew)
 class UShoutStatusEffectItem : public UStatusEffectItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected sectio
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

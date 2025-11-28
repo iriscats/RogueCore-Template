@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class URandomSelector : public URoomFeature {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

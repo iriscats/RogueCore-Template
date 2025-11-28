@@ -18,7 +18,7 @@ class USoundBase;
 UCLASS(Abstract, Blueprintable)
 class AFlyingLifter : public AAFlyingBug {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

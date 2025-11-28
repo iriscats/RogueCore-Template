@@ -14,7 +14,7 @@ class UTrackBuilderUsable;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineStart : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FFuelLineStartedDelegate, bool, InFuelLineStarted);

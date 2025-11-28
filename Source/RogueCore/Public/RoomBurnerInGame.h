@@ -17,7 +17,7 @@ class UStageTemplateDifficulty;
 UCLASS(Blueprintable)
 class ROGUECORE_API ARoomBurnerInGame : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

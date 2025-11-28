@@ -9,7 +9,7 @@ class AActor;
 UCLASS(Blueprintable, EditInlineNew)
 class USpawnTriggerFeature : public URoomFeature {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

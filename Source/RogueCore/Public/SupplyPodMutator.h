@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class USupplyPodMutator : public UMutator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

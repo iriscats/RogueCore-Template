@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class ROGUECORE_API UBTService_HasLineOfSight : public UBTService {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

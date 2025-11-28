@@ -7,7 +7,7 @@ class UAbilityUpgrade;
 UCLASS(Blueprintable, EditInlineNew)
 class UAbilityUpgradesUnlockAction : public UBXEUnlockAction {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

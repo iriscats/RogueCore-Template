@@ -12,7 +12,7 @@ class UPawnStat;
 UCLASS(Blueprintable)
 class UElementType : public USavablePrimaryDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FName ElementName;

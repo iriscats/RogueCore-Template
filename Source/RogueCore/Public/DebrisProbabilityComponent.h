@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDebrisProbabilityComponent : public UDebrisActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

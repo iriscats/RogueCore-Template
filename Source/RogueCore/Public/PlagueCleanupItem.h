@@ -19,7 +19,7 @@ class USphereComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API APlagueCleanupItem : public AAnimatedItem, public IThrowable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -6,7 +6,7 @@ class AZipLineConnector;
 USTRUCT(BlueprintType)
 struct FZipLineConnectorHandler {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

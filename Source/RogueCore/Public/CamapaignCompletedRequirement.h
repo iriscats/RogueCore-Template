@@ -8,7 +8,7 @@ class UCampaign;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UCamapaignCompletedRequirement : public UCampaignRequirement {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<UCampaign> Campaign;

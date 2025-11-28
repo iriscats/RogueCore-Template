@@ -10,7 +10,7 @@ class UDamageComponent;
 UCLASS(Blueprintable, MinimalAPI, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDownedStateComponent : public UCharacterStateComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

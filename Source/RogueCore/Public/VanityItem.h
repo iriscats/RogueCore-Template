@@ -21,7 +21,7 @@ class UVanityEventSourceDataAsset;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UVanityItem : public USavablePrimaryDataAsset, public ICraftable, public IRefundableInterface, public IAquisitionable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

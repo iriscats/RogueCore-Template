@@ -15,7 +15,7 @@ class UPrimitiveComponent;
 UCLASS(Abstract, Blueprintable)
 class APlayerCameraDrone : public APawn {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

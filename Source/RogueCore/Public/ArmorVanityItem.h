@@ -13,7 +13,7 @@ class USkeletalMesh;
 UCLASS(Blueprintable, EditInlineNew)
 class UArmorVanityItem : public UVanityItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<EArmorMeshType, TSoftObjectPtr<USkeletalMesh>> TPArmorMesh;

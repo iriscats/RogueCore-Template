@@ -8,7 +8,7 @@ class UOptionalUICategory;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UOptionalUIWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

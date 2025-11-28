@@ -14,7 +14,7 @@ class UEnemyDescriptor;
 UCLASS(Blueprintable)
 class ROGUECORE_API ASpawnLordEnemy : public ACoreSpawnEnemyBase, public IBossFightInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

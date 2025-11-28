@@ -10,7 +10,7 @@ class UGrabberComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API ASpawnLordAdEnemy : public ACoreSpawnEnemyBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

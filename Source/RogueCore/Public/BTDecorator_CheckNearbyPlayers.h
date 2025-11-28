@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class ROGUECORE_API UBTDecorator_CheckNearbyPlayers : public UBTDecorator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float Range;

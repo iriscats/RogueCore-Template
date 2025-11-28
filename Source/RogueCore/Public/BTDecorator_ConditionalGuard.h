@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class UBTDecorator_ConditionalGuard : public UBTDecorator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBlackboardKeySelector GuardKey;

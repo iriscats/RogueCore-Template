@@ -8,7 +8,7 @@ class AActor;
 UCLASS(Abstract, Blueprintable)
 class ASpawnTriggerItem : public AGenerationItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -11,7 +11,7 @@ class UWorkbenchItemWidget;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class ROGUECORE_API UWorkbenchItemWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FWorkbenchItemDelegate, UWorkbenchItemWidget*, InWidget);
     

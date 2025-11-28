@@ -11,7 +11,7 @@ class USceneComponent;
 UCLASS(Blueprintable)
 class AExcavationMachine : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* GemSpawnPoint;

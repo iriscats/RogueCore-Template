@@ -8,7 +8,7 @@ class USkeletalMesh;
 UCLASS(Blueprintable, EditInlineNew)
 class UReplaceSkeletonMeshUpgradeElement : public UItemUpgradeElement {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -12,7 +12,7 @@ class UCoolDownItemAggregator;
 UCLASS(Abstract, Blueprintable)
 class AGrapplingHookGun : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -14,7 +14,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API APlanetShowroomItem : public AShowroomItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

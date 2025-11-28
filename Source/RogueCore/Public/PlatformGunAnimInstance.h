@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, NonTransient)
 class UPlatformGunAnimInstance : public UAmmoDrivenWeaponAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

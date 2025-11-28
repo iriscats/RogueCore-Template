@@ -12,7 +12,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class ASpiderEnemy : public AEnemyDeepPathfinderCharacter, public IEnemyAttacker {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

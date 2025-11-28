@@ -13,7 +13,7 @@ class UTerrainMaterialBase;
 UCLASS(Blueprintable)
 class ARandomizedInstantMeshCarver : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

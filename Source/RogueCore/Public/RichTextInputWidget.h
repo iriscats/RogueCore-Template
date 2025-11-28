@@ -12,7 +12,7 @@ class UTextBlock;
 UCLASS(Abstract, Blueprintable, EditInlineNew, HideDropdown)
 class URichTextInputWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

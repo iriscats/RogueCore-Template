@@ -7,7 +7,7 @@ class UIntelObjective;
 UCLASS(Blueprintable)
 class UIntelSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UIntelObjective*> IntelProgression;

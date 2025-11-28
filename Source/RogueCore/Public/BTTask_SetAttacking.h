@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class UBTTask_SetAttacking : public UBTTaskNode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

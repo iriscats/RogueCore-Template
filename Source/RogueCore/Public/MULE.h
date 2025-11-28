@@ -8,7 +8,7 @@ class USimpleObjectInfoComponent;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AMULE : public ADeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

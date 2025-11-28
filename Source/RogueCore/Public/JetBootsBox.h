@@ -9,7 +9,7 @@ class UTerrainPlacementComponent;
 UCLASS(Blueprintable)
 class AJetBootsBox : public AActor, public IActorTrackingCheatInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -11,7 +11,7 @@ class USceneComponent;
 UCLASS(Blueprintable)
 class ADroneStream : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

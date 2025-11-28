@@ -8,7 +8,7 @@ class UStatusEffect;
 UCLASS(Blueprintable)
 class ADualMachinePistols : public ADualWieldWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

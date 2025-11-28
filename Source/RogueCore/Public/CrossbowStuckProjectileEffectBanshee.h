@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCrossbowStuckProjectileEffectBanshee : public UCrossbowStuckProjectileEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

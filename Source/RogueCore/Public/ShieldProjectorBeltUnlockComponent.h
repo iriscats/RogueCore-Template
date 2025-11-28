@@ -9,7 +9,7 @@ class AActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UShieldProjectorBeltUnlockComponent : public UPerkInputUnlockComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

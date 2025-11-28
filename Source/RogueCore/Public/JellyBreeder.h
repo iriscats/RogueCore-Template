@@ -14,7 +14,7 @@ class USoundBase;
 UCLASS(Blueprintable)
 class AJellyBreeder : public AAFlyingBug {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimSequenceBase* EggSpawnAnimation;

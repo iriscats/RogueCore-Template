@@ -35,7 +35,7 @@ class UUserWidget;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBiome : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

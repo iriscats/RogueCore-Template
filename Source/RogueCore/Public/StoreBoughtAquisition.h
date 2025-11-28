@@ -7,7 +7,7 @@ class UResourceData;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UStoreBoughtAquisition : public UItemAquisitionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

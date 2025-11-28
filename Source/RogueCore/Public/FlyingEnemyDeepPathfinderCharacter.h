@@ -14,7 +14,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class AFlyingEnemyDeepPathfinderCharacter : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -7,7 +7,7 @@ class AAbilityItem;
 UCLASS(Blueprintable, NonTransient)
 class UAbilityItemAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected sectio                      
+                          
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

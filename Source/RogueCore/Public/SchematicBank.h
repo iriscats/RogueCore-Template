@@ -7,7 +7,7 @@ class USchematic;
 UCLASS(Blueprintable)
 class ROGUECORE_API USchematicBank : public USchematicBankBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

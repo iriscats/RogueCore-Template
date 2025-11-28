@@ -13,7 +13,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class UPawnAffliction : public UDataAsset, public ISoftReferenceProvider {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

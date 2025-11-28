@@ -14,7 +14,7 @@ class USphereComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATether : public ACarriableItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USkeletalMeshComponent* BaseMesh;

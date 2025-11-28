@@ -9,7 +9,7 @@ class UElementType;
 UCLASS(Blueprintable, EditInlineNew)
 class UElementStatusEffectItem : public UStatusEffectItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UElementType* ElementType;

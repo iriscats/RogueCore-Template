@@ -13,7 +13,7 @@ class USceneComponent;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UActorTrackingWidget : public UFSDUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, Transient, meta=(AllowPrivateAccess=true))

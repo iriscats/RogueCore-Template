@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UCallbackBonus : public UDamageBonusBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected sectio
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

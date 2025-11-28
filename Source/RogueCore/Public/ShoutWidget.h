@@ -7,7 +7,7 @@ class APlayerCharacter;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UShoutWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

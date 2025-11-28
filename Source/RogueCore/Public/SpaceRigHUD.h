@@ -9,7 +9,7 @@ class UWindowWidget;
 UCLASS(Blueprintable, NonTransient)
 class ASpaceRigHUD : public AFSDHUD {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

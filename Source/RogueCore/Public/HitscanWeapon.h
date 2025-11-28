@@ -7,7 +7,7 @@ class UHitscanComponent;
 UCLASS(Blueprintable)
 class AHitscanWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UHitscanComponent* HitscanComponent;

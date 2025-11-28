@@ -23,7 +23,7 @@ class UStickyFlameSpawner;
 UCLASS(Abstract, Blueprintable)
 class AFlameThrowerItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UFXSystemComponent* FlameParticleComponent;

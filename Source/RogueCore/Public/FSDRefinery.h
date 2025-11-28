@@ -18,7 +18,7 @@ class USingleUsableComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API AFSDRefinery : public ADroppableOutpost {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryStateDelegate, ERefineryState, InRefineryState);
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryProgressDelegate, float, InProgress01);

@@ -7,7 +7,7 @@ class UReward;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API USeasonEditorRewardWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

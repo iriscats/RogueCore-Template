@@ -6,7 +6,7 @@
 UCLASS(Blueprintable)
 class UBTTask_MoveToTarget : public UBTTask_BlackboardBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

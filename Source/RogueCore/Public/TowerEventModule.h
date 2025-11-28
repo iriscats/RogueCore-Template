@@ -20,7 +20,7 @@ class UWeakpointGlowComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATowerEventModule : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

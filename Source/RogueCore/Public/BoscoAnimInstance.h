@@ -8,7 +8,7 @@
 UCLASS(Blueprintable, NonTransient)
 class UBoscoAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

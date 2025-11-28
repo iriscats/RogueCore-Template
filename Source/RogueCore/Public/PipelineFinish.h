@@ -17,7 +17,7 @@ class UTrackBuilderConnectPoint;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APipelineFinish : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

@@ -12,7 +12,7 @@ class ARedeployableSentryGun;
 UCLASS(Abstract, Blueprintable)
 class ARecallableItem : public AAnimatedItem, public IUpgradable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

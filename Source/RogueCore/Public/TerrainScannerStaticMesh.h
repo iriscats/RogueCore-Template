@@ -7,7 +7,7 @@ class UHealthComponentBase;
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UTerrainScannerStaticMesh : public UStaticMeshComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bVisibleAtBeginPlay;

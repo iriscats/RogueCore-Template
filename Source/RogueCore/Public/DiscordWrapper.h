@@ -14,7 +14,7 @@
 UCLASS(Blueprintable)
 class UDiscordWrapper : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

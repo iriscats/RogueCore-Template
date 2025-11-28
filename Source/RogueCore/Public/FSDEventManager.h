@@ -13,7 +13,7 @@ class UFSDEvent;
 UCLASS(Blueprintable)
 class UFSDEventManager : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FFSDEventsRefreshDelegate);

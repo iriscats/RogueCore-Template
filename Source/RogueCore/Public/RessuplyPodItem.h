@@ -12,7 +12,7 @@ class UObject;
 UCLASS(Blueprintable)
 class ARessuplyPodItem : public AAnimatedItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

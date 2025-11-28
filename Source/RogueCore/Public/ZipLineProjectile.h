@@ -14,7 +14,7 @@ class UTimelineComponent;
 UCLASS(Abstract, Blueprintable)
 class AZipLineProjectile : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

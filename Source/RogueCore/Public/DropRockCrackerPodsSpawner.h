@@ -8,7 +8,7 @@ class APlagueMeteor;
 UCLASS(Blueprintable)
 class ADropRockCrackerPodsSpawner : public ADebrisLocationFinder {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     APlagueMeteor* meteor;

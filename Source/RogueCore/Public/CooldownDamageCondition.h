@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UCooldownDamageCondition : public UDamageCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float CoolDown;

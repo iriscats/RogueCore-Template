@@ -9,7 +9,7 @@ class UStage;
 UCLASS(Blueprintable)
 class ROGUECORE_API URunGenerationManager : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

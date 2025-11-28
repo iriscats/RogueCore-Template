@@ -7,7 +7,7 @@ class URunTemplate;
 UCLASS(Blueprintable, EditInlineNew)
 class UUnlockRunReward : public UReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

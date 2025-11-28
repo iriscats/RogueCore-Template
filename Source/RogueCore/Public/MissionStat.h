@@ -16,7 +16,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class UMissionStat : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_FourParams(FStatCountChanged, UObject*, WorldContext, UMissionStat*, MissionStat, float, Value, float, change);

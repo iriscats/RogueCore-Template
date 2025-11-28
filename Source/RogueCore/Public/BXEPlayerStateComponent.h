@@ -20,7 +20,7 @@ class UObject;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UBXEPlayerStateComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FPlayerDataChanged, const FBXEPlayerData&, OldData, const AFSDPlayerState*, InPlayerState);

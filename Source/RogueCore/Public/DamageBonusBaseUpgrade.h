@@ -7,7 +7,7 @@ class UDamageCondition;
 UCLASS(Abstract, Blueprintable, EditInlineNew, MinimalAPI)
 class UDamageBonusBaseUpgrade : public UItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool UseBaseDamage;

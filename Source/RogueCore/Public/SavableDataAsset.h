@@ -9,7 +9,7 @@ class UBuildRestriction;
 UCLASS(Blueprintable)
 class USavableDataAsset : public UDataAsset, public ISaveGameIDInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -10,7 +10,7 @@ class USoundCue;
 UCLASS(Abstract, Blueprintable)
 class AMicroMissileLauncher : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FChargingDelegate);
     

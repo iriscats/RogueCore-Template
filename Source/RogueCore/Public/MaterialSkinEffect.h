@@ -7,7 +7,7 @@ class UMaterialInterface;
 UCLASS(Blueprintable, EditInlineNew)
 class UMaterialSkinEffect : public USkinEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<TSoftObjectPtr<UMaterialInterface>> Materials;

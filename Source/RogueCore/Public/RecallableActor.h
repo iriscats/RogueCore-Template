@@ -13,7 +13,7 @@ class ARecallableActor;
 UCLASS(Abstract, Blueprintable)
 class ARecallableActor : public ADeepPathfinderCharacter, public IUpgradable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FRecallableActorStateChanged, ARecallableActor*, Sender, ERecallableActorState, State);

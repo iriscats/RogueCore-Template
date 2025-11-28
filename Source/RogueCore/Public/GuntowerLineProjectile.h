@@ -12,7 +12,7 @@ class USceneComponent;
 UCLASS(Blueprintable)
 class AGuntowerLineProjectile : public AProjectile {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

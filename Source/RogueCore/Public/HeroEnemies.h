@@ -10,7 +10,7 @@ class UEnemyDescriptor;
 UCLASS(Abstract, Blueprintable)
 class UHeroEnemies : public UStageLogic {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -10,7 +10,7 @@ class UTexture;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API UFadeScreenSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

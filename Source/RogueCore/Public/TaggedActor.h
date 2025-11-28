@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class ATaggedActor : public AActor, public IGameplayTagAssetInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

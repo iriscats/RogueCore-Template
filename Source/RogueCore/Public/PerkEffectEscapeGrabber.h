@@ -7,7 +7,7 @@ class AActor;
 UCLASS(Blueprintable, EditInlineNew)
 class UPerkEffectEscapeGrabber : public UPerkEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

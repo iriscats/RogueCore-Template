@@ -8,7 +8,7 @@ class UDialogDataAsset;
 UCLASS(Abstract, Blueprintable)
 class AZipLineItem : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float MaxDistance;

@@ -8,7 +8,7 @@
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCapacityHoldingItemAggregator : public UCapacityBasedItemAggregator, public IUpgradable, public IRejoinListener {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_MaxAmmo, meta=(AllowPrivateAccess=true))

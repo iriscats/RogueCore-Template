@@ -8,7 +8,7 @@ class UNiagaraSystem;
 UCLASS(Blueprintable)
 class UAttachedParticlesAfflictionEffect : public UAfflictionEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

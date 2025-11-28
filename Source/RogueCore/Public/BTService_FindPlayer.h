@@ -8,7 +8,7 @@ class APlayerCharacter;
 UCLASS(Blueprintable)
 class UBTService_FindPlayer : public UBTService {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

@@ -16,7 +16,7 @@ class UObject;
 UCLASS(Blueprintable)
 class ARessuplyPod : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FRessuplyPodStateDelegate, ARessuplyPod*, InPod, ERessuplyPodState, InState);

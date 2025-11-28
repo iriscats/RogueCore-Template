@@ -15,7 +15,7 @@ class UTerrainMaterial;
 UCLASS(Blueprintable)
 class ROGUECORE_API AMeleeSwipeItem : public AAbilityItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

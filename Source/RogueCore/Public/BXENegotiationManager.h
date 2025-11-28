@@ -11,7 +11,7 @@ class URunManager;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXENegotiationManager : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -12,7 +12,7 @@ class USceneComponent;
 UCLASS(Blueprintable)
 class UMoveComponentToAction : public UTickableActionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCompletedDelegate, USceneComponent*, Component);

@@ -58,7 +58,7 @@ class UTeamResourcesComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API AFSDGameState : public AGameState {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FNamedCountdownDelegate, const FNamedCountdownInt&, Countdown);

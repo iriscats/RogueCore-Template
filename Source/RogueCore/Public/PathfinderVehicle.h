@@ -11,7 +11,7 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable)
 class APathfinderVehicle : public APawn, public ITargetable, public ISteerable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDeepPathfinderMovement* PathfinderMovement;

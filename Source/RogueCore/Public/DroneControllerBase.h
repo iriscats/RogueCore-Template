@@ -9,7 +9,7 @@ class APlayerCharacter;
 UCLASS(Blueprintable)
 class ADroneControllerBase : public AAIController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

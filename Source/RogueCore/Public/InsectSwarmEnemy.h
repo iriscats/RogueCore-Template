@@ -7,7 +7,7 @@ class USceneComponent;
 UCLASS(Abstract, Blueprintable)
 class AInsectSwarmEnemy : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

@@ -17,7 +17,7 @@ class UStatusEffect;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ALockOnWeapon : public AAmmoDrivenWeapon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMaxTargetsDelegate, int32, InMaxTargets);

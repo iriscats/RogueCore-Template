@@ -7,7 +7,7 @@ class UBXEUnlockBase;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXEUnlockPool : public UBXEUnlockCollection {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

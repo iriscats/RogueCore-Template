@@ -8,7 +8,7 @@ class UFXSystemAsset;
 UCLASS(Blueprintable, EditInlineNew)
 class UInfestedEnemiesMutator : public UMutator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UFXSystemAsset*> SpawnEffects;

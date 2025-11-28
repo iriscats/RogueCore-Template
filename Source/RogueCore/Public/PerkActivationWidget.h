@@ -7,7 +7,7 @@
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkActivationWidget : public UPerkHUDWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class ROGUECORE_API UBTDecorator_CheckPlayerState : public UBTDecorator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

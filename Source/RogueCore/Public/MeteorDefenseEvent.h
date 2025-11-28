@@ -8,7 +8,7 @@ class APlagueMeteor;
 UCLASS(Blueprintable)
 class AMeteorDefenseEvent : public AGameEvent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<FProgressShout> ProgressShouts;

@@ -8,7 +8,7 @@ class UDamageCondition;
 UCLASS(Blueprintable, EditInlineNew)
 class UDamageModifier : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
 

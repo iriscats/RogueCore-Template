@@ -10,7 +10,7 @@ class UDebrisPositioning;
 UCLASS(Blueprintable)
 class ATentaclePlant : public AShootingPlant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, ReplicatedUsing=OnRep_IsVulnerable, meta=(AllowPrivateAccess=true))

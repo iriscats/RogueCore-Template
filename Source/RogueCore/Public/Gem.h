@@ -9,7 +9,7 @@ class UResourceData;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AGem : public ACarriableItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

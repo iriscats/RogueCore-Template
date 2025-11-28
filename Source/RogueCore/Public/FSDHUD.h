@@ -13,7 +13,7 @@ class URadarPointComponent;
 UCLASS(Blueprintable, NonTransient)
 class AFSDHUD : public AHUD {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FSetObjectivesVisible, bool, inVisible, bool, animate);

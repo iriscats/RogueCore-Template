@@ -10,7 +10,7 @@ class UUserWidget;
 UCLASS(Blueprintable)
 class UBossFightSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

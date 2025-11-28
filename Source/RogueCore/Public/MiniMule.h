@@ -7,7 +7,7 @@ class AGem;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AMiniMule : public AMULE {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

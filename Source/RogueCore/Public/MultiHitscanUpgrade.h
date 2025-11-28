@@ -11,7 +11,7 @@ class AItem;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UMultiHitscanUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

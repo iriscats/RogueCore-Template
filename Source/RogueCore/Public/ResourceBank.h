@@ -12,7 +12,7 @@ class USoundBase;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UResourceBank : public UUsableComponentBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FResourceEvent, UResourceData*, Resource, float, amount);

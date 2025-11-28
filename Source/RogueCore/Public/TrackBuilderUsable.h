@@ -14,7 +14,7 @@ class UTrackBuilderUsable;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UTrackBuilderUsable : public UInstantUsable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FSegmentDelegate, UTrackBuilderUsable*, InUsable, ATrackBuilderSegment*, InSegment);

@@ -9,7 +9,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class AHomingDroneBomb : public AProjectile {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEnemyHealthComponent* Health;

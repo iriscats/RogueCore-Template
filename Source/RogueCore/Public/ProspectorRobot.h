@@ -9,7 +9,7 @@ class UMaterialInstanceDynamic;
 UCLASS(Blueprintable)
 class AProspectorRobot : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float WorkingArmSpeed;

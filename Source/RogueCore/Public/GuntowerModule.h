@@ -17,7 +17,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class AGuntowerModule : public AFSDPawn, public IEventParticipant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

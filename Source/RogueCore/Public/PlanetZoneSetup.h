@@ -8,7 +8,7 @@ class UPlanetZone;
 UCLASS(Blueprintable)
 class UPlanetZoneSetup : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

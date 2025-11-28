@@ -17,7 +17,7 @@ class UInstantUsable;
 UCLASS(Abstract, Blueprintable)
 class ASpaceRigBar : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FDrinkableSignature, UDrinkableDataAsset*, drinkable);

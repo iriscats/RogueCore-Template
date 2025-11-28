@@ -9,7 +9,7 @@ class AAbilitySpawnActor;
 UCLASS(Blueprintable, EditInlineNew)
 class USpawnActorAbilityUpgrade : public UAbilityUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

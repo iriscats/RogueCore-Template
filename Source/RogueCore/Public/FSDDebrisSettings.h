@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, DefaultConfig, Config=Game)
 class UFSDDebrisSettings : public UDeveloperSettings {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -9,7 +9,7 @@ class AFlameWallSegment;
 UCLASS(Abstract, Blueprintable)
 class AFlameWallProjectile : public AProjectile {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

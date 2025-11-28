@@ -7,7 +7,7 @@ class UFXSystemAsset;
 UCLASS(Blueprintable, EditInlineNew)
 class UTracerUpgradeElement : public UItemUpgradeElement {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftObjectPtr<UFXSystemAsset> Tracer;

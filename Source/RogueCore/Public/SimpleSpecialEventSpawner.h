@@ -8,7 +8,7 @@ class UDebrisPositioning;
 UCLASS(Blueprintable, EditInlineNew)
 class USimpleSpecialEventSpawner : public USpecialEventSpawner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

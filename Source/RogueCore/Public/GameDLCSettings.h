@@ -8,7 +8,7 @@ class UObject;
 UCLASS(Blueprintable)
 class ROGUECORE_API UGameDLCSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSet<UGameDLC*> StoreDLCs;

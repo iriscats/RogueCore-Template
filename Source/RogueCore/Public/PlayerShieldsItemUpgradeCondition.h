@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UPlayerShieldsItemUpgradeCondition : public UItemUpgradeCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))
     FFloatInterval ShieldPercentageRequired;

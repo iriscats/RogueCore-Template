@@ -13,7 +13,7 @@ class UDebrisPositioning;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API URefineryObjective : public UObjective {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRefineryDelegate, AFSDRefinery*, InRefinery);

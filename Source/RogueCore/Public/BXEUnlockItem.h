@@ -7,7 +7,7 @@ class UItemID;
 UCLASS(Blueprintable)
 class UBXEUnlockItem : public UBXEUnlockBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

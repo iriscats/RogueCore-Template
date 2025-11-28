@@ -9,7 +9,7 @@ class UPointLightComponent;
 UCLASS(Blueprintable)
 class ADroneBase : public ADeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPointLightComponent* StateLight;

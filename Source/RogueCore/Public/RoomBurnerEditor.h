@@ -25,7 +25,7 @@ class UStageTemplateOverride;
 UCLASS(Blueprintable)
 class ARoomBurnerEditor : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool LiveUpdateEditor;

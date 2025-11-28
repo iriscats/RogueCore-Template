@@ -16,7 +16,7 @@ class UStaticMesh;
 UCLASS(Blueprintable)
 class ROGUECORE_API ASplinePlant : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

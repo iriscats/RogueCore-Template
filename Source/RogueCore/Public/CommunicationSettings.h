@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, DefaultConfig, Config=Game)
 class ROGUECORE_API UCommunicationSettings : public UDeveloperSettings {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCommunicationCharacterSettings CharacterSettings;

@@ -8,7 +8,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class USeasonLevelWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -10,7 +10,7 @@ class USoundCue;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class ROGUECORE_API UHackingToolWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

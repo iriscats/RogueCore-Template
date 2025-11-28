@@ -8,7 +8,7 @@ class APlayerCharacter;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UBioBoosterTerminalUsable : public UUsableComponentBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

@@ -25,7 +25,7 @@ class UWeaponFireComponent;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ASentryGun : public AActor, public IWeaponFireOwner, public IUpgradable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FEnabledChanged, bool, IsEnabled);

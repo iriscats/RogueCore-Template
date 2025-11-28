@@ -8,7 +8,7 @@ class UClaimableRewardEntryWidget;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UClaimableRewardEntryWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FWidgetDelegate, UClaimableRewardEntryWidget*, EntryWidget);
     

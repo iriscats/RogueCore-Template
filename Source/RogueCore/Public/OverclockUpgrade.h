@@ -7,7 +7,7 @@ class USchematicCategory;
 UCLASS(Blueprintable, EditInlineNew)
 class UOverclockUpgrade : public UCombinedUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

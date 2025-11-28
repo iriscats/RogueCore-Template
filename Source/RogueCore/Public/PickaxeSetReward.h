@@ -7,7 +7,7 @@ class UPickaxePart;
 UCLASS(Blueprintable, EditInlineNew)
 class UPickaxeSetReward : public UUnlockReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

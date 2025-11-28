@@ -8,7 +8,7 @@ class UDamageComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class USpecialDamageAttackComponent : public USpecialAttackComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

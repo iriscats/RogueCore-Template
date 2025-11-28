@@ -9,7 +9,7 @@ class UItemUpgrade;
 UCLASS(Blueprintable, EditInlineNew)
 class UPermanentItemUpgradeReward : public UUnlockReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

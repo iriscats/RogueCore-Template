@@ -19,7 +19,7 @@ class UUseAnimationSetting;
 UCLASS(Blueprintable, NonTransient)
 class UPlayerAnimInstance : public UAnimInstance, public IFootStepNotifyTarget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

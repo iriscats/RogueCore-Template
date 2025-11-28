@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, NonTransient)
 class UConvertedRobotAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool HasIntroduced;

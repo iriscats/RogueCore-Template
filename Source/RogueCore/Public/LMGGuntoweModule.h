@@ -13,7 +13,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class ALMGGuntoweModule : public AHostileTargetingGuntowerModule {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

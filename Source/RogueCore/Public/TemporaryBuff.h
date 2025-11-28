@@ -8,7 +8,7 @@ class UTexture2D;
 UCLASS(Abstract, Blueprintable)
 class UTemporaryBuff : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

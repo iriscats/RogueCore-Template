@@ -7,7 +7,7 @@ class AHydraWeedCore;
 UCLASS(Blueprintable)
 class AHydraWeedShooter : public AShootingPlant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

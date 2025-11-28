@@ -8,7 +8,7 @@ class AProjectileBase;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UChargedProjectileLauncherComponent : public UProjectileLauncherBaseComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSubclassOf<AProjectileBase> NormalProjectileClass;

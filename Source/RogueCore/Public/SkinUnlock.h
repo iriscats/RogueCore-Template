@@ -9,7 +9,7 @@ class UPlayerCharacterID;
 UCLASS(Blueprintable, DefaultToInstanced, EditInlineNew)
 class USkinUnlock : public UUnlockReward {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

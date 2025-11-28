@@ -8,7 +8,7 @@ class UItemID;
 UCLASS(Blueprintable)
 class ROGUECORE_API UBXEInventoryList : public UInventoryList {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

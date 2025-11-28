@@ -11,7 +11,7 @@ class UDamageParamBonus;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UUpgradeContainerComponent : public UActorComponent, public IDamageRelevant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Replicated, Transient, meta=(AllowPrivateAccess=true))
     TArray<UDamageBonusBase*> DamageBonusUpgrades;

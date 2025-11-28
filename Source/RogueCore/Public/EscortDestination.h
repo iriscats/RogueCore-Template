@@ -11,7 +11,7 @@ class UTerrainMaterial;
 UCLASS(Blueprintable)
 class ROGUECORE_API AEscortDestination : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

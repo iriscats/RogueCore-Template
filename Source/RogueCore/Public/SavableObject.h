@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class USavableObject : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

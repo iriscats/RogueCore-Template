@@ -7,7 +7,7 @@ class UCurveFloat;
 USTRUCT(BlueprintType)
 struct FAnalogAimSettings {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

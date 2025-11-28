@@ -8,7 +8,7 @@ class UTexture2D;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UTriFacetDynamicIcon : public UTwoFacetDynamicIcon {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

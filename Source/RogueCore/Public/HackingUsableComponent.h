@@ -11,7 +11,7 @@ class UHackingToolWidget;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UHackingUsableComponent : public UInstantUsable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FHackedDelegate, APlayerCharacter*, InHackedBy);

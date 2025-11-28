@@ -8,7 +8,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, DefaultToInstanced, EditInlineNew)
 class UPushDynamicStatusEffectDamageBonus : public UDamageBonusBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

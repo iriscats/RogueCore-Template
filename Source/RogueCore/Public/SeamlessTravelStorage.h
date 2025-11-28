@@ -14,7 +14,7 @@ class USeamlessTravelEventKey;
 UCLASS(Blueprintable)
 class USeamlessTravelStorage : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

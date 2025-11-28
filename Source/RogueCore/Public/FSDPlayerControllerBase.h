@@ -18,7 +18,7 @@ class UWindowManager;
 UCLASS(Blueprintable, Config=Engine)
 class AFSDPlayerControllerBase : public APlayerController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -22,7 +22,7 @@ class UTreasureRewarder;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATreasureBox : public ATreasureContainer {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

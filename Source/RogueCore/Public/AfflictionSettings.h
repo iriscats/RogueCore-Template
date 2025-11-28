@@ -10,7 +10,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class UAfflictionSettings : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FScaledMeshAfflictionTypeItem FrozenScaledMeshAffliction;

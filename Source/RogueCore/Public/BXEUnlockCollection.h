@@ -8,7 +8,7 @@ class UBXEUnlockBase;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API UBXEUnlockCollection : public UPrimaryDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

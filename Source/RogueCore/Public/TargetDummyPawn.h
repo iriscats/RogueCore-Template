@@ -9,7 +9,7 @@
 UCLASS(Abstract, Blueprintable)
 class ATargetDummyPawn : public AActor, public IGameplayTagAssetInterface, public ITargetable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer GameplayTags;

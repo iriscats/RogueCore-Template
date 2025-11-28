@@ -7,7 +7,7 @@
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UAbilityUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected sectio
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

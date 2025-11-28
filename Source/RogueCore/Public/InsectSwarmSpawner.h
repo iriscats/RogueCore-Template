@@ -10,7 +10,7 @@ class UStaticMeshComponent;
 UCLASS(Abstract, Blueprintable)
 class AInsectSwarmSpawner : public AEnemyPawn {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

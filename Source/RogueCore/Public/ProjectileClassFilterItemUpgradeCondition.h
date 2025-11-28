@@ -8,7 +8,7 @@ class AProjectileBase;
 UCLASS(Blueprintable, EditInlineNew)
 class UProjectileClassFilterItemUpgradeCondition : public UItemUpgradeCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

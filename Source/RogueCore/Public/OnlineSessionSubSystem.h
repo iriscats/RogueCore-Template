@@ -9,7 +9,7 @@ class UFSDSessionUpdater;
 UCLASS(Blueprintable)
 class UOnlineSessionSubSystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

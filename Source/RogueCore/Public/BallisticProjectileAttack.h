@@ -8,7 +8,7 @@ class AProjectile;
 UCLASS(Blueprintable, EditInlineNew)
 class UBallisticProjectileAttack : public UProjectileAttack {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

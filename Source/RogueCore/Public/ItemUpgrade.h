@@ -21,7 +21,7 @@ class UResourceData;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UItemUpgrade : public USavableDataAsset, public IRefundableInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FItemUpgradeSignature, UItemUpgrade*, upgrade);

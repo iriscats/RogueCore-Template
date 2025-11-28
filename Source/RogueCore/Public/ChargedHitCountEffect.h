@@ -9,7 +9,7 @@ class USoundCue;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UChargedHitCountEffect : public UWeaponHitCountEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float DamagePerHit;

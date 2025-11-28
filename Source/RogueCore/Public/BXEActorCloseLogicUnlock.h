@@ -7,7 +7,7 @@ class AActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UBXEActorCloseLogicUnlock : public UBXELogicUnlockComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

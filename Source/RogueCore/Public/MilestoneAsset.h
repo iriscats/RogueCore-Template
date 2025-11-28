@@ -15,7 +15,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class UMilestoneAsset : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

@@ -21,7 +21,7 @@ class UPrimitiveComponent;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UHealthComponentBase : public UActorComponent, public IHealth, public IDamageRelevant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCanTakeDamageDelegate, bool, OutCanTakeDamage);

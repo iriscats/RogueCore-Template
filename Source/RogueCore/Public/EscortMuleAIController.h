@@ -9,7 +9,7 @@ class UEscortObjective;
 UCLASS(Blueprintable)
 class AEscortMuleAIController : public AFSDAIController, public IAsyncPathRequestsInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

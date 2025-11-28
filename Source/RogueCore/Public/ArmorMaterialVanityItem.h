@@ -14,7 +14,7 @@ class UObject;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API UArmorMaterialVanityItem : public UVanityItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

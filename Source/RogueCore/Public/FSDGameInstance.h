@@ -87,7 +87,7 @@ class UWorld;
 UCLASS(Blueprintable, NonTransient)
 class ROGUECORE_API UFSDGameInstance : public UGameInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FSteamServerJoinStatusDelegate, ESteamServerJoinStatus, status);

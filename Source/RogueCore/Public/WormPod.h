@@ -19,7 +19,7 @@ class USoundCue;
 UCLASS(Blueprintable)
 class AWormPod : public ATaggedActor, public ITargetable {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USceneComponent* Root;

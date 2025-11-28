@@ -13,7 +13,7 @@ class UResourceBank;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AMolly : public AMULE {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FCalledByDelegate, APlayerCharacter*, InPlayer);

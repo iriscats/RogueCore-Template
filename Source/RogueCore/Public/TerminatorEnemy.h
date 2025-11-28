@@ -10,7 +10,7 @@ class UHitReactionComponent;
 UCLASS(Blueprintable)
 class ATerminatorEnemy : public AEnemyDeepPathfinderCharacter, public IMultiTargeter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAnimMontage* FlairAnimation;

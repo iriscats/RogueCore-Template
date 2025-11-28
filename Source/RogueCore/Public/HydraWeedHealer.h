@@ -7,7 +7,7 @@ class AHydraWeedCore;
 UCLASS(Blueprintable)
 class AHydraWeedHealer : public AEnemyPawn {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

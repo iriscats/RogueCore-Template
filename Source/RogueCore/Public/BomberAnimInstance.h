@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, NonTransient)
 class UBomberAnimInstance : public UFlyingBugAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool ShouldBomb;

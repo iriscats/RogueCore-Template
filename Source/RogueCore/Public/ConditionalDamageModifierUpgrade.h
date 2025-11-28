@@ -12,7 +12,7 @@ class UDamageCondition;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UConditionalDamageModifierUpgrade : public UItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UDamageCondition* Condition;

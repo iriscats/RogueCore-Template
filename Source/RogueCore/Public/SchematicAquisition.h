@@ -9,7 +9,7 @@ class USchematicRarity;
 UCLASS(Blueprintable, EditInlineNew)
 class ROGUECORE_API USchematicAquisition : public UItemAquisitionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USchematicPricingTier* PricingTier;

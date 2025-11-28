@@ -19,7 +19,7 @@ class USoundBase;
 UCLASS(Blueprintable)
 class ROGUECORE_API ATimeRewinder : public AAbilityItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

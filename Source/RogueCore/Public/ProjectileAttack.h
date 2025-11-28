@@ -7,7 +7,7 @@
 UCLASS(Abstract, Blueprintable, DefaultToInstanced, EditInlineNew)
 class UProjectileAttack : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(EditAnywhere, meta=(AllowPrivateAccess=true))

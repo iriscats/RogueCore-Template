@@ -12,7 +12,7 @@ class UTextBlock;
 UCLASS(Blueprintable)
 class UMultiTextCounterAction : public UTickableActionBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

@@ -44,7 +44,7 @@ class UTerrainDetectComponent;
 UCLASS(Blueprintable)
 class ARiftCrystal : public AActor, public IGameplayTagAssetInterface, public IBossFightInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

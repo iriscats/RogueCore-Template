@@ -11,7 +11,7 @@ class AFSDPlayerState;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UGooGunProjectileUpgrade : public UStandardItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

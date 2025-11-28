@@ -9,7 +9,7 @@ class UPhysicalMaterial;
 UCLASS(Blueprintable, CollapseCategories, EditInlineNew)
 class UAnimNotifyState_TimedParticleEffectWithImpactDecals : public UAnimNotifyState_TimedParticleEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

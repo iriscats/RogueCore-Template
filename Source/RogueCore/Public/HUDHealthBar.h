@@ -12,7 +12,7 @@ class UHealth;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UHUDHealthBar : public UFSDUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 
 public:

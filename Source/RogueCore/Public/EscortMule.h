@@ -27,7 +27,7 @@ class USkeletalMeshComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API AEscortMule : public AFSDPawn, public ITriggerAI {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

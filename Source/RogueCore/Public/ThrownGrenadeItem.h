@@ -17,7 +17,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class AThrownGrenadeItem : public AItem, public IRejoinListener {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGrenadeThrown);

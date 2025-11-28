@@ -23,7 +23,7 @@ class UWorld;
 UCLASS(Blueprintable)
 class ROGUECORE_API UFSDEvent : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

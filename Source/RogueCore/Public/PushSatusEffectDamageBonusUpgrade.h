@@ -12,7 +12,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UPushSatusEffectDamageBonusUpgrade : public UItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

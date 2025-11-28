@@ -7,7 +7,7 @@ class UDamageTag;
 UCLASS(Blueprintable, EditInlineNew, MinimalAPI)
 class UDamageTagBonusUpgrade : public UItemUpgrade {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
 

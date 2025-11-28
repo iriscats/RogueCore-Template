@@ -11,7 +11,7 @@ class USkeletalMeshComponent;
 UCLASS(Abstract, Blueprintable)
 class ADualAnimatedItem : public AItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     UAnimInstance* FPAnimInstance;

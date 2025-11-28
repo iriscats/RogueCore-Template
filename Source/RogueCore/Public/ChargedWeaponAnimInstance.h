@@ -7,7 +7,7 @@ class AChargedWeapon;
 UCLASS(Blueprintable, NonTransient)
 class UChargedWeaponAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool isCharging;

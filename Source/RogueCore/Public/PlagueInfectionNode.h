@@ -15,7 +15,7 @@ class UTerrainMaterial;
 UCLASS(Abstract, Blueprintable)
 class APlagueInfectionNode : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from protected section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintCallable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
