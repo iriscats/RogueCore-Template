@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ECaveEntrancePriority.h"
 #include "ECaveEntranceType.h"
 #include "RoomFeature.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameFramework/Actor.h"
 #include "ShellCrackedSignatureDelegate.h"
 #include "EscortDestination.generated.h"

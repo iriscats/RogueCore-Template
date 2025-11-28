@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UObject/UnrealType.h"
 #include "AttackBaseComponent.h"
 #include "BeamSweepHitSignatureDelegate.h"

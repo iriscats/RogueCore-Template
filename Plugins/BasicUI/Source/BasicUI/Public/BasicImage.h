@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Styling/SlateBrush.h"
 #include "BasicBrush.h"
 #include "BasicColor.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "DLCBase.h"
 #include "SaveGameIDInterface.h"
 #include "GameDLC.generated.h"

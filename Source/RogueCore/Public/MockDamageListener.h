@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "UObject/Object.h"
-#include "UObject/NoExportTypes.h"
+
 #include "MockDamageListener.generated.h"
 
 UCLASS(Blueprintable)

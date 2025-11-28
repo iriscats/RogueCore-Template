@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UObject/UnrealType.h"
 #include "Engine/LatentActionManager.h"
 #include "GameFramework/PawnMovementComponent.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Curves/CurveFloat.h"
 #include "EInputKeys.h"
 #include "ERobotState.h"

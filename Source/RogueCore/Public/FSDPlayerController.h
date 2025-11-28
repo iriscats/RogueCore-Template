@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ChatOpenedDelegateDelegate.h"
 #include "ClientDamageRapport.h"
 #include "ClientRadialDamageRapport.h"

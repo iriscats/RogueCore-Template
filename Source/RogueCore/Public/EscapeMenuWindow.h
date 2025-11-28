@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EMinersManualSection.h"
 #include "WindowWidget.h"
 #include "EscapeMenuWindow.generated.h"

@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTDecorator.h"
 #include "BehaviorTree/BehaviorTreeTypes.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UObject/UnrealType.h"
 #include "BTDecorator_CanSeeTarget.generated.h"
 

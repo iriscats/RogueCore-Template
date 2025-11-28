@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ChallengeSaveInfo.h"
 #include "RewardsClaimed.h"
 #include "SeasonSaveEntry.generated.h"

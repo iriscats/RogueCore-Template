@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "DrinkSave.generated.h"
 
 USTRUCT(BlueprintType)

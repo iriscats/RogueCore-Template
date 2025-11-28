@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTDecorator.h"
 #include "BehaviorTree/BehaviorTreeTypes.h"
-#include "UObject/NoExportTypes.h"
+
 #include "BTDecorator_CheckObstruction.generated.h"
 
 UCLASS(Blueprintable)

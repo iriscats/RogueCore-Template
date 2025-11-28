@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ESchematicState.h"
 #include "SavableDataAsset.h"
 #include "Schematic.generated.h"

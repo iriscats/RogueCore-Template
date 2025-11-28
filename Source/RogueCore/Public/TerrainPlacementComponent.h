@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Components/SceneComponent.h"
 #include "DebrisCapsule.h"
 #include "EDebrisColliderType.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ETerrainPlacementBoxType.h"
 #include "TerrainPlacementBox.generated.h"
 

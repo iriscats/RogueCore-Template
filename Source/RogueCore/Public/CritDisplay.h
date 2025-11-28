@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Runtime/SlateCore/Public/Fonts/SlateFontInfo.h"
 #include "CritDisplay.generated.h"
 

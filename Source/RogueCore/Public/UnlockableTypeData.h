@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ItemSlotIndex.h"
 #include "UnlockableWithCount.h"
 #include "UnlockableTypeData.generated.h"

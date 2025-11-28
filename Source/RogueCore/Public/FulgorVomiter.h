@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EnemyPawn.h"
 #include "Templates/SubclassOf.h"
 #include "FulgorVomiter.generated.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Components/ActorComponent.h"
 #include "DeepPathFinderSize.h"
 #include "Templates/SubclassOf.h"

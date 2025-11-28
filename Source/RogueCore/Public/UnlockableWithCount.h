@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UnlockableWithCount.generated.h"
 
 USTRUCT(BlueprintType)

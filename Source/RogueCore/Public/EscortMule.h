@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "DelegateDelegate.h"
 #include "EEscortExtractorState.h"
 #include "EEscortMissionState.h"

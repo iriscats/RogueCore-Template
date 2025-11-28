@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "SpaceRigNotification.generated.h"
 
 class UTexture2D;

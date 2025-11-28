@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "HostileGuntowerModule.h"
 #include "Templates/SubclassOf.h"
 #include "RadialFireModule.generated.h"

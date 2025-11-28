@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "MiningPodDialogs.h"
 #include "TeamTransport.h"
 #include "DropPod.generated.h"

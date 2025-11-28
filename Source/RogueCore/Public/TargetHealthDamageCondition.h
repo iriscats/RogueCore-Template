@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "DamageCondition.h"
 #include "TargetHealthDamageCondition.generated.h"
 

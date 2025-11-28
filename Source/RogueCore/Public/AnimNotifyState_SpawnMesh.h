@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameFramework/Pawn.h"
 #include "Runtime/Engine/Classes/Animation/AnimNotifies/AnimNotifyState.h"
 #include "AnimNotifyState_SpawnMesh.generated.h"

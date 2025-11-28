@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EIndicatorMode.h"
 #include "FacilityTurret.h"
 #include "AimingFacilityTurret.generated.h"

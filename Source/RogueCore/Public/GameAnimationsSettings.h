@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameAnimationsSettings.generated.h"
 
 UCLASS(Blueprintable, DefaultConfig, Config=Game)

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "AmmoDrivenWeaponAnimInstance.h"
 #include "BeltDrivenAnimInstance.generated.h"
 

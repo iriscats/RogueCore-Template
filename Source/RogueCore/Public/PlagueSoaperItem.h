@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "PlagueCleanerResourceChangedDelegate.h"
 #include "PlagueCleanupItem.h"
 #include "Templates/SubclassOf.h"

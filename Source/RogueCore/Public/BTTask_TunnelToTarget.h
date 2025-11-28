@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTTaskNode.h"
 #include "BehaviorTree/BehaviorTreeTypes.h"
-#include "UObject/NoExportTypes.h"
+
 #include "BTTask_TunnelToTarget.generated.h"
 
 UCLASS(Blueprintable)

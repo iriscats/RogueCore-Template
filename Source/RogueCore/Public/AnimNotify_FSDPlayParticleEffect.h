@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Runtime/Engine/Classes/Animation/AnimNotifies/AnimNotify.h"
 #include "AnimNotify_FSDPlayParticleEffect.generated.h"
 

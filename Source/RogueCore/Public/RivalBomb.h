@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameEvent.h"
 #include "Templates/SubclassOf.h"
 #include "RivalBomb.generated.h"

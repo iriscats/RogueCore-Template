@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "CampaignRequirement.h"
 #include "WeeklyTimerCampaignRequirement.generated.h"
 

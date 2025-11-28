@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "CharacterStateComponent.h"
 #include "DamageData.h"
 #include "ZipLine.h"

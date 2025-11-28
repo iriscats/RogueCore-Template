@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EMoveDirection.h"
 #include "ESpiderDeathAnimationCategory.h"
 #include "EnemyAnimInstance.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Components/ActorComponent.h"
 #include "UObject/UnrealType.h"
 #include "ReplicatedCharacterData.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Components/ActorComponent.h"
 #include "AttackerInfo.h"
 #include "AttackerPositioningComponent.generated.h"

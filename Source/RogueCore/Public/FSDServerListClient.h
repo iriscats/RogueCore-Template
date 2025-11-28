@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "Online/CoreOnline.h"
 #include "SessionSearchResultTypes.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "GetLobbiesResultDelegate.h"
 #include "ServerlistLobby.h"

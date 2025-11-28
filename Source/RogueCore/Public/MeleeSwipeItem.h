@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "AbilityItem.h"
 #include "MeleeSwipeData.h"
 #include "MeleeSwipeItem.generated.h"

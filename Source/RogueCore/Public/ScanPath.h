@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ScanPath.generated.h"
 
 USTRUCT(BlueprintType)

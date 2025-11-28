@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EventParticipant.h"
 #include "FSDPawn.h"
 #include "TowerEventModule.generated.h"

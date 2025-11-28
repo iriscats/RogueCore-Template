@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "AbilityUpgrade.h"
 #include "Templates/SubclassOf.h"
 #include "SpawnActorAbilityUpgrade.generated.h"

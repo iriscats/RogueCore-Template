@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "CharacterVanityLoadout.h"
 #include "EVanitySlot.h"
 #include "CharacterVanitySave.generated.h"

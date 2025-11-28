@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "Engine/NetSerialization.h"
 #include "TentacleTarget.generated.h"
 

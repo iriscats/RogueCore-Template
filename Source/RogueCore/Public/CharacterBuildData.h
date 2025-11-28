@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UnlockableTypeData.h"
 #include "CharacterBuildData.generated.h"
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EBXECompanionDroneState.h"
 #include "FSDAIController.h"
 #include "Templates/SubclassOf.h"

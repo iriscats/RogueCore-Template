@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "VictoryPoseSave.generated.h"
 
 USTRUCT(BlueprintType)

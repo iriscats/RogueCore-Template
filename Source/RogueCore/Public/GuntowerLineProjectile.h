@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 
 #include "Projectile.h"
 #include "GuntowerLineProjectile.generated.h"

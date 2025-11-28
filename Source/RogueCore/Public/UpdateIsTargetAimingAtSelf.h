@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/BTService.h"
 #include "BehaviorTree/BehaviorTreeTypes.h"
-#include "UObject/NoExportTypes.h"
+
 #include "UpdateIsTargetAimingAtSelf.generated.h"
 
 UCLASS(Blueprintable)

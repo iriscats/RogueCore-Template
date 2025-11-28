@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ERefineryState.h"
 #include "Objective.h"
 #include "Templates/SubclassOf.h"

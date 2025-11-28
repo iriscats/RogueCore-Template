@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ObjectiveMissionIcon.generated.h"
 
 class UTexture2D;

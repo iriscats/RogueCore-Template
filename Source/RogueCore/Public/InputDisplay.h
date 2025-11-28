@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "EInputInteraction.h"
 #include "InputDisplay.generated.h"
 

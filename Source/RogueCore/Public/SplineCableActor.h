@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameFramework/Actor.h"
 #include "UObject/UnrealType.h"
 #include "Components/SplineMeshComponent.h"

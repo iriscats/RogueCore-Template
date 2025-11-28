@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameFramework/Character.h"
 #include "UObject/UnrealType.h"
 #include "Engine/NetSerialization.h"

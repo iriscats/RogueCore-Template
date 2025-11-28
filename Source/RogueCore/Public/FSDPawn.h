@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "GameFramework/Pawn.h"
 #include "GameplayTagContainer.h"
 #include "GameplayTagAssetInterface.h"

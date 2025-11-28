@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 #include "AnimatedItem.h"
 #include "PlaceableInterface.h"
 #include "Templates/SubclassOf.h"

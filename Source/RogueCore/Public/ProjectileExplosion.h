@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-#include "UObject/NoExportTypes.h"
+
 
 #include "ExplosionBaseComponent.h"
 #include "ScaledEffect.h"

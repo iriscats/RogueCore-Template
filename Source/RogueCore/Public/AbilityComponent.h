@@ -12,11 +12,11 @@
 class APlayerCharacter;
 class UAbilityData;
 class UDialogDataAsset;
+
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UAbilityComponent : public UActorComponent {
     GENERATED_BODY()
     
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FFloatDelegate OnAbilityActivated;

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "BasicUserWidget.h"
-#include "UObject/NoExportTypes.h"
+
 #include "ButtonHoldSettings.h"
 #include "BasicButtonHoldIndicator.generated.h"
 
