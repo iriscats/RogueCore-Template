@@ -41,159 +41,7 @@
 #include "WeaponTagBonusesComponent.h"
 
 APlayerCharacter::APlayerCharacter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UPlayerMovementComponent>(TEXT("CharMoveComp"))) {
-    this->AudioDownCameraStatic = NULL;
-    this->AudioComponent_DownCameraStatic = NULL;
-    this->HeightenedSenseComponent = NULL;
-    this->ZipLineStateComponent = NULL;
-    this->BoundPerkActivationW = NULL;
-    this->PerkActivationTimer = -1.00f;
-    this->IsCloseToFlare = false;
-    this->GrabbedByClass = NULL;
-    this->bIsBeingBittenByCaveLeech = false;
-    this->WidgetInteraction = CreateDefaultSubobject<UWidgetInteractionComponent>(TEXT("WidgetInteraction"));
-    this->EquipLaserpointerHoldDuration = 0.33f;
-    this->IsPressingMovementInputKey = false;
-    this->characterID = NULL;
-    this->FPMesh = CreateDefaultSubobject<UFirstPersonSkeletalMeshComponent>(TEXT("FPMesh"));
-    this->FirstPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FirstPersonCamera"));
-    this->FirstPersonRoot = CreateDefaultSubobject<USceneComponent>(TEXT("FPRoot"));
-    this->ActorTracking = CreateDefaultSubobject<UActorTrackingComponent>(TEXT("ActorTracking"));
-    this->IntoxicationComponent = NULL;
-    this->MissionStatsCollector = CreateDefaultSubobject<UMissionStatsCollector>(TEXT("MissionStatsCollector"));
-    this->ThirdPersonSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("ThirdPersonSpringArm"));
-    this->ThirdPersonCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("ThirdPersonCamera"));
-    this->ThirdPersonLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("ThirdPersonLight"));
-    this->FollowSpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("FollowSpringArm"));
-    this->DamageNumberAggregator = CreateDefaultSubobject<UDamageNumberAggregator>(TEXT("DamageNumberAggregatorComponent"));
-    this->FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-    this->GymCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("GymCamera"));
-    this->PerkComponent = CreateDefaultSubobject<UPerkComponent>(TEXT("CharacterPerkContainerComponent"));
-    this->PlayerCheatComponent = CreateDefaultSubobject<UFSDPlayerCheatComponent>(TEXT("PlayerCheatComponent"));
-    this->GymSpringArm = (USpringArmComponent*)FollowSpringArm;
-    this->DownCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("DownCamera"));
-    this->CameraController = CreateDefaultSubobject<UCharacterCameraController>(TEXT("CameraController"));
-    this->HealthComponent = CreateDefaultSubobject<UPlayerHealthComponent>(TEXT("Health"));
-    this->SightComponent = CreateDefaultSubobject<UCharacterSightComponent>(TEXT("SightComponent"));
-    this->InventoryComponent = CreateDefaultSubobject<UInventoryComponent>(TEXT("Inventory"));
-    this->UseComponentNew = CreateDefaultSubobject<UCharacterUseComponent>(TEXT("UseComponentNew"));
-    this->UsableComponent = CreateDefaultSubobject<USingleUsableComponent>(TEXT("UsableComponent"));
-    this->OutlineComponent = CreateDefaultSubobject<UOutlineComponent>(TEXT("OutlineComponent"));
-    this->RecoilComponent = CreateDefaultSubobject<UCharacterRecoilComponent>(TEXT("RecoilComponent"));
-    this->StatusEffectsComponent = CreateDefaultSubobject<UStatusEffectsComponent>(TEXT("StatusEffects"));
-    this->PawnStatsComponent = CreateDefaultSubobject<UPawnStatsComponent>(TEXT("PawnStats"));
-    this->PawnAfflictionComponent = CreateDefaultSubobject<UPlayerAfflictionComponent>(TEXT("PawnAfflictions"));
-    this->PlayerInfoComponent = CreateDefaultSubobject<UPlayerInfoComponent>(TEXT("PlayerInfoComponent"));
-    this->AttackerPositioningComponent = CreateDefaultSubobject<UPlayerAttackPositionComponent>(TEXT("AttackerPositioning"));
-    this->CommunicationComponent = CreateDefaultSubobject<UCommunicationComponent>(TEXT("Communication"));
-    this->ElementComponent = CreateDefaultSubobject<UElementComponent>(TEXT("ElementComponent"));
-    this->ReactiveTerrainTracker = CreateDefaultSubobject<UPlayerReactiveTerrainTrackerComponent>(TEXT("TerrainTracker"));
-    this->WeaponTagBonuses = CreateDefaultSubobject<UWeaponTagBonusesComponent>(TEXT("WeaponTagBonuses"));
-    this->TrackGrindUsableComponent = CreateDefaultSubobject<UInstantUsable>(TEXT("TrackGrindUsable"));
-    this->StatCounterComponent = CreateDefaultSubobject<UBXEStatCounterComponent>(TEXT("StatCounterComponent"));
-    this->AbilityComponent = NULL;
-    this->PlayerAmbienceSoundComponent = CreateDefaultSubobject<UPlayerAmbienceSoundComponent>(TEXT("PlayerAmbienceSoundComponent"));
-    this->PlayerEvents = CreateDefaultSubobject<UPlayerEventsComponent>(TEXT("PlayerEventsComponent"));
-    this->CrosshairExtensionComponent = CreateDefaultSubobject<UCrosshairExtensionComponent>(TEXT("CrosshairExtensionComponent"));
-    this->AccessCollectionComponent = CreateDefaultSubobject<UAccessCollectionComponent>(TEXT("AccessCollectionComponent"));
-    this->BioBoosterDecksComponent = CreateDefaultSubobject<UBoosterDeckContainerComponent>(TEXT("BioBoosterDecksComponent"));
-    this->UpgradeContainerComponent = CreateDefaultSubobject<UUpgradeContainerComponent>(TEXT("UpgradeContainer"));
-    this->RunningSpeed = 0.00f;
-    this->RunBoost = 0.00f;
-    this->RunBoostChargeTime = 0.00f;
-    this->RunBoostActivationSound = NULL;
-    this->RunBoostParticles = NULL;
-    this->RunBoostAffliction = NULL;
-    this->HangingPhysicsAsset = NULL;
-    this->HangingSimulationBlend = 1.00f;
-    this->IsPlayableCharacter = true;
-    this->SprintSoundComponent = NULL;
-    this->SpringSound = NULL;
-    this->DownedCameraMinPitch = -75.00f;
-    this->DownedCameraMaxPitch = 0.00f;
-    this->TurnToFaceScannerAngularSpeed = 180.00f;
-    this->Turn180Time = 0.50f;
-    this->CarryingMovementSpeedPenalty = 0.50f;
-    this->CarryingMaxFallVelocity = 1200.00f;
-    this->MaxThrowProgress = 1.00f;
-    this->MaxThrowHoldDuration = 2.00f;
-    this->CarryingThrowMinForce = 100.00f;
-    this->CarryingThrowMaxForce = 600.00f;
-    this->PlayerVelocityToThrowFactor = 0.00f;
-    this->CarryingThrowingStatusEffect = NULL;
-    this->ThrowCarriableProgress = 0.00f;
-    this->ActiveCharacterState = NULL;
-    this->IsInDropPod = false;
-    this->IsInEscapePod = false;
-    this->ButtonMemoryDuration = 0.25f;
-    this->IsRunning = false;
-    this->SprintingEnabled = true;
-    this->CanDash = false;
-    this->DashInputWindow = 0.30f;
-    this->DashFowardMovementMinRequirement = 0.90f;
-    this->DashRightMovementMaxRequirement = 0.10f;
-    this->DashControllerMinValueRequired = 0.50f;
-    this->DashCooldown = 1.00f;
-    this->DashStatusEffect = NULL;
-    this->StandingStillActivationTime = 0.00f;
-    this->StandingStillMaxVelocity = 1.00f;
-    this->ForwardInput = 0.00f;
-    this->RightInput = 0.00f;
-    this->ControllerForwardInput = 0.00f;
-    this->ControllerRightInput = 0.00f;
-    this->StoppedRunningTime = -1.00f;
-    this->ShoutPressedTime = -1.00f;
-    this->bIsUsingItemPressed = false;
-    this->bIsUsingPressed = false;
-    this->UsingDelay = 0.00f;
-    this->bIsWorkingout = false;
-    this->IsStandingStill = false;
-    this->HeadLightOn = true;
-    this->isUsing = false;
-    this->JumpPressedTime = 0.00f;
-    this->CanMove = true;
-    this->CanAim = true;
-    this->CanUseItem = true;
-    this->CanChangeItems = true;
-    this->CanMine = true;
-    this->CanSalute = true;
-    this->IsStandingDown = false;
-    this->InDanceRange = false;
-    this->IsDancing = false;
-    this->CanUseUsables = true;
-    this->DanceStartTime = 0.00f;
-    this->HappyFeetAchievement = NULL;
-    this->DanceMove = 0;
-    this->CameraMode = ECharacterCameraMode::FirstPerson;
-    this->IsInCharacterSelectionWorld = false;
-    this->bShouldSpawnAnimEffects = true;
-    this->IdleTime = 0.00f;
-    this->FPDrinkSalute = NULL;
-    this->TPDrinkSalute = NULL;
-    this->CurrentSaluteMontage = NULL;
-    this->BlockTrackGrindOnLanded = false;
-    this->RadarMaterialInstance = NULL;
-    this->RadarMaterialAngleParameterIndex = 0;
-    this->FallbackPhysicalMaterial = NULL;
-    this->ClientReady = false;
-    this->NextCharacterState = NULL;
-    this->PlayerIsLeavingInDroppod = false;
-    this->CanInstantRevive = false;
-    this->CharacterVanity = CreateDefaultSubobject<UCharacterVanityComponent>(TEXT("CharacterVanity"));
-    this->OnLandedAttachTo = NULL;
-    this->TrackedPerksThatAreUpdating = 0;
-    this->ActorTracking->SetupAttachment(RootComponent);
-    this->DownCamera->SetupAttachment(RootComponent);
-    this->FPMesh->SetupAttachment(FirstPersonRoot);
-    this->FirstPersonCamera->SetupAttachment(FPMesh);
-    this->FirstPersonRoot->SetupAttachment(RootComponent);
-    this->FollowCamera->SetupAttachment(FollowSpringArm);
-    this->FollowSpringArm->SetupAttachment(RootComponent);
-    this->GymCamera->SetupAttachment(FollowSpringArm);
-    this->GymSpringArm->SetupAttachment(RootComponent);
-    this->ThirdPersonCamera->SetupAttachment(ThirdPersonSpringArm);
-    this->ThirdPersonLight->SetupAttachment(RootComponent);
-    this->ThirdPersonSpringArm->SetupAttachment(RootComponent);
-    this->WidgetInteraction->SetupAttachment(FirstPersonCamera);
+
 }
 
 void APlayerCharacter::UseZipLine(AZipLineProjectile* ZipLine, const FVector& Start, const FVector& End) {
@@ -447,7 +295,7 @@ void APlayerCharacter::OnRep_DanceMove() {
 void APlayerCharacter::OnRep_CharacterState(UCharacterStateComponent* oldState) {
 }
 
-void APlayerCharacter::SetPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet) {
+void APlayerCharacter::OnPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet) {
 }
 
 void APlayerCharacter::OnItemEquipped(AItem* Item) {
@@ -808,7 +656,7 @@ void APlayerCharacter::AcceptInvite() {
 
 void APlayerCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
-    
+
     DOREPLIFETIME(APlayerCharacter, IsCloseToFlare);
     DOREPLIFETIME(APlayerCharacter, IsPressingMovementInputKey);
     DOREPLIFETIME(APlayerCharacter, ActiveCharacterState);
@@ -822,5 +670,6 @@ void APlayerCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& Out
     DOREPLIFETIME(APlayerCharacter, PlayerIsLeavingInDroppod);
     DOREPLIFETIME(APlayerCharacter, UniqueRunID);
 }
+
 
 
