@@ -7,7 +7,7 @@ class AActor;
 UCLASS(Blueprintable)
 class AShredder : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 
 public:

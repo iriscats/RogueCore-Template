@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UNegotiationRarityModifierMutator : public UMutator {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -8,7 +8,7 @@
 UCLASS(Blueprintable)
 class ROGUECORE_API UBTTask_FindPointNearTarget : public UBTTaskNode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FBlackboardKeySelector TargetKey;

@@ -7,7 +7,7 @@ class UStaticSpawnPoint;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UStaticSpawnPointManager : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

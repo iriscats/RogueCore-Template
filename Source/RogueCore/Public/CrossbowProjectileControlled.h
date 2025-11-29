@@ -9,7 +9,7 @@ class USceneComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UCrossbowProjectileControlled : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     USceneComponent* HomingTarget;

@@ -36,7 +36,7 @@ class UStaticMeshComponent;
 UCLASS(Blueprintable)
 class AConvertedRobot : public AEnemyDeepPathfinderCharacter, public IWeaponFireOwner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

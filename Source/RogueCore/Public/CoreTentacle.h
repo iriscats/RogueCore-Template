@@ -12,7 +12,7 @@ class UDebrisPositioning;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API ACoreTentacle : public ATentacleBase, public ITriggerAI {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, ReplicatedUsing=OnRep_MovementTarget, meta=(AllowPrivateAccess=true))
     FCoreTentacleMovementTarget MovementTarget;

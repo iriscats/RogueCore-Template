@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class UBTTask_SetCondition : public UBTTaskNode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

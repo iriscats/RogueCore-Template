@@ -7,7 +7,7 @@ class UTerrainScannerStaticMesh;
 UCLASS(Blueprintable)
 class UTerrainScannerMeshTrackingSubsystem : public UWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

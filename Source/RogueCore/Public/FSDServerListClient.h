@@ -12,7 +12,7 @@
 UCLASS(Blueprintable)
 class UFSDServerListClient : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FBlueprintFindSessionsResultDelegate, const TArray<FSessionSearchResultWrapper>&, Results);

@@ -8,7 +8,7 @@ class UCrosshairExtensionWidget;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCrosshairExtensionComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FCrosshairExtensionWidgetDelegate, TSubclassOf<UCrosshairExtensionWidget>, WidgetClass, UCrosshairExtensionWidget*, Widget);

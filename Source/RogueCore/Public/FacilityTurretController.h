@@ -10,7 +10,7 @@ class UHealthComponentBase;
 UCLASS(Blueprintable)
 class AFacilityTurretController : public AFSDAIController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

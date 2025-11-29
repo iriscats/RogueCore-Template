@@ -7,7 +7,7 @@ class UVoteOptionAction;
 UCLASS(Blueprintable)
 class UVoteOptionPool : public UPrimaryDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Export, meta=(AllowPrivateAccess=true))
     TSet<UVoteOptionAction*> VoteOptionActions;

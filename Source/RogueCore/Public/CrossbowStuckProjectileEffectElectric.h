@@ -9,7 +9,7 @@ class ACrossbowElectroBeam;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCrossbowStuckProjectileEffectElectric : public UCrossbowStuckProjectileEffect {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

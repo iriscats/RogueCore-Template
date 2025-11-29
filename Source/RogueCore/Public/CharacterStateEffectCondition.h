@@ -7,7 +7,7 @@
 UCLASS(Blueprintable, EditInlineNew)
 class UCharacterStateEffectCondition : public UEffectTriggerCondition {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     ECharacterState TargetState;

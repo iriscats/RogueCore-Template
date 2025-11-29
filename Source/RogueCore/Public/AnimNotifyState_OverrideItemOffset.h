@@ -8,7 +8,7 @@
 UCLASS(Blueprintable, CollapseCategories, EditInlineNew, MinimalAPI)
 class UAnimNotifyState_OverrideItemOffset : public UAnimNotifyState {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

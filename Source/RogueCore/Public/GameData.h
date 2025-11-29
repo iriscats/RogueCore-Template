@@ -84,7 +84,7 @@ class UVictoryPoseSettings;
 UCLASS(Blueprintable)
 class ROGUECORE_API UGameData : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FGVisibilityGroups VisibilityGroups;

@@ -8,7 +8,7 @@ class USubsystem;
 UCLASS(Blueprintable)
 class USubsystemLoader : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

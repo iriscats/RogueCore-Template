@@ -14,7 +14,7 @@ class USceneComponent;
 UCLASS(Abstract, Blueprintable)
 class AFulgorVomiter : public AEnemyPawn {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

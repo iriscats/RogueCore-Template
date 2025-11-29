@@ -12,7 +12,7 @@ class UObject;
 UCLASS(Blueprintable, MinimalAPI)
 class UFSDJoinSessionCallbackProxy : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FEmptyOnlineDelegate OnSuccess;

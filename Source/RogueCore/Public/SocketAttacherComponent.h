@@ -7,7 +7,7 @@ class AActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class USocketAttacherComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
  

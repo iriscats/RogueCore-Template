@@ -9,7 +9,7 @@ class UFSDCloudSaveHandler;
 UCLASS(Blueprintable)
 class UFSDCloudLoadSave : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

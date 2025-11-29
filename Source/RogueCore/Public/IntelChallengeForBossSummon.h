@@ -8,7 +8,7 @@ class AActor;
 UCLASS(Abstract, Blueprintable)
 class UIntelChallengeForBossSummon : public UIntelChallenge {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 
 public:

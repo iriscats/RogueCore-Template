@@ -7,7 +7,7 @@ class UDebrisBase;
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDebrisInstances : public UHierarchicalInstancedStaticMeshComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

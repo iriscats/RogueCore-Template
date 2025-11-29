@@ -29,7 +29,7 @@ class UStatusEffect;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDeathFXComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 
 public:

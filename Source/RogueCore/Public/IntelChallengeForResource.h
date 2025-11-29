@@ -9,7 +9,7 @@ class UResourceData;
 UCLASS(Abstract, Blueprintable)
 class UIntelChallengeForResource : public UIntelChallenge {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -14,7 +14,7 @@ class URun;
 UCLASS(Blueprintable)
 class ROGUECORE_API URunHistoryManager : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

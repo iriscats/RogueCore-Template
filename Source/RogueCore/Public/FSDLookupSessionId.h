@@ -10,7 +10,7 @@ class UObject;
 UCLASS(Blueprintable, MinimalAPI)
 class UFSDLookupSessionId : public UOnlineBlueprintCallProxyBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
  

@@ -9,7 +9,7 @@ class UPerkDelegateItem;
 UCLASS(Blueprintable)
 class ROGUECORE_API UPerkSubsystem : public UWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

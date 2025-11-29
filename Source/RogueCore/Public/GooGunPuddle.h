@@ -16,7 +16,7 @@ class UStatusEffect;
 UCLASS(Blueprintable)
 class AGooGunPuddle : public AActor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Instanced, meta=(AllowPrivateAccess=true))

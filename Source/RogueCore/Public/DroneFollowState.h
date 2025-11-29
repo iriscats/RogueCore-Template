@@ -7,7 +7,7 @@ class AActor;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDroneFollowState : public UDroneStateComponentBase {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

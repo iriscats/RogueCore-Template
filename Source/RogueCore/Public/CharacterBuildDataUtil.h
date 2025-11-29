@@ -11,7 +11,7 @@ class UBXEUnlockBase;
 UCLASS(Blueprintable)
 class ROGUECORE_API UCharacterBuildDataUtil : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TMap<FGuid, UBXEUnlockBase*> AllUnlocks;

@@ -13,7 +13,7 @@ class UStaticMeshComponent;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API AFuelLineSegment : public ATrackBuilderSegment {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     USplineMeshComponent* FuelLineSplineMesh;

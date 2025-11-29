@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class AConvertedRobotController : public AEnemyAIController {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

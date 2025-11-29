@@ -8,7 +8,7 @@ class UPerkAsset;
 UCLASS(Abstract, Blueprintable, EditInlineNew)
 class UPerkCooldownWidget : public UUserWidget {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
  
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

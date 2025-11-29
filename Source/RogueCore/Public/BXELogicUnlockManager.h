@@ -7,7 +7,7 @@ class UBXELogicUnlockComponent;
 UCLASS(Blueprintable)
 class UBXELogicUnlockManager : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))

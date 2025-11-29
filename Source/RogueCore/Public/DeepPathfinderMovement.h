@@ -29,7 +29,7 @@ class UPawnStatsComponent;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UDeepPathfinderMovement : public UPawnMovementComponent, public IAsyncPathRequestsInterface {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

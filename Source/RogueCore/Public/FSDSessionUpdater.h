@@ -8,7 +8,7 @@ class UFSDSessionHandler;
 UCLASS(Blueprintable)
 class UFSDSessionUpdater : public UObject {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNewFSDSessionID OnNewFSDSessionID;

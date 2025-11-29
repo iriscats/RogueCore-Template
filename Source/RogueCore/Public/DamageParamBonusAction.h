@@ -7,7 +7,7 @@ class UDamageParamBonus;
 UCLASS(Blueprintable, EditInlineNew)
 class UDamageParamBonusAction : public UBXEUnlockAction {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

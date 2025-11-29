@@ -14,7 +14,7 @@ class USphereComponent;
 UCLASS(Blueprintable)
 class AFriendlyParasite : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

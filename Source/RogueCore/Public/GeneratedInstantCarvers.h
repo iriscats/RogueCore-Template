@@ -6,7 +6,7 @@
 USTRUCT(BlueprintType)
 struct FGeneratedInstantCarvers {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

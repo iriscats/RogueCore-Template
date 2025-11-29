@@ -9,7 +9,7 @@
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class ROGUECORE_API UDamageListenerCollection : public UActorComponent, public IDamageRelevant {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

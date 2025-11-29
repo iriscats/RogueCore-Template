@@ -13,7 +13,7 @@ class UObject;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API UBXEDamageSubsystem : public UWorldSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 
 public:

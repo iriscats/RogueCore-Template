@@ -6,7 +6,7 @@
 UCLASS(Blueprintable, CollapseCategories, MinimalAPI)
 class UAnimNotifyState_AnimSequence : public UAnimNotify {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
 

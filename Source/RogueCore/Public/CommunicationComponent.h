@@ -23,7 +23,7 @@ class USoundBase;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCommunicationComponent : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FShoutDelegate, APlayerCharacter*, InSender, FText, InText, float, InDuration);

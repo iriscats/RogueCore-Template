@@ -8,7 +8,7 @@ class AActor;
 UCLASS(Abstract, Blueprintable)
 class UIntelChallengeUseDataTerminal : public UIntelChallengePlayerMonitor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

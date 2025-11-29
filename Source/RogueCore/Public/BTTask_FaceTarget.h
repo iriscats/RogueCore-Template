@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class UBTTask_FaceTarget : public UBTTaskNode {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

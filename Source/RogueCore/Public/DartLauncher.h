@@ -12,7 +12,7 @@ class UProjectileLauncherComponent;
 UCLASS(Blueprintable)
 class ROGUECORE_API ADartLauncher : public AAbilityItem, public IWeaponFireOwner {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

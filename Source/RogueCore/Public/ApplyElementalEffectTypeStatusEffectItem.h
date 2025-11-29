@@ -8,7 +8,7 @@ class UElementType;
 UCLASS(Blueprintable, EditInlineNew)
 class UApplyElementalEffectTypeStatusEffectItem : public UStatusEffectItem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

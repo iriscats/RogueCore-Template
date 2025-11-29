@@ -10,7 +10,7 @@ class UPlayerCharacterID;
 UCLASS(Blueprintable)
 class UAnimSequenceCollection : public UDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 
 public:

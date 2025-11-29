@@ -11,7 +11,7 @@ class USkeletalMesh;
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UProjectileThrowerAttack : public UProjectileAttackComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
  

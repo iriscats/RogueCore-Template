@@ -11,7 +11,7 @@ class UWorld;
 UCLASS(Blueprintable)
 class UFXTelemetry : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
  

@@ -14,7 +14,7 @@ class UIntelObjective;
 UCLASS(Blueprintable)
 class UIntelCampaignSubsystem : public UGameInstanceSubsystem {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FIntelSubsystemObjectiveDelegate, UIntelObjective*, Objective);

@@ -7,7 +7,7 @@ class APlagueCleanupItem;
 UCLASS(Blueprintable, NonTransient)
 class UCleanupToolAnimInstance : public UAnimInstance {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))

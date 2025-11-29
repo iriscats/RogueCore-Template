@@ -26,7 +26,7 @@ class USphereComponent;
 UCLASS(Abstract, Blueprintable)
 class ROGUECORE_API APatrolBot : public AEnemyDeepPathfinderCharacter {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))

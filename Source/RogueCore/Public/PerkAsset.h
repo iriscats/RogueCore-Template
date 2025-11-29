@@ -19,7 +19,7 @@ class UTexture2D;
 UCLASS(Blueprintable)
 class ROGUECORE_API UPerkAsset : public USavableDataAsset {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -10,7 +10,7 @@ class AActor;
 UCLASS(Blueprintable, CollapseCategories, EditInlineNew, MinimalAPI)
 class UAnimNotifyState_SpawnAndReleaseActor : public UAnimNotifyState {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

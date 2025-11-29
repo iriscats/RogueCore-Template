@@ -11,7 +11,7 @@ class UPawnStatsComponent;
 UCLASS(Abstract, Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UProjectileLauncherBaseComponent : public UWeaponFireComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FProjectileSpawned, AProjectileBase*, Projectile);

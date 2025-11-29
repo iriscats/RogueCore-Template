@@ -8,7 +8,7 @@ class UCameraComponent;
 UCLASS(Blueprintable, MinimalAPI, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))
 class UCharacterCameraController : public UActorComponent {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
 
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

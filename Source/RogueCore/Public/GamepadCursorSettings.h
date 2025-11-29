@@ -5,7 +5,7 @@
 UCLASS(Blueprintable, DefaultConfig, Config=Game)
 class UGamepadCursorSettings : public UDeveloperSettings {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, Config, EditAnywhere, meta=(AllowPrivateAccess=true))

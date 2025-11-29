@@ -7,7 +7,7 @@
 UCLASS(Blueprintable)
 class ROGUECORE_API UBTDecorator_RCCooldown : public UBTDecorator_Cooldown {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

@@ -8,7 +8,7 @@ class UUsableComponentBase;
 UCLASS(Abstract, Blueprintable)
 class UIntelChallengeUseAccessCondition : public UIntelChallengePlayerMonitor {
     GENERATED_BODY()
-    // UPROPERTY fields moved from private section
+    
 public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     UAccessCondition* RequiredAccess;
