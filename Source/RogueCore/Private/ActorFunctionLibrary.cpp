@@ -240,7 +240,7 @@ FVector UActorFunctionLibrary::FindCharacterTeleportLocation(UObject* WorldConte
     return FVector{};
 }
 
-void UActorFunctionLibrary::FadeMaterials(const UObject* WorldContextObject, const UMeshComponent*& mesh, float Duration) {
+void UActorFunctionLibrary::FadeMaterials(const UObject* WorldContextObject, UMeshComponent* mesh, float Duration) {
 }
 
 float UActorFunctionLibrary::EvaluateRuntimeCurve(UObject* WorldContextObject, const FRuntimeFloatCurve& Curve, float Time) {
@@ -251,7 +251,7 @@ bool UActorFunctionLibrary::DoesActorHaveEnemyId(const AActor* Actor, const UEne
     return false;
 }
 
-void UActorFunctionLibrary::DissolveMaterials(const UObject* WorldContextObject, const UMeshComponent*& mesh, float Duration) {
+void UActorFunctionLibrary::DissolveMaterials(const UObject* WorldContextObject, UMeshComponent* mesh, float Duration) {
 }
 
 TArray<UMaterialInstanceDynamic*> UActorFunctionLibrary::CreateDynamicMaterialInstances(UMeshComponent* mesh) {

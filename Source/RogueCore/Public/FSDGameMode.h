@@ -34,105 +34,265 @@ class UPheromoneSpawnerComponent;
 class UStageManager;
 class UStaticSpawnPointManager;
 class UWidget;
-UCLASS(Blueprintable, NonTransient)
+
+UCLASS(Blueprintable)
 class ROGUECORE_API AFSDGameMode : public AGameMode {
     GENERATED_BODY()
-    
-
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMatchStartedSignature OnMatchStarted;
     
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FAllReadySignature OnAllControllersReady;
+    
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FPlayerLoggedIn OnPlayerLoggedIn;
+    
+    UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FCallDonkey OnDonkeyCalled;
+    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool GenerationStarted;
+    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UPheromoneSpawnerComponent* PheromoneComponent;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UEnemySpawnManager* EnemySpawnManager;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UObjectivesManager* ObjectivesManager;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UKeepInsideWorld* KeepInsideWorld;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStageManager* MissionManager;
+    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UEncounterManager* EncounterManagerComponent;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UCritterManager* CritterManager;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<AFSDPlayerController*> PlayerControllers;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
     UStaticSpawnPointManager* StaticSpawnPointManager;
+    
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, meta=(AllowPrivateAccess=true))
+    UFormationsManagerComponent* FormationsManager;
+    
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ATeamTransport> DropPodClass;
-
- 
-    UFormationsManagerComponent* FormationsManager;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<AMolly> MuleClass;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ATeamTransport> DropodEscapeClass;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ATeamTransport> DropodEscapeSafeClass;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<ABosco> DroneClass;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<UWidget> CheatUI;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool PreventAllLatejoin;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool PreventLateJoinOnMissionStart;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float PlayerSpawnHeightOffset;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     float FriendlyFireGracePeriod;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UEnemyDescriptor*> ForcedEnemyPool;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UEnemyDescriptor*> ForcedStationaryPool;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool UseNormalEncounters;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool UseStationaryEncounter;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool AllowSpecialEncounters;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced, Transient, meta=(AllowPrivateAccess=true))
     UEnemyWaveManager* CachedWaveManager;
+    
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     bool MissionWasAborted;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Transient, meta=(AllowPrivateAccess=true))
     TArray<FNamedCountdownFloat> NamedCountdowns;
+    
+public:
     AFSDGameMode(const FObjectInitializer& ObjectInitializer);
+
     UFUNCTION(BlueprintCallable)
     void StartGame();
+    
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void SpawnMissionCriticalItems(const ECriticalItemPass& pass);
+    
+
+    UFUNCTION(BlueprintCallable)
     void SignalLevelEndToAll();
+    
+public:
+    UFUNCTION(BlueprintCallable)
     void SetForcedStationaryPool(const TArray<UEnemyDescriptor*>& pool);
+    
+    UFUNCTION(BlueprintCallable)
     void SetForcedEnemyPool(const TArray<UEnemyDescriptor*>& pool);
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void RecieveEndLevel();
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void RecieveAllDwarvesDown();
+    
+
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void Recieve_GotoNextLevel();
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceivePostSeamlessTravel();
+    
+public:
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceiveBeginEndLevelAsSuccess();
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnObjectivesInitialized();
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void OnLevelGenerationComplete(int32 pass);
+    
+
+    UFUNCTION(BlueprintCallable)
     void OnControllerDestroyed(AActor* Controller);
+    
+public:
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void LoadSpaceRig();
+    
+    UFUNCTION(BlueprintCallable)
     void LoadMission(const FString& MapName, TSoftClassPtr<AFSDGameMode> optionalGameMode, bool ClearPlayerState);
+    
+    UFUNCTION(BlueprintCallable)
     void HostAbortMission();
+    
+
+    UFUNCTION(BlueprintCallable)
     void HandlePlayerBanning(AFSDPlayerController* FSDPlayerController);
+    
+    UFUNCTION(BlueprintCallable)
     void GotoNextLevel();
+    
+public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     UEnemyWaveManager* GetWaveManager() const;
+    
+    UFUNCTION(BlueprintCallable)
     AActor* GetPlayerStart(AFSDPlayerController* Controller);
+    
     UFUNCTION(BlueprintCallable, BlueprintPure=false)
     TArray<AFSDPlayerController*> GetPlayerControllers() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TSubclassOf<AMolly> GetMuleClass() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     UEncounterManager* GetEncounterManager() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     FSoftObjectPath GetDropPodPath() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     FSoftObjectPath GetDropPodEscapeSafePath() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TSubclassOf<ATeamTransport> GetDropPodEscapeSafeClass() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     FSoftObjectPath GetDropPodEscapePath() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TSubclassOf<ATeamTransport> GetDropPodEscapeClass() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TSubclassOf<ATeamTransport> GetDropPodClass() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     FSoftObjectPath GetDronePath() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     TSubclassOf<ABosco> GetDroneClass() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     UDifficultyManager* GetDifficultyManager() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     UDifficultyController* GetDifficultyController() const;
+    
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetCurrentLevel() const;
+    
+    UFUNCTION(BlueprintCallable)
     bool FSDSetPause(APlayerController* PC, EPauseReason pauseReason);
+    
+    UFUNCTION(BlueprintCallable)
     bool FSDKickPlayer(APlayerController* KickedPlayer, const FText& KickReason);
+    
+    UFUNCTION(BlueprintCallable)
     bool FSDClearPause(EPauseReason pauseReason);
+    
+    UFUNCTION(BlueprintCallable)
     void EndLevelAsSuccess();
+    
+    UFUNCTION(BlueprintCallable)
     void EndLevel();
+    
+    UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void DonkeyButtonPressed();
+    
+    UFUNCTION(BlueprintCallable)
     void DestroyNonLocalPlayers();
+    
     UFUNCTION(BlueprintCallable, Exec)
     void Debug_ShowPlayerSpheres();
+    
+    UFUNCTION(BlueprintCallable)
     void CleanupActorsOfTypes(TArray<TSubclassOf<AActor>> Types, TArray<TSubclassOf<AActor>> dontRemoveTypes);
+    
     UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable, BlueprintPure)
     bool AllPlayersHaveSelectedCharacter() const;
+    
+    UFUNCTION(BlueprintAuthorityOnly, BlueprintCallable, BlueprintPure)
     bool AllPlayersHaveGeneratedLevel() const;
+    
+
+    UFUNCTION(BlueprintCallable)
     void AddControllerForGracePeriod(APlayerCharacter* aPlayerCharacter);
+    
+public:
+    UFUNCTION(BlueprintCallable)
     void AboutMission();
+    
 };
+
