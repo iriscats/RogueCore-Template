@@ -295,8 +295,8 @@ void APlayerCharacter::OnRep_DanceMove() {
 void APlayerCharacter::OnRep_CharacterState(UCharacterStateComponent* oldState) {
 }
 
-void APlayerCharacter::OnPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet) {
-}
+//void APlayerCharacter::OnPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet) {
+//}
 
 void APlayerCharacter::OnItemEquipped(AItem* Item) {
 }

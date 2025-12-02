@@ -1146,8 +1146,8 @@ public:
     void OnRep_CharacterState(UCharacterStateComponent* oldState);
 
 public:
-    UFUNCTION(BlueprintCallable)
-    void OnPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet);
+    //UFUNCTION(BlueprintCallable)
+    //void OnPlayerStateChanged(const APlayerCharacter::FOnPlayerStateDelegate& OnNewStateSet, bool CallInstantlyIfAlreadySet);
 
 
     UFUNCTION(BlueprintCallable)

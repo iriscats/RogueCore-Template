@@ -3,9 +3,6 @@
 #include "Templates/SubclassOf.h"
 
 UBasicPanel::UBasicPanel() {
-    this->bIsVariable = false;
-    this->Visibility = ESlateVisibility::SelfHitTestInvisible;
-    this->Type = EBasicPanelType::Overlay;
 }
 
 TArray<UWidget*> UBasicPanel::CreateChildren(TSubclassOf<UWidget> InWidgetClass, int32 InNumChildren, FBasicSlotSettings InSlotSettings, bool InClearPanelBefore) {
