@@ -116,16 +116,6 @@ public:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool CanTakeDamageFrom(UDamageClass* DamageClass) const;
     
-
-    // Fix for true pure virtual functions not being implemented
-    UFUNCTION(BlueprintCallable)
-    AActor* GetOwner() const override PURE_VIRTUAL(GetOwner, return NULL;);
-    
-    UFUNCTION(BlueprintCallable)
-    float GetMaxHealth() const override PURE_VIRTUAL(GetMaxHealth, return 0.0f;);
-    
-    UFUNCTION(BlueprintCallable)
-    EHealthbarType GetHealthbarType() const override PURE_VIRTUAL(GetHealthbarType, return EHealthbarType::None;);
     
 };
 
