@@ -15,7 +15,7 @@ class UObject;
 class UPawnAffliction;
 class USkeletalMeshComponent;
 
-UCLASS(Blueprintable, NoExport)
+UCLASS(Blueprintable)
 class ADeepPathfinderCharacter : public AFSDPawn, public ITriggerAI, public IVisualLoggerDebugSnapshotInterface {
     GENERATED_BODY()
 public:
@@ -117,4 +117,5 @@ public:
 
     // Fix for true pure virtual functions not being implemented
 };
+
 
