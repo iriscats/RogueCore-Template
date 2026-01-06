@@ -12,8 +12,12 @@ class ROGUECORE_API UPlanetGenerationLibrary : public UBlueprintFunctionLibrary 
     GENERATED_BODY()
 public:
     UPlanetGenerationLibrary();
+
     UFUNCTION(BlueprintCallable, BlueprintPure)
     static FGeneratedRunsForBiome GetRunsAtDepth(const FGeneratedRunsForBiome& GeneratedRuns, const ERunDepth Depth);
     
+    UFUNCTION(BlueprintCallable, BlueprintPure)
     static FRunCreationParameters CreateRunCreationParameters(const FGeneratedRunForBiome& GeneratedRun);
+    
 };
+
